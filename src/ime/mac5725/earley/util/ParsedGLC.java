@@ -7,7 +7,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
-import java.util.Set;
 
 
 /**
@@ -18,6 +17,7 @@ import java.util.Set;
  */
 public class ParsedGLC {
 	
+	private int endCount;
 	private HashSet<String> rules;
 	private String line = "", currentParent = "", currentWord = "", currentRule = "";
 	
@@ -34,8 +34,10 @@ public class ParsedGLC {
 			
 			while ((line = reader.readLine()) != null) {
 				
+				System.out.println(line);//
 				char currentLetter = line.charAt(0);
-				readRule(currentLetter);
+				System.out.println(currentLetter);//
+				readRules(currentLetter, 1);
 				
 			}
 			
@@ -48,13 +50,22 @@ public class ParsedGLC {
 		return rules;
 		
 	}
+	
+	private void readRules(char currentLetter, int index) {
+		getPOSTags(currentLetter, index);
+		if(!isFirstPOS()) {
+			getWord();
+			handleEndOfRule();
+		}
+	}
 
-	private void readRule(char currentLetter) {
+	private void getPOSTags(char currentLetter, int index) {
 
-		for(int i=1; i<line.length(); i++) {
+		for(; index<line.length(); index++) {
 			
 			// Skip first parenthesis
-			currentLetter = line.charAt(i);
+			currentLetter = String.valueOf(currentLetter).matches("\\t") && index+1>=line.length() ? line.charAt(index+1) : line.charAt(index);
+			System.out.println(currentLetter);//
 			
 			// Line start
 			if(currentLetter == '(')
@@ -62,33 +73,42 @@ public class ParsedGLC {
 			
 			// End of rule (already identified)
 			else if(currentLetter == ')')
-				handleEndOfRule(currentLetter);
+				endCount++;
 			
 			// Checks if POS tags were already collected
 			// and it's time to collect the word of the
 			// sentence
-			else if(currentLetter == ' ')
-				checkWord(currentLetter);
+//			else if(String.valueOf(currentLetter).matches("\\s+")) 
+//				checkWord(currentLetter);
 			
 			// Gets the POS tags recursively
 			else if(String.valueOf(currentLetter).matches("[A-Z]")) {
 				currentParent += currentLetter;
-				readRule(currentLetter);
-			}				
+				getPOSTags(currentLetter, ++index);
+				break;
+			}			
 			
 		}
 		
 	}
-
-	private void checkWord(char currentLetter) {
-		// TODO Auto-generated method stub
-		
+	
+	private boolean isFirstPOS() {
+		return line.contains("IP") ? true : false ;
 	}
 
-	private void handleEndOfRule(char currentLetter) {
-		
-		
-		
+	private void getWord() {
+		currentWord = !line.split("\\s")[line.split("\\s").length-1].contains("(") && 
+					  line.split("\\s")[line.split("\\s").length-1].matches("[a-z]+.*") ? 
+					  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll(")", "") : "";
+	}
+
+	private void handleEndOfRule() {
+		rules.add(currentParent + " " + currentWord);
+		currentWord = "";
+		for(int i=0; i<endCount; i++) {
+			String lastPosTag = currentParent.split(",")[currentParent.split(",").length];
+			currentParent = currentParent.replace(lastPosTag, "");
+		}
 	}
 
 }
