@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,34 +18,24 @@ import java.util.Set;
  */
 public class ParsedGLC {
 	
-	// First arg: grammar (glc)
-	// Second arg: sentence (pt-br)
-	public static void main(String... args) {
-		
-		String line = null, posTag = null, word = null;
+	private HashSet<String> rules;
+	private String line = "", currentParent = "", currentWord = "", currentRule = "";
+	
+	public HashSet<String> readGrammar(File grammar) {
+
+		rules = new HashSet<String>();
 		FileInputStream input;
 		BufferedReader reader;
-		Set<String> symbols;
-		File grammar = new File(args[0]);
-		HashMap<String, String> rules = new HashMap<String, String>();
 		
 		try {
 			
 			input = new FileInputStream(grammar);
 			reader = new BufferedReader(new InputStreamReader(input));
-			symbols = new HashSet<String>();
 			
 			while ((line = reader.readLine()) != null) {
 				
-				line = line.replace("IP", "S");
-				System.out.println(line);
-				// tenho que dar replace em tudo que não for letras maiúsculas p/ POS
-				posTag = line.matches(".*[A-Z].*") ? line : null;
-				// tenho que tratar casos tipo esse:
-				// (NP (NPR Senhor))
-				// ~ tenho dois POS e WORD!
-				word = line.matches("[^A-Z]") ? line : null;
-//				rules.put(<pos_tag>, <word>);
+				char currentLetter = line.charAt(0);
+				readRule(currentLetter);
 				
 			}
 			
@@ -56,6 +45,15 @@ public class ParsedGLC {
 			System.out.println(ioException.getMessage());
 		}
 		
+		return rules;
+		
+	}
+
+	private void readRule(char currentLetter) {
+
+		for(int i=0; i<line.length(); i++) {
+			
+		}
 		
 	}
 	
