@@ -51,10 +51,44 @@ public class ParsedGLC {
 
 	private void readRule(char currentLetter) {
 
-		for(int i=0; i<line.length(); i++) {
+		for(int i=1; i<line.length(); i++) {
+			
+			// Skip first parenthesis
+			currentLetter = line.charAt(i);
+			
+			// Line start
+			if(currentLetter == '(')
+				currentParent += ",";
+			
+			// End of rule (already identified)
+			else if(currentLetter == ')')
+				handleEndOfRule(currentLetter);
+			
+			// Checks if POS tags were already collected
+			// and it's time to collect the word of the
+			// sentence
+			else if(currentLetter == ' ')
+				checkWord(currentLetter);
+			
+			// Gets the POS tags recursively
+			else if(String.valueOf(currentLetter).matches("[A-Z]")) {
+				currentParent += currentLetter;
+				readRule(currentLetter);
+			}				
 			
 		}
 		
 	}
-	
+
+	private void checkWord(char currentLetter) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void handleEndOfRule(char currentLetter) {
+		
+		
+		
+	}
+
 }
