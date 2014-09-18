@@ -6,7 +6,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 
 
 /**
@@ -23,7 +25,7 @@ public class ParsedGLC {
 	
 	public HashSet<String> readGrammar(File grammar) {
 
-		rules = new HashSet<String>();
+			rules = new HashSet<String>();
 		FileInputStream input;
 		BufferedReader reader;
 		
@@ -33,14 +35,10 @@ public class ParsedGLC {
 			reader = new BufferedReader(new InputStreamReader(input));
 			
 			while ((line = reader.readLine()) != null) {
-				
-				if(isValidLine()) {
-					System.out.println(line);//
-					char currentLetter = line.charAt(0);
-					System.out.println(currentLetter);//
-					readRules(currentLetter, 1);
-				}
-				
+					if(isValidLine()) {
+						char currentLetter = line.charAt(0);
+						readRules(currentLetter, 0);
+					}
 			}
 			
 		} catch (FileNotFoundException fileNotFoundException) {
@@ -58,53 +56,58 @@ public class ParsedGLC {
 	}
 	
 	private void readRules(char currentLetter, int index) {
+		if(isNewRule())
+			currentRule = "";
 		getPOSTags(currentLetter, index);
-		if(!hasOnlyPOS()) {
+		if(!hasOnlyPOS()) {	
 			getWord();
 			handleEndOfRule();
 		}
 	}
 
+	private boolean isNewRule() {
+		return line.matches("\\([A-Z].*") ? true : false;
+	}
+
 	private void getPOSTags(char currentLetter, int index) {
 
-		for(; index<line.length(); index++) {
+		try {
+		
+			for(; index<line.length(); index++) {
+				
+				// Skip first brackets
+				currentLetter = String.valueOf(currentLetter).matches("\\t") && index+1>line.length() ? line.charAt(index+1) : line.charAt(index);
+				// Line start
+				if(currentLetter == '(')
+					currentRule += ",";
+				
+				// End of rule (already identified)
+				else if(currentLetter == ')')
+					currentRuleEndCount++;
+				
+				// Gets the POS tags recursively
+				else if(isNextCharPOSTag(currentLetter, index)) {
+					currentRule += currentLetter;
+					getPOSTags(currentLetter, ++index);
+					break;
+				}			
+				
+			}
 			
-			// Skip first brackets
-			currentLetter = String.valueOf(currentLetter).matches("\\t") && index+1>=line.length() ? line.charAt(index+1) : line.charAt(index);
-			System.out.println(currentLetter);//
-			// if(String.valueOf(currentLetter).matches("[a-z]") break;
-			// Line start
-			if(currentLetter == '(')
-				currentRule += ",";
-			
-			// End of rule (already identified)
-			else if(currentLetter == ')')
-				currentRuleEndCount++;
-			
-			// Checks if POS tags were already collected
-			// and it's time to collect the word of the
-			// sentence
-//			else if(String.valueOf(currentLetter).matches("\\s+")) 
-//				checkWord(currentLetter);
-			
-			// Gets the POS tags recursively
-			else if(isNextCharPOSTag(currentLetter, index)) {
-				currentRule += currentLetter;
-				getPOSTags(currentLetter, ++index);
-				break;
-			}			
-			
+		} catch(StringIndexOutOfBoundsException outOfBoundsException) {
+			System.out.println("currentLine: " + line + "\ncurrentLetter: " + currentLetter);
+			System.out.println(outOfBoundsException.getMessage());
 		}
 		
 	}
-
+	
 	// Checks if it's a capital letter followed by a space,
 	// another capital letter or a bracket. Otherwise, it's 
 	// not a POS tag, it's the word sentence!
 	private boolean isNextCharPOSTag(char currentLetter, int index) {
 		
 		boolean followedBySpace = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\s+");
-		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-Z]");
+		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-ZÀ-Ú]|\\$");
 		boolean followedByBracket = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
 		
 		// If index = line.lenght(), it's the last word and
@@ -116,34 +119,41 @@ public class ParsedGLC {
 	}
 	
 	private boolean hasOnlyPOS() {
-		return line.matches(".*[a-z]+.*") ? false : true;
+		return line.matches(".*[a-zà-ú]+.*") ? false : true;
 	}
 
 	private void getWord() {
 		currentWord = !line.split("\\s")[line.split("\\s").length-1].contains("(") && 
-					  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-z]+.*") ? 
+					  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú]+.*") ? 
 					  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "") : "";
 	}
 
 	private void handleEndOfRule() {
+		currentRule = currentRule.charAt(0) == ',' ? currentRule.substring(1, currentRule.length()) : currentRule;
 		rules.add(currentRule + " " + currentWord);
 		clearVariables();
 	}
 
 	private void clearVariables() {
 		
-		// Should remove only the EXACTLY pos tag and not every text that contains it.
-		// E.g.:
-		// IP,NP,NPR,NP,PP,P
-		// ruleCount = 2
-		// Should remove only PP and P, not every 'P'!
-		for(int i=0; i<currentRuleEndCount; i++) {
-			String lastPosTag = "," + currentRule.split(",")[currentRule.split(",").length-1];
-			currentRule = currentRule.replaceAll("," + lastPosTag.replace(",", ""), "");
+		ArrayList<String> tmpPOSTags = new ArrayList<String>();
+		String tmp[] = currentRule.split(",");
+		currentWord = "";
+		currentRule = "";
+		
+		for(int i=0; i<tmp.length; i++) 
+			tmpPOSTags.add(tmp[i]);
+		
+		while(currentRuleEndCount > 0) {
+			tmpPOSTags.remove(tmpPOSTags.size()-1);
+			currentRuleEndCount--;
 		}
 		
-		currentWord = "";
-		currentRuleEndCount = 0;
+		for(Iterator i=tmpPOSTags.iterator(); i.hasNext(); ) {
+			currentRule += i.next().toString();
+			if(i.hasNext())
+				currentRule += ",";
+		}
 		
 	}
 
