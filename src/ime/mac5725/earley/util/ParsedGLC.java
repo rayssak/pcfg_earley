@@ -132,6 +132,11 @@ public class ParsedGLC {
 
 	private void clearVariables() {
 		
+		// Should remove only the EXACTLY pos tag and not every text that contains it.
+		// E.g.:
+		// IP,NP,NPR,NP,PP,P
+		// ruleCount = 2
+		// Should remove only PP and P, not every 'P'!
 		for(int i=0; i<currentRuleEndCount; i++) {
 			String lastPosTag = "," + currentRule.split(",")[currentRule.split(",").length-1];
 			currentRule = currentRule.replaceAll("," + lastPosTag.replace(",", ""), "");
