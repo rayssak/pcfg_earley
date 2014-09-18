@@ -19,15 +19,32 @@ import java.util.Iterator;
  */
 public class ParsedGLC {
 	
-	private HashSet<String> rules;
+	private HashSet<String> fullGrammarRules;
+	private HashSet<String> grammarRules;
+	private HashSet<String> lexicon;
+	
 	private int currentRuleEndCount = 0;
 	private String line = "", currentRule = "", currentWord = "";
 	
-	public HashSet<String> readGrammar(File grammar) {
+	public HashSet<String> getFullGrammarRules() {
+		return fullGrammarRules;
+	}
 
-			rules = new HashSet<String>();
+	public HashSet<String> getGrammarRules() {
+		return grammarRules;
+	}
+	
+	public HashSet<String> getLexicon() {
+		return lexicon;
+	}
+
+	public void readGrammar(File grammar) {
+
 		FileInputStream input;
 		BufferedReader reader;
+		fullGrammarRules = new HashSet<String>();
+		grammarRules = new HashSet<String>();
+		lexicon = new HashSet<String>();
 		
 		try {
 			
@@ -46,8 +63,6 @@ public class ParsedGLC {
 		} catch (IOException ioException) {
 			System.out.println(ioException.getMessage());
 		}
-		
-		return rules;
 		
 	}
 
@@ -129,9 +144,20 @@ public class ParsedGLC {
 	}
 
 	private void handleEndOfRule() {
+		
 		currentRule = currentRule.charAt(0) == ',' ? currentRule.substring(1, currentRule.length()) : currentRule;
-		rules.add(currentRule + " " + currentWord);
+		
+		// Get grammar rule (POS tags)
+		grammarRules.add(currentRule);
+		
+		// Get full grammar rule (POS tags + sentence word)
+		fullGrammarRules.add(currentRule + " " + currentWord);
+		
+		// Get lexicon rule (last POS tag + current sentence word)
+		lexicon.add(currentRule.split(",")[currentRule.split(",").length-1] + " " + currentWord);
+		
 		clearVariables();
+		
 	}
 
 	private void clearVariables() {
