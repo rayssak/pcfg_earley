@@ -9,7 +9,7 @@ import java.util.Iterator;
 public class TestingGrammar {
 	
 	public static void main(String[] args) {	
-
+		
 		long timeRan = System.currentTimeMillis();
 		
 		ParsedGLC glc = new ParsedGLC();

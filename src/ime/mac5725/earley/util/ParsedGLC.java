@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 
 /**
@@ -19,9 +21,13 @@ public class ParsedGLC {
 	
 	private int ruleLevelCount = 0;
 	
+	private boolean sentenceWordAdded = false, hasClosingBracket = false;
+	
 	private String nextElementChar = "->";
 	
-	private String line = "", mainRule = "", currentRule = "", lastRule = "";
+	private String line = "", currentRule = "";
+	
+	private LinkedList<String> tmp;
 	
 	private HashSet<String> fullGrammarRules;
 	private HashSet<String> grammarRules;
@@ -43,6 +49,7 @@ public class ParsedGLC {
 
 		FileInputStream input;
 		BufferedReader reader;
+		tmp = new LinkedList<String>();
 		fullGrammarRules = new HashSet<String>();
 		grammarRules = new HashSet<String>();
 		lexicon = new HashSet<String>();
@@ -53,12 +60,8 @@ public class ParsedGLC {
 			reader = new BufferedReader(new InputStreamReader(input));
 			
 			while ((line = reader.readLine()) != null) {
-				System.out.println(line);//
-					if(isValidLine()) {
-						char currentLetter = line.charAt(0);
-						System.out.println(currentLetter);//
-						readRules(currentLetter, 0);
-					}
+				char currentLetter = line.charAt(0);
+				readRules(currentLetter, 0);
 			}
 			
 		} catch (FileNotFoundException fileNotFoundException) {
@@ -75,11 +78,10 @@ public class ParsedGLC {
 	}
 	
 	private void readRules(char currentLetter, int index) {
+		sentenceWordAdded = false;
+		hasClosingBracket = false;
 		getPOSTags(currentLetter, index);
-		if(!hasOnlyPOS()) {	
-			getWord();
-//			handleEndOfRule();
-		}
+		handleEndOfRule();
 	}
 
 	private void getPOSTags(char currentLetter, int index) {
@@ -89,28 +91,62 @@ public class ParsedGLC {
 			for(; index<line.length(); index++) {
 				
 				currentLetter = getValidNextLetter(currentLetter, index);
-				System.out.println(currentLetter);//
+
 				if(isOpeningBracket(currentLetter)) {
-					mainRule += ruleLevelCount>0 && !mainRule.isEmpty() && !lastRule.isEmpty() ? "," : "";
-					lastRule += ruleLevelCount>1 && !currentRule.isEmpty() ? currentRule : "";
-					currentRule = "";
+					
+					if(!currentRule.isEmpty()) tmp.add(ruleLevelCount + " " + currentRule);
 					ruleLevelCount++;
-				} else if(isClosingBracket(currentLetter)) {
-					if(!currentRule.isEmpty())
-						grammarRules.add(lastRule.split(",")[lastRule.split(",").length-1] + nextElementChar + currentRule.split("\\s")[0]);
 					currentRule = "";
+
+				} else if(isClosingBracket(currentLetter)) {
+					
+					hasClosingBracket = true;
+					if(!currentRule.isEmpty()) tmp.add(ruleLevelCount + " " + currentRule);
 					ruleLevelCount--;
+					getWord();
+					currentRule = "";
+					
 				} else if(isValidChar(currentLetter) && isNextCharPOSTag(currentLetter, index)) 
 					currentRule += currentLetter;
+				
+				if(!tmp.isEmpty() && Integer.parseInt(tmp.getLast().split(" ")[0]) - ruleLevelCount == 2) {
+					
+					String currentPOSTag = "";
+					String currentLevel = tmp.getLast().split(" ")[0];
+					
+					for(Iterator i = tmp.iterator(); i.hasNext(); ) {
+						String posTag = i.next().toString();
+						if(posTag.startsWith(currentLevel))
+							currentPOSTag += currentPOSTag.isEmpty() ? posTag.split(" ")[1] : " " + posTag.split(" ")[1];
+					}
+					
+					while(tmp.getLast().startsWith(currentLevel)) {
+						
+						String currentTargetLevel = String.valueOf(Integer.parseInt(tmp.getLast().split(" ")[0]) - 1);
+						
+						for(Iterator i = tmp.iterator(); i.hasNext(); ) {
+							
+							String currentItem = i.next().toString();
+							
+							if(currentItem.startsWith(currentTargetLevel)) {
+								String item = currentItem.replace(currentTargetLevel + " ", "");
+								fullGrammarRules.add(item + nextElementChar + currentPOSTag);
+								break;
+							}
+						}
+						
+						String posTagsToRemove[] = currentPOSTag.split("\\s");
+						for(int i=0; i<posTagsToRemove.length; i++)
+							tmp.remove(currentLevel + " " + posTagsToRemove[i]);
+						
+					}
+					
+				}
+				
 			}
 			
-			lastRule = currentRule;
-			
-			if(ruleLevelCount==1) 
-				mainRule += lastRule;
-			else if(ruleLevelCount>1) 
-				lastRule += lastRule.isEmpty() ? currentRule : "," + currentRule;
-				
+			if(!hasClosingBracket) tmp.add(ruleLevelCount + " " + currentRule);
+			getWord();
 			currentRule = "";
 			
 		} catch(StringIndexOutOfBoundsException outOfBoundsException) {
@@ -118,6 +154,10 @@ public class ParsedGLC {
 			System.out.println(outOfBoundsException.getMessage());
 		}
 		
+	}
+
+	private String addComma(String text) {
+		return "," + text;
 	}
 
 	// Skips first brackets
@@ -161,11 +201,28 @@ public class ParsedGLC {
 	}
 	
 	private void getWord() {
-		String lexiconRule = !line.split("\\s")[line.split("\\s").length-1].contains("(") && 
-						  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú]+.*") ? 
-						  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
-		if(!lexicon.isEmpty())
-			lexicon.add(lexiconRule);
+		
+		if(!hasOnlyPOS() && !sentenceWordAdded) {
+			
+			String lexiconRule = !line.split("\\s")[line.split("\\s").length-1].contains("(") && 
+							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú]+.*") ? 
+							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
+							  	  
+		  	fullGrammarRules.add(currentRule + nextElementChar + lexiconRule);
+			lexicon.add(currentRule + nextElementChar + lexiconRule);
+			
+			sentenceWordAdded = true;
+		
+		}
+	}
+	
+	private void handleEndOfRule() {
+		
+		if(ruleLevelCount == 0) {
+			
+			
+		}
+		
 	}
 	
 }
