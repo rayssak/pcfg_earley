@@ -88,6 +88,9 @@ public class ParsedGLC {
 
 		try {
 		
+			if(line.contains("P+D"))
+					System.out.println("HERE");
+			
 			for(; index<line.length(); index++) {
 				
 				currentLetter = getValidNextLetter(currentLetter, index);
@@ -124,7 +127,7 @@ public class ParsedGLC {
 						
 						String currentTargetLevel = String.valueOf(Integer.parseInt(tmp.getLast().split(" ")[0]) - 1);
 						
-						for(Iterator i = tmp.iterator(); i.hasNext(); ) {
+						for(Iterator i = tmp.descendingIterator(); i.hasNext(); ) {
 							
 							String currentItem = i.next().toString();
 							
@@ -187,12 +190,14 @@ public class ParsedGLC {
 		boolean followedBySpace = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\s+");
 		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-ZÀ-Ú]|\\$");
 		boolean followedByBracket = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
+		boolean followedByPlusSign = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\+");
 		
 		// If index = line.lenght(), it's the last word and
 		// there's no need to check anything else.
 		return index != line.length() &&
 			   String.valueOf(currentLetter).matches("[A-Z]") && 
-			   (followedBySpace || followedByCapitalLetter || followedByBracket);
+			   (followedBySpace || followedByCapitalLetter || followedByBracket || followedByPlusSign) ||
+			   (String.valueOf(currentLetter).matches("\\+") && followedByCapitalLetter);
 		
 	}
 	
