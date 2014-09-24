@@ -23,7 +23,7 @@ public class TestingGrammar {
 		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); )
 			System.out.println(i.next());
 		
-		System.out.println("- RULES: " + fullGrammarRules.size());
+		System.out.println("- RULES: " + fullGrammarRules.size() + " (" + grammarRules.size() + " rules and " + lexicon.size() + " lexicons)");
 		String time = timeRan > 1000 ? timeRan + " segundos." : timeRan + " millisegundos.";
 		System.out.println("- TIME: " + time);
 		
