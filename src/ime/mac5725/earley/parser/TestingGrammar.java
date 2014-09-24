@@ -3,8 +3,8 @@ package ime.mac5725.earley.parser;
 import ime.mac5725.earley.util.ParsedGLC;
 
 import java.io.File;
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 
 public class TestingGrammar {
 	
@@ -16,9 +16,9 @@ public class TestingGrammar {
 		glc.readGrammar(new File(args[0]));
 		timeRan = System.currentTimeMillis() - timeRan;
 		
-		HashSet<String> fullGrammarRules = glc.getFullGrammarRules();
-		HashSet<String> grammarRules = glc.getGrammarRules();
-		HashSet<String> lexicon = glc.getLexicon();
+		LinkedHashSet<String> fullGrammarRules = glc.getFullGrammarRules();
+		LinkedHashSet<String> grammarRules = glc.getGrammarRules();
+		LinkedHashSet<String> lexicon = glc.getLexicon();
 		
 		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); )
 			System.out.println(i.next());
