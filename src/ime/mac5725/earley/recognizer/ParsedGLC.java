@@ -1,4 +1,4 @@
-package ime.mac5725.earley.util;
+package ime.mac5725.earley.recognizer;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,7 +6,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 
 
 /**
@@ -15,29 +17,31 @@ import java.util.HashSet;
  * 		   pre-process and generate the formatted Grammar Tree required
  * 		   as the Parser input.
  */
-public class _ParsedGLC {
+public class ParsedGLC {
 	
 	private int ruleLevelCount = 0;
 	
-	private boolean sentenceWordAdded = false;
+	private boolean sentenceWordAdded = false, hasClosingBracket = false;
 	
 	private String nextElementChar = "->";
 	
-	private String line = "", mainRule = "", currentRule = "", lastRule = "";
+	private String line = "", currentRule = "";
 	
-	private HashSet<String> fullGrammarRules;
-	private HashSet<String> grammarRules;
-	private HashSet<String> lexicon;
+	private LinkedList<String> tmp;
 	
-	public HashSet<String> getFullGrammarRules() {
+	private LinkedHashSet<String> fullGrammarRules;
+	private LinkedHashSet<String> grammarRules;
+	private LinkedHashSet<String> lexicon;
+	
+	public LinkedHashSet<String> getFullGrammarRules() {
 		return fullGrammarRules;
 	}
 
-	public HashSet<String> getGrammarRules() {
+	public LinkedHashSet<String> getGrammarRules() {
 		return grammarRules;
 	}
 	
-	public HashSet<String> getLexicon() {
+	public LinkedHashSet<String> getLexicon() {
 		return lexicon;
 	}
 
@@ -45,19 +49,21 @@ public class _ParsedGLC {
 
 		FileInputStream input;
 		BufferedReader reader;
-		fullGrammarRules = new HashSet<String>();
-		grammarRules = new HashSet<String>();
-		lexicon = new HashSet<String>();
+		tmp = new LinkedList<String>();
+		fullGrammarRules = new LinkedHashSet<String>();
+		grammarRules = new LinkedHashSet<String>();
+		lexicon = new LinkedHashSet<String>();
 		
 		try {
 			
 			input = new FileInputStream(grammar);
 			reader = new BufferedReader(new InputStreamReader(input));
 			
-			while ((line = reader.readLine()) != null) {
-				char currentLetter = line.charAt(0);
-				readRules(currentLetter, 0);
-			}
+			while ((line = reader.readLine()) != null) 
+				if(isValidLine()) {
+					char currentLetter = line.charAt(0);
+					readRules(currentLetter, 0);
+				}
 			
 		} catch (FileNotFoundException fileNotFoundException) {
 			System.out.println(fileNotFoundException.getMessage());
@@ -69,13 +75,13 @@ public class _ParsedGLC {
 
 	private boolean isValidLine() {
 		line = line.startsWith("\t") ? line.replace("\t", "") : line;
-		return line.matches(".*\\w+.*");
+		return line.matches(".*") && !line.isEmpty();
 	}
 	
 	private void readRules(char currentLetter, int index) {
 		sentenceWordAdded = false;
+		hasClosingBracket = false;
 		getPOSTags(currentLetter, index);
-		handleEndOfRule();
 	}
 
 	private void getPOSTags(char currentLetter, int index) {
@@ -85,70 +91,37 @@ public class _ParsedGLC {
 			for(; index<line.length(); index++) {
 				
 				currentLetter = getValidNextLetter(currentLetter, index);
-				
+
 				if(isOpeningBracket(currentLetter)) {
 					
+					addTempRule();
 					ruleLevelCount++;
-					
-					if(lastRule.isEmpty()) 
-						lastRule = currentRule;
-					else if(!currentRule.isEmpty()) {
-						lastRule += addComma(currentRule);
-						if(lastRule.split(",").length >2 )
-							fullGrammarRules.add(lastRule.split(",")[lastRule.split(",").length-2] + nextElementChar + lastRule.split(",")[lastRule.split(",").length-1]);
-						else 
-							fullGrammarRules.add(lastRule.replace(",", nextElementChar));
-					}
-					
-					currentRule = "";
+					clearCurrentRule();
 
 				} else if(isClosingBracket(currentLetter)) {
 					
+					hasClosingBracket = true;
+					addTempRule();
 					ruleLevelCount--;
-					
-					if(lastRule.contains(",")) {
-						
-						String lastCurrentRule = lastRule.split(",")[lastRule.split(",").length-1];
-						fullGrammarRules.add(lastCurrentRule + nextElementChar + currentRule);
-						grammarRules.add(lastCurrentRule + nextElementChar + currentRule);
-						getWord();
-						currentRule = lastRule;
-						
-					} else {
-						
-						if(!lastRule.isEmpty()) {
-							fullGrammarRules.add(lastRule + nextElementChar + currentRule);
-							grammarRules.add(lastRule + nextElementChar + currentRule);
-							getWord();
-							currentRule = lastRule;
-						}
-						
-					}
-					
-					lastRule = "";
+					getWord();
+					clearCurrentRule();
 					
 				} else if(isValidChar(currentLetter) && isNextCharPOSTag(currentLetter, index)) 
 					currentRule += currentLetter;
 				
+				handleTempRules();
+				
 			}
 			
-			if(ruleLevelCount == 1) 
-				mainRule += mainRule.isEmpty() ? currentRule : addComma(currentRule);
-			else 
-				lastRule += lastRule.isEmpty() ? currentRule : addComma(currentRule);
-			
+			addTempFirstRule();
 			getWord();
-			currentRule = "";
+			clearCurrentRule();
 			
 		} catch(StringIndexOutOfBoundsException outOfBoundsException) {
 			System.out.println("currentLine: " + line + "\ncurrentLetter: " + currentLetter);
 			System.out.println(outOfBoundsException.getMessage());
 		}
 		
-	}
-
-	private String addComma(String text) {
-		return "," + text;
 	}
 
 	// Skips first brackets
@@ -178,12 +151,14 @@ public class _ParsedGLC {
 		boolean followedBySpace = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\s+");
 		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-ZÀ-Ú]|\\$");
 		boolean followedByBracket = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
+		boolean followedByPlusSign = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\+");
 		
 		// If index = line.lenght(), it's the last word and
 		// there's no need to check anything else.
 		return index != line.length() &&
 			   String.valueOf(currentLetter).matches("[A-Z]") && 
-			   (followedBySpace || followedByCapitalLetter || followedByBracket);
+			   (followedBySpace || followedByCapitalLetter || followedByBracket || followedByPlusSign) ||
+			   (String.valueOf(currentLetter).matches("\\+") && followedByCapitalLetter);
 		
 	}
 	
@@ -207,20 +182,66 @@ public class _ParsedGLC {
 		}
 	}
 	
-	private void handleEndOfRule() {
+	private void clearCurrentRule() {
+		currentRule = "";
+	}
+
+	private void addTempRule() {
+		if(!currentRule.isEmpty() && !currentRule.matches("\\s")) 
+			tmp.add(ruleLevelCount + " " + currentRule);
+	}
+	
+	private void addTempFirstRule() {
+		if(!hasClosingBracket && !currentRule.isEmpty()) 
+			tmp.add(ruleLevelCount + " " + currentRule);
+	}
+	
+	private void clearPOSTagsAlreadyFinalized(String currentPOSTag, String currentLevel) {
+		String posTagsToRemove[] = currentPOSTag.split("\\s");
+		for(int i=0; i<posTagsToRemove.length; i++)
+			tmp.remove(currentLevel + " " + posTagsToRemove[i]);
+	}
+	
+	private String getPOSTagsWithSameLevel(String currentPOSTag, String currentLevel) {
 		
-		if(ruleLevelCount == 0) {
+		for(Iterator i = tmp.iterator(); i.hasNext(); ) {
+			String posTag = i.next().toString();
+			if(posTag.startsWith(currentLevel))
+				currentPOSTag += currentPOSTag.isEmpty() ? posTag.split(" ")[1] : " " + posTag.split(" ")[1];
+		}
+		
+		return currentPOSTag;
+		
+	}
+	
+	private void handleTempRules() {
+		if(!tmp.isEmpty() && Integer.parseInt(tmp.getLast().split(" ")[0]) - ruleLevelCount == 2) {
+			String currentPOSTag = "";
+			String currentLevel = tmp.getLast().split(" ")[0];
+			currentPOSTag = getPOSTagsWithSameLevel(currentPOSTag, currentLevel);
+			addCurrentLevelRulesToRespectivePOSTag(currentPOSTag, currentLevel);
+		}
+	}
+
+	private void addCurrentLevelRulesToRespectivePOSTag(String currentPOSTag, String currentLevel) {
+		
+		while(tmp.getLast().startsWith(currentLevel)) {
 			
-			String mainRules[] = mainRule.split(",");
+			String currentTargetLevel = String.valueOf(Integer.parseInt(tmp.getLast().split(" ")[0]) - 1);
 			
-			for(int i=0; i<mainRules.length; i++)
-				if(i==0)
-					mainRule = mainRules[i] + nextElementChar;
-				else
-					mainRule += addComma(mainRules[i]);
+			for(Iterator i = tmp.descendingIterator(); i.hasNext(); ) {
+				
+				String currentItem = i.next().toString();
+				
+				if(currentItem.startsWith(currentTargetLevel)) {
+					String item = currentItem.replace(currentTargetLevel + " ", "");
+					fullGrammarRules.add(item + nextElementChar + currentPOSTag);
+					grammarRules.add(item + nextElementChar + currentPOSTag);
+					break;
+				}
+			}
 			
-			fullGrammarRules.add(mainRule);
-			grammarRules.add(mainRule);
+			clearPOSTagsAlreadyFinalized(currentPOSTag, currentLevel);
 			
 		}
 		

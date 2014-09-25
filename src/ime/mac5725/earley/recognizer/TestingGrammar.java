@@ -1,6 +1,4 @@
-package ime.mac5725.earley.parser;
-
-import ime.mac5725.earley.util.ParsedGLC;
+package ime.mac5725.earley.recognizer;
 
 import java.io.File;
 import java.util.Iterator;
@@ -20,8 +18,11 @@ public class TestingGrammar {
 		LinkedHashSet<String> grammarRules = glc.getGrammarRules();
 		LinkedHashSet<String> lexicon = glc.getLexicon();
 		
-		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); )
-			System.out.println(i.next());
+		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); ) {
+			String rule = i.next().toString();
+			if(rule.startsWith("IP"))
+				System.out.println(rule);
+		}
 		
 		System.out.println("- RULES: " + fullGrammarRules.size() + " (" + grammarRules.size() + " rules and " + lexicon.size() + " lexicons)");
 		String time = timeRan > 1000 ? timeRan + " segundos." : timeRan + " millisegundos.";

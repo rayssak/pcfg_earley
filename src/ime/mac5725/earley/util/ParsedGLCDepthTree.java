@@ -17,7 +17,7 @@ import java.util.Iterator;
  * 		   pre-process and generate the formatted Grammar Tree required
  * 		   as the Parser input.
  */
-public class ParsedGLC_depth {
+public class ParsedGLCDepthTree {
 	
 	private HashSet<String> fullGrammarRules;
 	private HashSet<String> grammarRules;
