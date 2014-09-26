@@ -20,7 +20,7 @@ public class TestingGrammar {
 		
 		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
-			if(rule.startsWith("IP"))
+//			if(rule.startsWith("IP"))
 				System.out.println(rule);
 		}
 		

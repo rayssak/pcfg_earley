@@ -101,12 +101,13 @@ public class ParsedGLC {
 				} else if(isClosingBracket(currentLetter)) {
 					
 					hasClosingBracket = true;
+					handlePontuation();
 					addTempRule();
 					ruleLevelCount--;
 					getWord();
 					clearCurrentRule();
 					
-				} else if(isValidChar(currentLetter) && isNextCharPOSTag(currentLetter, index)) 
+				} else if(isValidChar(currentLetter) && isNextCharPOSTag(currentLetter, index))
 					currentRule += currentLetter;
 				
 				handleTempRules();
@@ -156,10 +157,14 @@ public class ParsedGLC {
 		// If index = line.lenght(), it's the last word and
 		// there's no need to check anything else.
 		return index != line.length() &&
-			   String.valueOf(currentLetter).matches("[A-Z]") && 
 			   (followedBySpace || followedByCapitalLetter || followedByBracket || followedByPlusSign) ||
-			   (String.valueOf(currentLetter).matches("\\+") && followedByCapitalLetter);
+			   (String.valueOf(currentLetter).matches("\\+") && followedByCapitalLetter) ||
+			   isPontuation(currentLetter);
 		
+	}
+
+	private boolean isPontuation(char currentLetter) {
+		return currentLetter == ':' || currentLetter == ';' || currentLetter == ',' || currentLetter == '.' || currentLetter == '!' || currentLetter == '?';
 	}
 	
 	private boolean hasOnlyPOS() {
@@ -185,6 +190,20 @@ public class ParsedGLC {
 	private void clearCurrentRule() {
 		currentRule = "";
 	}
+	
+	private boolean hasPontuation() {
+		return currentRule.contains(".") || currentRule.contains(",") || currentRule.contains(":") || 
+			   currentRule.contains(";") || currentRule.contains("?") || currentRule.contains("!");
+	}
+	
+	private void handlePontuation() {
+		if(hasPontuation() && currentRule.length()>1) {
+			fullGrammarRules.add(currentRule.substring(0, 1) + nextElementChar + currentRule.substring(1, 2));
+			grammarRules.add(currentRule.substring(0, 1) + nextElementChar + currentRule.substring(1, 2));
+			tmp.add(ruleLevelCount + " " + currentRule.substring(0, 1));
+			clearCurrentRule();
+		} 
+	}
 
 	private void addTempRule() {
 		if(!currentRule.isEmpty() && !currentRule.matches("\\s")) 
@@ -202,6 +221,15 @@ public class ParsedGLC {
 			tmp.remove(currentLevel + " " + posTagsToRemove[i]);
 	}
 	
+	private void handleTempRules() {
+		if(!tmp.isEmpty() && Integer.parseInt(tmp.getLast().split(" ")[0]) - ruleLevelCount == 2) {
+			String currentPOSTag = "";
+			String currentLevel = tmp.getLast().split(" ")[0];
+			currentPOSTag = getPOSTagsWithSameLevel(currentPOSTag, currentLevel);
+			addCurrentLevelRulesToRespectivePOSTag(currentPOSTag, currentLevel);
+		}
+	}
+	
 	private String getPOSTagsWithSameLevel(String currentPOSTag, String currentLevel) {
 		
 		for(Iterator i = tmp.iterator(); i.hasNext(); ) {
@@ -214,15 +242,6 @@ public class ParsedGLC {
 		
 	}
 	
-	private void handleTempRules() {
-		if(!tmp.isEmpty() && Integer.parseInt(tmp.getLast().split(" ")[0]) - ruleLevelCount == 2) {
-			String currentPOSTag = "";
-			String currentLevel = tmp.getLast().split(" ")[0];
-			currentPOSTag = getPOSTagsWithSameLevel(currentPOSTag, currentLevel);
-			addCurrentLevelRulesToRespectivePOSTag(currentPOSTag, currentLevel);
-		}
-	}
-
 	private void addCurrentLevelRulesToRespectivePOSTag(String currentPOSTag, String currentLevel) {
 		
 		while(tmp.getLast().startsWith(currentLevel)) {
