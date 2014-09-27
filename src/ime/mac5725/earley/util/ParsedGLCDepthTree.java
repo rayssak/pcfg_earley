@@ -90,7 +90,7 @@ public class ParsedGLCDepthTree {
 		
 			for(; index<line.length(); index++) {
 				
-				// Skip first brackets
+				// Skip first parenthesis
 				currentLetter = String.valueOf(currentLetter).matches("\\t") && index+1>line.length() ? line.charAt(index+1) : line.charAt(index);
 				
 				// Line start
@@ -118,19 +118,19 @@ public class ParsedGLCDepthTree {
 	}
 	
 	// Checks if it's a capital letter followed by a space,
-	// another capital letter or a bracket. Otherwise, it's 
+	// another capital letter or a parenthesis. Otherwise, it's 
 	// not a POS tag, it's the word sentence!
 	private boolean isNextCharPOSTag(char currentLetter, int index) {
 		
 		boolean followedBySpace = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\s+");
 		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-ZÀ-Ú]|\\$");
-		boolean followedByBracket = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
+		boolean followedByParenthesis = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
 		
 		// If index = line.lenght(), it's the last word and
 		// there's no need to check anything else.
 		return index != line.length() &&
 			   String.valueOf(currentLetter).matches("[A-Z]") && 
-			   (followedBySpace || followedByCapitalLetter || followedByBracket);
+			   (followedBySpace || followedByCapitalLetter || followedByParenthesis);
 		
 	}
 	

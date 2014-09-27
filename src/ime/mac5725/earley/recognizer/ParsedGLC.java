@@ -21,9 +21,9 @@ public class ParsedGLC {
 	
 	private int ruleLevelCount = 0;
 	
-	private boolean sentenceWordAdded = false, hasClosingBracket = false;
+	private boolean sentenceWordAdded = false, hasClosingParenthesis = false;
 	
-	private String nextElementChar = "->";
+	private static String NEXT_ELEMENT_CHAR = "->";
 	
 	private String line = "", currentRule = "";
 	
@@ -80,7 +80,7 @@ public class ParsedGLC {
 	
 	private void readRules(char currentLetter, int index) {
 		sentenceWordAdded = false;
-		hasClosingBracket = false;
+		hasClosingParenthesis = false;
 		getPOSTags(currentLetter, index);
 	}
 
@@ -92,15 +92,15 @@ public class ParsedGLC {
 				
 				currentLetter = getValidNextLetter(currentLetter, index);
 
-				if(isOpeningBracket(currentLetter)) {
+				if(isOpeningParenthesis(currentLetter)) {
 					
 					addTempRule();
 					ruleLevelCount++;
 					clearCurrentRule();
 
-				} else if(isClosingBracket(currentLetter)) {
+				} else if(isClosingParenthesis(currentLetter)) {
 					
-					hasClosingBracket = true;
+					hasClosingParenthesis = true;
 					handlePontuation();
 					addTempRule();
 					ruleLevelCount--;
@@ -125,39 +125,39 @@ public class ParsedGLC {
 		
 	}
 
-	// Skips first brackets
+	// Skips first parenthesis
 	private char getValidNextLetter(char currentLetter, int index) {
 		return String.valueOf(currentLetter).matches("\\t") && index+1>line.length() ? line.charAt(index+1) : line.charAt(index);
 	}
 	
-	private boolean isOpeningBracket(char currentLetter) {
+	private boolean isOpeningParenthesis(char currentLetter) {
 		return String.valueOf(currentLetter).matches("\\(");
 	}
 	
-	private boolean isClosingBracket(char currentLetter) {
+	private boolean isClosingParenthesis(char currentLetter) {
 		return String.valueOf(currentLetter).matches("\\)");
 	}
 	
 	private boolean isValidChar(char currentChar) {
-		return !isOpeningBracket(currentChar) && 
-			   !isClosingBracket(currentChar) &&
+		return !isOpeningParenthesis(currentChar) && 
+			   !isClosingParenthesis(currentChar) &&
 			   !String.valueOf(currentChar).matches("\\s");
 	}
 	
 	// Checks if it's a capital letter followed by a space,
-	// another capital letter or a bracket. Otherwise, it's 
+	// another capital letter or a parenthesis. Otherwise, it's 
 	// not a POS tag, it's the word sentence!
 	private boolean isNextCharPOSTag(char currentLetter, int index) {
 		
 		boolean followedBySpace = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\s+");
 		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-ZÀ-Ú]|\\$");
-		boolean followedByBracket = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
+		boolean followedByParenthesis = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
 		boolean followedByPlusSign = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\+");
 		
 		// If index = line.lenght(), it's the last word and
 		// there's no need to check anything else.
 		return index != line.length() &&
-			   (followedBySpace || followedByCapitalLetter || followedByBracket || followedByPlusSign) ||
+			   (followedBySpace || followedByCapitalLetter || followedByParenthesis || followedByPlusSign) ||
 			   (String.valueOf(currentLetter).matches("\\+") && followedByCapitalLetter) ||
 			   isPontuation(currentLetter);
 		
@@ -179,8 +179,8 @@ public class ParsedGLC {
 							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú]+.*") ? 
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
 							  	  
-		  	fullGrammarRules.add(currentRule + nextElementChar + lexiconRule);
-			lexicon.add(currentRule + nextElementChar + lexiconRule);
+		  	fullGrammarRules.add(currentRule + NEXT_ELEMENT_CHAR + lexiconRule);
+			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + lexiconRule);
 			
 			sentenceWordAdded = true;
 		
@@ -198,8 +198,8 @@ public class ParsedGLC {
 	
 	private void handlePontuation() {
 		if(hasPontuation() && currentRule.length()>1) {
-			fullGrammarRules.add(currentRule.substring(0, 1) + nextElementChar + currentRule.substring(1, 2));
-			grammarRules.add(currentRule.substring(0, 1) + nextElementChar + currentRule.substring(1, 2));
+			fullGrammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + currentRule.substring(1, 2));
+			grammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + currentRule.substring(1, 2));
 			tmp.add(ruleLevelCount + " " + currentRule.substring(0, 1));
 			clearCurrentRule();
 		} 
@@ -211,7 +211,7 @@ public class ParsedGLC {
 	}
 	
 	private void addTempFirstRule() {
-		if(!hasClosingBracket && !currentRule.isEmpty()) 
+		if(!hasClosingParenthesis && !currentRule.isEmpty()) 
 			tmp.add(ruleLevelCount + " " + currentRule);
 	}
 	
@@ -254,8 +254,8 @@ public class ParsedGLC {
 				
 				if(currentItem.startsWith(currentTargetLevel)) {
 					String item = currentItem.replace(currentTargetLevel + " ", "");
-					fullGrammarRules.add(item + nextElementChar + currentPOSTag);
-					grammarRules.add(item + nextElementChar + currentPOSTag);
+					fullGrammarRules.add(item + NEXT_ELEMENT_CHAR + currentPOSTag);
+					grammarRules.add(item + NEXT_ELEMENT_CHAR + currentPOSTag);
 					break;
 				}
 			}
