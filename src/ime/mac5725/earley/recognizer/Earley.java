@@ -1,6 +1,5 @@
 package ime.mac5725.earley.recognizer;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -11,22 +10,25 @@ public class Earley {
 	private static String NEXT_ELEMENT_CHAR = "->";
 	private static String DUMMY_STATE = "Y" + NEXT_ELEMENT_CHAR + " * S|[0,0]";
 	
+	private int i = 0;
 	private int chartCount = 0;
 	private int stateLevelCount = 0;
 	
-	private ArrayList<String> nextPOSTags;
+	private LinkedList<String> stack;
 	
 	private LinkedList<LinkedList<String>> chart;
 	private LinkedList<String> sentenceWords;
 	private LinkedHashSet<String> grammar;
 	
 	private String currentPOSTag;
+	private String state;
 	
 	public LinkedList<LinkedList<String>> parse(String words, LinkedHashSet<String> fullGrammar) {
 		
+		state = "";
 		currentPOSTag = "";
 		grammar = fullGrammar;
-		nextPOSTags = new ArrayList<String>();
+		stack = new LinkedList<String>();
 		chart = new LinkedList<LinkedList<String>>();
 		prepareSentenceWords(words);
 
@@ -35,11 +37,10 @@ public class Earley {
 		
 		for(; chartCount<sentenceWords.size(); chartCount++) {
 			
-			for(int i=0; i<chart.get(chartCount).size(); i++) {
+			while(i<chart.get(chartCount).size() || !stack.isEmpty()) {
 				
-				String state = chart.get(chartCount).get(i);
-				addStateField(state, chart.get(chartCount));;
-				
+				getNextStateToRun(i);
+			
 				if(!isComplete(state) && !isTerminal(nextCategory(state))) 
 					predictor(state);
 				else if(!isComplete(state) && isTerminal(nextCategory(state)))
@@ -55,11 +56,10 @@ public class Earley {
 		
 	}
 
-	private void printHeadRule() {
-		System.out.println("Chart[" + chartCount + "]\t" + "S" + stateLevelCount + " " + chart.get(chartCount).get(0).replace(FIELD_SEPARATOR, "") + 
-						   "\tDummy start state");
+	private String getRules(String current) {
+		return current.substring(current.indexOf(NEXT_ELEMENT_CHAR)+5).split("\\" + FIELD_SEPARATOR)[0];
 	}
-	
+
 	private void prepareSentenceWords(String words) {
 		sentenceWords = new LinkedList<String>();
 		String tmp[] = words.split(" ");
@@ -84,6 +84,31 @@ public class Earley {
 		chartEntry.addLast(state);
 	}
 	
+	private void printHeadRule() {
+		System.out.println("Chart[" + chartCount + "]\t\t" + "S" + stateLevelCount + " " + chart.get(chartCount).get(0).replace(FIELD_SEPARATOR, "") + 
+						   "\t\t\t\t\tDummy start state");
+	}
+	
+	private void printRule(String rule) {
+		System.out.println("Chart[" + chartCount + "]\t\t" + addStateAndStartEndPointsFields(rule).replace("|", " ") + "\t\t\tPredictor");
+	}
+	
+	private void getNextStateToRun(int i) {
+		
+		if(stack.isEmpty()) {
+			state = chart.get(chartCount).get(i);
+			addStateField(state, chart.get(chartCount));
+		} else
+			for(Iterator it = chart.get(chartCount).iterator(); it.hasNext(); ) {
+				String current = it.next().toString();
+				if(getRules(current).contains(stack.getFirst())) {
+					state = current;
+					break;
+				}
+			}
+		
+	}
+	
 	private void addStateField(String state, LinkedList<String> chartEntry) {
 		if(!state.split("\\" + FIELD_SEPARATOR)[0].matches("S[0-9]+")) {
 			chartEntry.set(chartEntry.indexOf(state), "S" + stateLevelCount + FIELD_SEPARATOR + state);
@@ -106,43 +131,63 @@ public class Earley {
 	}
 	
 	private String nextCategory(String state) {
-		String[] categories = state.substring(state.lastIndexOf('*')+2).split("\\" + FIELD_SEPARATOR)[0].split(" ");
-		if(categories.length>1 && !nextPOSTags.contains(state.substring(state.lastIndexOf('*')+2).split("\\" + FIELD_SEPARATOR)[0]))
-			nextPOSTags.add(state.substring(state.lastIndexOf('*')+2).split("\\" + FIELD_SEPARATOR)[0]);
-		return state.substring(state.lastIndexOf('*')+2).split("\\" + FIELD_SEPARATOR)[0].split(" ")[0];
+		
+		if(stack.isEmpty()) {
+			
+			String[] categories = state.substring(state.lastIndexOf('*')+2).split("\\" + FIELD_SEPARATOR)[0].split(" ");
+			if(categories.length>1)
+				for(int i=0; i<categories.length; i++)
+					if(!stack.contains(categories[i]))
+						stack.add(categories[i]);
+			
+			return state.substring(state.lastIndexOf('*')+2).split("\\" + FIELD_SEPARATOR)[0].split(" ")[0];
+			
+		} else
+			return stack.getFirst();
+		
 	}
 
 	private void predictor(String state) {
 		
 		currentPOSTag = nextCategory(state);
+		boolean hasAnyEntry = false;
 		
-		for(Iterator i=grammar.iterator(); i.hasNext(); ) {
+		for(Iterator it=grammar.iterator(); it.hasNext(); ) {
 
-			String rule = i.next().toString();
-			if(rule.startsWith(currentPOSTag) && isPOS(rule)) {
+			String rule = it.next().toString();
+			if(getRule(rule).equals(currentPOSTag) && isPOS(rule)) {
 				
+				i++;
 				stateLevelCount++;
+				hasAnyEntry = true;
 				enqueue(addStateAndStartEndPointsFields(rule), chart.get(chartCount));
-				System.out.println("Chart[" + chartCount + "]\t" + addStateAndStartEndPointsFields(rule).replace("|", " ") + "\tPredictor");
-				
-				// Se eu fizer isso, só vou pegar 1 regra de cada POS!
-				// Peguei  IP-> * . VB NP .
-				// se remover IP
-				// não pego nenhum outro IP -> !!!!!!!!!
-				for(int aux=0; aux<nextPOSTags.size(); aux++) {
-					String current = nextPOSTags.get(aux);
-					if(current.startsWith(currentPOSTag)) {
-						nextPOSTags.remove(aux);
-						nextPOSTags.add(current.replace(currentPOSTag, ""));
-					}
-				}
+				printRule(rule);
 				
 			}
 				
 		}
 		
+		pop(hasAnyEntry);
+		
 	}
-	
+
+	private String getRule(String rule) {
+		return rule.split(NEXT_ELEMENT_CHAR)[0];
+	}
+
+	private void pop(boolean hasAnyEntry) {
+		
+		if(!hasAnyEntry) 
+			stack.remove(currentPOSTag);
+		else {
+			for(int aux=0; aux<stack.size(); aux++) {
+				String current = stack.get(aux);
+				if(current.startsWith(currentPOSTag)) 
+					stack.remove(current);
+			}
+		}
+		
+	}
 
 	private String addStateAndStartEndPointsFields(String rule) {
 		return "S" + stateLevelCount + FIELD_SEPARATOR + rule.replace(NEXT_ELEMENT_CHAR, NEXT_ELEMENT_CHAR + " * ") + FIELD_SEPARATOR + "[0," + chartCount + "]";

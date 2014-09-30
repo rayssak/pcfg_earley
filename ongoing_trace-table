@@ -1,0 +1,13 @@
+Chart[0]		S0 Y-> * S[0,0]						Dummy start state
+Chart[0]		S1 S-> * IP CP FRAG [0,0]			Predictor
+Chart[0]		S2 IP-> * . VB NP . [0,0]			Predictor
+Chart[0]		S3 .-> * : [0,0]					Predictor
+Chart[0]		S4 .-> * ; [0,0]					Predictor
+Chart[0]		S5 NP-> * N [0,0]					Predictor
+Chart[0]		S6 NP-> * D N PP [0,0]				Predictor
+Chart[0]		S7 NP-> * D NPR PP [0,0]			Predictor
+
+----- COMPLETER ------
+
+Chart[0]		S8 PP-> * P+D NP [0,0]				Predictor
+Chart[0]		S9 PP-> * P NP [0,0]				Predictor
