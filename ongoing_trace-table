@@ -1,13 +1,31 @@
-Chart[0]		S0 Y-> * S[0,0]						Dummy start state
-Chart[0]		S1 S-> * IP CP FRAG [0,0]			Predictor
-Chart[0]		S2 IP-> * . VB NP . [0,0]			Predictor
-Chart[0]		S3 .-> * : [0,0]					Predictor
-Chart[0]		S4 .-> * ; [0,0]					Predictor
-Chart[0]		S5 NP-> * N [0,0]					Predictor
-Chart[0]		S6 NP-> * D N PP [0,0]				Predictor
-Chart[0]		S7 NP-> * D NPR PP [0,0]			Predictor
-
------ COMPLETER ------
-
-Chart[0]		S8 PP-> * P+D NP [0,0]				Predictor
-Chart[0]		S9 PP-> * P NP [0,0]				Predictor
+Chart[0]		S0 Y-> * S[0,0]						DUMMY START STATE
+Chart[0]		S1 S-> * IP CP FRAG [0,0]			PREDICTOR
+Chart[0]		S2 Y-> S * [0,0]					COMPLETER
+Chart[0]		S3 IP-> * . VB NP . [0,0]			PREDICTOR
+Chart[0]		S4 S-> IP * CP FRAG [0,0]			COMPLETER
+Chart[0]		S5 .-> * : [0,0]					PREDICTOR
+Chart[0]		S6 .-> * ; [0,0]					PREDICTOR
+Chart[0]		S7 IP-> . * VB NP . [0,0]			COMPLETER
+Chart[0]		S8 S-> IP CP * FRAG [0,0]			COMPLETER
+Chart[0]		S9 .-> : * [0,0]					COMPLETER
+Chart[0]		S10 .-> ; * [0,0]					COMPLETER
+Chart[0]		S11 IP-> . VB * NP . [0,0]			COMPLETER
+Chart[0]		S12 S-> IP CP FRAG * [0,0]			COMPLETER
+Chart[0]		S13 NP-> * N [0,0]					PREDICTOR
+Chart[0]		S14 NP-> * D N PP [0,0]				PREDICTOR
+Chart[0]		S15 NP-> * D NPR PP [0,0]			PREDICTOR
+Chart[0]		S16 IP-> . VB NP * . [0,0]			COMPLETER
+Chart[0]		S17 NP-> N * [0,0]					COMPLETER
+Chart[0]		S18 NP-> D * N PP [0,0]				COMPLETER
+Chart[0]		S19 NP-> D * NPR PP [0,0]			COMPLETER
+Chart[0]		S20 IP-> . VB NP . * [0,0]			COMPLETER
+Chart[0]		S21 NP-> D N * PP [0,0]				COMPLETER
+Chart[0]		S22 NP-> D NPR * PP [0,0]			COMPLETER
+Chart[0]		S23 PP-> * P+D NP [0,0]				PREDICTOR
+Chart[0]		S24 PP-> * P NP [0,0]				PREDICTOR
+Chart[0]		S25 NP-> D N PP * [0,0]				COMPLETER
+Chart[0]		S26 NP-> D NPR PP * [0,0]			COMPLETER
+Chart[0]		S27 PP-> P+D * NP [0,0]				COMPLETER
+Chart[0]		S28 PP-> P * NP [0,0]				COMPLETER
+Chart[0]		S29 PP-> P+D NP * [0,0]				COMPLETER
+Chart[0]		S30 PP-> P NP * [0,0]				COMPLETER

@@ -24,6 +24,8 @@ public class Earley {
 	private String state;
 	private String fullState;
 	
+	private enum Methods { PREDICTOR, SCANNER, COMPLETER };
+	
 	public LinkedList<LinkedList<String>> parse(String words, LinkedHashSet<String> fullGrammar) {
 		
 		state = "";
@@ -82,11 +84,12 @@ public class Earley {
 	
 	private void printHeadRule() {
 		System.out.println("Chart[" + chartCount + "]\t\t" + "S" + stateLevelCount + " " + chart.get(chartCount).get(0).replace(FIELD_SEPARATOR, "") + 
-						   "\t\t\t\t\tDummy start state");
+						   "\t\t\t\t\tDUMMY START STATE");
 	}
 	
-	private void printRule(String rule) {
-		System.out.println("Chart[" + chartCount + "]\t\t" + addStateAndStartEndPointsFields(rule).replace("|", " ") + "\t\t\tPredictor");
+	private void printRule(String rule, String method) {
+		rule = rule.contains(DOTTED_RULE) ? rule : addStateAndStartEndPointsFields(rule);
+		System.out.println("Chart[" + chartCount + "]\t\t" + rule.replace("|", " ") + "\t\t\t" + method);
 	}
 	
 	private void getNextStateToRun() {
@@ -125,20 +128,51 @@ public class Earley {
 		currentPOSTag = nextCategory(state);
 		
 		for(Iterator it=grammar.iterator(); it.hasNext(); ) {
-
+			
 			String rule = it.next().toString();
-			if(getRule(rule).equals(currentPOSTag) && isPOS(rule)) {
+			
+			if(getRule(rule).equals(currentPOSTag) && isPOS(rule) && !isRuleAlreadyInChart(rule)) {
 				
-				j++;
 				stateLevelCount++;
 				enqueue(addStateAndStartEndPointsFields(rule), chart.get(chartCount));
-				printRule(rule);
+				printRule(rule, Methods.PREDICTOR.name());
 				
 			}
-				
+			
 		}
 		
-		enqueue(fullState.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE), chart.get(chartCount));
+		markCategoryCompleted(state);
+		j++;
+		
+	}
+
+	private boolean isRuleAlreadyInChart(String rule) {
+		
+		boolean isRuleAlreadyInChart = false;
+		rule = addStateAndStartEndPointsFields(rule).replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "");
+		
+		for(Iterator i=chart.get(chartCount).iterator(); i.hasNext(); ) 
+			if(i.next().toString().replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").equals(rule)) {
+				isRuleAlreadyInChart = true;
+				break;
+			}
+		
+		return isRuleAlreadyInChart;
+		
+	}
+
+	private void markCategoryCompleted(String state) {
+			
+		if(currentPOSTag.equals(".")) 
+			state = fullState.replace(DOTTED_RULE + " " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE);
+		else 
+			state = fullState.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE);
+		
+		state = state.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + ++stateLevelCount + FIELD_SEPARATOR);
+		
+		enqueue(state, chart.get(chartCount));
+		printRule(state, Methods.PREDICTOR.name());
+			
 		
 	}
 
@@ -159,16 +193,22 @@ public class Earley {
 		
 		currentPOSTag = nextCompletedCategory(state);
 		
-		for(Iterator it=chart.get(chartCount).iterator(); it.hasNext(); ) {
+		for(int count=0; count<chart.get(chartCount).size(); count++) {
 			
-			String rule = it.next().toString();
-			String cleanRule = rule.split("\\" + FIELD_SEPARATOR)[1];
-			String[] posTags = getRules(cleanRule);
+			String rule = chart.get(chartCount).get(count);
+			if(!chart.get(chartCount).get(count).equals(rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + count + FIELD_SEPARATOR))) {
 			
-			for(int aux=0; aux<posTags.length; aux++) 
-				if(!posTags[aux].isEmpty() && posTags[aux].equals(currentPOSTag) && !equalRules(state, rule))
-					enqueue(rule.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE), chart.get(chartCount));
-			
+				String cleanRule = rule.split("\\" + FIELD_SEPARATOR)[1];
+				String[] posTags = getRules(cleanRule);
+				
+				for(int aux=0; aux<posTags.length; aux++) 
+					if(!posTags[aux].isEmpty() && posTags[aux].equals(currentPOSTag) && !equalRules(state, rule)) {
+						rule = rule.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE).replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + ++stateLevelCount + FIELD_SEPARATOR);
+						enqueue(rule, chart.get(chartCount));
+						printRule(rule, Methods.COMPLETER.name());
+					}
+				
+			} 
 		}
 		j++;
 		
@@ -183,7 +223,7 @@ public class Earley {
 	}
 	
 	private boolean equalRules(String state, String rule) {
-		return state.replace(DOTTED_RULE, "").replaceAll("\\s", "").equals(rule.replace(DOTTED_RULE, "").replaceAll("\\s", ""));
+		return state.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").replaceAll("\\s", "").equals(rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").replaceAll("\\s", ""));
 	}
 
 }
