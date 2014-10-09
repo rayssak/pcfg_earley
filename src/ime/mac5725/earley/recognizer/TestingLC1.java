@@ -7,7 +7,7 @@ public class TestingLC1 {
 	
 	public static void main(String[] args) {	
 		
-////		long timeRan = System.currentTimeMillis();
+		long timeRan = System.currentTimeMillis();
 ////		
 ////		ParsedGLC glc = new ParsedGLC();
 ////		glc.readGrammar(new File(args[0]));
@@ -56,10 +56,11 @@ public class TestingLC1 {
 		lexicon.add("Preposition-> near");
 		lexicon.add("Preposition-> through");
 		
-//		fullGrammarRules.add("S->IP CP FRAG");
 		Earley earley = new Earley();
-//		earley.parse("vaidade dos homens", fullGrammarRules);
-		earley.parse("book that flight", grammarRules, lexicon);
+		earley.recognize("book that flight", grammarRules, lexicon);
+		timeRan = System.currentTimeMillis() - timeRan;
+		String time = timeRan > 1000 ? timeRan + " segundos." : timeRan + " millisegundos.";
+		System.out.println("- TIME: " + time);
 		
 //		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); ) {
 //			String rule = i.next().toString();
