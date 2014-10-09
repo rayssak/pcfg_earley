@@ -17,6 +17,7 @@ public class Earley {
 	private LinkedList<LinkedList<String>> chart;
 	private LinkedList<String> sentenceWords;
 	private LinkedHashSet<String> grammar;
+	private LinkedHashSet<String> lexicon;
 	
 	private String currentPOSTag;
 	private String state;
@@ -24,26 +25,28 @@ public class Earley {
 	
 	private enum Methods { PREDICTOR, SCANNER, COMPLETER };
 	
-	public LinkedList<LinkedList<String>> parse(String words, LinkedHashSet<String> fullGrammar) {
+	public LinkedList<LinkedList<String>> parse(String words, LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
 		
 		state = "";
 		currentPOSTag = "";
-		grammar = fullGrammar;
+		this.grammar = grammar;
+		this.lexicon = lexicon;
 		chart = new LinkedList<LinkedList<String>>();
 		prepareSentenceWords(words);
 
 		enqueue(DUMMY_STATE, chart.get(0));
 		printHeadRule();
 		
-		for(; i<sentenceWords.size(); i++) {
+		for(; i<=sentenceWords.size(); i++) {
 			
 			while(j<chart.get(i).size()) {
 				
 				getNextStateToRun();
 			
+//				System.out.println("\n-STATE: " + state);//
 				if(!isComplete(state) && !isPartOfSpeech(nextCategory(state))) 
 					predictor(state);
-				else if(!isComplete(state) && isPartOfSpeech(nextCategory(state)))
+				else if(!isComplete(state) /*&& isPartOfSpeech(nextCategory(state))*/)
 					scanner(state);
 				else 
 					completer(state);
@@ -83,14 +86,15 @@ public class Earley {
 	}
 	
 	private void printHeadRule() {
-		System.out.println("Chart[" + i + "]\t\t" + "S" + stateLevelCount + " " + chart.get(i).get(0).replace(FIELD_SEPARATOR, "") + 
-						   "\t\t\t\t\tDUMMY START STATE");
+		System.out.println("\tChart[" + i + "]\t\t" + "S" + stateLevelCount + " " + chart.get(i).get(0).replace(FIELD_SEPARATOR, "") + 
+						   "\t\t\t\t\t\t\t\t DUMMY START STATE");
 	}
 	
-	private void printRule(String rule, String method) {
-		rule = rule.contains(DOTTED_RULE) ? rule : addStateAndStartEndPointsFields(rule);
-		System.out.println(method.equals(Methods.SCANNER.name()) ? "Chart[" + (i+1) + "]\t\t" + rule.replace("|", " ") + "\t\t\t" + method :
-						   "Chart[" + i + "]\t\t" + rule.replace("|", " ") + "\t\t\t" + method);
+	private void printRule(String rule, String method, String chartValue) {
+		rule = rule.contains(DOTTED_RULE) ? rule : addStateAndStartEndPointsFields(rule); 
+		rule += rule.length()<24 ? "\t\t\t\t\t\t\t" : (rule.length()<32 ? "\t\t\t\t\t\t" : "\t\t\t\t\t");
+		System.out.println("\tChart[" + chartValue + "]\t\t" + rule.replace("|", " ") + " " + method);
+		
 	}
 	
 	private void getNextStateToRun() {
@@ -112,8 +116,22 @@ public class Earley {
 		return bracket-dottedRule == 2;
 	}
 	
+	// POS = Noun (aponta p/ outro POS)  /   !POS = Aux (aponta p/ léxico)
 	private boolean isPartOfSpeech(String nextCategory) {
-		return nextCategory.matches(".*[a-z].*");
+		
+		boolean isLexicon = false;
+		
+		if(!nextCategory.replace("-", "").matches("[A-Z]+") &&
+		    nextCategory.replace("-", "").matches("[[A-Z]+[a-z]+]+")) {
+			
+			for(Iterator it=lexicon.iterator(); it.hasNext(); ) 
+				if(it.next().toString().split(NEXT_ELEMENT_CHAR)[0].equals(nextCategory))
+					isLexicon = true;
+			
+		}
+		
+		return isLexicon;
+		
 	}
 	
 	private String nextCategory(String state) {
@@ -128,17 +146,17 @@ public class Earley {
 			
 			String rule = it.next().toString();
 			
-			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && !isRuleAlreadyInChart(rule)) {
+			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && 
+			  !isRuleAlreadyInCurrentChart(rule) && !chartHasCurretRuleAlreadyCompleted(rule)) {
 				
 				stateLevelCount++;
 				enqueue(addStateAndStartEndPointsFields(rule), chart.get(i));
-				printRule(rule, Methods.PREDICTOR.name());
+				printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
 				
 			}
 			
 		}
 		
-//		markCategoryCompleted(state);
 		j++;
 		
 	}
@@ -147,7 +165,7 @@ public class Earley {
 		return posTag.matches(".*[A-Z]+.*");
 	}
 	
-	private boolean isRuleAlreadyInChart(String rule) {
+	private boolean isRuleAlreadyInCurrentChart(String rule) {
 		
 		boolean isRuleAlreadyInChart = false;
 		rule = addStateAndStartEndPointsFields(rule).replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "");
@@ -161,19 +179,26 @@ public class Earley {
 		return isRuleAlreadyInChart;
 		
 	}
+	
+	private boolean chartHasCurretRuleAlreadyCompleted(String rule) {
 
-	private void markCategoryCompleted(String state) {
-			
-		if(currentPOSTag.equals(".")) 
-			state = fullState.replace(DOTTED_RULE + " " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE);
-		else 
-			state = fullState.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE);
+		int chartCount = 0;
+		String terminalAfterDottedRule = rule.split("\\" + NEXT_ELEMENT_CHAR + " ")[1].split(" ")[0];
 		
-		state = state.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + ++stateLevelCount + FIELD_SEPARATOR);
-		
-		enqueue(state, chart.get(i));
-		printRule(state, Methods.PREDICTOR.name());
+		for(int count=0; count<chart.get(chartCount).size(); count++) {
 			
+			String currentTerminals = chart.get(chartCount).get(count).replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").split("\\" + FIELD_SEPARATOR)[0].split("\\" + NEXT_ELEMENT_CHAR + " ")[1];
+			if(currentTerminals.contains(terminalAfterDottedRule) && !currentTerminals.substring(0, currentTerminals.indexOf(terminalAfterDottedRule)).contains(DOTTED_RULE))
+				return true;
+			
+			if(isLastChartItem(chartCount, chart.get(chartCount).get(count)) && chartCount < chart.size()-1) {
+				count = -1;
+				chartCount++;
+			}
+			
+		}
+		
+		return false;
 		
 	}
 
@@ -185,7 +210,7 @@ public class Earley {
 //		return "S" + stateLevelCount + FIELD_SEPARATOR + rule.replace(NEXT_ELEMENT_CHAR, NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " ") + 
 //				FIELD_SEPARATOR + "[0," + i + "]";
 		return "S" + stateLevelCount + FIELD_SEPARATOR + rule.replace(NEXT_ELEMENT_CHAR, NEXT_ELEMENT_CHAR + " " + DOTTED_RULE) + 
-				FIELD_SEPARATOR + "[0," + i + "]";
+				FIELD_SEPARATOR + "[" + i + "," + i + "]";
 	}
 
 	private void scanner(String state) {
@@ -193,8 +218,7 @@ public class Earley {
 		LinkedList<String> terminals = new LinkedList<String>();
 		String terminal = getTerminal(state);
 		
-		for(Iterator it=grammar.iterator(); it.hasNext(); ) {
-			
+		for(Iterator it=lexicon.iterator(); it.hasNext(); ) {
 			String rule = it.next().toString();
 			if(rule.split(NEXT_ELEMENT_CHAR)[0].equals(terminal))
 				terminals.add(rule.split(NEXT_ELEMENT_CHAR + " ")[1]);
@@ -207,8 +231,8 @@ public class Earley {
 					if(word.equals(terminals.get(aux)) && i==sentenceWords.indexOf(word)) {
 						String rule = getTerminalCompletedRule(terminal, word);
 						enqueue(rule, chart.get(i+1));
-						printRule(rule, Methods.SCANNER.name());
-						it.remove();
+						printRule(rule, Methods.SCANNER.name(), String.valueOf(i+1));
+						sentenceWords.set(sentenceWords.indexOf(word), "");
 					}
 			}
 		
@@ -222,58 +246,100 @@ public class Earley {
 		String tmp[] = changeFieldSeparator(state).split(" ");
 		
 		for(int aux=0; aux<tmp.length; aux++)
-			if(tmp[aux].matches("[A-Z]*[a-z]+")) {
-				terminal = tmp[aux];
-				break;
-			}
+			if(tmp[aux].matches("[A-Z]*[a-z]+")) 
+				if(!posAlreadyProcessed(tmp[aux])) {
+					terminal = tmp[aux];
+					break;
+				}
 		
 		return terminal;
 		
 	}
 	
+	private boolean posAlreadyProcessed(String posTag) {
+		
+		int chartCount = 0;
+		
+		for(int aux=0; aux<chart.get(chartCount).size(); aux++) {
+			
+			String rule = chart.get(chartCount).get(aux).toString();
+			if(rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").startsWith(posTag)) 
+				return true;
+			
+			if(aux == chart.get(chartCount).size()-1) {
+				aux = -1;
+				chartCount++;
+			}
+			
+		}
+		
+		return false;
+		
+	}
+
 	private String changeFieldSeparator(String state) {
 		return state.replace(FIELD_SEPARATOR, " ");
 	}
 	
 	private String getTerminalCompletedRule(String terminal, String word) {
-		return "S" + ++stateLevelCount + FIELD_SEPARATOR + terminal + NEXT_ELEMENT_CHAR + " " + word + " " + DOTTED_RULE + FIELD_SEPARATOR + "[0," + (i+1) + "]";
+		return "S" + ++stateLevelCount + FIELD_SEPARATOR + terminal + NEXT_ELEMENT_CHAR + " " + word + " " + DOTTED_RULE + FIELD_SEPARATOR + "[" + i + "," + (i+1) + "]";
 	}
-
+	
 	private void completer(String state) {
 		
+		int chartCount = 0;
+		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
 		currentPOSTag = nextCompletedCategory(state);
+		LinkedList<String> tmp = new LinkedList<String>();
 		
-		for(int count=0; count<chart.get(i).size(); count++) {
+		for(int count=0; count<chart.get(chartCount).size(); count++) {
 			
-			String rule = chart.get(i).get(count);
-			if(!chart.get(i).get(count).equals(rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + count + FIELD_SEPARATOR))) {
+			String rule = chart.get(chartCount).get(count);
+			int ruleEnd = Integer.parseInt(rule.split("\\[")[1].split(",")[1].replace("]", ""));
 			
-				String cleanRule = rule.split("\\" + FIELD_SEPARATOR)[1];
-				String[] posTags = getRules(cleanRule);
+			if(!isComplete(rule) && ruleEnd==stateStart) {
 				
-				for(int aux=0; aux<posTags.length; aux++) 
-					if(!posTags[aux].isEmpty() && posTags[aux].equals(currentPOSTag) && !equalRules(state, rule)) {
-						rule = rule.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE).replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + ++stateLevelCount + FIELD_SEPARATOR);
-						enqueue(rule, chart.get(i));
-						printRule(rule, Methods.COMPLETER.name());
-					}
+				String cleanNonTerminal = rule.substring(rule.indexOf(DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
+				String tmpRule = rule.substring(0, rule.indexOf('['));
 				
-			} 
+				if(cleanNonTerminal.equals(currentPOSTag) && !tmp.contains(rule.split("\\" + FIELD_SEPARATOR)[1]) &&
+				   !rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").equals(DUMMY_STATE)) {
+					
+					int ruleStart = Integer.parseInt(rule.split("\\[")[1].split(",")[0]);
+					tmp.add(tmpRule.split("\\" + FIELD_SEPARATOR)[1]);
+					tmpRule = tmpRule.replace(DOTTED_RULE, "").replace(" " + currentPOSTag, currentPOSTag + " " + DOTTED_RULE).replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "S" + ++stateLevelCount + FIELD_SEPARATOR) + "[" + ruleStart + "," + i + "]";
+					enqueue(tmpRule, chart.get(i));
+					printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
+					
+				}
+				
+			}
+			
+			if(isLastChartItem(chartCount, rule) && chartCount < chart.size()-1) {
+				count = -1;
+				chartCount++;
+			}
+			
 		}
+		
 		j++;
 		
 	}
 
 	private String nextCompletedCategory(String state) {
-		return state.substring(state.lastIndexOf(DOTTED_RULE)-2).split("\\" + FIELD_SEPARATOR)[0].split(" ")[0];
+		return state.substring(state.indexOf(FIELD_SEPARATOR)+1, state.indexOf(NEXT_ELEMENT_CHAR));
 	}
 	
-	private String[] getRules(String rule) {
-		return rule.substring(rule.indexOf(NEXT_ELEMENT_CHAR)).replace(NEXT_ELEMENT_CHAR, "").replace(DOTTED_RULE, "").split(" ");
-	}
+//	private int getTerminalPosition(String rule, String posTag) {
+//		String tmp[] = rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").split(NEXT_ELEMENT_CHAR + " ")[1].replace(DOTTED_RULE + " ", "").split("\\" + FIELD_SEPARATOR)[0].split(" ");
+//		for(int aux=0; aux<tmp.length; aux++)
+//			if(tmp[aux].equals(posTag))
+//				return aux;
+//		return 0;
+//	}
 	
-	private boolean equalRules(String state, String rule) {
-		return state.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").replaceAll("\\s", "").equals(rule.replaceAll("S[0-9]+" + "\\" + FIELD_SEPARATOR, "").replaceAll("\\s", ""));
+	private boolean isLastChartItem(int chartCount, String rule) {
+		return rule.equals(chart.get(chartCount).getLast());
 	}
 
 }
