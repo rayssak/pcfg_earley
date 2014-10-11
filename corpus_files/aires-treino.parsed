@@ -10,7 +10,7 @@
 		(PP (P sobre)
 		    (NP (D a)
 			(N vaidade)
-			(PP (P+D dos)
+			(PP (P+D dos)'
 			    (NP (N homens))))))
 	(. ;))
 (IP (NP (DEM isto))

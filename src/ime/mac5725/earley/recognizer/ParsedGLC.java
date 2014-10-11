@@ -179,8 +179,8 @@ public class ParsedGLC {
 							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú]+.*") ? 
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
 							  	  
-		  	fullGrammarRules.add(currentRule + NEXT_ELEMENT_CHAR + lexiconRule);
-			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + lexiconRule);
+		  	fullGrammarRules.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
+			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
 			
 			sentenceWordAdded = true;
 		
@@ -198,8 +198,8 @@ public class ParsedGLC {
 	
 	private void handlePontuation() {
 		if(hasPontuation() && currentRule.length()>1) {
-			fullGrammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + currentRule.substring(1, 2));
-			grammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + currentRule.substring(1, 2));
+			fullGrammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
+			grammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
 			tmp.add(ruleLevelCount + " " + currentRule.substring(0, 1));
 			clearCurrentRule();
 		} 
@@ -254,8 +254,8 @@ public class ParsedGLC {
 				
 				if(currentItem.startsWith(currentTargetLevel)) {
 					String item = currentItem.replace(currentTargetLevel + " ", "");
-					fullGrammarRules.add(item + NEXT_ELEMENT_CHAR + currentPOSTag);
-					grammarRules.add(item + NEXT_ELEMENT_CHAR + currentPOSTag);
+					fullGrammarRules.add(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
+					grammarRules.add(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
 					break;
 				}
 			}

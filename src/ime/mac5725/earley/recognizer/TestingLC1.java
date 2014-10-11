@@ -24,14 +24,14 @@ public class TestingLC1 {
 	public static void main(String[] args) {
 		
 //		String sentence = new File(args[1]);
-		String sentence = "include to me";
+		String sentence = "vaidade homens ofereço";
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();
 		readGrammar(args);
 //		printRules(timeRan);
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		LinkedList<String> grammarTree = earley.getParse();
+		LinkedList<String> grammarTree = earley.parse();
 
 		timeRan = System.currentTimeMillis() - timeRan;
 		time = timeRan > 1000 ? timeRan + " segundos" : timeRan + " millisegundos";

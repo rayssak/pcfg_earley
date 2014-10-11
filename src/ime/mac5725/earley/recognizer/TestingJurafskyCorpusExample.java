@@ -17,7 +17,7 @@ public class TestingJurafskyCorpusExample {
 	private static LinkedHashSet<String> lexicon;
 	private static boolean grammarRecognized;
 	private static String time;
-	private static Earley earley;
+	private static EarleyJurafsky earley;
 
 	public static void main(String[] args) {
 		
@@ -64,7 +64,7 @@ public class TestingJurafskyCorpusExample {
 	}
 
 	private static void initializeRequiredObjects() {
-		earley = new Earley();
+		earley = new EarleyJurafsky();
 		grammarRules = new LinkedHashSet<String>();
 		lexicon = new LinkedHashSet<String>();
 	}
