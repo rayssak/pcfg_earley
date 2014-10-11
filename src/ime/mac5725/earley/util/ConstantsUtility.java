@@ -1,6 +1,6 @@
 package ime.mac5725.earley.util;
 
-public class EarleyConstantsUtility {
+public class ConstantsUtility {
 	
 	public static String SYSTEM_SCAPE = "\\";
 
@@ -16,6 +16,8 @@ public class EarleyConstantsUtility {
 	
 	public static String DOTTED_RULE = "*";
 	
-	public static String DUMMY_STATE = "Y" + NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " S|[0,0]";
+//	Jurafsky dummy rule
+//	public static String DUMMY_STATE = "Y" + NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " S|[0,0]";
+	public static String DUMMY_STATE = "Y" + NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " IP|[0,0]";
 	
 }
