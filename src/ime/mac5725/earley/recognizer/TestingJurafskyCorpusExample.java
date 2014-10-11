@@ -46,7 +46,7 @@ public class TestingJurafskyCorpusExample {
 		initializeRequiredObjects();
 		populateGrammarLists(grammarRules, lexicon);
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		LinkedList<String> grammarTree = earley.getParse();
+		LinkedList<String> grammarTree = earley.parse();
 
 		timeRan = System.currentTimeMillis() - timeRan;
 		time = timeRan > 1000 ? timeRan + " segundos" : timeRan + " millisegundos";

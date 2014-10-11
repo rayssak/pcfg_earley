@@ -18,7 +18,7 @@ public class TestingLC1 {
 	private static LinkedHashSet<String> grammarRules;
 	private static boolean grammarRecognized;
 	private static String time;
-	private static Earley earley;
+	private static EarleyFinger earley;
 	private static ParsedGLC glc;
 	
 	public static void main(String[] args) {
@@ -67,7 +67,7 @@ public class TestingLC1 {
 
 	private static void initializeRequiredObjects() {
 		glc = new ParsedGLC();
-		earley = new Earley();
+		earley = new EarleyFinger();
 		fullGrammarRules = new LinkedHashSet<String>();
 		grammarRules = new LinkedHashSet<String>();
 		lexicon = new LinkedHashSet<String>();

@@ -8,71 +8,42 @@ import java.util.LinkedList;
 
 public class Earley {
 	
-	private int i = 0, j = 0;
-	private int stateLevelCount = 0;
-	private int sentenceHeadRuleCount = 0;
+	protected int i = 0;
+	protected int j = 0;
+	protected int stateLevelCount = 0;
+	protected int sentenceHeadRuleCount = 0;
 	
-	private boolean grammarRecognized = false;
+	protected boolean grammarRecognized = false;
 	
-	private LinkedList<LinkedList<String>> chart;
-	private LinkedList<String> sentenceWords;
-	private LinkedHashSet<String> grammar;
-	private LinkedHashSet<String> lexicon;
+	protected LinkedList<LinkedList<String>> chart;
+	protected LinkedList<String> sentenceWords;
+	protected LinkedHashSet<String> grammar;
+	protected LinkedHashSet<String> lexicon;
 	
-	private String sentenceHeadRule;
-	private String currentPOSTag;
-	private String state;
-	private String previousState;
-	private String fullState;
+	protected String sentenceHeadRule;
+	protected String currentPOSTag;
+	protected String state;
+	protected String previousState;
+	protected String fullState;
 	
-	private enum Methods { PREDICTOR, SCANNER, COMPLETER };
+	protected static String DUMMY_STATE;
 	
-	private LinkedList<String> finalParser;
+	protected enum Methods { PREDICTOR, SCANNER, COMPLETER };
+	
+	protected LinkedList<String> finalParser;
 	
 	public LinkedList<String> parse() {
 		cleanTmp();
 		return finalParser;
 	}
 	
-	private void cleanTmp() {
+	protected void cleanTmp() {
 		for(Iterator it=finalParser.iterator(); it.hasNext(); )
 			if(it.next().toString().startsWith("tmp"))
 				it.remove();
 	}
-
-	public boolean recognize(String words, LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
-		
-		prepareVariables(grammar, lexicon);
-		prepareSentenceWords(words);
-
-		enqueue(ConstantsUtility.DUMMY_STATE, chart.get(0));
-		printHeadRule();
-		
-		for(; i<=sentenceWords.size(); i++) {
-			
-			while(j<chart.get(i).size()) {
-				
-				getNextStateToRun();
-			
-//				System.out.println("\n-STATE: " + state);//
-				if(!isComplete(state) && !isPartOfSpeech(nextCategory(state))) 
-					predictor(state);
-				else if(!isComplete(state))
-					scanner(state);
-				else 
-					completer(state);
-				
-			}
-			
-			j=0;
-
-		}
-		
-		return grammarRecognized;
-		
-	}
-
-	private void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
+	
+	protected void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
 		state = "";
 		currentPOSTag = "";
 		sentenceHeadRule = "";
@@ -81,9 +52,10 @@ public class Earley {
 		this.lexicon = lexicon;
 		chart = new LinkedList<LinkedList<String>>();
 		finalParser = new LinkedList<String>();
+		DUMMY_STATE = this.getClass().getName().contains("Finger") ? ConstantsUtility.DUMMY_STATE : ConstantsUtility.DUMMY_STATE_JURAFSKY;
 	}
 
-	private void prepareSentenceWords(String words) {
+	protected void prepareSentenceWords(String words) {
 		sentenceWords = new LinkedList<String>();
 		String tmp[] = words.split(" ");
 		for(int aux=0; aux<tmp.length; aux++) {
@@ -94,37 +66,37 @@ public class Earley {
 		addNewEntryToChart();
 	}
 
-	private void addNewEntryToChart() {
+	protected void addNewEntryToChart() {
 		chart.add(new LinkedList<String>());
 	}
 	
-	private void enqueue(String state, LinkedList<String> chartEntry) {
+	protected void enqueue(String state, LinkedList<String> chartEntry) {
 		if(!chartEntry.contains(state))
 			push(state, chartEntry);
 	}
 
-	private void push(String state, LinkedList<String> chartEntry) {
+	protected void push(String state, LinkedList<String> chartEntry) {
 		chartEntry.addLast(state);
 	}
 	
-	private void printHeadRule() {
+	protected void printHeadRule() {
 		System.out.println("\tChart[" + i + "]\t\t" + "S" + stateLevelCount + " " + chart.get(i).get(0).replace(ConstantsUtility.FIELD_SEPARATOR, "") + 
 						   "\t\t\t\t\t\t\t\t DUMMY START STATE");
 	}
 	
-	private void printRule(String rule, String method, String chartValue) {
+	protected void printRule(String rule, String method, String chartValue) {
 		rule = rule.contains(ConstantsUtility.DOTTED_RULE) ? rule : addStateAndStartEndPointsFields(rule); 
 		rule += rule.length()<24 ? "\t\t\t\t\t\t\t" : (rule.length()<32 ? "\t\t\t\t\t\t" : "\t\t\t\t\t");
 		System.out.println("\tChart[" + chartValue + "]\t\t" + rule.replace("|", " ") + " " + method);
 		
 	}
 	
-	private void getNextStateToRun() {
+	protected void getNextStateToRun() {
 		state = chart.get(i).get(j);
 		addStateField(state, chart.get(i));
 	}
 	
-	private void addStateField(String state, LinkedList<String> chartEntry) {
+	protected void addStateField(String state, LinkedList<String> chartEntry) {
 		if(!state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].matches("S[0-9]+")) {
 			fullState = "S" + stateLevelCount + ConstantsUtility.FIELD_SEPARATOR + state;
 			chartEntry.set(chartEntry.indexOf(state), fullState);
@@ -132,60 +104,17 @@ public class Earley {
 			fullState = state;
 	}
 
-	private boolean isComplete(String state) {
+	protected boolean isComplete(String state) {
 		int dottedRule = state.lastIndexOf(ConstantsUtility.DOTTED_RULE);
 		int bracket = state.indexOf('[');
 		return bracket-dottedRule == 2;
 	}
 	
-	/**
-	 * @author rayssak
-	 * @reason Verifies if the next category is a part-of-speech according
-	 * 		   to Jurafsky definition:
-	 * 		   		~ 	  POS: Noun, Nominal, Verb, etc (points to another POS);
-	 * 				~ Not POS: Aux (points to a lexicon).
-	 * @param nextCategory
-	 * @return boolean isPOS
-	 */
-	private boolean isPartOfSpeech(String nextCategory) {
-		
-		for(Iterator it=lexicon.iterator(); it.hasNext(); ) 
-			if(it.next().toString().split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(nextCategory))
-				return true;
-			
-		return false;
-		
-	}
-	
-	private String nextCategory(String state) {
+	protected String nextCategory(String state) {
 		return state.substring(state.lastIndexOf(ConstantsUtility.DOTTED_RULE)+2).split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].split(" ")[0];
 	}
 	
-	private void predictor(String state) {
-		
-		currentPOSTag = nextCategory(state);
-		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
-		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
-		
-		for(Iterator it=grammar.iterator(); it.hasNext(); ) {
-			
-			String rule = it.next().toString();
-			
-			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule)) {
-				
-				stateLevelCount++;
-				enqueue(addStateAndStartEndPointsFields(rule), chart.get(i));
-				printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
-				
-			}
-			
-		}
-		
-		j++;
-		
-	}
-
-	private boolean isRuleAlreadyInCurrentChart(String rule) {
+	protected boolean isRuleAlreadyInCurrentChart(String rule) {
 		
 		boolean isRuleAlreadyInChart = false;
 		rule = addStateAndStartEndPointsFields(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "");
@@ -199,21 +128,20 @@ public class Earley {
 		return isRuleAlreadyInChart;
 		
 	}
-
-	private String getRule(String rule) {
+	
+	protected String getRule(String rule) {
 		return rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0];
 	}
 
-	private String addStateAndStartEndPointsFields(String rule) {
+	protected String addStateAndStartEndPointsFields(String rule) {
 		return "S" + stateLevelCount + ConstantsUtility.FIELD_SEPARATOR + 
 				rule.replace(ConstantsUtility.NEXT_ELEMENT_CHAR, ConstantsUtility.NEXT_ELEMENT_CHAR + " " + ConstantsUtility.DOTTED_RULE) + 
 				ConstantsUtility.FIELD_SEPARATOR + "[" + i + "," + i + "]";
 	}
 
-	private void scanner(String state) {
+	protected void scanner(String state, String terminal) {
 		
 		LinkedList<String> terminals = new LinkedList<String>();
-		String terminal = getTerminal(state);
 		
 		for(Iterator it=lexicon.iterator(); it.hasNext(); ) {
 			String rule = it.next().toString();
@@ -242,24 +170,8 @@ public class Earley {
 		j++;
 		
 	}
-
-	private String getTerminal(String state) {
-		
-		String terminal = "";
-		String tmp[] = changeFieldSeparator(state).split(" ");
-		
-		for(int aux=0; aux<tmp.length; aux++)
-			if(!tmp[aux].equals(ConstantsUtility.DOTTED_RULE) && tmp[aux].replace("-", "").matches("[A-Z]+"))
-				if(!posAlreadyProcessed(tmp[aux])) {
-					terminal = tmp[aux];
-					break;
-				}
-		
-		return terminal;
-		
-	}
 	
-	private boolean posAlreadyProcessed(String posTag) {
+	protected boolean posAlreadyProcessed(String posTag) {
 		
 		int chartCount = 0;
 		
@@ -280,92 +192,32 @@ public class Earley {
 		
 	}
 
-	private String changeFieldSeparator(String state) {
+	protected String changeFieldSeparator(String state) {
 		return state.replace(ConstantsUtility.FIELD_SEPARATOR, " ");
 	}
 	
-	private String getTerminalCompletedRule(String terminal, String word, int start, int end) {
+	protected String getTerminalCompletedRule(String terminal, String word, int start, int end) {
 		return "S" + ++stateLevelCount + ConstantsUtility.FIELD_SEPARATOR + terminal + ConstantsUtility.NEXT_ELEMENT_CHAR + " " + 
 					word + " " + ConstantsUtility.DOTTED_RULE + ConstantsUtility.FIELD_SEPARATOR + "[" + start + "," + end + "]";
 	}
 	
-	private void completer(String state) {
-		
-		int chartCount = 0;
-		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
-		currentPOSTag = nextCompletedCategory(state);
-		LinkedList<String> tmp = new LinkedList<String>();
-		
-		if(isRecursiveRule(state)) {
-			j++;
-			return;
-		}
-		
-		for(int count=0; count<chart.get(chartCount).size(); count++) {
-			
-			String rule = chart.get(chartCount).get(count);
-			int ruleEnd = Integer.parseInt(rule.split("\\[")[1].split(",")[1].substring(0, 1));
-			
-			if(!isComplete(rule) && ruleEnd==stateStart) {
-				
-				String cleanNonTerminal = rule.substring(rule.indexOf(ConstantsUtility.DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
-				String tmpRule = rule.substring(0, rule.indexOf('['));
-				
-				if(ruleFullyProcessedAndNotInChart(tmp, rule, cleanNonTerminal)) {
-					
-					previousState = state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0];
-					int ruleStart = Integer.parseInt(rule.split("\\[")[1].split(",")[0]);
-					tmp.add(tmpRule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
-					tmpRule = tmpRule.replace(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag, currentPOSTag + " " + ConstantsUtility.DOTTED_RULE)
-								.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "S" + ++stateLevelCount + ConstantsUtility.FIELD_SEPARATOR) + 
-								"[" + ruleStart + "," + i + "]";
-					finalParser.add("tmp: " + tmpRule + ConstantsUtility.FIELD_SEPARATOR + "(" + previousState + ")");
-					
-					enqueue(tmpRule, chart.get(i));
-					printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
-					
-				}
-				
-			} 
-			
-			if(isComplete(rule) && hasCompletedSentence(rule))
-				grammarRecognized = true;
-			if(isComplete(rule) && isFinalStateToGrammarTree(rule))
-				addToFinalParser(rule, "(" + previousState + ")");
-			
-			if(isLastChartItem(chartCount, rule) && chartCount < chart.size()-1) {
-				count = -1;
-				chartCount++;
-			}
-			
-		}
-		
-		j++;
-		
-	}
-
-	private String nextCompletedCategory(String state) {
+	protected String nextCompletedCategory(String state) {
 		return state.substring(state.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1, state.indexOf(ConstantsUtility.NEXT_ELEMENT_CHAR));
 	}
 	
-	private boolean isRecursiveRule(String state) {
-		return currentPOSTag.equals(sentenceHeadRule) && getRule(state).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(
-				state.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1].split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].replace(" " + ConstantsUtility.DOTTED_RULE, "").replace(ConstantsUtility.DOTTED_RULE, ""));
-	}
-	
-	private boolean ruleFullyProcessedAndNotInChart(LinkedList<String> tmp,
+	protected boolean ruleFullyProcessedAndNotInChart(LinkedList<String> tmp,
 			String rule, String cleanNonTerminal) {
 		return cleanNonTerminal.equals(currentPOSTag) && !tmp.contains(rule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]) &&
 		   !rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(ConstantsUtility.DUMMY_STATE);
 	}
 	
 	// isStartingSentenceRule
-	private boolean hasCompletedSentence(String rule) {
+	protected boolean hasCompletedSentence(String rule) {
 		return rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").startsWith(sentenceHeadRule);
 	}
 
 	// !isAtFinalParser
-	private boolean isFinalStateToGrammarTree(String rule){
+	protected boolean isFinalStateToGrammarTree(String rule){
 		for(Iterator it=finalParser.iterator(); it.hasNext(); ) {
 			String tmp = it.next().toString().replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";//
 			if(tmp.equals(rule))
@@ -374,11 +226,11 @@ public class Earley {
 		return true;
 	}
 	
-	private boolean isLastChartItem(int chartCount, String rule) {
+	protected boolean isLastChartItem(int chartCount, String rule) {
 		return rule.equals(chart.get(chartCount).getLast());
 	}
 	
-	private void addToFinalParser(String rule, String method) {
+	protected void addToFinalParser(String rule, String method) {
 		
 		String states = "";
 		String previousRule = "";
@@ -401,5 +253,5 @@ public class Earley {
 		previousState = "";
 		
 	}
-
+	
 }
