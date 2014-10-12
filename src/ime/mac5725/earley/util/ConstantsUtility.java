@@ -18,6 +18,6 @@ public class ConstantsUtility {
 	
 	public static String DUMMY_STATE_JURAFSKY = "Y" + NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " S|[0,0]";
 	
-	public static String DUMMY_STATE = "Y" + NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " IP|[0,0]";
+	public static String DUMMY_STATE = "Y" + NEXT_ELEMENT_CHAR + " " + DOTTED_RULE + " IP CP FRAG|[0,0]";
 	
 }

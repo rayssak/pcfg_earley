@@ -8,6 +8,8 @@ import java.util.LinkedList;
 
 public class EarleyFinger extends Earley {
 	
+	private LinkedList<String> recursiveCycle = new LinkedList<String>();
+	
 	public boolean recognize(String words, LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
 		
 		prepareVariables(grammar, lexicon);
@@ -69,7 +71,7 @@ public class EarleyFinger extends Earley {
 			
 			String rule = it.next().toString();
 			
-			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule)) {
+			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) {
 				
 				stateLevelCount++;
 				enqueue(addStateAndStartEndPointsFields(rule), chart.get(i));
@@ -81,6 +83,21 @@ public class EarleyFinger extends Earley {
 		
 		j++;
 		
+	}
+	
+	/**
+	 * @author rayssak
+	 * @param rule
+	 * @return Improvements due to corpus properties)
+	 */
+	private boolean specialCase(String rule) {
+			   // Removing VB rules that are not part of lexicon 
+		return !getRule(rule).equals("VB");
+			   // Removing the only one WPP lexicon rule
+			   // (this is not required since the PREDICTOR
+			   //  only run through the GRAMMAR rules list, not the
+		       //  FULLGRAMMAR rules that includes LEXICON)
+//			   && (getRule(rule).equals("WPP") && !getTerminal(state).matches("[0-9]+"));
 	}
 	
 	protected void scanner(String state) {
@@ -109,7 +126,11 @@ public class EarleyFinger extends Earley {
 		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
 		currentPOSTag = nextCompletedCategory(state);
 		LinkedList<String> tmp = new LinkedList<String>();
+		System.out.println(state);
 		
+		if(state.contains("PP *"))
+			System.out.println("here");
+
 		if(isRecursiveRule(state)) {
 			j++;
 			return;
@@ -124,6 +145,8 @@ public class EarleyFinger extends Earley {
 				
 				String cleanNonTerminal = rule.substring(rule.indexOf(ConstantsUtility.DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
 				String tmpRule = rule.substring(0, rule.indexOf('['));
+				if(rule.contains("S536"))
+					System.out.println("here");
 				
 				if(ruleFullyProcessedAndNotInChart(tmp, rule, cleanNonTerminal)) {
 					
@@ -136,6 +159,7 @@ public class EarleyFinger extends Earley {
 					finalParser.add("tmp: " + tmpRule + ConstantsUtility.FIELD_SEPARATOR + "(" + previousState + ")");
 					
 					enqueue(tmpRule, chart.get(i));
+					System.out.println("----- " + state);//
 					printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
 					
 				}
@@ -154,6 +178,7 @@ public class EarleyFinger extends Earley {
 			
 		}
 		
+		handleRecursiveCycle(state);
 		j++;
 		
 	}
@@ -161,6 +186,12 @@ public class EarleyFinger extends Earley {
 	private boolean isRecursiveRule(String state) {
 		return currentPOSTag.equals(sentenceHeadRule) && getRule(state).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(
 				state.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1].split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].replace(" " + ConstantsUtility.DOTTED_RULE, "").replace(ConstantsUtility.DOTTED_RULE, ""));
+	}
+	
+	private void handleRecursiveCycle(String state) {
+		if(recursiveCycle.size()>4) 
+			recursiveCycle.removeFirst();
+		recursiveCycle.add(state);
 	}
 	
 }

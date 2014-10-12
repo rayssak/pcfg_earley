@@ -61,6 +61,8 @@ public class ParsedGLC {
 			
 			while ((line = reader.readLine()) != null) 
 				if(isValidLine()) {
+					if(line.contains("CP/IP"))//
+						System.out.println("here");//
 					char currentLetter = line.charAt(0);
 					readRules(currentLetter, 0);
 				}
@@ -153,11 +155,12 @@ public class ParsedGLC {
 		boolean followedByCapitalLetter = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("[A-ZÀ-Ú]|\\$");
 		boolean followedByParenthesis = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\(");
 		boolean followedByPlusSign = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\+");
+		boolean followedByBar = index+1>=line.length() ? false : String.valueOf(line.charAt(index+1)).matches("\\/");
 		
 		// If index = line.lenght(), it's the last word and
 		// there's no need to check anything else.
 		return index != line.length() &&
-			   (followedBySpace || followedByCapitalLetter || followedByParenthesis || followedByPlusSign) ||
+			   (followedBySpace || followedByCapitalLetter || followedByParenthesis || followedByPlusSign || followedByBar) ||
 			   (String.valueOf(currentLetter).matches("\\+") && followedByCapitalLetter) ||
 			   isPontuation(currentLetter);
 		
@@ -168,7 +171,7 @@ public class ParsedGLC {
 	}
 	
 	private boolean hasOnlyPOS() {
-		return line.matches(".*[a-zà-ú]+.*") ? false : true;
+		return line.matches(".*[a-zà-ú0-9]+.*") ? false : true;
 	}
 	
 	private void getWord() {
@@ -176,7 +179,7 @@ public class ParsedGLC {
 		if(!hasOnlyPOS() && !sentenceWordAdded) {
 			
 			String lexiconRule = !line.split("\\s")[line.split("\\s").length-1].contains("(") && 
-							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú]+.*") ? 
+							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú0-9]+.*") ? 
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
 							  	  
 		  	fullGrammarRules.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);

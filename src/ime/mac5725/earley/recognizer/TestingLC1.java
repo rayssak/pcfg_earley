@@ -50,14 +50,16 @@ public class TestingLC1 {
 
 	private static void printRules(long timeRan) {
 		fullGrammarRules = glc.getFullGrammarRules();
-		
+		int count=0;
 		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
 			// Print only head rules
-//			if(rule.startsWith("IP"))
+			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("CP/IP")) {
+				count++;
 				System.out.println(rule);
+			}
 		}
-	
+	System.out.println(count);
 		System.out.println("- RULES: " + fullGrammarRules.size() + " (" + grammarRules.size() + " rules and " + lexicon.size() + " lexicons)");
 		timeRan = System.currentTimeMillis() - timeRan;
 		time = timeRan > 1000 ? timeRan + " segundos." : timeRan + " millisegundos.";
