@@ -40,7 +40,7 @@ public class TestingJurafskyCorpusExample {
 		 * 		include to me
 		 * 
 		 */
-		String sentence = "include to me";
+		String sentence = "book that flight";
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();

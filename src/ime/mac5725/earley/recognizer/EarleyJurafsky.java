@@ -151,7 +151,7 @@ public class EarleyJurafsky extends Earley {
 			String rule = chart.get(chartCount).get(count);
 			int ruleEnd = Integer.parseInt(rule.split("\\[")[1].split(",")[1].substring(0, 1));
 			
-			if(!isComplete(rule) && ruleEnd==stateStart) {
+			if(!isComplete(rule) && ruleEnd==stateStart && !rule.contains(DUMMY_STATE)) {
 				
 				String cleanNonTerminal = rule.substring(rule.indexOf(ConstantsUtility.DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
 				String tmpRule = rule.substring(0, rule.indexOf('['));
