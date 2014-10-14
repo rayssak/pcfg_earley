@@ -274,11 +274,19 @@ public class ParsedGLC {
 		// 		IP-> IP
 		// 		.-> .
 		for(Iterator it=grammarRules.iterator(); it.hasNext(); ) {
+			
 			String current = it.next().toString();
 			String currentRule = current.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0];
 			String currentTerminals = current.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1];
+			
 			if(currentRule.equals(currentTerminals))
 				it.remove();
+			// Handles "(, OPEN)" and "(, CLOSE)" cases (4 rules instances):
+			// 		- ",-> O"
+			//      - ",-> C"
+			else if(isPontuation(currentRule.charAt(0)) && !isPontuation(currentTerminals.charAt(0)))
+				it.remove();
+			
 		}
 		
 		// Can not remove ALL cases that has only one POS tag (e.g.: NP-> N)!
