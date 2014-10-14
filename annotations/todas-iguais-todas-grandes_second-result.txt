@@ -1,3 +1,11 @@
+23 minutos a menos e 11.886 regras a menos.
+árvore caiu de 386 regras p/ 273 regras.
+
+~ antes só fazia isso:
+	chartEntry.contains(state) onde o state era "S15|IP-> NP VB|[0,1]"
+~ depois adicionado método p/ verificar clean rule (sem state level): "IP-> NP VB|[0,1]"
+   Não pode verificar a regra totalmente limpa ("IP-> NP VB") porque ela pode repetir em posições diferentes!
+
 - SENTENCE: "todas são iguais e todas grandes"
 - TIME: 23 minutes, 4 seconds e 1384314 milliseconds
 - SENTENCE STATUS: recognized

@@ -1,3 +1,8 @@
+14 minutos a menos e 16.173 regras a menos.
+árvore reduziu de 273 regras p/ 59.
+
+~ antes não removia recursividades ("IP-> IP"), apesar de não entrar em loop, nem cycles ("IP-> NP", "NP-> PP", "PP-> IP").
+
 	Chart[6]		S12661 IP-> IP CONJP * , [1,6]						 COMPLETER
 
 - SENTENCE: "todas são iguais e todas grandes"

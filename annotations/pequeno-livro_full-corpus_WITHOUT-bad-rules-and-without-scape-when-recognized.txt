@@ -1,3 +1,6 @@
+1 min a menos e 2825 regras a menos.
+árvore caiu de 54 regras p/ 10 regras.
+
 	Chart[2]		S5745 WADJP-> * WADV ADJ [2,2]						 PREDICTOR
 
 - SENTENCE: "pequeno livro"

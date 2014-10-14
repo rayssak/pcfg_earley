@@ -1,3 +1,6 @@
+2 minutos a menos e 1926 regras a menos.
+árvore caiu de 20 regras p/ 19 regras.
+
 	Chart[2]		S3819 IP-> IP CONJP * , [0,2]						 COMPLETER
 
 - SENTENCE: "pequeno livro"
