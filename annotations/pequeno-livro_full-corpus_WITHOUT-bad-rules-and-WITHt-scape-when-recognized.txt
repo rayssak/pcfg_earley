@@ -1,0 +1,16 @@
+	Chart[2]		S3819 IP-> IP CONJP * , [0,2]						 COMPLETER
+
+- SENTENCE: "pequeno livro"
+- TIME: 2 minutes, 18 seconds e 138853 milliseconds
+- SENTENCE STATUS: recognized
+- SYNTATIC TREE:
+	Chart[2] S3815 IP-> IP CONJP * [0,2] (S3767,S3766)
+	Chart[2] S3811 ADJP-> ADJP CONJP * [0,2] (S3767,S1791)
+	Chart[2] S3767 CONJP-> IP * [1,2] (S3766)
+	Chart[2] S3766 IP-> N * [1,2] (S2027)
+	Chart[2] S2027 N-> livro * [1,2] SCANNER
+	Chart[2] S1935 IP-> ADVP * [0,1] (S1809)
+	Chart[2] S1813 IP-> ADJP * [0,1] (S1791)
+	Chart[2] S1809 ADVP-> ADJ * [0,1] (S1752)
+	Chart[2] S1791 ADJP-> ADJ * [0,1] (S1752)
+	Chart[1] S1752 ADJ-> pequeno * [0,1] SCANNER

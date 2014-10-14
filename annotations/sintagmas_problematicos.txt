@@ -1,0 +1,1789 @@
+- WPP:
+  ~ 8 rules
+WPP-> P WPRO
+WPP-> P WADV
+WPP-> P+WADV
+WPP-> P+D WPRO
+WPP-> P P+WADV
+WPP-> P NP
+WPP-> P+ADV
+WPP-> WPRO
+  ~ léxico
+WPP-> 0
+
+
+
+- NP:
+  ~ 2 léxico
+NP-> elliptical
+NP-> nos
+  ~ 328 rules
+NP-> NPR
+NP-> PRO$ NPR
+NP-> N
+NP-> D N PP
+NP-> D NPR PP
+NP-> DEM
+NP-> D ADJ N
+NP-> D N Q
+NP-> SE
+NP-> FP PRO$ NPR
+NP-> ADJ N
+NP-> DEM CP
+NP-> D ADJ CP
+NP-> D N
+NP-> ADJ N PP
+NP-> N ADJ PP
+NP-> D ADJ N , CP ,
+NP-> N PP
+NP-> CL
+NP-> Q N
+NP-> PRO FP
+NP-> D N , CP
+NP-> D N ADJ , CP
+NP-> D N ADJP
+NP-> Q N ADJ , CP
+NP-> ADJ NPR
+NP-> D NPR
+NP-> NP CONJP
+NP-> D NPR ADJ
+NP-> NP , CONJP , CONJP
+NP-> D ADJ
+NP-> D ADJ NPR
+NP-> D PRO$ NPR
+NP-> D NPR , CP
+NP-> NP , CONJP , CP
+NP-> N ADJP
+NP-> N ADJ
+NP-> D ADJ N PP
+NP-> NPR CP
+NP-> CP
+NP-> N , CONJ N
+NP-> PRO$ N
+NP-> D N ADJ PP
+NP-> ADJP N
+NP-> ADJ N ADJ
+NP-> D
+NP-> Q
+NP-> D N ADJ
+NP-> FP , CP
+NP-> PRO
+NP-> D N , CONJP
+NP-> Q N PP
+NP-> D IP
+NP-> D ADV
+NP-> D N PP Q
+NP-> NUM N
+NP-> D PP
+NP-> D OUTRO
+NP-> ADV D CP
+NP-> D N , NP
+NP-> D PRO$ N
+NP-> D ADJ N CP
+NP-> Q D N
+NP-> D ADJ N , CP
+NP-> D ADJ NPR PP
+NP-> PRO CP
+NP-> PP
+NP-> N CP
+NP-> D N VB
+NP-> OUTRO
+NP-> Q N ADJP
+NP-> Q CP
+NP-> Q D N , CONJP PP
+NP-> D ADJ N ,
+NP-> IP
+NP-> Q PP
+NP-> N PRO$
+NP-> ADJ
+NP-> D PRO$
+NP-> NPR NPR ,
+NP-> NPR , CONJ NPR
+NP-> D N PP CP
+NP-> ADV N
+NP-> D N CP
+NP-> D VB N
+NP-> D NP
+NP-> D ADJP N , CP
+NP-> NP , CONJP
+NP-> D ADJ ADJ N PP
+NP-> D PRO$ N ADJ
+NP-> N , CP
+NP-> D PRO$ N , CONJP ADJ
+NP-> N VB
+NP-> Q D PP
+NP-> ADJ ADJ N PP . NP
+NP-> D PRO$ ADJ N
+NP-> D CP
+NP-> ADJ N , CP
+NP-> ADV D N ADJP
+NP-> ADJP N , CP
+NP-> D Q
+NP-> D , CP
+NP-> ADV D N PP
+NP-> ADV Q
+NP-> ADV
+NP-> D N ADJ CP
+NP-> PRO$
+NP-> N , CP , CP . CONJP
+NP-> Q PRO
+NP-> D ADJ , CP
+NP-> D ADJ PP
+NP-> ADV D N , CONJP
+NP-> D ADJ N , CP , Q
+NP-> PRO$ ADJ N
+NP-> D N , CONJP CP
+NP-> D ADJP N
+NP-> D NPR , CONJP
+NP-> ADV D ADJ N PP
+NP-> NUM N ADJ
+NP-> NP , CONJP , CONJP ADJ
+NP-> ADV C
+NP-> ADV PP
+NP-> NP , CONJP ADJ
+NP-> CONJ NP
+NP-> D ADJP
+NP-> NP , CONJP PP
+NP-> D ADV CP
+NP-> NEG N PP
+NP-> P+D N
+NP-> N , CP , CP
+NP-> Q D N , CP
+NP-> N Q
+NP-> D N , CONJP , CP
+NP-> N ADJ , CP
+NP-> D ADV PP
+NP-> Q N , CP
+NP-> Q D N PP
+NP-> ADV D PRO$ N
+NP-> ADJ N ADJP
+NP-> D N PP , PP
+NP-> D N , ADJP
+NP-> NP Q
+NP-> ADV ADJ N
+NP-> DEM , CP
+NP-> FP D N
+NP-> D N VB , CP
+NP-> NP , CONJP , CONJP , CONJP
+NP-> D N , CONJP PP
+NP-> D N PP PP
+NP-> ADV D ADJ N
+NP-> NPR , CP
+NP-> NPR NPR
+NP-> PP Q D NPR
+NP-> FP NPR
+NP-> ADJ , CP
+NP-> D PRO$ ADJ N , CONJP
+NP-> D NPR ADJP
+NP-> ADJ N , NP , CP
+NP-> D N PP , CP
+NP-> ADV D N ADJ
+NP-> Q . NP
+NP-> NPR ADJ
+NP-> N PP CP
+NP-> D N PP ADJP
+NP-> PRO$ N ADJ
+NP-> ADV D N PP , CP
+NP-> ADV D N PP , PP
+NP-> Q D PRO$ N
+NP-> CONJ D N
+NP-> N , CONJP PP
+NP-> N FP
+NP-> NEG D CP
+NP-> N CONJ N
+NP-> D N ADJ Q
+NP-> Q D
+NP-> D N , PP
+NP-> D N , CONJP PP CP
+NP-> NEG FP D N
+NP-> ADV D N
+NP-> D ADV ADJ N
+NP-> SENAO N
+NP-> NP . CONJP . CONJP . CONJP
+NP-> ADV ADV
+NP-> NP . NP , CONJP
+NP-> NUM N , CP
+NP-> ADV D
+NP-> N , VB ,
+NP-> D PRO$ ADJP N
+NP-> D WADV Q CP
+NP-> D N ADJP PP
+NP-> D N , CP PP
+NP-> ADV Q CP
+NP-> ADV N PP
+NP-> D ADJ Q
+NP-> NP , CONJP N
+NP-> PRO$ N PP
+NP-> ADV N , CP
+NP-> D Q , CP
+NP-> CONJ NP , CONJP
+NP-> D N ,
+NP-> Q DEM CP
+NP-> D ADJ N ADJP
+NP-> ADVP PP
+NP-> D ADV N
+NP-> WPRO
+NP-> FP D N PP
+NP-> D N ADV CP
+NP-> D ADJ , CONJP N
+NP-> NPR PP
+NP-> D ADV N PP
+NP-> N , PP
+NP-> D VB
+NP-> Q NPR
+NP-> ADV Q D ADV N , CP
+NP-> D N FP
+NP-> N N
+NP-> D ADJ N PP CP
+NP-> NP CONJP CONJP CONJP CONJP CONJP
+NP-> CONJ ADJP D N
+NP-> D Q N , CP
+NP-> D Q CP
+NP-> D N CP ,
+NP-> D ADJ N CP ,
+NP-> ADJ Q N , CP
+NP-> Q ADJP
+NP-> N CP ,
+NP-> D , CONJP
+NP-> VB
+NP-> N ADJP CP
+NP-> D ADJ N , CP . NP
+NP-> D N , CONJP ADJ
+NP-> D PRO$ N ADJP
+NP-> N PP . NP
+NP-> NP CONJP N
+NP-> D ADJ N , PP
+NP-> ADJ ADJ
+NP-> PRO$ N , CONJP
+NP-> D NEG IP
+NP-> D CONJP
+NP-> NEG D PRO$ N
+NP-> D N ADJP , CP
+NP-> N , CONJP CP
+NP-> NEG FP CP
+NP-> N ADJP PP
+NP-> PP D N PP , PP
+NP-> P+D NP
+NP-> D N NP
+NP-> NUM N ADJP
+NP-> ADJ ADJP
+NP-> Q N ADV
+NP-> ADV N CP
+NP-> N , N , N
+NP-> N ADJ CP
+NP-> D N ADJ PP . NP
+NP-> ADVP N
+NP-> FP D N CP
+NP-> D N , CP ,
+NP-> ADJ N CP
+NP-> DEM SR , D N ADJP
+NP-> VB , CONJP
+NP-> NEG FP D N PP
+NP-> D N ADJP , NP . CP
+NP-> D ADV , CP
+NP-> PP N ADJ
+NP-> D N PP , NP
+NP-> D N ADJ ADJP
+NP-> NP
+NP-> D PP CP
+NP-> Q N CP
+NP-> Q , CP
+NP-> PP D N
+NP-> NUM N PP
+NP-> D WADV
+NP-> D PRO$ N Q
+NP-> SENAO D N PP
+NP-> ADJ ADJ N
+NP-> D ADV ADJ
+NP-> Q D N CP
+NP-> FP D PRO$ N
+NP-> ADJ CP
+NP-> Q D N , CONJP
+NP-> Q N ADJ
+NP-> N CP ADJP
+NP-> ADV PRO$
+NP-> ADJ ADV N
+NP-> NP , CONJP , CONJP , NP
+NP-> D FP , CP
+NP-> ADV VB
+NP-> NP . CONJP
+NP-> NP . D N
+NP-> D VB N PP
+NP-> NP . CONJP . CONJP . CONJP . CONJP
+NP-> NP . Q
+NP-> Q D N ADJ
+NP-> N , N CONJ N
+NP-> D ADJ N ADJ
+NP-> NP , CONJP , CONJP , CONJP , CONJP , CONJP
+NP-> D ADJ IP
+NP-> ADV PRO
+NP-> WNP IP
+NP-> NP , D
+NP-> VB N
+NP-> NP . NP
+NP-> Q D ADV
+NP-> N PP , CP
+NP-> ADV D ADJ
+NP-> Q D PRO$ N , CONJP
+NP-> ADV N ,
+NP-> D NPR CP
+NP-> ADV ADV N
+NP-> CONJ Q
+NP-> N NPR
+NP-> OUTRO N ADJP
+NP-> VB N , CP
+NP-> CP . Q PP
+NP-> Q P+DEM
+NP-> ADV , CONJ ADV
+NP-> ADJ N , ADJP
+NP-> D ADJ N Q
+NP-> OUTRO N
+NP-> N . NP
+NP-> NP , D ADJ
+NP-> SENAO D ADJ N
+NP-> DEM FP
+NP-> D ADJ N PP , CP
+NP-> NP , CONJP , CONJP , CONJP , CONJP
+NP-> N ADJ ,
+NP-> PP D PP
+
+
+
+
+- VB:
+  ~ 4 rules
+VB-> VB , CONJ VB
+VB-> VB CONJ VB
+VB-> VB , VB , VB , VB
+VB-> VB , VB , VB
+  ~ 1430 léxico
+VB-> ofereço
+VB-> oferecer
+VB-> compõe
+VB-> acha
+VB-> declamei
+VB-> pude
+VB-> resistir
+VB-> pôr
+VB-> pisam
+VB-> dignem
+VB-> proteger
+VB-> ocupam
+VB-> ver
+VB-> têm
+VB-> vêem
+VB-> sentem
+VB-> faz
+VB-> pode
+VB-> sentir
+VB-> saber
+VB-> estudasse
+VB-> deram
+VB-> valeriam
+VB-> pudessem
+VB-> alcançar
+VB-> vemos
+VB-> penetradas
+VB-> acham
+VB-> unidos
+VB-> puderam
+VB-> unir
+VB-> viu
+VB-> ficaram
+VB-> quis
+VB-> manifestar
+VB-> preparava
+VB-> mostrou
+VB-> amanheceu
+VB-> fundou
+VB-> explicou
+VB-> verificassem
+VB-> veio
+VB-> mostrar
+VB-> disse
+VB-> fez
+VB-> entender
+VB-> chegou
+VB-> persuadem
+VB-> reinar
+VB-> podem
+VB-> aprender
+VB-> infunde
+VB-> fizeram
+VB-> merecer
+VB-> dizem
+VB-> mostram
+VB-> aprendidas
+VB-> inspiradas
+VB-> distinguem
+VB-> vão
+VB-> seguindo
+VB-> cedem
+VB-> vem
+VB-> nasceu
+VB-> sabia
+VB-> recebem
+VB-> mandar
+VB-> depender
+VB-> recebeu
+VB-> usar
+VB-> devem
+VB-> deve
+VB-> justifica
+VB-> servem
+VB-> sei
+VB-> ficam
+VB-> suporta
+VB-> sabem
+VB-> aclamassem
+VB-> aclamado
+VB-> levantou
+VB-> subiu
+VB-> promete
+VB-> podemos
+VB-> crer
+VB-> chega
+VB-> vermos
+VB-> guarde
+VB-> vim
+VB-> cair
+VB-> escrevi
+VB-> suscitou
+VB-> confesso
+VB-> consenti
+VB-> retroceder
+VB-> conseguir
+VB-> fiquei
+VB-> poder
+VB-> negar
+VB-> costuma
+VB-> fazer
+VB-> servir
+VB-> dilatada
+VB-> dizer
+VB-> achar
+VB-> afasto
+VB-> dirão
+VB-> ditos
+VB-> reparar
+VB-> afectei
+VB-> desusados
+VB-> posso
+VB-> passar
+VB-> advertir
+VB-> tomar
+VB-> soam
+VB-> pertencem
+VB-> disseram
+VB-> escrever
+VB-> encontram
+VB-> escrevem
+VB-> seguido
+VB-> aprovado
+VB-> leva
+VB-> atrai
+VB-> sabe
+VB-> esforça
+VB-> produz
+VB-> fugir
+VB-> resulta
+VB-> impolida
+VB-> presumo
+VB-> ache
+VB-> distinguir
+VB-> distingam
+VB-> pintar
+VB-> fizessem
+VB-> fiz
+VB-> formar
+VB-> emendar
+VB-> prometer
+VB-> entro
+VB-> cumprir
+VB-> suprimidas
+VB-> sair
+VB-> reservadas
+VB-> aceites
+VB-> desculpam
+VB-> vale
+VB-> necessita
+VB-> morra
+VB-> procede
+VB-> obrigo
+VB-> vivendo
+VB-> retirado
+VB-> deixe
+VB-> ocupar
+VB-> contém
+VB-> soubesse
+VB-> feito
+VB-> olhar
+VB-> parece
+VB-> separadas
+VB-> nasceram
+VB-> transplanta
+VB-> frutificar
+VB-> limitado
+VB-> dura
+VB-> introduz
+VB-> elevado
+VB-> depositam
+VB-> fazerem
+VB-> querem
+VB-> sirva
+VB-> inspirar
+VB-> corra
+VB-> colocado
+VB-> edificou
+VB-> declara
+VB-> estende
+VB-> enriquecer
+VB-> vivemos
+VB-> morremos
+VB-> arrancando
+VB-> dispondo
+VB-> morrer
+VB-> bastasse
+VB-> deixar
+VB-> entramos
+VB-> compor
+VB-> ordenar
+VB-> anticipada
+VB-> pomos
+VB-> antever
+VB-> chamam
+VB-> devendo
+VB-> queremos
+VB-> entregue
+VB-> saborear
+VB-> transportamos
+VB-> desempara
+VB-> dá
+VB-> divertido
+VB-> empregado
+VB-> chegue
+VB-> contemplar
+VB-> luzida
+VB-> esconde
+VB-> oculta
+VB-> ignora
+VB-> nascem
+VB-> conhece
+VB-> distingue
+VB-> recebe
+VB-> obramos
+VB-> consiste
+VB-> obrar
+VB-> dirige
+VB-> ofende
+VB-> aflige
+VB-> expõe
+VB-> sacrifica
+VB-> adquire
+VB-> consola
+VB-> perde
+VB-> serve
+VB-> conserva
+VB-> nascessem
+VB-> formados
+VB-> existirem
+VB-> durarem
+VB-> amassem
+VB-> sustenta
+VB-> vive
+VB-> nascer
+VB-> produzir
+VB-> parecer
+VB-> desvanecem
+VB-> imaginam
+VB-> revestidos
+VB-> desprezar
+VB-> funda
+VB-> trazem
+VB-> conhecendo
+VB-> tira
+VB-> vejamos
+VB-> importaria
+VB-> começam
+VB-> acabam
+VB-> nascerem
+VB-> acabem
+VB-> manifestam-se
+VB-> adquirem
+VB-> diga
+VB-> moram
+VB-> vivem
+VB-> acabamos
+VB-> une
+VB-> nasce
+VB-> acaba
+VB-> oposta
+VB-> vê
+VB-> exercita
+VB-> deixa
+VB-> seriam
+VB-> ignoradas
+VB-> digamos
+VB-> inventou
+VB-> desaprova
+VB-> canoniza
+VB-> notados
+VB-> defende
+VB-> abomina
+VB-> preserva
+VB-> ensina
+VB-> proceda
+VB-> ponderarmos
+VB-> formam
+VB-> resultam
+VB-> compõem
+VB-> degeneram
+VB-> afastam
+VB-> dignificam
+VB-> mudando
+VB-> ficando
+VB-> mudam
+VB-> deixam
+VB-> parece-se
+VB-> viver
+VB-> desemparam
+VB-> acompanham
+VB-> acompanha
+VB-> segue
+VB-> contribui
+VB-> tiveram
+VB-> fundassem
+VB-> ajuntar
+VB-> separar
+VB-> compreendem
+VB-> fazemos
+VB-> consistir
+VB-> olham
+VB-> falam
+VB-> cremos
+VB-> atendem
+VB-> consideram
+VB-> lisonjeia
+VB-> imaginamos
+VB-> perturba
+VB-> inquieta
+VB-> diminui
+VB-> aumenta
+VB-> cura
+VB-> fica
+VB-> acabar
+VB-> basta
+VB-> dure
+VB-> cessar
+VB-> cessa
+VB-> incorporam
+VB-> unem
+VB-> vêm
+VB-> ficar
+VB-> desperta
+VB-> depende
+VB-> agrade
+VB-> representa
+VB-> ignorar
+VB-> prejudica
+VB-> discorre
+VB-> discorrer
+VB-> pensa
+VB-> obra
+VB-> conhecemos
+VB-> duvida
+VB-> resolva
+VB-> resolve
+VB-> duvide
+VB-> engana
+VB-> decide
+VB-> acerta
+VB-> pondera
+VB-> falamos
+VB-> achamos
+VB-> desvanece
+VB-> consideramos
+VB-> olhamos
+VB-> reside
+VB-> agrada
+VB-> discorrermos
+VB-> voltar
+VB-> fiquem
+VB-> parecendo
+VB-> vestido
+VB-> polida
+VB-> persuade
+VB-> errar
+VB-> acertar
+VB-> fazem
+VB-> reconhecemos
+VB-> confessamos
+VB-> defendemos
+VB-> indica
+VB-> sacrifiquemos
+VB-> entendidos
+VB-> dar
+VB-> dizemos
+VB-> obriga
+VB-> querermos
+VB-> prevê
+VB-> medita
+VB-> descobre
+VB-> evitar
+VB-> antevê
+VB-> exercer
+VB-> consideradas
+VB-> apropria
+VB-> fortalece
+VB-> induzida
+VB-> mostra
+VB-> devemos
+VB-> sente
+VB-> vimos
+VB-> cansados
+VB-> advertidos
+VB-> deixamos
+VB-> padecer
+VB-> abate
+VB-> contraímos
+VB-> admitirmos
+VB-> armamos
+VB-> querendo
+VB-> justifique
+VB-> parece-nos
+VB-> inspira
+VB-> procurar
+VB-> admira-se
+VB-> respeita-se
+VB-> faça
+VB-> persistir
+VB-> brota
+VB-> move
+VB-> buscamos
+VB-> busca
+VB-> irrita
+VB-> arrependidos
+VB-> amar
+VB-> aborrecer
+VB-> deseja
+VB-> ama
+VB-> ofendido
+VB-> quer
+VB-> amamos
+VB-> vamos
+VB-> imos
+VB-> mudamos
+VB-> separa
+VB-> conduz
+VB-> permanecer
+VB-> vindo
+VB-> reputem
+VB-> mudar
+VB-> tememos
+VB-> conservamos
+VB-> escondida
+VB-> mova
+VB-> dilate
+VB-> receber
+VB-> concentrar
+VB-> forma
+VB-> cresce
+VB-> nascemos
+VB-> dissera
+VB-> devia
+VB-> defender
+VB-> precipita
+VB-> dão
+VB-> começamos
+VB-> manifesta
+VB-> começa
+VB-> aparecer
+VB-> premeditar
+VB-> procura
+VB-> descuidados
+VB-> dobrado
+VB-> anima
+VB-> domina
+VB-> cercado
+VB-> traz
+VB-> presume
+VB-> confiado
+VB-> merecemos
+VB-> empreendemos
+VB-> conseguimos
+VB-> pedimos
+VB-> estabelece
+VB-> corporificar
+VB-> composto
+VB-> organizado
+VB-> contribuem
+VB-> ocupados
+VB-> buscam
+VB-> desprezam
+VB-> sejamos
+VB-> deixemos
+VB-> seguir
+VB-> perder
+VB-> podermos
+VB-> sacrificarmos
+VB-> sermos
+VB-> admirados
+VB-> fazendo-nos
+VB-> caber
+VB-> pareça
+VB-> acabaram
+VB-> durar
+VB-> começaram
+VB-> desfaziam
+VB-> vencer
+VB-> vinham
+VB-> extinguir
+VB-> quisermos
+VB-> remontar
+VB-> passou
+VB-> encontrar
+VB-> coberta
+VB-> encerra
+VB-> desconhecido
+VB-> deixaram
+VB-> sepultadas
+VB-> perpetuar
+VB-> pôde
+VB-> guia
+VB-> pára
+VB-> suspende
+VB-> arrasta
+VB-> entra
+VB-> sai
+VB-> precipitar
+VB-> vieram
+VB-> foram
+VB-> antepassados
+VB-> vir
+VB-> renovam
+VB-> muda
+VB-> sucedem
+VB-> usa
+VB-> corre
+VB-> passando
+VB-> insultam
+VB-> passam
+VB-> ofenderem
+VB-> preparam
+VB-> meditam
+VB-> prevêem
+VB-> anteverem
+VB-> irado
+VB-> clama
+VB-> ameaça
+VB-> julga
+VB-> condena
+VB-> aniquilam-se
+VB-> gravam
+VB-> corrompem-se
+VB-> esculpem
+VB-> descrevem
+VB-> dissipam
+VB-> cede
+VB-> acabam-se
+VB-> acabe
+VB-> inclui
+VB-> estragam
+VB-> desaparecem
+VB-> recordemos
+VB-> escondem
+VB-> desfazem
+VB-> fugindo
+VB-> apagam
+VB-> perdendo
+VB-> sacrificar
+VB-> eternizar
+VB-> morre
+VB-> compõe-se
+VB-> entrar
+VB-> agigantadas
+VB-> duram
+VB-> extinguem
+VB-> finge
+VB-> inclina
+VB-> dilata
+VB-> confunde
+VB-> apaga
+VB-> gastam
+VB-> acabando
+VB-> adquirir
+VB-> atendidos
+VB-> reduz
+VB-> indagarem
+VB-> amados
+VB-> olha
+VB-> ideou
+VB-> introduzir
+VB-> prostram
+VB-> atrair
+VB-> custa
+VB-> damos
+VB-> oferece
+VB-> deixando
+VB-> entrando
+VB-> cega
+VB-> seguimos
+VB-> determine
+VB-> fazendo
+VB-> enfraquece
+VB-> falte
+VB-> satisfeita
+VB-> influi
+VB-> vendo
+VB-> entretida
+VB-> desvia
+VB-> extingue
+VB-> cansamo-nos
+VB-> isenta
+VB-> esquece
+VB-> ofendida
+VB-> regula
+VB-> diz
+VB-> pagamo-nos
+VB-> abrir
+VB-> verter
+VB-> sofrem
+VB-> resistem
+VB-> penetra
+VB-> reconcilia
+VB-> perdoa
+VB-> originam
+VB-> padece
+VB-> permita-se
+VB-> existe
+VB-> animando
+VB-> imprime
+VB-> vai
+VB-> mortifica
+VB-> consistisse
+VB-> desterra
+VB-> ir
+VB-> desgraçada
+VB-> fuja
+VB-> atravessada
+VB-> contempla
+VB-> reflectir
+VB-> importa
+VB-> emenda
+VB-> melhora
+VB-> habitam
+VB-> sustentam
+VB-> toca
+VB-> respeita
+VB-> servimos
+VB-> contraído
+VB-> inficiona
+VB-> unida
+VB-> conhecer
+VB-> conhecerem
+VB-> ignoram
+VB-> decidir
+VB-> respeitamos
+VB-> transcende
+VB-> inclinamos
+VB-> confessar
+VB-> opõe
+VB-> deleita
+VB-> meditar
+VB-> espera
+VB-> guiar
+VB-> propende
+VB-> segura
+VB-> chegando
+VB-> esperamos
+VB-> procurarmos
+VB-> fale
+VB-> fala
+VB-> dando
+VB-> vivamos
+VB-> põem
+VB-> crescem
+VB-> crescendo
+VB-> refere
+VB-> admiramos
+VB-> preocupe
+VB-> passaram
+VB-> existem
+VB-> sabemos
+VB-> desprezamos
+VB-> entre
+VB-> chamamos
+VB-> acusamos
+VB-> desejamos
+VB-> possuem
+VB-> merecíamos
+VB-> deviam
+VB-> cuidamos
+VB-> passa
+VB-> diria
+VB-> alimenta
+VB-> interpreta
+VB-> dita
+VB-> conhecermos-lhe
+VB-> reveja
+VB-> satisfaça
+VB-> procuramos
+VB-> entrega
+VB-> guiam
+VB-> fingida
+VB-> sonhada
+VB-> fogem
+VB-> conhecem
+VB-> discorrem
+VB-> magoa
+VB-> partidos
+VB-> rindo
+VB-> murmuram
+VB-> festejam
+VB-> chamar
+VB-> presumem
+VB-> estimada
+VB-> renunciamos
+VB-> consentimos
+VB-> vistos
+VB-> lembrados
+VB-> espantam
+VB-> ensinam
+VB-> conhecermos
+VB-> apetece
+VB-> concentradas
+VB-> apertado
+VB-> livra
+VB-> arriscado
+VB-> devora
+VB-> passados
+VB-> ocorre
+VB-> acabou
+VB-> amortecido
+VB-> reclama
+VB-> perdida
+VB-> perdido
+VB-> estima
+VB-> ponderada
+VB-> indicam
+VB-> articulem
+VB-> introduziu
+VB-> dobrem
+VB-> ouvimos
+VB-> induz
+VB-> buscarmos
+VB-> distinguiu
+VB-> ficou
+VB-> compreende
+VB-> respira
+VB-> dispôs
+VB-> conheceu
+VB-> sugerindo
+VB-> compostas
+VB-> ocupa
+VB-> tirar
+VB-> substituir
+VB-> encobrir
+VB-> desfigurada
+VB-> cobrem
+VB-> formou
+VB-> destinou
+VB-> comunica
+VB-> representam
+VB-> regidos
+VB-> custaram
+VB-> brilham
+VB-> parecem-se
+VB-> diferem
+VB-> cinge
+VB-> ilustra
+VB-> possam
+VB-> sabidas
+VB-> adquirido
+VB-> admire
+VB-> reprove
+VB-> iguala
+VB-> prepara
+VB-> degenera
+VB-> tributa
+VB-> elevem
+VB-> dobre
+VB-> intendida
+VB-> julgados
+VB-> ouvidos
+VB-> julgam
+VB-> ouve
+VB-> fizesse
+VB-> julgar
+VB-> conspira
+VB-> encobre
+VB-> esclarecido
+VB-> esconder
+VB-> confunda
+VB-> divide
+VB-> propõe
+VB-> anda
+VB-> pensar
+VB-> desengana
+VB-> ouvir
+VB-> andar
+VB-> preguntar
+VB-> responder
+VB-> afectar
+VB-> tomam
+VB-> convém
+VB-> diversifica
+VB-> passamos
+VB-> buscar
+VB-> excede
+VB-> perdemos
+VB-> alcançamos
+VB-> consistem
+VB-> reflectimos
+VB-> gozar
+VB-> custou
+VB-> possuir
+VB-> despreza
+VB-> entretêm
+VB-> veneram
+VB-> determinado
+VB-> troca
+VB-> faria
+VB-> transportado
+VB-> servirá
+VB-> venha
+VB-> produza
+VB-> sentimos
+VB-> possa
+VB-> crê
+VB-> priva
+VB-> fizermos
+VB-> admirar
+VB-> assiste
+VB-> sossegado
+VB-> console
+VB-> esqueçam
+VB-> vendo-se
+VB-> adormecer
+VB-> viesse
+VB-> querida
+VB-> nascesse
+VB-> entendido
+VB-> alcança
+VB-> causa
+VB-> desvaneça
+VB-> adora
+VB-> idolatram
+VB-> moderada
+VB-> passado
+VB-> queixamos
+VB-> apetecemos
+VB-> julgamos
+VB-> dizermos
+VB-> desejemos
+VB-> faz-nos
+VB-> estimamos
+VB-> possuímos
+VB-> queiramos
+VB-> amemos
+VB-> dotados
+VB-> acabada
+VB-> ignoramos
+VB-> entretidos
+VB-> chegamos
+VB-> destruindo
+VB-> sintamos
+VB-> cansa
+VB-> diminuindo
+VB-> tornamos
+VB-> adquirimos
+VB-> ganhamos
+VB-> dado
+VB-> ficamos
+VB-> humilha
+VB-> lembra
+VB-> acusa
+VB-> confessam
+VB-> receberam
+VB-> assenta
+VB-> suposta
+VB-> reconhecem
+VB-> pretendemos
+VB-> conservar
+VB-> esquecer
+VB-> aborrecemos
+VB-> remiu
+VB-> paga
+VB-> pagar
+VB-> obrigou
+VB-> encontramos
+VB-> afecta
+VB-> esquecido
+VB-> retira
+VB-> obrigados
+VB-> sucede
+VB-> reconhece
+VB-> agradecidos
+VB-> inficionado
+VB-> procedem
+VB-> fundada
+VB-> esperam
+VB-> dever
+VB-> favorecem
+VB-> pagam
+VB-> supomos
+VB-> impõe
+VB-> suaviza
+VB-> ocupado
+VB-> descobrir
+VB-> entretenha
+VB-> suspender
+VB-> desviar
+VB-> maltratada
+VB-> encontra
+VB-> sugere
+VB-> oprimida
+VB-> aflito
+VB-> força
+VB-> consolar
+VB-> desprezado
+VB-> reparam
+VB-> atender
+VB-> aprovar
+VB-> resultar
+VB-> representar
+VB-> enobreceu
+VB-> considere-se
+VB-> cravado
+VB-> palpita
+VB-> regando
+VB-> congela
+VB-> fumando
+VB-> inculque
+VB-> estremece
+VB-> queiram
+VB-> medir
+VB-> desvanecemos
+VB-> incita
+VB-> condenamos
+VB-> aprovamos
+VB-> fugimos
+VB-> detestar
+VB-> abraçar
+VB-> arrasta-nos
+VB-> vence
+VB-> conforma
+VB-> resiste
+VB-> formem
+VB-> aplica
+VB-> registar
+VB-> posto
+VB-> vejam
+VB-> mostramos
+VB-> entendemos
+VB-> exercitamos
+VB-> pratica-se
+VB-> assegure
+VB-> disposto
+VB-> persuadir
+VB-> calam-se
+VB-> perdem
+VB-> publique
+VB-> suprimem
+VB-> perceba
+VB-> arrebatada
+VB-> pacifique
+VB-> ensine
+VB-> disfarçar
+VB-> confessa
+VB-> supõe
+VB-> arrepende
+VB-> trazer
+VB-> errou
+VB-> elege
+VB-> veja
+VB-> saiba
+VB-> invocar
+VB-> divulgue
+VB-> incitam
+VB-> intenda
+VB-> encontrem
+VB-> desmaia
+VB-> cobre
+VB-> marcha
+VB-> resoluto
+VB-> cuida
+VB-> prostrado
+VB-> agonizando
+VB-> parece-lhe
+VB-> expira
+VB-> ornada
+VB-> regula-se
+VB-> elevam
+VB-> arrebatam
+VB-> disputa
+VB-> vaticina
+VB-> combatem
+VB-> inflama
+VB-> acende
+VB-> despenha
+VB-> sobressalta
+VB-> cai
+VB-> atemoriza
+VB-> altera
+VB-> figura
+VB-> armado
+VB-> sobra
+VB-> falta
+VB-> adquire-se
+VB-> salva
+VB-> consegue-se
+VB-> digam
+VB-> escrevam
+VB-> alvergam
+VB-> foragidos
+VB-> extingue-se
+VB-> perde-se
+VB-> conserva-se
+VB-> falta-lhe
+VB-> fugiriam
+VB-> vissem
+VB-> retiram
+VB-> conhecidos
+VB-> estivesse
+VB-> expor
+VB-> esconde-o
+VB-> destemidos
+VB-> ousados
+VB-> favorece
+VB-> envilece
+VB-> acobarda
+VB-> debilita
+VB-> irroga
+VB-> conheceram
+VB-> imaginaram
+VB-> puseram
+VB-> executar
+VB-> introduziram
+VB-> exige
+VB-> compreenda
+VB-> culpados
+VB-> induza
+VB-> temem
+VB-> receiam
+VB-> tocar
+VB-> desatendem
+VB-> continuar
+VB-> reprime
+VB-> mata
+VB-> foge
+VB-> iludiu
+VB-> impunido
+VB-> suposto
+VB-> ausentasse
+VB-> deixou
+VB-> fulmina
+VB-> acabava
+VB-> subsistindo
+VB-> renascer
+VB-> adorar
+VB-> considerado
+VB-> imposta
+VB-> considera
+VB-> entende
+VB-> temer
+VB-> praticam-se
+VB-> sabe-se
+VB-> aprende-se
+VB-> necessitamos
+VB-> esqueçamos
+VB-> lembremos
+VB-> custa-nos
+VB-> lembrar
+VB-> praticamos
+VB-> mudemos
+VB-> levamos
+VB-> consegue
+VB-> obrarmos
+VB-> consultar
+VB-> achado
+VB-> abreviar
+VB-> oposto
+VB-> conhecem-se
+VB-> vistas
+VB-> chegar
+VB-> toma
+VB-> distingue-se
+VB-> fugirmos
+VB-> moderar
+VB-> impedir
+VB-> constitui
+VB-> desemparou
+VB-> bastam
+VB-> controvertem
+VB-> pervertem
+VB-> escurecem-se
+VB-> faltam
+VB-> duvidar
+VB-> desfazer
+VB-> adverte
+VB-> celebradas
+VB-> nega-se-lhe
+VB-> interpreta-se
+VB-> pratica
+VB-> enganar
+VB-> violar
+VB-> atribua
+VB-> reduziam
+VB-> reduzem
+VB-> cumpre
+VB-> prometa
+VB-> cumpra
+VB-> fazem-nos
+VB-> levam-nos
+VB-> ofende-nos
+VB-> prometemos
+VB-> arrependemos
+VB-> observar
+VB-> governa
+VB-> obrigasse
+VB-> guardar
+VB-> cumprem
+VB-> faltamos
+VB-> enganamos
+VB-> infamam
+VB-> contêm
+VB-> justificam
+VB-> revolta
+VB-> incite
+VB-> desce
+VB-> contamina
+VB-> deixem
+VB-> admiram-se
+VB-> arma-se
+VB-> suspensa
+VB-> cegam
+VB-> suspendem
+VB-> ignorássemos
+VB-> prende
+VB-> indagar
+VB-> saltam
+VB-> correm
+VB-> cheguem
+VB-> alargam-se
+VB-> cabem
+VB-> caminham
+VB-> lavando
+VB-> precipitam-se
+VB-> detêm-se
+VB-> descansam
+VB-> retrocedem
+VB-> quebram
+VB-> banhando
+VB-> entram
+VB-> morrem
+VB-> confundidas
+VB-> mudado
+VB-> formando
+VB-> animar
+VB-> saem
+VB-> chegam
+VB-> andaram
+VB-> impede
+VB-> penetrar
+VB-> escolhe
+VB-> valem
+VB-> insinua
+VB-> venceu
+VB-> subirem
+VB-> descerem
+VB-> pesa
+VB-> caem
+VB-> sobem
+VB-> examinam-se
+VB-> desaprovados
+VB-> conseguiu
+VB-> justificados
+VB-> conduziram
+VB-> aborrecidas
+VB-> vê-se
+VB-> busquem
+VB-> feita
+VB-> quiseram
+VB-> tomados
+VB-> cabiam
+VB-> medidos
+VB-> podia
+VB-> excogitar
+VB-> lamentassem
+VB-> parecia
+VB-> lamentavam
+VB-> consistia
+VB-> invadir
+VB-> devastar
+VB-> poderem
+VB-> desgraçados
+VB-> conquistados
+VB-> reputam-se
+VB-> executa
+VB-> fazem-se
+VB-> admira
+VB-> cobertos
+VB-> conservam
+VB-> observam
+VB-> ouvem
+VB-> articuladas
+VB-> arrancou
+VB-> coroar
+VB-> inspiraria
+VB-> tome
+VB-> perturbadas
+VB-> humedecidos
+VB-> rubricados
+VB-> impedidos
+VB-> despedaçados
+VB-> abater
+VB-> ensoberbece
+VB-> querer
+VB-> reunir
+VB-> repartiu
+VB-> reduzir
+VB-> organizados
+VB-> anuncia
+VB-> distribui
+VB-> abraça
+VB-> respiram
+VB-> comunicam
+VB-> subsistir
+VB-> subordinada
+VB-> chorar
+VB-> rir
+VB-> apetecer
+VB-> anticipa
+VB-> abatidos
+VB-> moverem
+VB-> estejam
+VB-> receia
+VB-> espiritualizam
+VB-> entregarem
+VB-> incorpore
+VB-> apresenta
+VB-> sentido
+VB-> desconhecemos
+VB-> saciados
+VB-> imagina
+VB-> pinta
+VB-> desvanecer
+VB-> mostrem
+VB-> igualam
+VB-> põe
+VB-> discorra
+VB-> ajunta
+VB-> emprestado
+VB-> fingido
+VB-> tirada
+VB-> despida
+VB-> tirarmos
+VB-> mudam-se
+VB-> vestem
+VB-> infundisse
+VB-> muda-se
+VB-> concebemos
+VB-> descarnado
+VB-> descobrimos
+VB-> graduado
+VB-> ilustrado
+VB-> inspirado
+VB-> veste
+VB-> substituídos
+VB-> identificada
+VB-> encoberta
+VB-> unido
+VB-> dirigem
+VB-> despreza-se
+VB-> governam
+VB-> desaparece
+VB-> desbaratada
+VB-> caídas
+VB-> prostrados
+VB-> emudecido
+VB-> trocados
+VB-> convertidas
+VB-> desmaiadas
+VB-> entrelaçados
+VB-> confundidos
+VB-> viram
+VB-> desvanecidos
+VB-> reina
+VB-> empiora
+VB-> proporcionado
+VB-> intrincado
+VB-> tomamos
+VB-> figurar
+VB-> vencido
+VB-> autorizar
+VB-> aconselhar
+VB-> isentar
+VB-> fique
+VB-> interposta
+VB-> rompeu
+VB-> desfez
+VB-> erramos
+VB-> sujeita
+VB-> prevalece
+VB-> embravecido
+VB-> correr
+VB-> escapa
+VB-> acertado
+VB-> participar
+VB-> movem
+VB-> existir
+VB-> desaparecer
+VB-> desoprime
+VB-> suportar
+VB-> fazia
+VB-> induzido
+VB-> desejar
+VB-> sofrer
+VB-> importuna
+VB-> gozamos
+VB-> esquecem
+VB-> tire
+VB-> tornar
+VB-> procedeu
+VB-> alenta
+VB-> desanima
+VB-> amanheceram
+VB-> molesta
+VB-> debilita-se
+VB-> altera-se
+VB-> persiste
+VB-> usam-se
+VB-> aviva
+VB-> limitada
+VB-> dependem
+VB-> conta
+VB-> caminhamos
+VB-> inundam
+VB-> abatem
+VB-> forçam
+VB-> levam
+VB-> abre
+VB-> rompe
+VB-> desfaz
+VB-> engrossam
+VB-> emprestadas
+VB-> escumando
+VB-> dilatam
+VB-> presos
+VB-> oprimidos
+VB-> descem
+VB-> encontram-se
+VB-> elevados
+VB-> nasçam
+VB-> venham
+VB-> corram
+VB-> passarem
+VB-> tornam
+VB-> saírem
+VB-> terminar
+VB-> juntarem
+VB-> encontrarem
+VB-> acharem
+VB-> dilatado
+VB-> separada
+VB-> convertem
+VB-> correrem
+VB-> infundiu
+VB-> subir
+VB-> descer
+VB-> brilha
+VB-> ponham
+VB-> armar
+VB-> figurados
+VB-> levantar
+VB-> vestir
+VB-> fingir
+VB-> exale
+VB-> arde
+VB-> consome
+VB-> recreia
+VB-> soçobra
+VB-> perdermos
+VB-> extasie
+VB-> temperar
+VB-> distinguimos
+VB-> circula
+VB-> resumido
+VB-> tomado
+VB-> produzem
+VB-> alegram
+VB-> tomadas
+VB-> entristecem
+VB-> naturaliza
+VB-> formamos
+VB-> fundam
+VB-> recebemos
+VB-> largam
+VB-> entregam
+VB-> supostos
+VB-> autenticar
+VB-> envelhece
+VB-> enobrece
+VB-> começar
+VB-> vemo-las
+VB-> instruída
+VB-> dera
+VB-> ensinasse
+VB-> compostos
+VB-> manifestam
+VB-> ocultar
+VB-> reveste-se
+VB-> prostrada
+VB-> intumecem
+VB-> dispõe
+VB-> motiva
+VB-> dirigem-se
+VB-> considerar
+VB-> disfarça
+VB-> chora
+VB-> ri
+VB-> penetrada
+VB-> desmente
+VB-> transformar
+VB-> lisonjeiam
+VB-> alcançadas
+VB-> esclarecida
+VB-> causem
+VB-> entendem
+VB-> confunde-se
+VB-> converte
+VB-> absorta
+VB-> acalmar
+VB-> agrava
+VB-> doer
+VB-> curar
+VB-> achemos
+VB-> visto
+VB-> desfaça
+VB-> autorize
+VB-> ilustre
+VB-> consente
+VB-> abatida
+VB-> forçadas
+VB-> desacredita
+VB-> desonra
+VB-> infama
+VB-> estabeleça
+VB-> sujeitar
+VB-> creia
+VB-> quiser
+VB-> poderá
+VB-> reconhecer
+VB-> atenda
+VB-> ofusca
+VB-> conhecido
+VB-> calculam
+VB-> medem
+VB-> influem
+VB-> influímos

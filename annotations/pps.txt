@@ -1,0 +1,15 @@
+PP-> P NP
+PP-> P+D NP
+PP-> FP P NP
+PP-> P IP
+PP-> FP P+D NP
+PP-> P NP ,
+PP-> PP CONJP
+PP-> P+D
+PP-> FP P IP
+PP-> NEG P NP
+PP-> PP , CONJP
+PP-> P+ADV
+PP-> ADV P NP
+PP-> P+PRO
+PP-> IP

@@ -1,0 +1,156 @@
+NP-> NPR
+NP-> PRO$ NPR
+NP-> N
+NP-> D N PP
+NP-> D NPR PP
+NP-> DEM
+NP-> D ADJ N
+NP-> D N Q
+NP-> SE
+NP-> FP PRO$ NPR
+NP-> ADJ N
+NP-> DEM CP
+NP-> D ADJ CP
+NP-> D N
+NP-> ADJ N PP
+NP-> N ADJ PP
+NP-> D ADJ N , CP ,
+NP-> N PP
+NP-> CL
+NP-> Q N
+NP-> PRO FP
+NP-> D N , CP
+NP-> D N ADJ , CP
+NP-> D N ADJP
+NP-> Q N ADJ , CP
+NP-> ADJ NPR
+NP-> D NPR
+NP-> NP CONJP
+NP-> D NPR ADJ
+NP-> NP , CONJP , CONJP
+NP-> D ADJ
+NP-> D ADJ NPR
+NP-> D PRO$ NPR
+NP-> D NPR , CP
+NP-> NP , CONJP , CP
+NP-> N ADJP
+NP-> N ADJ
+NP-> D ADJ N PP
+NP-> NPR CP
+NP-> CP
+NP-> N , CONJ N
+NP-> PRO$ N
+NP-> D N ADJ PP
+NP-> ADJP N
+NP-> ADJ N ADJ
+NP-> D
+NP-> Q
+NP-> D N ADJ
+NP-> FP , CP
+NP-> PRO
+NP-> D N , CONJP
+NP-> Q N PP
+NP-> D IP
+NP-> D ADV
+NP-> D N PP Q
+NP-> NUM N
+NP-> D PP
+NP-> D OUTRO
+NP-> ADV D CP
+NP-> D N , NP
+NP-> D PRO$ N
+NP-> D ADJ N CP
+NP-> Q D N
+NP-> D ADJ N , CP
+NP-> D ADJ NPR PP
+NP-> PRO CP
+NP-> PP
+NP-> N CP
+NP-> D N VB
+
+N-> vaidade
+N-> homens
+N-> livro
+N-> mundo
+N-> indigência
+N-> discursos
+N-> pés
+N-> vaidades
+N-> reflexões
+N-> virtudes
+N-> vez
+N-> lugar
+N-> espelho
+N-> impressão
+N-> estudo
+N-> ignorância
+N-> parte
+N-> prodígio
+N-> gentes
+N-> admiração
+N-> respeito
+N-> atributos
+N-> efeito
+N-> berço
+N-> figura
+N-> anúncio
+N-> felicidade
+N-> voz
+N-> natureza
+N-> sucessos
+N-> vaticínio
+N-> semblante
+N-> bondade
+N-> agrado
+N-> penhor
+N-> esperanças
+N-> presságio
+N-> forma
+N-> tempo
+N-> acertos
+N-> arte
+N-> favor
+N-> resoluções
+N-> acções
+N-> prelúdios
+N-> ensaios
+N-> perfeição
+N-> obra
+N-> mãos
+N-> idade
+N-> experiência
+N-> anos
+N-> poder
+N-> ciência
+N-> exercício
+N-> disposições
+N-> força
+N-> preceito
+N-> obrigação
+N-> lei
+N-> amor
+N-> vínculos
+N-> vezes
+N-> cadeias
+N-> vozes
+N-> corações
+N-> trono
+N-> profecia
+N-> senhor
+N-> terra
+N-> fé
+N-> hora
+N-> mão
+N-> verdade
+N-> pensamento
+N-> repugnância
+N-> nome
+N-> confissão
+N-> culpa
+N-> pena
+N-> volume
+N-> campo
+N-> censura
+N-> estilo
+N-> figuras
+N-> matéria
