@@ -1,0 +1,7 @@
+	Chart[4]		S10132 ,-> * O [4,4]							 PREDICTOR
+	(, OPEN)
+	~ Linhas: 1685 e 8675
+	
+	Chart[4]		S10133 ,-> * C [4,4]							 PREDICTOR
+	~ (, CLOSE)
+	~ Linhas: 1689 e 8680
