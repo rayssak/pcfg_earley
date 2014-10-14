@@ -61,8 +61,6 @@ public class ParsedGLC {
 			
 			while ((line = reader.readLine()) != null) 
 				if(isValidLine()) {
-					if(line.contains("CP/IP"))//
-						System.out.println("here");//
 					char currentLetter = line.charAt(0);
 					readRules(currentLetter, 0);
 				}

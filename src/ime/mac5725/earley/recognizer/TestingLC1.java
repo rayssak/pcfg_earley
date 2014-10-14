@@ -20,21 +20,38 @@ public class TestingLC1 {
 	private static String time;
 	private static EarleyFinger earley;
 	private static ParsedGLC glc;
+	private static boolean printRules;
 	
 	public static void main(String[] args) {
 		
-//		String sentence = new File(args[1]);
-		String sentence = "vaidade homens ofereço";
+		/* 
+		 * - SENTENCE EXAMPLES:
+		 * 
+		 * 		senhor
+		 * 		vaidade
+		 * 		ofereço
+		 * 		vaidade homens
+		 * 		vaidade ofereço
+		 * 		vaidade ofereço
+		 * 		pequeno livro
+		 * 		senhor ofereço a vossa majestade
+		 * 		declamei virtudes
+		 * 		todas são iguais e todas grandes
+		 * 
+		 */
+		String sentence = "pequeno livro";
+//		String sentence = new File(args[2]);
+		printRules = Boolean.valueOf(args[1]);
+		
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();
 		readGrammar(args);
-//		printRules(timeRan);
+//		printRules(tsimeRan);
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
 		LinkedList<String> grammarTree = earley.parse();
-
-		timeRan = System.currentTimeMillis() - timeRan;
-		time = timeRan > 1000 ? timeRan + " segundos" : timeRan + " millisegundos";
+		
+		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
 		
@@ -48,13 +65,21 @@ public class TestingLC1 {
 		
 	}
 
+	private static void handleTimeRan(long timeRan) {
+		
+		timeRan = System.currentTimeMillis() - timeRan;
+		long seconds = (timeRan/1000) % 60;
+		long minutes = (timeRan/60000) % 60;
+		time = minutes + " minutes, " + seconds + " seconds e " + timeRan + " milliseconds";
+		
+	}
+
 	private static void printRules(long timeRan) {
-		fullGrammarRules = glc.getFullGrammarRules();
 		int count=0;
-		for(Iterator i = fullGrammarRules.iterator(); i.hasNext(); ) {
+		for(Iterator i = grammarRules.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
 			// Print only head rules
-			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("CP/IP")) {
+			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("P")) {
 				count++;
 				System.out.println(rule);
 			}
@@ -73,6 +98,7 @@ public class TestingLC1 {
 		fullGrammarRules = new LinkedHashSet<String>();
 		grammarRules = new LinkedHashSet<String>();
 		lexicon = new LinkedHashSet<String>();
+		earley.setPrintRules(printRules);
 	}
 	
 	private static void readGrammar(String[] args) {

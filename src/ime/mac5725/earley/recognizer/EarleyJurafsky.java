@@ -18,11 +18,10 @@ public class EarleyJurafsky extends Earley {
 		
 		for(; i<=sentenceWords.size(); i++) {
 			
-			while(j<chart.get(i).size()) {
+			while(!grammarRecognized && j<chart.get(i).size()) {
 				
 				getNextStateToRun();
 			
-//				System.out.println("\n-STATE: " + state);//
 				if(!isComplete(state) && !isPartOfSpeech(nextCategory(state))) 
 					predictor(state);
 				else if(!isComplete(state) /*&& isPartOfSpeech(nextCategory(state))*/)
@@ -78,8 +77,8 @@ public class EarleyJurafsky extends Earley {
 			  !isRuleAlreadyInCurrentChart(rule) /*&& !chartHasCurretRuleAlreadyCompleted(rule)*/) {
 				
 				stateLevelCount++;
-				enqueue(addStateAndStartEndPointsFields(rule), chart.get(i));
-				printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
+				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
+					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
 				
 			}
 			
@@ -165,17 +164,18 @@ public class EarleyJurafsky extends Earley {
 								.replace(" " + currentPOSTag, currentPOSTag + " " + ConstantsUtility.DOTTED_RULE)
 								.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "S" + ++stateLevelCount + ConstantsUtility.FIELD_SEPARATOR) + 
 								"[" + ruleStart + "," + i + "]";
-					finalParser.add("tmp: " + tmpRule + ConstantsUtility.FIELD_SEPARATOR + "(" + previousState + ")");
 					
-					enqueue(tmpRule, chart.get(i));
-					printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
+					if(enqueue(tmpRule, chart.get(i))) {
+						printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
+						finalParser.add("tmp: " + tmpRule + ConstantsUtility.FIELD_SEPARATOR + "(" + previousState + ")");
+					}
 					
 				}
 				
 			} 
 			
 			if(sentenceCompleted(rule) && isComplete(rule)) {
-				if(hasCompletedSentence(rule))
+				if(hasCompletedSentence(rule)) 
 					grammarRecognized = true;
 				if(isFinalStateToGrammarTree(rule))
 					addToFinalParser(rule, "(" + previousState + ")");
@@ -186,8 +186,10 @@ public class EarleyJurafsky extends Earley {
 				chartCount++;
 			}
 			
+			if(grammarRecognized)
+				return;
+			
 		}
-		
 		j++;
 		
 	}

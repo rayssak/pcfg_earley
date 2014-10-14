@@ -18,6 +18,8 @@ public class TestingJurafskyCorpusExample {
 	private static boolean grammarRecognized;
 	private static String time;
 	private static EarleyJurafsky earley;
+	
+	private static boolean printRules = false;
 
 	public static void main(String[] args) {
 		
@@ -41,6 +43,7 @@ public class TestingJurafskyCorpusExample {
 		 * 
 		 */
 		String sentence = "book that flight";
+		
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();
@@ -48,8 +51,7 @@ public class TestingJurafskyCorpusExample {
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
 		LinkedList<String> grammarTree = earley.parse();
 
-		timeRan = System.currentTimeMillis() - timeRan;
-		time = timeRan > 1000 ? timeRan + " segundos" : timeRan + " millisegundos";
+		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
 		
@@ -67,6 +69,7 @@ public class TestingJurafskyCorpusExample {
 		earley = new EarleyJurafsky();
 		grammarRules = new LinkedHashSet<String>();
 		lexicon = new LinkedHashSet<String>();
+		earley.setPrintRules(printRules);
 	}
 
 	private static void populateGrammarLists(LinkedHashSet<String> grammarRules, LinkedHashSet<String> lexicon) {
@@ -108,6 +111,14 @@ public class TestingJurafskyCorpusExample {
 		lexicon.add("Preposition-> near");
 		lexicon.add("Preposition-> through");
 		
+	}
+	
+	private static void handleTimeRan(long timeRan) {
+		timeRan = System.currentTimeMillis() - timeRan;
+		long seconds = (timeRan/1000) % 60;
+		long minutes = (timeRan/60000) % 60;
+		time = minutes + " minutes, " + seconds + " seconds e " + timeRan + " milliseconds";
+//		time = String.format("%03d:%04d:%05d", minutes, seconds, timeRan) + " milliseconds";
 	}
 
 }
