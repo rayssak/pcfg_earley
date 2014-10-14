@@ -35,11 +35,12 @@ public class TestingLC1 {
 		 * 		vaidade ofereço
 		 * 		pequeno livro
 		 * 		senhor ofereço a vossa majestade
-		 * 		declamei virtudes
 		 * 		todas são iguais e todas grandes
+		 * 		declamei virtudes
+		 * 		veio até fé
 		 * 
 		 */
-		String sentence = "todas são iguais e todas grandes";
+		String sentence = "senhor ofereço a vossa majestade";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
@@ -47,7 +48,7 @@ public class TestingLC1 {
 		
 		initializeRequiredObjects();
 		readGrammar(args);
-//		printRules(tsimeRan);
+		printRules();
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
 		LinkedList<String> grammarTree = earley.parse();
 		
@@ -66,17 +67,15 @@ public class TestingLC1 {
 	}
 
 	private static void handleTimeRan(long timeRan) {
-		
 		timeRan = System.currentTimeMillis() - timeRan;
 		long seconds = (timeRan/1000) % 60;
 		long minutes = (timeRan/60000) % 60;
 		time = minutes + " minutes, " + seconds + " seconds e " + timeRan + " milliseconds";
-		
 	}
 
-	private static void printRules(long timeRan) {
+	private static void printRules() {
 		int count=0;
-		for(Iterator i = grammarRules.iterator(); i.hasNext(); ) {
+		for(Iterator i = lexicon.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
 			// Print only head rules
 			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("P")) {
@@ -84,12 +83,6 @@ public class TestingLC1 {
 				System.out.println(rule);
 			}
 		}
-	System.out.println(count);
-		System.out.println("- RULES: " + fullGrammarRules.size() + " (" + grammarRules.size() + " rules and " + lexicon.size() + " lexicons)");
-		timeRan = System.currentTimeMillis() - timeRan;
-		time = timeRan > 1000 ? timeRan + " segundos." : timeRan + " millisegundos.";
-		System.out.println("- TIME: " + time);
-		
 	}
 
 	private static void initializeRequiredObjects() {
