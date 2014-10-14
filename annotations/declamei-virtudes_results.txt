@@ -1,0 +1,13 @@
+	Chart[2]		S3876 FRAG-> IP * . [1,2]						 COMPLETER
+
+- SENTENCE: "declamei virtudes"
+- TIME: 2 minutes, 23 seconds e 143963 milliseconds
+- SENTENCE STATUS: recognized
+- SYNTATIC TREE:
+	Chart[2] S3820 IP-> VB IP * [0,2] (S3819,S1584)
+	Chart[2] S3819 IP-> N * [1,2] (S3706)
+	Chart[2] S3706 N-> virtudes * [1,2] SCANNER
+	Chart[2] S3689 IP-> ADJP * [0,1] (S1887)
+	Chart[2] S1887 ADJP-> VB * [0,1] (S1584)
+	Chart[2] S1795 IP-> VB * [0,1] (S1584)
+	Chart[1] S1584 VB-> declamei * [0,1] SCANNER

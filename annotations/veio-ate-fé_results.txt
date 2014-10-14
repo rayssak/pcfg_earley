@@ -1,0 +1,15 @@
+	Chart[3]		S5902 CP/IP-> PP * SR NP [1,3]						 COMPLETER
+
+- SENTENCE: "veio até fé"
+- TIME: 4 minutes, 20 seconds e 260774 milliseconds
+- SENTENCE STATUS: recognized
+- SYNTATIC TREE:
+	Chart[3] S5644 IP-> VB PP * [0,3] (S5638,S1584)
+	Chart[3] S5641 IP-> N * [2,3] (S5600)
+	Chart[3] S5638 PP-> P N * [1,3] (S5600,S3706)
+	Chart[3] S5600 N-> fé * [2,3] SCANNER
+	Chart[2] S3706 P-> até * [1,2] SCANNER
+	Chart[2] S3689 IP-> ADJP * [0,1] (S1887)
+	Chart[2] S1887 ADJP-> VB * [0,1] (S1584)
+	Chart[2] S1795 IP-> VB * [0,1] (S1584)
+	Chart[1] S1584 VB-> veio * [0,1] SCANNER

@@ -1,0 +1,14 @@
+P-> a
+P-> sobre
+P-> em
+P-> de
+P-> contra
+P-> para
+P-> sem
+P-> por
+P-> com
+P-> desde
+P-> entre
+P-> apesar
+P-> até
+P-> par
