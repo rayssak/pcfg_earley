@@ -1,5 +1,7 @@
 package ime.mac5725.earley.recognizer;
 
+import ime.mac5725.earley.util.ConstantsUtility;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,12 +31,14 @@ public class ParsedGLC {
 	
 	private LinkedList<String> tmp;
 	
-	private LinkedHashSet<String> fullGrammarRules;
 	private LinkedHashSet<String> grammarRules;
 	private LinkedHashSet<String> lexicon;
 	
 	public LinkedHashSet<String> getFullGrammarRules() {
-		return fullGrammarRules;
+		LinkedHashSet<String> tmp = new LinkedHashSet<String>();
+		tmp.addAll(grammarRules);
+		tmp.addAll(lexicon);
+		return tmp;
 	}
 
 	public LinkedHashSet<String> getGrammarRules() {
@@ -50,7 +54,6 @@ public class ParsedGLC {
 		FileInputStream input;
 		BufferedReader reader;
 		tmp = new LinkedList<String>();
-		fullGrammarRules = new LinkedHashSet<String>();
 		grammarRules = new LinkedHashSet<String>();
 		lexicon = new LinkedHashSet<String>();
 		
@@ -70,6 +73,8 @@ public class ParsedGLC {
 		} catch (IOException ioException) {
 			System.out.println(ioException.getMessage());
 		}
+		
+		handleSpecialCases();
 		
 	}
 
@@ -180,7 +185,6 @@ public class ParsedGLC {
 							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú0-9]+.*") ? 
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
 							  	  
-		  	fullGrammarRules.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
 			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
 			
 			sentenceWordAdded = true;
@@ -199,7 +203,6 @@ public class ParsedGLC {
 	
 	private void handlePontuation() {
 		if(hasPontuation() && currentRule.length()>1) {
-			fullGrammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
 			grammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
 			tmp.add(ruleLevelCount + " " + currentRule.substring(0, 1));
 			clearCurrentRule();
@@ -250,12 +253,9 @@ public class ParsedGLC {
 			String currentTargetLevel = String.valueOf(Integer.parseInt(tmp.getLast().split(" ")[0]) - 1);
 			
 			for(Iterator i = tmp.descendingIterator(); i.hasNext(); ) {
-				
 				String currentItem = i.next().toString();
-				
 				if(currentItem.startsWith(currentTargetLevel)) {
 					String item = currentItem.replace(currentTargetLevel + " ", "");
-					fullGrammarRules.add(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
 					grammarRules.add(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
 					break;
 				}
@@ -264,6 +264,34 @@ public class ParsedGLC {
 			clearPOSTagsAlreadyFinalized(currentPOSTag, currentLevel);
 			
 		}
+		
+	}
+	
+	private void handleSpecialCases() {
+		
+		// Removes recursive rules:
+		// 		,-> ,
+		// 		IP-> IP
+		// 		.-> .
+		for(Iterator it=grammarRules.iterator(); it.hasNext(); ) {
+			String current = it.next().toString();
+			String currentRule = current.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0];
+			String currentTerminals = current.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1];
+			if(currentRule.equals(currentTerminals))
+				it.remove();
+		}
+		
+		// Can not remove ALL cases that has only one POS tag (e.g.: NP-> N)!
+		// The best way of overcoming the special cases is removing specifically
+		// each one of them (IP-> NP, NP->PP and PP-> IP, a recursive cycle).
+		grammarRules.remove("IP-> NP");
+		grammarRules.remove("NP-> PP");
+		grammarRules.remove("PP-> IP");
+		grammarRules.remove("IP-> CP");
+		grammarRules.remove("CP-> IP");
+		grammarRules.remove("NP-> CP");
+		grammarRules.remove("PP-> CP");
+		grammarRules.remove("NP-> IP");
 		
 	}
 	

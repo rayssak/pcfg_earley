@@ -18,13 +18,13 @@ public class EarleyFinger extends Earley {
 		
 		for(; i<=sentenceWords.size(); i++) {
 			
-			while(/*!grammarRecognized &&*/ j<chart.get(i).size()) {
+			while(!grammarRecognized && j<chart.get(i).size()) {
 				
 				getNextStateToRun();
 			
 				if(!isComplete(state) && !isPartOfSpeech(nextCategory(state))) 
 					predictor(state);
-				else if(!isComplete(state) /*&& isPartOfSpeech(nextCategory(state))*/)
+				else if(!isComplete(state))
 					scanner(state);
 				else 
 					completer(state);
@@ -124,11 +124,6 @@ public class EarleyFinger extends Earley {
 		currentPOSTag = nextCompletedCategory(state);
 		LinkedList<String> tmp = new LinkedList<String>();
 		
-		if(isRecursiveRule(state)) {
-			j++;
-			return;
-		}
-		
 		for(int count=0; count<chart.get(chartCount).size(); count++) {
 			
 			String rule = chart.get(chartCount).get(count);
@@ -167,17 +162,12 @@ public class EarleyFinger extends Earley {
 				chartCount++;
 			}
 			
-//			if(grammarRecognized)
-//				return;
+			if(grammarRecognized)
+				return;
 			
 		}
 		j++;
 		
-	}
-
-	private boolean isRecursiveRule(String state) {
-		return currentPOSTag.equals(sentenceHeadRule) && getRule(state).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(
-				state.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1].split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].replace(" " + ConstantsUtility.DOTTED_RULE, "").replace(ConstantsUtility.DOTTED_RULE, ""));
 	}
 	
 }

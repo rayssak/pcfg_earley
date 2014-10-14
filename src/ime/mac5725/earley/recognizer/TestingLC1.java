@@ -39,7 +39,7 @@ public class TestingLC1 {
 		 * 		todas são iguais e todas grandes
 		 * 
 		 */
-		String sentence = "pequeno livro";
+		String sentence = "todas são iguais e todas grandes";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
