@@ -3,9 +3,9 @@ package ime.mac5725.earley.recognizer;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 
 /**
  * @author rayssak
@@ -38,9 +38,11 @@ public class TestingLC1 {
 		 * 		todas são iguais e todas grandes
 		 * 		declamei virtudes
 		 * 		veio até fé
+		 * 		senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;
+		 * 		declamei contra a vaidade ,
 		 * 
 		 */
-		String sentence = "senhor ofereço a vossa majestade";
+		String sentence = "senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
@@ -48,9 +50,9 @@ public class TestingLC1 {
 		
 		initializeRequiredObjects();
 		readGrammar(args);
-		printRules();
+//		printRules();
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		LinkedList<String> grammarTree = earley.parse();
+		ArrayList<String> grammarTree = earley.parse();
 		
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
@@ -59,8 +61,8 @@ public class TestingLC1 {
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 		if(grammarRecognized) {
 			System.out.println("- SYNTATIC TREE:");
-			for(Iterator it = grammarTree.descendingIterator(); it.hasNext(); )
-				System.out.println("\t" + it.next().toString().replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+			for(int aux=grammarTree.size()-1; aux>=0; aux--)
+				System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
 			
 		}
 		
@@ -75,10 +77,15 @@ public class TestingLC1 {
 
 	private static void printRules() {
 		int count=0;
-		for(Iterator i = lexicon.iterator(); i.hasNext(); ) {
+		for(Iterator i = grammarRules.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
 			// Print only head rules
-			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("P")) {
+			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(",") ||
+				rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(".") ||
+				rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(":") ||
+				rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(";") ||
+				rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("?") ||
+				rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("!")) {
 				count++;
 				System.out.println(rule);
 			}

@@ -2,7 +2,6 @@ package ime.mac5725.earley.recognizer;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
@@ -53,8 +52,8 @@ public class EarleyJurafsky extends Earley {
 		if(!nextCategory.replace("-", "").replace("+", "").matches("[A-Z]+") &&
 		    nextCategory.replace("-", "").replace("+", "").matches("[[A-Z]+[a-z]+]+")) {
 			
-			for(Iterator it=lexicon.iterator(); it.hasNext(); ) 
-				if(it.next().toString().split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(nextCategory))
+			for(int aux=0; aux<lexicon.size(); aux++)
+				if(lexicon.get(aux).split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(nextCategory))
 					return true;
 			
 		}
@@ -69,10 +68,9 @@ public class EarleyJurafsky extends Earley {
 		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
 		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
 		
-		for(Iterator it=grammar.iterator(); it.hasNext(); ) {
+		for(int aux=0; aux<grammar.size(); aux++) {
 			
-			String rule = it.next().toString();
-			
+			String rule = grammar.get(aux);
 			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && 
 			  !isRuleAlreadyInCurrentChart(rule) /*&& !chartHasCurretRuleAlreadyCompleted(rule)*/) {
 				
@@ -145,12 +143,15 @@ public class EarleyJurafsky extends Earley {
 		currentPOSTag = nextCompletedCategory(state);
 		LinkedList<String> tmp = new LinkedList<String>();
 		
+		if(isComplete(state) && hasCompletedSentence(state)) 
+			grammarRecognized = true;
+		
 		for(int count=0; count<chart.get(chartCount).size(); count++) {
 			
 			String rule = chart.get(chartCount).get(count);
 			int ruleEnd = Integer.parseInt(rule.split("\\[")[1].split(",")[1].substring(0, 1));
 			
-			if(!isComplete(rule) && ruleEnd==stateStart && !rule.contains(DUMMY_STATE)) {
+			if(!isComplete(rule) && /*ruleEnd==stateStart &&*/ !rule.contains(DUMMY_STATE)) {
 				
 				String cleanNonTerminal = rule.substring(rule.indexOf(ConstantsUtility.DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
 				String tmpRule = rule.substring(0, rule.indexOf('['));

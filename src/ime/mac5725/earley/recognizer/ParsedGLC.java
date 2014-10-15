@@ -203,7 +203,7 @@ public class ParsedGLC {
 	
 	private void handlePontuation() {
 		if(hasPontuation() && currentRule.length()>1) {
-			grammarRules.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
+			lexicon.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
 			tmp.add(ruleLevelCount + " " + currentRule.substring(0, 1));
 			clearCurrentRule();
 		} 
