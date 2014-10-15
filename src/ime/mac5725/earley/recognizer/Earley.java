@@ -3,8 +3,10 @@ package ime.mac5725.earley.recognizer;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Earley {
 	
@@ -16,7 +18,8 @@ public class Earley {
 	protected boolean printRules;
 	protected boolean grammarRecognized = false;
 	
-	protected ArrayList<ArrayList<String>> chart;
+	protected List<ArrayList<String>> chart = Collections.synchronizedList(new ArrayList<ArrayList<String>>());
+//	protected ArrayList<ArrayList<String>> chart;
 	protected LinkedList<String> sentenceWords;
 	protected ArrayList<String> grammar;
 	protected ArrayList<String> lexicon;
@@ -29,7 +32,7 @@ public class Earley {
 	
 	protected static String DUMMY_STATE;
 	
-	protected enum Methods { PREDICTOR, SCANNER, COMPLETER };
+	public enum Methods { PREDICTOR, SCANNER, COMPLETER };
 	
 	protected ArrayList<String> finalParser;
 	

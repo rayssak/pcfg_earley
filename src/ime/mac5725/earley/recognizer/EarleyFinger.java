@@ -1,7 +1,9 @@
 package ime.mac5725.earley.recognizer;
 
+import ime.mac5725.earley.Predictor;
 import ime.mac5725.earley.util.ConstantsUtility;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
@@ -63,18 +65,51 @@ public class EarleyFinger extends Earley {
 		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
 		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
 		
-		for(int aux=0; aux<grammar.size(); aux++) {
-			
-			String rule = grammar.get(aux);
-			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) {
-				
-				stateLevelCount++;
-				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
-					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
-				
+		long timeRan = System.currentTimeMillis();
+		
+		int chartByThreadSize = grammar.size()/3;
+		ArrayList<String> grammarFirstThread = new ArrayList<String>();
+		ArrayList<String> grammarSecondThread = new ArrayList<String>();
+		ArrayList<String> grammarThirdThread = new ArrayList<String>();
+		
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			grammarFirstThread.add(grammar.get(aux));
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			grammarSecondThread.add(grammar.get(chartByThreadSize + aux));
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			grammarThirdThread.add(grammar.get(chartByThreadSize + chartByThreadSize + aux));
+		
+		Predictor predictor = new Predictor(chart.get(i), i, stateLevelCount, grammarFirstThread, currentPOSTag);
+		Thread firstThread = new Thread(predictor);
+		firstThread.start();
+		Predictor predictor2 = new Predictor(chart.get(i), i, stateLevelCount, grammarSecondThread, currentPOSTag);
+		Thread secondThread = new Thread(predictor2);
+		secondThread.start();
+		Predictor predictor3 = new Predictor(chart.get(i), i, stateLevelCount, grammarThirdThread, currentPOSTag);
+		Thread thirdThread = new Thread(predictor3);
+		thirdThread.start();
+		
+//		for(int aux=0; aux<grammar.size(); aux++) {
+//			
+//			String rule = grammar.get(aux);
+//			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) {
+//				
+//				stateLevelCount++;
+//				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
+//					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
+//				
+//			}
+//			
+//		}
+		
+		while(firstThread.isAlive() || secondThread.isAlive() || thirdThread.isAlive())
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
-			
-		}
+		timeRan = System.currentTimeMillis() - timeRan;
+		System.out.println(timeRan);
 		
 		j++;
 		
@@ -128,6 +163,19 @@ public class EarleyFinger extends Earley {
 		
 		if(isComplete(state) && hasCompletedSentence(state)) 
 			grammarRecognized = true;
+		
+		int chartByThreadSize = chart.get(chartCount).size()/3;
+		ArrayList<String> chartFirstThread = new ArrayList<String>();
+		ArrayList<String> chartSecondThread = new ArrayList<String>();
+		ArrayList<String> chartThirdThread = new ArrayList<String>();
+		
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			chartFirstThread.add(chart.get(chartCount).get(aux));
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			chartSecondThread.add(chart.get(chartCount).get(chartByThreadSize + aux));
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			chartThirdThread.add(chart.get(chartCount).get(chartByThreadSize + chartByThreadSize + aux));
+		
 		
 		for(int count=0; count<chart.get(chartCount).size(); count++) {
 			

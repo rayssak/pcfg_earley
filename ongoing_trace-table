@@ -1,50 +1,24 @@
-	Chart[0]		S0 Y-> * S[0,0]								  	 DUMMY START STATE
-	Chart[0]		S1 S-> * NP VP [0,0]							 PREDICTOR
-	Chart[0]		S2 S-> * Aux NP VP [0,0]						 PREDICTOR
-	Chart[0]		S3 S-> * VP [0,0]							 	 PREDICTOR
-	Chart[0]		S4 NP-> * Pronoun [0,0]							 PREDICTOR
-	Chart[0]		S5 NP-> * Proper-Noun [0,0]						 PREDICTOR
-	Chart[0]		S6 NP-> * Det Nominal [0,0]						 PREDICTOR
-	Chart[0]		S7 VP-> * Verb [0,0]							 PREDICTOR
-	Chart[0]		S8 VP-> * Verb NP [0,0]							 PREDICTOR
-	Chart[0]		S9 VP-> * Verb NP PP [0,0]						 PREDICTOR
-	Chart[0]		S10 VP-> * Verb PP [0,0]						 PREDICTOR
-	Chart[0]		S11 VP-> * VP PP [0,0]							 PREDICTOR
-	Chart[1]		-S12 Verb-> book * [0,1]							 SCANNER
-	Chart[1]		S13 VP-> Verb * [0,1]							 COMPLETER
-	Chart[1]		S14 VP-> Verb * NP [0,1]						 COMPLETER
-	Chart[1]		S15 VP-> Verb * NP PP [0,1]						 COMPLETER
-	Chart[1]		S16 VP-> Verb * PP [0,1]						 COMPLETER
-	Chart[1]		S17 S-> VP * [0,1]							     COMPLETER
-	Chart[1]		S18 VP-> VP * PP [0,1]							 COMPLETER
-	Chart[1]		S19 NP-> * Pronoun [1,1]						 PREDICTOR
-	Chart[1]		S20 NP-> * Proper-Noun [1,1]						 PREDICTOR
-	Chart[1]		S21 NP-> * Det Nominal [1,1]						 PREDICTOR
-	Chart[1]		S22 PP-> * Preposition NP [1,1]						 PREDICTOR
-	Chart[2]		-S23 Det-> that * [1,2]							 SCANNER
-	Chart[2]		S24 NP-> Det * Nominal [1,2]						 COMPLETER
-	Chart[2]		S25 Nominal-> * Noun [2,2]						 PREDICTOR
-	Chart[2]		S26 Nominal-> * Nominal Noun [2,2]					 PREDICTOR
-	Chart[2]		S27 Nominal-> * Nominal PP [2,2]					 PREDICTOR
-	Chart[3]		-S28 Noun-> flight * [2,3]						 SCANNER
-	Chart[3]		-S29 Nominal-> Noun * [2,3]						 COMPLETER
-	Chart[3]		-S30 NP-> Det Nominal * [1,3]						 COMPLETER
-	Chart[3]		S31 Nominal-> Nominal * Noun [2,3]					 COMPLETER
-	Chart[3]		S32 Nominal-> Nominal * PP [2,3]					 COMPLETER
-	Chart[3]		-S33 VP-> Verb NP * [0,3]						 COMPLETER
-	Chart[3]		S34 VP-> Verb NP * PP [0,3]						 COMPLETER
-	Chart[3]		S35 PP-> * Preposition NP [3,3]						 PREDICTOR
-	Chart[3]		-S36 S-> VP * [0,3]							 COMPLETER
-	Chart[3]		S37 VP-> VP * PP [0,3]							 COMPLETER
+- se eu tenho 1 regra daquela headRule, então terei TODAS as regras daquela headRule e não preciso checar uma por uma (IP e PP são enormeeees);
+- scanner: verificar if(i==sentenceWords.indexOf(word)) logo no início do método! poupa loops!
 
-	
-	
-Chart[1] S12|Verb-> book *|[0,1] SCANNER, 
-Chart[2] S23|Det-> that *|[1,2] SCANNER, 
-Chart[3] S28|Noun-> flight *|[2,3] SCANNER, 
-Chart[3] S29|Nominal-> Noun *|[2,3] (S28),      -- Apenas um terminal
-Chart[3] S30|NP-> Det Nominal *|[1,3] (S29),   !-- Tem mais de um terminal
-Chart[3] S33|VP-> Verb NP *|[0,3] (S30),       !-- Tem mais de um terminal
-Chart[3] S36|S-> VP *|[0,3] (S33)
 
------ SÓ TÔ PEGANDO O ÚLTIMO STATE E NÃO TODOS OS STATES QUE GERARAM O ATUAL STATE!
+lexico
+,-> ,
+,-> O
+,-> C
+
+grammar
+.-> :
+.-> ;
+.-> ?
+.-> !
+
+
+
+- PREDICTOR 
+  ~ talvez não compense colocar Thread aqui:
+	793 no-thread 
+	21.387 thread
+
+	829 no-thread (print)
+	20.878 thread (print)

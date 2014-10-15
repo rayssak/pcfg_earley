@@ -38,11 +38,11 @@ public class TestingLC1 {
 		 * 		todas são iguais e todas grandes
 		 * 		declamei virtudes
 		 * 		veio até fé
-		 * 		senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;
+		 * 		senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;  !!!!!!!!!!!!!!!!
 		 * 		declamei contra a vaidade ,
 		 * 
 		 */
-		String sentence = "senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;";
+		String sentence = "pequeno livro";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
