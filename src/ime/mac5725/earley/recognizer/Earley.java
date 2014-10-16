@@ -3,6 +3,7 @@ package ime.mac5725.earley.recognizer;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -18,6 +19,8 @@ public class Earley {
 	protected boolean grammarRecognized = false;
 	
 	protected ArrayList<ArrayList<String>> chart;
+	protected HashSet<String> chartOnlyWithRules;
+	protected HashSet<String> currentChartOnlyWithRules;
 	protected LinkedList<String> sentenceWords;
 	protected ArrayList<String> grammar;
 	protected ArrayList<String> lexicon;
@@ -60,6 +63,8 @@ public class Earley {
 		this.lexicon.addAll(lexicon);
 		chart = new ArrayList<ArrayList<String>>();
 		finalParser = new ArrayList<String>();
+		chartOnlyWithRules = new HashSet<String>();
+		currentChartOnlyWithRules = new HashSet<String>();
 		DUMMY_STATE = this.getClass().getName().contains("Finger") ? ConstantsUtility.DUMMY_STATE : ConstantsUtility.DUMMY_STATE_JURAFSKY;
 	}
 
@@ -79,7 +84,8 @@ public class Earley {
 	}
 	
 	protected boolean enqueue(String state, ArrayList<String> chartEntry) {
-		if(!chartEntry.contains(state) && !containsClanState(state)) {
+//		if(!chartEntry.contains(state) && !containsClanState(state)) {
+		if(!chartEntry.contains(state) && !chartOnlyWithRules.contains(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""))) {
 			push(state, chartEntry);
 			return true;
 		} else
@@ -113,6 +119,8 @@ public class Earley {
 
 	protected void push(String state, ArrayList<String> chartEntry) {
 		chartEntry.add(state);
+		chartOnlyWithRules.add(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
+		currentChartOnlyWithRules.add(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
 	}
 	
 	protected void printHeadRule() {
@@ -179,7 +187,7 @@ public class Earley {
 
 	protected void scanner(String state, String terminal) {
 		
-		LinkedList<String> terminals = new LinkedList<String>();
+		ArrayList<String> terminals = new ArrayList<String>();
 		
 		for(Iterator it=lexicon.iterator(); it.hasNext(); ) {
 			String rule = it.next().toString();
@@ -314,6 +322,10 @@ public class Earley {
 	
 	private boolean ruleAlreadyInTree(String tmp, String rule) {//IP-> IP *|[0,3] 
 		return tmp.replace("Chart[", "").replaceFirst("[0-9]+", "").replaceFirst("] ", "").split(" \\(")[0].replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
+	}
+	
+	protected void resetChartControl() {
+		currentChartOnlyWithRules = new HashSet<String>();
 	}
 	
 }

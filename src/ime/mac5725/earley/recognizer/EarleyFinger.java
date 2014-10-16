@@ -31,6 +31,7 @@ public class EarleyFinger extends Earley {
 				
 			}
 			
+			resetChartControl();
 			j=0;
 
 		}
@@ -68,10 +69,11 @@ public class EarleyFinger extends Earley {
 			
 			String rule = it.next().toString();
 			
-			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) {
+//			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) {
+			if(getRule(rule).equals(currentPOSTag) && !currentChartOnlyWithRules.contains(rule) && specialCase(rule)) {
 				
-				stateLevelCount++;
 				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
+					stateLevelCount++;
 					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
 				
 			}
@@ -107,14 +109,18 @@ public class EarleyFinger extends Earley {
 		String tmp[] = changeFieldSeparator(state).split(" ");
 		
 		for(int aux=0; aux<tmp.length; aux++)
-			if(!tmp[aux].equals(ConstantsUtility.DOTTED_RULE) && tmp[aux].replace("-", "").matches("[A-Z]+"))
-				if(!posAlreadyProcessed(tmp[aux])) {
+			if(!tmp[aux].equals(ConstantsUtility.DOTTED_RULE) && (tmp[aux].replace("-", "").matches("[A-Z]+.*") || isPontuation(tmp[aux].charAt(0))))
+				if(aux>0 && tmp[aux-1].equals(ConstantsUtility.DOTTED_RULE) && !posAlreadyProcessed(tmp[aux])) {
 					terminal = tmp[aux];
 					break;
 				}
 		
 		return terminal;
 		
+	}
+	
+	private boolean isPontuation(char currentLetter) {
+		return currentLetter == ':' || currentLetter == ';' || currentLetter == ',' || currentLetter == '.' || currentLetter == '!' || currentLetter == '?';
 	}
 	
 	private void completer(String state) {

@@ -31,6 +31,7 @@ public class EarleyJurafsky extends Earley {
 				
 			}
 			
+			resetChartControl();
 			j=0;
 
 		}
@@ -73,11 +74,13 @@ public class EarleyJurafsky extends Earley {
 			
 			String rule = it.next().toString();
 			
+//			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && 
+//			  !isRuleAlreadyInCurrentChart(rule) /*&& !chartHasCurretRuleAlreadyCompleted(rule)*/) {
 			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && 
-			  !isRuleAlreadyInCurrentChart(rule) /*&& !chartHasCurretRuleAlreadyCompleted(rule)*/) {
+					  !currentChartOnlyWithRules.contains(rule)) {
 				
-				stateLevelCount++;
 				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
+					stateLevelCount++;
 					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
 				
 			}
@@ -199,7 +202,7 @@ public class EarleyJurafsky extends Earley {
 
 	private boolean sentenceCompleted(String rule) {
 		return i == chart.size()-1 && 
-				Integer.parseInt(rule.split("\\[")[1].split(",")[1].substring(0, 1)) == chart.size()-1;
+				Integer.parseInt(rule.split("\\[")[1].split(",")[1].replace("]", "")) == chart.size()-1;
 	}
 	
 }
