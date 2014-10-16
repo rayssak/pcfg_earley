@@ -1,4 +1,4 @@
-package ime.mac5725.earley.recognizer;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
@@ -84,7 +84,7 @@ public class Earley {
 	}
 	
 	protected boolean enqueue(String state, ArrayList<String> chartEntry) {
-//		if(!chartEntry.contains(state) && !containsClanState(state)) {
+//		if(!chartEntry.contains(state) && !containsClanState(state)) { PREDICTOR performance improvement
 		if(!chartEntry.contains(state) && !chartOnlyWithRules.contains(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""))) {
 			push(state, chartEntry);
 			return true;
@@ -92,30 +92,30 @@ public class Earley {
 			return false;
 	}
 
-	private boolean containsClanState(String state) {
-		
-		if(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].matches("S[0-9]+")) {
-
-			int chartCount = 0;
-			String cleanStateWithPositions = state.substring(state.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1);
-			
-			for(int aux=0; chartCount < chart.size() && aux<chart.get(chartCount).size(); aux++) {
-				
-				String rule = chart.get(chartCount).get(aux).toString();
-				if(rule.substring(rule.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1).equals(cleanStateWithPositions))
-					return true;
-				
-				if(aux == chart.get(chartCount).size()-1) {
-					aux = -1;
-					chartCount++;
-				}
-				
-			}
-		}
-		
-		return false;
-		
-	}
+//	private boolean containsClanState(String state) {
+//		
+//		if(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].matches("S[0-9]+")) {
+//
+//			int chartCount = 0;
+//			String cleanStateWithPositions = state.substring(state.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1);
+//			
+//			for(int aux=0; chartCount < chart.size() && aux<chart.get(chartCount).size(); aux++) {
+//				
+//				String rule = chart.get(chartCount).get(aux).toString();
+//				if(rule.substring(rule.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1).equals(cleanStateWithPositions))
+//					return true;
+//				
+//				if(aux == chart.get(chartCount).size()-1) {
+//					aux = -1;
+//					chartCount++;
+//				}
+//				
+//			}
+//		}
+//		
+//		return false;
+//		
+//	}
 
 	protected void push(String state, ArrayList<String> chartEntry) {
 		chartEntry.add(state);
@@ -160,20 +160,20 @@ public class Earley {
 		return state.substring(state.lastIndexOf(ConstantsUtility.DOTTED_RULE)+2).split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].split(" ")[0];
 	}
 	
-	protected boolean isRuleAlreadyInCurrentChart(String rule) {
-		
-		boolean isRuleAlreadyInChart = false;
-		rule = addStateAndStartEndPointsFields(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "");
-		
-		for(Iterator it=chart.get(i).iterator(); it.hasNext(); ) 
-			if(it.next().toString().replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule)) {
-				isRuleAlreadyInChart = true;
-				break;
-			}
-		
-		return isRuleAlreadyInChart;
-		
-	}
+//	protected boolean isRuleAlreadyInCurrentChart(String rule) {
+//		
+//		boolean isRuleAlreadyInChart = false;
+//		rule = addStateAndStartEndPointsFields(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "");
+//		
+//		for(Iterator it=chart.get(i).iterator(); it.hasNext(); ) 
+//			if(it.next().toString().replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule)) {
+//				isRuleAlreadyInChart = true;
+//				break;
+//			}
+//		
+//		return isRuleAlreadyInChart;
+//		
+//	}
 	
 	protected String getRule(String rule) {
 		return rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0];
@@ -189,17 +189,14 @@ public class Earley {
 		
 		ArrayList<String> terminals = new ArrayList<String>();
 		
-		for(Iterator it=lexicon.iterator(); it.hasNext(); ) {
-			String rule = it.next().toString();
+		for(String rule : lexicon) 
 			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(terminal))
 				terminals.add(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1]);
-		}
 		
 		if(!terminals.isEmpty())
 			
-			for(Iterator it = sentenceWords.iterator(); it.hasNext(); ) {
+			for(String word : sentenceWords) {
 				
-				String word = it.next().toString();
 				for(int aux=0; aux<terminals.size(); aux++)
 					if(word.equals(terminals.get(aux)) && i==sentenceWords.indexOf(word)) {
 						
@@ -252,7 +249,7 @@ public class Earley {
 		return state.substring(state.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1, state.indexOf(ConstantsUtility.NEXT_ELEMENT_CHAR));
 	}
 	
-	protected boolean ruleFullyProcessedAndNotInChart(LinkedList<String> tmp, String rule, String cleanNonTerminal) {
+	protected boolean ruleFullyProcessedAndNotInChart(ArrayList<String> tmp, String rule, String cleanNonTerminal) {
 		return cleanNonTerminal.equals(currentPOSTag) && !tmp.contains(rule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]) &&
 			   !rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(ConstantsUtility.DUMMY_STATE);
 	}
@@ -275,8 +272,8 @@ public class Earley {
 
 	// !isAtFinalParser
 	protected boolean isFinalStateToGrammarTree(String rule){
-		for(Iterator it=finalParser.iterator(); it.hasNext(); ) {
-			String tmp = it.next().toString().replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";
+		for(String current : finalParser) {
+			String tmp = current.replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";
 			if(tmp.equals(rule))
 				return false;
 		}
@@ -293,9 +290,7 @@ public class Earley {
 		String previousRule = "";
 		
 		for(int aux=finalParser.size()-1; aux>=0; aux--) {
-//		for(Iterator it=finalParser.descendingIterator(); it.hasNext(); ) {
 			
-//			String tmp = it.next().toString();
 			String tmp = finalParser.get(aux);
 			String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
 			
@@ -320,7 +315,7 @@ public class Earley {
 		
 	}
 	
-	private boolean ruleAlreadyInTree(String tmp, String rule) {//IP-> IP *|[0,3] 
+	private boolean ruleAlreadyInTree(String tmp, String rule) {
 		return tmp.replace("Chart[", "").replaceFirst("[0-9]+", "").replaceFirst("] ", "").split(" \\(")[0].replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
 	}
 	

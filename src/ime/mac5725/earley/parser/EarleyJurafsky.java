@@ -1,10 +1,10 @@
-package ime.mac5725.earley.recognizer;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 
 public class EarleyJurafsky extends Earley {
 	
@@ -146,7 +146,7 @@ public class EarleyJurafsky extends Earley {
 		int chartCount = 0;
 		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
 		currentPOSTag = nextCompletedCategory(state);
-		LinkedList<String> tmp = new LinkedList<String>();
+		ArrayList<String> tmp = new ArrayList<String>();
 		
 		if(isComplete(state) && hasCompletedSentence(state)) 
 			grammarRecognized = true;

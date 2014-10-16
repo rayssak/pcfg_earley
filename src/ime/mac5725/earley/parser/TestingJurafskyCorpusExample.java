@@ -1,4 +1,4 @@
-package ime.mac5725.earley.recognizer;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 

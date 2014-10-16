@@ -1,4 +1,4 @@
-package ime.mac5725.earley.recognizer;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
@@ -37,7 +37,7 @@ public class TestingLC1 {
 		 * 		a confissão da culpa costuma fazer menor a pena .
 		 * 
 		 */
-		String sentence = "todas são iguais e todas grandes";
+		String sentence = "pequeno livro";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		

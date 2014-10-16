@@ -1,10 +1,9 @@
-package ime.mac5725.earley.recognizer;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 
 public class EarleyFinger extends Earley {
 	
@@ -51,8 +50,8 @@ public class EarleyFinger extends Earley {
 	 */
 	private boolean isPartOfSpeech(String nextCategory) {
 		
-		for(Iterator it=lexicon.iterator(); it.hasNext(); ) 
-			if(it.next().toString().split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(nextCategory))
+		for(String current : lexicon)
+			if(current.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(nextCategory))
 				return true;
 			
 		return false;
@@ -65,20 +64,16 @@ public class EarleyFinger extends Earley {
 		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
 		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
 		
-		for(Iterator it=grammar.iterator(); it.hasNext(); ) {
+		for(String rule : grammar)
 			
-			String rule = it.next().toString();
-			
-//			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) {
-			if(getRule(rule).equals(currentPOSTag) && !currentChartOnlyWithRules.contains(rule) && specialCase(rule)) {
+//			if(getRule(rule).equals(currentPOSTag) && !isRuleAlreadyInCurrentChart(rule) && specialCase(rule)) { PREDICTOR performance improvement
+			if(getRule(rule).equals(currentPOSTag) && !currentChartOnlyWithRules.contains(rule) && specialCase(rule))
 				
-				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
+				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i))) {
 					stateLevelCount++;
 					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
 				
-			}
-			
-		}
+				}
 		
 		j++;
 		
@@ -128,7 +123,7 @@ public class EarleyFinger extends Earley {
 		int chartCount = 0;
 		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
 		currentPOSTag = nextCompletedCategory(state);
-		LinkedList<String> tmp = new LinkedList<String>();
+		ArrayList<String> tmp = new ArrayList<String>();
 		
 		if(isComplete(state) && hasCompletedSentence(state)) 
 			grammarRecognized = true;
