@@ -1,6 +1,6 @@
 - se eu tenho 1 regra daquela headRule, então terei TODAS as regras daquela headRule e não preciso checar uma por uma (IP e PP são enormeeees);
 - scanner: verificar if(i==sentenceWords.indexOf(word)) logo no início do método! poupa loops!
-
+- a sentença de 14 palavras!!!!!!!!
 
 lexico
 ,-> ,
@@ -17,8 +17,13 @@ grammar
 
 - PREDICTOR 
   ~ talvez não compense colocar Thread aqui:
-	793 no-thread 
+	793    no-thread 
 	21.387 thread
 
-	829 no-thread (print)
+	829    no-thread (print)
 	20.878 thread (print)
+	
+
+- COMPLETER
+	4 ms   no-thread
+	101 ms thread

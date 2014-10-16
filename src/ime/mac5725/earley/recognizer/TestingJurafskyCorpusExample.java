@@ -2,8 +2,9 @@ package ime.mac5725.earley.recognizer;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
-import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
 
 /**
  * @author rayssak
@@ -48,7 +49,7 @@ public class TestingJurafskyCorpusExample {
 		initializeRequiredObjects();
 		populateGrammarLists(grammarRules, lexicon);
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		ArrayList<String> grammarTree = earley.parse();
+		LinkedList<String> grammarTree = earley.parse();
 
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
@@ -57,8 +58,8 @@ public class TestingJurafskyCorpusExample {
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 		if(grammarRecognized) {
 			System.out.println("- SYNTATIC TREE:");
-			for(int aux=grammarTree.size()-1; aux>=0; aux--)
-				System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+			for(Iterator it = grammarTree.descendingIterator(); it.hasNext(); )
+				System.out.println("\t" + it.next().toString().replace(ConstantsUtility.FIELD_SEPARATOR, " "));
 			
 		}
 		

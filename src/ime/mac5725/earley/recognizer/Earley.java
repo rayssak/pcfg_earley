@@ -3,10 +3,9 @@ package ime.mac5725.earley.recognizer;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Earley {
 	
@@ -18,8 +17,7 @@ public class Earley {
 	protected boolean printRules;
 	protected boolean grammarRecognized = false;
 	
-	protected List<ArrayList<String>> chart = Collections.synchronizedList(new ArrayList<ArrayList<String>>());
-//	protected ArrayList<ArrayList<String>> chart;
+	protected ArrayList<ArrayList<String>> chart;
 	protected LinkedList<String> sentenceWords;
 	protected ArrayList<String> grammar;
 	protected ArrayList<String> lexicon;
@@ -32,23 +30,23 @@ public class Earley {
 	
 	protected static String DUMMY_STATE;
 	
-	public enum Methods { PREDICTOR, SCANNER, COMPLETER };
+	protected enum Methods { PREDICTOR, SCANNER, COMPLETER };
 	
-	protected ArrayList<String> finalParser;
+	protected LinkedList<String> finalParser;
 	
 	public void setPrintRules(boolean print) {
 		this.printRules = print;
 	}
 	
-	public ArrayList<String> parse() {
+	public LinkedList<String> parse() {
 		cleanTmp();
 		return finalParser;
 	}
 	
 	protected void cleanTmp() {
-		for(int aux=finalParser.size()-1; aux>=0; aux--)
-			if(finalParser.get(aux).startsWith("tmp"))
-				finalParser.remove(aux);
+		for(Iterator it=finalParser.iterator(); it.hasNext(); )
+			if(it.next().toString().startsWith("tmp"))
+				it.remove();
 	}
 	
 	protected void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
@@ -61,7 +59,7 @@ public class Earley {
 		this.lexicon = new ArrayList<String>();
 		this.lexicon.addAll(lexicon);
 		chart = new ArrayList<ArrayList<String>>();
-		finalParser = new ArrayList<String>();
+		finalParser = new LinkedList<String>();
 		DUMMY_STATE = this.getClass().getName().contains("Finger") ? ConstantsUtility.DUMMY_STATE : ConstantsUtility.DUMMY_STATE_JURAFSKY;
 	}
 
@@ -159,8 +157,8 @@ public class Earley {
 		boolean isRuleAlreadyInChart = false;
 		rule = addStateAndStartEndPointsFields(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "");
 		
-		for(int aux=0; aux<chart.get(i).size(); aux++) 
-			if(chart.get(i).get(aux).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule)) {
+		for(Iterator it=chart.get(i).iterator(); it.hasNext(); ) 
+			if(it.next().toString().replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule)) {
 				isRuleAlreadyInChart = true;
 				break;
 			}
@@ -181,32 +179,31 @@ public class Earley {
 
 	protected void scanner(String state, String terminal) {
 		
-		ArrayList<String> terminals = new ArrayList<String>();
+		LinkedList<String> terminals = new LinkedList<String>();
 		
-		for(int aux=lexicon.size()-1; aux>=0; aux--)
-			if(lexicon.get(aux).split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(terminal))
-				terminals.add(lexicon.get(aux).split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1]);
+		for(Iterator it=lexicon.iterator(); it.hasNext(); ) {
+			String rule = it.next().toString();
+			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(terminal))
+				terminals.add(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1]);
+		}
 		
 		if(!terminals.isEmpty())
 			
-			for(int count=0; count<sentenceWords.size(); count++) {
+			for(Iterator it = sentenceWords.iterator(); it.hasNext(); ) {
 				
-				String word = sentenceWords.get(count);
-				if(i==sentenceWords.indexOf(word)) {
-				
-					for(int aux=0; aux<terminals.size(); aux++)
-						if(word.equals(terminals.get(aux))) {
-							
-							String rule = getTerminalCompletedRule(terminal, word, sentenceWords.indexOf(word), sentenceWords.indexOf(word)+1);
-							if(enqueue(rule, chart.get(sentenceWords.indexOf(word)+1))) {
-								printRule(rule, Methods.SCANNER.name(), String.valueOf(sentenceWords.indexOf(word)+1));
-								sentenceWords.set(sentenceWords.indexOf(word), "");
-								addToFinalParser(rule, Methods.SCANNER.name());
-								break;
-							}
-							
+				String word = it.next().toString();
+				for(int aux=0; aux<terminals.size(); aux++)
+					if(word.equals(terminals.get(aux)) && i==sentenceWords.indexOf(word)) {
+						
+						String rule = getTerminalCompletedRule(terminal, word, sentenceWords.indexOf(word), sentenceWords.indexOf(word)+1);
+						if(enqueue(rule, chart.get(sentenceWords.indexOf(word)+1))) {
+							printRule(rule, Methods.SCANNER.name(), String.valueOf(sentenceWords.indexOf(word)+1));
+							sentenceWords.set(sentenceWords.indexOf(word), "");
+							addToFinalParser(rule, Methods.SCANNER.name());
+							break;
 						}
-				}
+						
+					}
 			}
 		
 		j++;
@@ -271,8 +268,8 @@ public class Earley {
 
 	// !isAtFinalParser
 	protected boolean isFinalStateToGrammarTree(String rule){
-		for(int aux=0; aux<finalParser.size(); aux++) {
-			String tmp = finalParser.get(aux).replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";
+		for(Iterator it=finalParser.iterator(); it.hasNext(); ) {
+			String tmp = it.next().toString().replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";
 			if(tmp.equals(rule))
 				return false;
 		}
@@ -287,10 +284,9 @@ public class Earley {
 		
 		String states = "";
 		String previousRule = "";
-		
-		for(int aux=finalParser.size()-1; aux>=0; aux--) {
+		for(Iterator it=finalParser.descendingIterator(); it.hasNext(); ) {
 			
-			String tmp = finalParser.get(aux);
+			String tmp = it.next().toString();
 			String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
 			
 			if(ruleAlreadyInTree(tmp, rule))

@@ -21,6 +21,48 @@ public class Predictor implements Runnable {
 		this.stateLevelCount = stateLevelCount;
 	}
 
+	/**
+	 * 
+	 * 
+	    long timeRan = System.currentTimeMillis();
+		
+		int chartByThreadSize = grammar.size()/3;
+		ArrayList<String> grammarFirstThread = new ArrayList<String>();
+		ArrayList<String> grammarSecondThread = new ArrayList<String>();
+		ArrayList<String> grammarThirdThread = new ArrayList<String>();
+		
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			grammarFirstThread.add(grammar.get(aux));
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			grammarSecondThread.add(grammar.get(chartByThreadSize + aux));
+		for (int aux=0; aux<chartByThreadSize; aux++) 
+			grammarThirdThread.add(grammar.get(chartByThreadSize + chartByThreadSize + aux));
+		
+		Predictor predictor = new Predictor(chart.get(i), i, stateLevelCount, grammarFirstThread, currentPOSTag);
+		Thread firstThread = new Thread(predictor);
+		firstThread.start();
+		Predictor predictor2 = new Predictor(chart.get(i), i, stateLevelCount, grammarSecondThread, currentPOSTag);
+		Thread secondThread = new Thread(predictor2);
+		secondThread.start();
+		Predictor predictor3 = new Predictor(chart.get(i), i, stateLevelCount, grammarThirdThread, currentPOSTag);
+		Thread thirdThread = new Thread(predictor3);
+		thirdThread.start();
+		
+		
+		
+		while(firstThread.isAlive() || secondThread.isAlive() || thirdThread.isAlive())
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		timeRan = System.currentTimeMillis() - timeRan;
+		System.out.println(timeRan);
+		
+	 * 
+	 * 
+	 */
+	
 	@Override
 	public void run() {
 		
