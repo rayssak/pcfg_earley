@@ -32,13 +32,13 @@ public class Earley {
 	
 	protected enum Methods { PREDICTOR, SCANNER, COMPLETER };
 	
-	protected LinkedList<String> finalParser;
+	protected ArrayList<String> finalParser;
 	
 	public void setPrintRules(boolean print) {
 		this.printRules = print;
 	}
 	
-	public LinkedList<String> parse() {
+	public ArrayList<String> parse() {
 		cleanTmp();
 		return finalParser;
 	}
@@ -59,7 +59,7 @@ public class Earley {
 		this.lexicon = new ArrayList<String>();
 		this.lexicon.addAll(lexicon);
 		chart = new ArrayList<ArrayList<String>>();
-		finalParser = new LinkedList<String>();
+		finalParser = new ArrayList<String>();
 		DUMMY_STATE = this.getClass().getName().contains("Finger") ? ConstantsUtility.DUMMY_STATE : ConstantsUtility.DUMMY_STATE_JURAFSKY;
 	}
 
@@ -215,7 +215,6 @@ public class Earley {
 		int chartCount = 0;
 		
 		for(int aux=0; aux<chart.get(chartCount).size()-1; aux++) {
-//		for(int aux=0; chartCount < chart.size() && aux<chart.get(chartCount).size(); aux++) {
 			
 			String rule = chart.get(chartCount).get(aux).toString();
 			if(rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE)[0].equals(posTag)) 
@@ -284,9 +283,12 @@ public class Earley {
 		
 		String states = "";
 		String previousRule = "";
-		for(Iterator it=finalParser.descendingIterator(); it.hasNext(); ) {
+		
+		for(int aux=finalParser.size()-1; aux>=0; aux--) {
+//		for(Iterator it=finalParser.descendingIterator(); it.hasNext(); ) {
 			
-			String tmp = it.next().toString();
+//			String tmp = it.next().toString();
+			String tmp = finalParser.get(aux);
 			String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
 			
 			if(ruleAlreadyInTree(tmp, rule))

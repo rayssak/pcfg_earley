@@ -3,9 +3,9 @@ package ime.mac5725.earley.recognizer;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 
 /**
  * @author rayssak
@@ -45,9 +45,9 @@ public class TestingLC1 {
 		
 		initializeRequiredObjects();
 		readGrammar(args);
-//		printRules(tsimeRan);
+//		printRules();
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		LinkedList<String> grammarTree = earley.parse();
+		ArrayList<String> grammarTree = earley.parse();
 		
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
@@ -56,8 +56,9 @@ public class TestingLC1 {
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 		if(grammarRecognized) {
 			System.out.println("- SYNTATIC TREE:");
-			for(Iterator it = grammarTree.descendingIterator(); it.hasNext(); )
-				System.out.println("\t" + it.next().toString().replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+			for(int aux=grammarTree.size()-1; aux>=0; aux--)
+//				for(Iterator it = grammarTree.descendingIterator(); it.hasNext(); )
+					System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
 			
 		}
 		
@@ -72,7 +73,7 @@ public class TestingLC1 {
 		
 	}
 
-	private static void printRules(long timeRan) {
+	private static void printRules() {
 		int count=0;
 		for(Iterator i = grammarRules.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
@@ -82,12 +83,6 @@ public class TestingLC1 {
 				System.out.println(rule);
 			}
 		}
-	System.out.println(count);
-		System.out.println("- RULES: " + fullGrammarRules.size() + " (" + grammarRules.size() + " rules and " + lexicon.size() + " lexicons)");
-		timeRan = System.currentTimeMillis() - timeRan;
-		time = timeRan > 1000 ? timeRan + " segundos." : timeRan + " millisegundos.";
-		System.out.println("- TIME: " + time);
-		
 	}
 
 	private static void initializeRequiredObjects() {
