@@ -41,7 +41,7 @@ public class TestingJurafskyCorpusExample {
 		 * 		include to me
 		 * 
 		 */
-		String sentence = "book that flight";
+		String sentence = "Houston book";
 		
 		long timeRan = System.currentTimeMillis();
 		
@@ -58,7 +58,6 @@ public class TestingJurafskyCorpusExample {
 		if(grammarRecognized) {
 			System.out.println("- SYNTATIC TREE:");
 			for(int aux=grammarTree.size()-1; aux>=0; aux--)
-//			for(Iterator it = grammarTree.descendingIterator(); it.hasNext(); )
 				System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
 			
 		}
@@ -118,7 +117,6 @@ public class TestingJurafskyCorpusExample {
 		long seconds = (timeRan/1000) % 60;
 		long minutes = (timeRan/60000) % 60;
 		time = minutes + " minutes, " + seconds + " seconds e " + timeRan + " milliseconds";
-//		time = String.format("%03d:%04d:%05d", minutes, seconds, timeRan) + " milliseconds";
 	}
 
 }

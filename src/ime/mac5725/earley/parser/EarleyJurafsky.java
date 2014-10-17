@@ -3,6 +3,7 @@ package ime.mac5725.earley.parser;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
@@ -13,7 +14,7 @@ public class EarleyJurafsky extends Earley {
 		prepareVariables(grammar, lexicon);
 		prepareSentenceWords(words);
 
-		enqueue(DUMMY_STATE, chart.get(0));
+		enqueue(DUMMY_STATE, chart.get(0), 0);
 		printHeadRule();
 		
 		for(; i<=sentenceWords.size(); i++) {
@@ -74,20 +75,33 @@ public class EarleyJurafsky extends Earley {
 			
 			String rule = it.next().toString();
 			
-//			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && 
-//			  !isRuleAlreadyInCurrentChart(rule) /*&& !chartHasCurretRuleAlreadyCompleted(rule)*/) {
-			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) && 
-					  !currentChartOnlyWithRules.contains(rule)) {
+			if(getRule(rule).equals(currentPOSTag) && isPOSTag(rule) &&  !currentChartWithRules.contains(rule)) {
 				
-				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i)))
+				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i), i)) {
 					stateLevelCount++;
 					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
+				}
 				
 			}
 			
 		}
 		
 		j++;
+		
+	}
+	
+	protected void push(String state, ArrayList<String> chartEntry, int i) {
+		
+		String currentTerminal = getTerminal(state);
+		String stateWithoutRule = state.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1];
+		if(currentTerminal.isEmpty())
+			chartTerminalsIndex.get(i).add(stateWithoutRule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0]);
+		else if(stateWithoutRule.indexOf(ConstantsUtility.DOTTED_RULE) > stateWithoutRule.indexOf(currentTerminal))
+			chartTerminalsIndex.get(i).add(currentTerminal + " " + ConstantsUtility.DOTTED_RULE);
+		else
+			chartTerminalsIndex.get(i).add(ConstantsUtility.DOTTED_RULE + " " + currentTerminal);
+		
+		super.push(state, chartEntry, i);
 		
 	}
 	
@@ -131,11 +145,12 @@ public class EarleyJurafsky extends Earley {
 		String tmp[] = changeFieldSeparator(state).split(" ");
 		
 		for(int aux=0; aux<tmp.length; aux++)
-			if(!tmp[aux].equals(ConstantsUtility.DOTTED_RULE) && tmp[aux].replace("-", "").matches("[[A-Z]*[a-z]+]+"))
-				if(!posAlreadyProcessed(tmp[aux])) {
+			if(!tmp[aux].equals(ConstantsUtility.DOTTED_RULE) && tmp[aux].replace("-", "").matches("[[A-Z]*[a-z]+]+")) {
+				if(aux>0 && tmp[aux-1].equals(ConstantsUtility.DOTTED_RULE)) {
 					terminal = tmp[aux];
 					break;
 				}
+			}
 		
 		return terminal;
 		
@@ -143,17 +158,33 @@ public class EarleyJurafsky extends Earley {
 	
 	private void completer(String state) {
 		
-		int chartCount = 0;
 		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
 		currentPOSTag = nextCompletedCategory(state);
 		ArrayList<String> tmp = new ArrayList<String>();
+		ArrayList<String> rulesToComplete = new ArrayList<String>();
 		
 		if(isComplete(state) && hasCompletedSentence(state)) 
 			grammarRecognized = true;
 		
-		for(int count=0; count<chart.get(chartCount).size(); count++) {
+		int currentPOSTagCount = 1, chartIndex = 0;
+
+		while(chartIndex < chartTerminalsIndex.size()) {
+
+			ArrayList<String> tmpChartOnlyWithTerminals = new ArrayList<String>(chartTerminalsIndex.get(chartIndex));
+			while(currentPOSTagCount > 0 && tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag) >= 0) {
+
+				currentPOSTagCount = Collections.frequency(tmpChartOnlyWithTerminals, ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
+				int ruleIndex = tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
+				rulesToComplete.add(chart.get(chartIndex).get(ruleIndex));
+				tmpChartOnlyWithTerminals.set(tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag), "");
+				
+			}
+			chartIndex++;
+		}
+		
+		for(int count=0; count<rulesToComplete.size(); count++) {
 			
-			String rule = chart.get(chartCount).get(count);
+			String rule = rulesToComplete.get(count);
 			int ruleEnd = Integer.parseInt(rule.split("\\[")[1].split(",")[1].replace("]", ""));
 			
 			if(!isComplete(rule) && ruleEnd==stateStart && !rule.contains(DUMMY_STATE)) {
@@ -161,7 +192,7 @@ public class EarleyJurafsky extends Earley {
 				String cleanNonTerminal = rule.substring(rule.indexOf(ConstantsUtility.DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
 				String tmpRule = rule.substring(0, rule.indexOf('['));
 				
-				if(ruleFullyProcessedAndNotInChart(tmp, rule, cleanNonTerminal)) {
+				if(currentPOSTag.equals(cleanNonTerminal) && ruleFullyProcessedAndNotInChart(tmp, rule, cleanNonTerminal)) {
 					
 					previousState = state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0];
 					int ruleStart = Integer.parseInt(rule.split("\\[")[1].split(",")[0]);
@@ -171,10 +202,12 @@ public class EarleyJurafsky extends Earley {
 								.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "S" + ++stateLevelCount + ConstantsUtility.FIELD_SEPARATOR) + 
 								"[" + ruleStart + "," + i + "]";
 					
-					if(enqueue(tmpRule, chart.get(i))) {
+					if(enqueue(tmpRule, chart.get(i), i)) {
 						printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
 						finalParser.add("tmp: " + tmpRule + ConstantsUtility.FIELD_SEPARATOR + "(" + previousState + ")");
 					}
+					
+					rule = tmpRule;
 					
 				}
 				
@@ -186,14 +219,6 @@ public class EarleyJurafsky extends Earley {
 				if(isFinalStateToGrammarTree(rule))
 					addToFinalParser(rule, "(" + previousState + ")");
 			}
-			
-			if(isLastChartItem(chartCount, rule) && chartCount < chart.size()-1) {
-				count = -1;
-				chartCount++;
-			}
-			
-			if(grammarRecognized)
-				return;
 			
 		}
 		j++;

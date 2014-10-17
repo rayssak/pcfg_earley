@@ -304,9 +304,9 @@ public class ParsedGLC {
 //		NP-> elliptical
 //		NP-> nos
 //		WPP-> 0
-//		lexicon.remove("NP-> elliptical");
-//		lexicon.remove("NP-> nos");
-//		lexicon.remove("WPP-> 0");
+		lexicon.remove("NP-> elliptical");
+		lexicon.remove("NP-> nos");
+		lexicon.remove("WPP-> 0");
 		
 	}
 	

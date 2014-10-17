@@ -37,7 +37,7 @@ public class TestingLC1 {
 		 * 		a confissão da culpa costuma fazer menor a pena .
 		 * 
 		 */
-		String sentence = "pequeno livro";
+		String sentence = "alguma vez havia de ver a vaidade sem lugar .";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
@@ -55,9 +55,8 @@ public class TestingLC1 {
 		
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 		if(grammarRecognized) {
-			System.out.println("- SYNTATIC TREE:");
+			System.out.println("- SYNTATIC TREE (the whole one):");
 			for(int aux=grammarTree.size()-1; aux>=0; aux--)
-//				for(Iterator it = grammarTree.descendingIterator(); it.hasNext(); )
 					System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
 			
 		}
@@ -65,12 +64,10 @@ public class TestingLC1 {
 	}
 
 	private static void handleTimeRan(long timeRan) {
-		
 		timeRan = System.currentTimeMillis() - timeRan;
 		long seconds = (timeRan/1000) % 60;
 		long minutes = (timeRan/60000) % 60;
 		time = minutes + " minutes, " + seconds + " seconds e " + timeRan + " milliseconds";
-		
 	}
 
 	private static void printRules() {

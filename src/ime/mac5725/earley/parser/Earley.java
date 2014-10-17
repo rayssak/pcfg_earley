@@ -3,7 +3,6 @@ package ime.mac5725.earley.parser;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -19,10 +18,12 @@ public class Earley {
 	protected boolean grammarRecognized = false;
 	
 	protected ArrayList<ArrayList<String>> chart;
-	protected HashSet<String> chartOnlyWithRules;
-	protected HashSet<String> currentChartOnlyWithRules;
+	protected ArrayList<String> chartWithRules;
+	protected ArrayList<String> currentChartWithRules;
+	protected ArrayList<ArrayList<String>> chartTerminalsIndex;
 	protected LinkedList<String> sentenceWords;
 	protected ArrayList<String> grammar;
+	protected ArrayList<String> grammarIndex;
 	protected ArrayList<String> lexicon;
 	
 	protected String sentenceHeadRule;
@@ -61,11 +62,19 @@ public class Earley {
 		this.grammar.addAll(grammar);
 		this.lexicon = new ArrayList<String>();
 		this.lexicon.addAll(lexicon);
+		startGrammarIndex();
 		chart = new ArrayList<ArrayList<String>>();
 		finalParser = new ArrayList<String>();
-		chartOnlyWithRules = new HashSet<String>();
-		currentChartOnlyWithRules = new HashSet<String>();
+		chartWithRules = new ArrayList<String>();
+		chartTerminalsIndex = new ArrayList<ArrayList<String>>();
+		currentChartWithRules = new ArrayList<String>();
 		DUMMY_STATE = this.getClass().getName().contains("Finger") ? ConstantsUtility.DUMMY_STATE : ConstantsUtility.DUMMY_STATE_JURAFSKY;
+	}
+
+	private void startGrammarIndex() {
+		grammarIndex = new ArrayList<String>();
+		for(String rule : grammar)
+			grammarIndex.add(getRule(rule));
 	}
 
 	protected void prepareSentenceWords(String words) {
@@ -81,46 +90,21 @@ public class Earley {
 
 	protected void addNewEntryToChart() {
 		chart.add(new ArrayList<String>());
+		chartTerminalsIndex.add(new ArrayList<String>());
 	}
 	
-	protected boolean enqueue(String state, ArrayList<String> chartEntry) {
-//		if(!chartEntry.contains(state) && !containsClanState(state)) { PREDICTOR performance improvement
-		if(!chartEntry.contains(state) && !chartOnlyWithRules.contains(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""))) {
-			push(state, chartEntry);
+	protected boolean enqueue(String state, ArrayList<String> chartEntry, int i) {
+		if(!chartEntry.contains(state) && !chartWithRules.contains(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""))) {
+			push(state, chartEntry, i);
 			return true;
 		} else
 			return false;
 	}
 
-//	private boolean containsClanState(String state) {
-//		
-//		if(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].matches("S[0-9]+")) {
-//
-//			int chartCount = 0;
-//			String cleanStateWithPositions = state.substring(state.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1);
-//			
-//			for(int aux=0; chartCount < chart.size() && aux<chart.get(chartCount).size(); aux++) {
-//				
-//				String rule = chart.get(chartCount).get(aux).toString();
-//				if(rule.substring(rule.indexOf(ConstantsUtility.FIELD_SEPARATOR)+1).equals(cleanStateWithPositions))
-//					return true;
-//				
-//				if(aux == chart.get(chartCount).size()-1) {
-//					aux = -1;
-//					chartCount++;
-//				}
-//				
-//			}
-//		}
-//		
-//		return false;
-//		
-//	}
-
-	protected void push(String state, ArrayList<String> chartEntry) {
+	protected void push(String state, ArrayList<String> chartEntry, int i) {
 		chartEntry.add(state);
-		chartOnlyWithRules.add(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
-		currentChartOnlyWithRules.add(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
+		chartWithRules.add(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
+		currentChartWithRules.add(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
 	}
 	
 	protected void printHeadRule() {
@@ -160,21 +144,6 @@ public class Earley {
 		return state.substring(state.lastIndexOf(ConstantsUtility.DOTTED_RULE)+2).split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].split(" ")[0];
 	}
 	
-//	protected boolean isRuleAlreadyInCurrentChart(String rule) {
-//		
-//		boolean isRuleAlreadyInChart = false;
-//		rule = addStateAndStartEndPointsFields(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "");
-//		
-//		for(Iterator it=chart.get(i).iterator(); it.hasNext(); ) 
-//			if(it.next().toString().replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").equals(rule)) {
-//				isRuleAlreadyInChart = true;
-//				break;
-//			}
-//		
-//		return isRuleAlreadyInChart;
-//		
-//	}
-	
 	protected String getRule(String rule) {
 		return rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0];
 	}
@@ -201,7 +170,7 @@ public class Earley {
 					if(word.equals(terminals.get(aux)) && i==sentenceWords.indexOf(word)) {
 						
 						String rule = getTerminalCompletedRule(terminal, word, sentenceWords.indexOf(word), sentenceWords.indexOf(word)+1);
-						if(enqueue(rule, chart.get(sentenceWords.indexOf(word)+1))) {
+						if(enqueue(rule, chart.get(sentenceWords.indexOf(word)+1), sentenceWords.indexOf(word)+1)) {
 							printRule(rule, Methods.SCANNER.name(), String.valueOf(sentenceWords.indexOf(word)+1));
 							sentenceWords.set(sentenceWords.indexOf(word), "");
 							addToFinalParser(rule, Methods.SCANNER.name());
@@ -215,27 +184,6 @@ public class Earley {
 		
 	}
 	
-	protected boolean posAlreadyProcessed(String posTag) {
-		
-		int chartCount = 0;
-		
-		for(int aux=0; aux<chart.get(chartCount).size()-1; aux++) {
-			
-			String rule = chart.get(chartCount).get(aux).toString();
-			if(rule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "").split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE)[0].equals(posTag)) 
-				return true;
-			
-			if(aux == chart.get(chartCount).size()-1) {
-				aux = -1;
-				chartCount++;
-			}
-			
-		}
-		
-		return false;
-		
-	}
-
 	protected String changeFieldSeparator(String state) {
 		return state.replace(ConstantsUtility.FIELD_SEPARATOR, " ");
 	}
@@ -320,7 +268,7 @@ public class Earley {
 	}
 	
 	protected void resetChartControl() {
-		currentChartOnlyWithRules = new HashSet<String>();
+		currentChartWithRules = new ArrayList<String>();
 	}
 	
 }
