@@ -1,17 +1,22 @@
 package ime.mac5724.earley.testing;
 
 import ime.mac5725.earley.EarleyFinger;
-import ime.mac5725.earley.util.ConstantsUtility;
 import ime.mac5725.earley.util.ParsedGLC;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 import java.util.LinkedHashSet;
 
 /**
  * @author rayssak
- * @reason Testing real grammar from Finger's corpus.
+ * @reason Receives a GLC and a portuguese sentence in raw format to 
+ * 		   pre-process and generate the formatted Grammar Tree required
+ * 		   as the Parser input.
+ * 
+ * 		   Testing real grammar from Finger's corpus.
  */
 public class TestingLC1 {
 	
@@ -37,9 +42,10 @@ public class TestingLC1 {
 		 * 		senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;
 		 * 		declamei contra a vaidade ,
 		 * 		a confissão da culpa costuma fazer menor a pena .
+		 * 		e que só em vossa majestade não tem : feliz indigência
 		 * 
 		 */
-		String sentence = "declamei virtudes";
+		String sentence = "a confissão da culpa costuma fazer menor a pena .";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
@@ -54,14 +60,14 @@ public class TestingLC1 {
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
-		
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
-		if(grammarRecognized) {
-			System.out.println("- SYNTATIC TREE (the whole one):");
-			for(int aux=grammarTree.size()-1; aux>=0; aux--)
-					System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
-			
-		}
+		
+//		if(grammarRecognized) {
+//			System.out.println("- SYNTATIC TREE (the whole one):");
+//			for(int aux=grammarTree.size()-1; aux>=0; aux--)
+//					System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+//			
+//		}
 		
 	}
 
@@ -73,15 +79,26 @@ public class TestingLC1 {
 	}
 
 	private static void printRules() {
+		ArrayList<String> tmp = new ArrayList<String>();
+		tmp.addAll(grammarRules);
+		Collections.sort(tmp);
+		
 		int count=0;
-		for(Iterator i = lexicon.iterator(); i.hasNext(); ) {
-			String rule = i.next().toString();
-			// Print only head rules
-			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("ADJ")) {
-				count++;
-				System.out.println(rule);
-			}
+		PrintWriter out = null;
+		try {
+			out = new PrintWriter("C:\\rayssak\\dev\\ime\\all-rules_sorted.txt");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		for(String rule : tmp)
+			out.println(rule);	
+			// Print only head rules
+//			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("ADJ")) {
+//				count++;
+//				System.out.println(rule);
+//			}
+//		}
 	}
 
 	private static void initializeRequiredObjects() {

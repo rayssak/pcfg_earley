@@ -5,6 +5,10 @@ import ime.mac5725.earley.Earley;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * @author rayssak
+ * @reason Thread to implement PREDICTOR's task parallel.
+ */
 public class Predictor extends Earley implements Runnable {
 	
 	private int size;

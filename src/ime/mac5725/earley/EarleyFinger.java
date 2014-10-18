@@ -8,6 +8,11 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
 
+/**
+ * @author rayssak
+ * @reason Earley algorithm with a few details adapted to
+ * 		   the grammar of Finger's corpus. 
+ */
 public class EarleyFinger extends Earley {
 	
 	public boolean recognize(String words, LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {

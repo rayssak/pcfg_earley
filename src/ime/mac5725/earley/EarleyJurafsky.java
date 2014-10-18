@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
+/**
+ * @author rayssak
+ * @reason Earley algorithm with a few details adapted to
+ * 		   the grammar of Jurafsky's book example. 
+ */
 public class EarleyJurafsky extends Earley {
 	
 	public boolean recognize(String words, LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {

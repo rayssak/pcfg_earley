@@ -5,10 +5,16 @@ import ime.mac5725.earley.parser.Predictor;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
+/**
+ * @author rayssak
+ * @reason Earley algorithm, a top-down search for sentence
+ * 		   recognition and also adapted to parse trees.
+ */
 public class Earley {
 	
 	protected int i = 0;
@@ -64,15 +70,19 @@ public class Earley {
 	}
 	
 	protected void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
+		
 		state = "";
 		currentPOSTag = "";
 		sentenceHeadRule = "";
 		previousState = "";
+		
 		this.grammar = new ArrayList<String>();
 		this.grammar.addAll(grammar);
 		this.lexicon = new ArrayList<String>();
 		this.lexicon.addAll(lexicon);
+		
 		startGrammarIndex();
+		
 		chart = new ArrayList<ArrayList<String>>();
 		finalParser = new ArrayList<String>();
 		chartWithRules = new ArrayList<String>();
@@ -80,7 +90,9 @@ public class Earley {
 		rulesToComplete = new ArrayList<String>();
 		chartTerminalsIndex = new ArrayList<ArrayList<String>>();
 		currentChartWithRules = new ArrayList<String>();
+		
 		DUMMY_STATE = this.getClass().getName().contains("Finger") ? ConstantsUtility.DUMMY_STATE : ConstantsUtility.DUMMY_STATE_JURAFSKY;
+		
 	}
 
 	private void startGrammarIndex() {
@@ -121,22 +133,22 @@ public class Earley {
 		currentPOSTag = nextCategory(state);
 		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
 		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
-		rulesToPredict.clear();
 				
-//		int currentPOSTagCount = 1;
-//		ArrayList<String> tmpIndex = new ArrayList<String>(grammarIndex);
-//		ArrayList<String> rulesToPredict = new ArrayList<String>();
-//		
-//		while(currentPOSTagCount > 0 && tmpIndex.indexOf(currentPOSTag) >= 0) {
-//			currentPOSTagCount = Collections.frequency(tmpIndex, getRule(currentPOSTag));
-//			int ruleIndex = tmpIndex.indexOf(getRule(currentPOSTag));
-//			rulesToPredict.add(grammar.get(ruleIndex));
-//			tmpIndex.set(tmpIndex.indexOf(currentPOSTag), "");
-//		}
+		int currentPOSTagCount = 1;
+		ArrayList<String> tmpIndex = new ArrayList<String>(grammarIndex);
+		ArrayList<String> rulesToPredict = new ArrayList<String>();
 		
-		// Searches for predictions according to the available grammar
-		// rules.
-		prepareAndStartThreadsToPredict(state);
+		while(currentPOSTagCount > 0 && tmpIndex.indexOf(currentPOSTag) >= 0) {
+			currentPOSTagCount = Collections.frequency(tmpIndex, getRule(currentPOSTag));
+			int ruleIndex = tmpIndex.indexOf(getRule(currentPOSTag));
+			rulesToPredict.add(grammar.get(ruleIndex));
+			tmpIndex.set(tmpIndex.indexOf(currentPOSTag), "");
+		}
+		
+//		// Searches for predictions according to the available grammar
+//		// rules.
+//		prepareAndStartThreadsToPredict(state);
+//		System.gc();
 			
 		// Insert each grammar rule of the current state being processed
 		// into the chart in case the rule is not already in the current
@@ -151,6 +163,7 @@ public class Earley {
 				
 				}
 		
+		rulesToPredict.clear();
 		j++;
 		
 	}
@@ -182,9 +195,6 @@ public class Earley {
 		ArrayList<String> pC1 = new ArrayList<String>();
 		ArrayList<String> pC2 = new ArrayList<String>();
 		ArrayList<String> pC3 = new ArrayList<String>();
-		ArrayList<String> pC4 = new ArrayList<String>();
-		ArrayList<String> pC5 = new ArrayList<String>();
-		ArrayList<String> pC6 = new ArrayList<String>();
 		
 		// If there is not many grammar rules, there is no need
 		// to gather several threads.
@@ -206,12 +216,6 @@ public class Earley {
 				pC2.add(grammarIndex.get(size + aux));
 			for (int aux=0; aux<size; aux++) 
 				pC3.add(grammarIndex.get((2*size) + aux));
-			for (int aux=0; aux<size; aux++) 
-				pC4.add(grammarIndex.get((3*size) + aux));
-			for (int aux=0; aux<size; aux++) 
-				pC5.add(grammarIndex.get((4*size) + aux));
-			for (int aux=0; aux<size; aux++) 
-				pC6.add(grammarIndex.get((5*size) + aux));
 			
 			// Count control for thread synchronization.
 			threadCount += ConstantsUtility.THREAD_NUMBER_PREDICTOR;
@@ -220,9 +224,6 @@ public class Earley {
 			new Thread(new Predictor(state, pC1, currentPOSTag, 0)).start();
 			new Thread(new Predictor(state, pC2, currentPOSTag, size)).start();
 			new Thread(new Predictor(state, pC3, currentPOSTag, (2*size))).start();
-			new Thread(new Predictor(state, pC4, currentPOSTag, (3*size))).start();
-			new Thread(new Predictor(state, pC5, currentPOSTag, (4*size))).start();
-			new Thread(new Predictor(state, pC6, currentPOSTag, (5*size))).start();
 			
 		}
 
@@ -393,32 +394,32 @@ public class Earley {
 		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
 		currentPOSTag = nextCompletedCategory(state);
 		ArrayList<String> tmp = new ArrayList<String>();
-		rulesToComplete.clear();
 		
 		// Checks if a final state entry was already processed and the
 		// sentence already recognized.
 		if(isComplete(state) && hasCompletedSentence(state)) 
 			grammarRecognized = true;
 		
-//		int currentPOSTagCount = 1, chartIndex = 0;
-//
-//		while(chartIndex < chartTerminalsIndex.size()) {
-//
-//			ArrayList<String> tmpChartOnlyWithTerminals = new ArrayList<String>(chartTerminalsIndex.get(chartIndex));
-//			while(currentPOSTagCount > 0 && tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag) >= 0) {
-//
-//				currentPOSTagCount = Collections.frequency(tmpChartOnlyWithTerminals, ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
-//				int ruleIndex = tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
-//				rulesToComplete.add(chart.get(chartIndex).get(ruleIndex));
-//				tmpChartOnlyWithTerminals.set(tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag), "");
-//				
-//			}
-//			chartIndex++;
-//		}
+		int currentPOSTagCount = 1, chartIndex = 0;
+
+		while(chartIndex < chartTerminalsIndex.size()) {
+
+			ArrayList<String> tmpChartOnlyWithTerminals = new ArrayList<String>(chartTerminalsIndex.get(chartIndex));
+			while(currentPOSTagCount > 0 && tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag) >= 0) {
+
+				currentPOSTagCount = Collections.frequency(tmpChartOnlyWithTerminals, ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
+				int ruleIndex = tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
+				rulesToComplete.add(chart.get(chartIndex).get(ruleIndex));
+				tmpChartOnlyWithTerminals.set(tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag), "");
+				
+			}
+			chartIndex++;
+		}
 		
-		// Searches for states with the category of the current state
-		// to update its progress.
-		prepareAndStartThreadsToComplete(state);
+//		// Searches for states with the category of the current state
+//		// to update its progress.
+//		prepareAndStartThreadsToComplete(state);
+//		System.gc();
 		
 		// Checks each one of the gathered rules...
 		for(int count = 0; count<rulesToComplete.size(); count++) {
@@ -454,7 +455,7 @@ public class Earley {
 					
 				}
 				
-			} 
+			}
 			
 			// Handles grammar tree rules and end of the sentence
 			if(isComplete(rule) && hasCompletedSentence(rule)) 
@@ -463,6 +464,7 @@ public class Earley {
 				addToFinalParser(rule, "(" + previousState + ")");
 			
 		}
+		rulesToComplete.clear();
 		j++;
 		
 	}
@@ -494,14 +496,11 @@ public class Earley {
 			// individual thread in order to reduce what each one
 			// needs to process.
 			// Performance improvement.
-			ArrayList<String> pC1 = new ArrayList<String>();
-			ArrayList<String> pC2 = new ArrayList<String>();
-			ArrayList<String> pC3 = new ArrayList<String>();
-			ArrayList<String> pC4 = new ArrayList<String>();
-			ArrayList<String> pC5 = new ArrayList<String>();
-			ArrayList<String> pC6 = new ArrayList<String>();
-			ArrayList<String> pC7 = new ArrayList<String>();
-			ArrayList<String> pC8 = new ArrayList<String>();
+			ArrayList<String> partialChart1 = new ArrayList<String>();
+			ArrayList<String> partialChart2 = new ArrayList<String>();
+			ArrayList<String> partialChart3 = new ArrayList<String>();
+			ArrayList<String> partialChart4 = new ArrayList<String>();
+			ArrayList<String> partialChart5 = new ArrayList<String>();
 			size = chartTerminalsIndex.get(chartIndex).size() / ConstantsUtility.THREAD_NUMBER_COMPLETER == 0 ? 
 					chartTerminalsIndex.get(chartIndex).size() : chartTerminalsIndex.get(chartIndex).size() / ConstantsUtility.THREAD_NUMBER_COMPLETER;
 			
@@ -510,44 +509,35 @@ public class Earley {
 			if(size <= (ConstantsUtility.THREAD_NUMBER_COMPLETER-1) && size!=0) {
 				
 				for (int aux=0; aux<chartTerminalsIndex.get(chartIndex).size(); aux++) 
-					pC1.add(chartTerminalsIndex.get(chartIndex).get(aux));
+					partialChart1.add(chartTerminalsIndex.get(chartIndex).get(aux));
 				
 				threadCount++;
-				new Thread(new Completer(chartIndex, state, pC1, currentPOSTag, 0)).start();
+				new Thread(new Completer(chartIndex, state, partialChart1, currentPOSTag, 0)).start();
 				
 			// Otherwise...
 			} else if(size!=0){
 				
 				// ...set each part of the chart to a different thread.
 				for (int aux=0; aux<size; aux++) 
-					pC1.add(chartTerminalsIndex.get(chartIndex).get(aux));
+					partialChart1.add(chartTerminalsIndex.get(chartIndex).get(aux));
 				for (int aux=0; aux<size; aux++) 
-					pC2.add(chartTerminalsIndex.get(chartIndex).get(size + aux));
+					partialChart2.add(chartTerminalsIndex.get(chartIndex).get(size + aux));
 				for (int aux=0; aux<size; aux++) 
-					pC3.add(chartTerminalsIndex.get(chartIndex).get((2*size) + aux));
+					partialChart3.add(chartTerminalsIndex.get(chartIndex).get((2*size) + aux));
 				for (int aux=0; aux<size; aux++) 
-					pC4.add(chartTerminalsIndex.get(chartIndex).get((3*size) + aux));
+					partialChart4.add(chartTerminalsIndex.get(chartIndex).get((3*size) + aux));
 				for (int aux=0; aux<size; aux++) 
-					pC5.add(chartTerminalsIndex.get(chartIndex).get((4*size) + aux));
-				for (int aux=0; aux<size; aux++) 
-					pC6.add(chartTerminalsIndex.get(chartIndex).get((5*size) + aux));
-				for (int aux=0; aux<size; aux++) 
-					pC7.add(chartTerminalsIndex.get(chartIndex).get((6*size) + aux));
-				for (int aux=0; aux<(chartTerminalsIndex.get(chartIndex).size()-(7*size)); aux++)
-					pC8.add(chartTerminalsIndex.get(chartIndex).get((7*size) + aux));
+					partialChart5.add(chartTerminalsIndex.get(chartIndex).get((4*size) + aux));
 				
 				// Count control for thread synchronization.
 				threadCount += ConstantsUtility.THREAD_NUMBER_COMPLETER;
 				
 				// Threads initialization.
-				new Thread(new Completer(chartIndex, state, pC1, currentPOSTag, 0)).start();
-				new Thread(new Completer(chartIndex, state, pC2, currentPOSTag, size)).start();
-				new Thread(new Completer(chartIndex, state, pC3, currentPOSTag, (2*size))).start();
-				new Thread(new Completer(chartIndex, state, pC4, currentPOSTag, (3*size))).start();
-				new Thread(new Completer(chartIndex, state, pC5, currentPOSTag, (4*size))).start();
-				new Thread(new Completer(chartIndex, state, pC6, currentPOSTag, (5*size))).start();
-				new Thread(new Completer(chartIndex, state, pC7, currentPOSTag, (6*size))).start();
-				new Thread(new Completer(chartIndex, state, pC8, currentPOSTag, (7*size))).start();
+				new Thread(new Completer(chartIndex, state, partialChart1, currentPOSTag, 0)).start();
+				new Thread(new Completer(chartIndex, state, partialChart2, currentPOSTag, size)).start();
+				new Thread(new Completer(chartIndex, state, partialChart3, currentPOSTag, (2*size))).start();
+				new Thread(new Completer(chartIndex, state, partialChart4, currentPOSTag, (3*size))).start();
+				new Thread(new Completer(chartIndex, state, partialChart5, currentPOSTag, (4*size))).start();
 
 			}
 

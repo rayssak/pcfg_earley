@@ -1,10 +1,14 @@
 package ime.mac5725.earley.util;
 
+/**
+ * @author rayssak
+ * @reason Utility constants.
+ */
 public class ConstantsUtility {
 	
-	public static int THREAD_NUMBER_COMPLETER = 8;
+	public static int THREAD_NUMBER_PREDICTOR = 3;
 	
-	public static int THREAD_NUMBER_PREDICTOR = 6;
+	public static int THREAD_NUMBER_COMPLETER = 5;
 	
 	public static String SYSTEM_SCAPE = "\\";
 

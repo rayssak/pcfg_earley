@@ -17,3 +17,9 @@
 - SENTENCE: "a confissão da culpa costuma fazer menor a pena ."
 - TIME: 23 minutes, 25 seconds e 1405051 milliseconds
 - SENTENCE STATUS: recognized
+
+
+	Chart[10]		S200060 IP-> NP VB NP CP . * [1,10]					 COMPLETER
+
+- SENTENCE: "a confissão da culpa costuma fazer menor a pena ."
+- TIME: 35 minutes, 2 seconds e 2102388 milliseconds

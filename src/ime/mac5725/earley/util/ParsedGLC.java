@@ -13,9 +13,7 @@ import java.util.LinkedList;
 
 /**
  * @author rayssak
- * @reason Receives a GLC and a portuguese sentence in raw format to 
- * 		   pre-process and generate the formatted Grammar Tree required
- * 		   as the Parser input.
+ * @reason Reads a corpus file and gather its grammar rules.
  */
 public class ParsedGLC {
 	
@@ -298,6 +296,7 @@ public class ParsedGLC {
 		grammarRules.remove("NP-> CP");
 		grammarRules.remove("PP-> CP");
 		grammarRules.remove("NP-> IP");
+		grammarRules.remove("IP-");
 		
 //		NP-> elliptical
 //		NP-> nos
@@ -305,6 +304,7 @@ public class ParsedGLC {
 		lexicon.remove("NP-> elliptical");
 		lexicon.remove("NP-> nos");
 		lexicon.remove("WPP-> 0");
+		lexicon.remove("VB");
 		
 	}
 	

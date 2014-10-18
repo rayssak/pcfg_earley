@@ -9,7 +9,8 @@ import java.util.LinkedHashSet;
 /**
  * @author rayssak
  * @reason Testing Jurafsky corpus example for Earley algoritm.
- *
+ *		   Used to check whether any change in the algorithm
+ *		   had a bad impact on the correct behavior.
  */
 public class TestingJurafskyCorpusExample {
 	
