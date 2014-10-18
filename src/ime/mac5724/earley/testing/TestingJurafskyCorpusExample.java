@@ -1,5 +1,6 @@
-package ime.mac5725.earley.parser;
+package ime.mac5724.earley.testing;
 
+import ime.mac5725.earley.EarleyJurafsky;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class TestingJurafskyCorpusExample {
 		 * 		include to me
 		 * 
 		 */
-		String sentence = "Houston book";
+		String sentence = "book that flight";
 		
 		long timeRan = System.currentTimeMillis();
 		

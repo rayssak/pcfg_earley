@@ -1,6 +1,4 @@
-package ime.mac5725.earley.parser;
-
-import ime.mac5725.earley.util.ConstantsUtility;
+package ime.mac5725.earley.util;
 
 import java.io.BufferedReader;
 import java.io.File;

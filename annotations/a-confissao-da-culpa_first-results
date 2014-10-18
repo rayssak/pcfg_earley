@@ -1,0 +1,19 @@
+- 4 chart (completer) e 6 grammar (predictor)!
+
+	Chart[10]		S189321 IP-> NP NP NP VB IP . * [0,10]					 COMPLETER
+	Chart[10]		S189322 IP-> PP NP NP VB IP . * [0,10]					 COMPLETER
+
+- SENTENCE: "a confissão da culpa costuma fazer menor a pena ."
+- TIME: 20 minutes, 55 seconds e 1255236 milliseconds
+- SENTENCE STATUS: recognized
+
+
+
+
+
+- 16 chart (completer) e 6 grammar (predictor)!
+	Chart[10]		S198302 IP-> VB PP CP . * [4,10]					 COMPLETER
+
+- SENTENCE: "a confissão da culpa costuma fazer menor a pena ."
+- TIME: 23 minutes, 25 seconds e 1405051 milliseconds
+- SENTENCE STATUS: recognized

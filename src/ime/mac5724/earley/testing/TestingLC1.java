@@ -1,6 +1,8 @@
-package ime.mac5725.earley.parser;
+package ime.mac5724.earley.testing;
 
+import ime.mac5725.earley.EarleyFinger;
 import ime.mac5725.earley.util.ConstantsUtility;
+import ime.mac5725.earley.util.ParsedGLC;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -37,7 +39,7 @@ public class TestingLC1 {
 		 * 		a confissão da culpa costuma fazer menor a pena .
 		 * 
 		 */
-		String sentence = "alguma vez havia de ver a vaidade sem lugar .";
+		String sentence = "declamei virtudes";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
@@ -72,10 +74,10 @@ public class TestingLC1 {
 
 	private static void printRules() {
 		int count=0;
-		for(Iterator i = grammarRules.iterator(); i.hasNext(); ) {
+		for(Iterator i = lexicon.iterator(); i.hasNext(); ) {
 			String rule = i.next().toString();
 			// Print only head rules
-			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("P")) {
+			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("ADJ")) {
 				count++;
 				System.out.println(rule);
 			}
