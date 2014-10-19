@@ -41,9 +41,10 @@ public class TestingJurafskyCorpusExample {
 		 * 		does this flight include Houston
 		 * 		does this flight include a meal
 		 * 		include to me
+		 * 		I prefer a morning flight
 		 * 
 		 */
-		String sentence = "book that flight";
+		String sentence = "I prefer a morning flight";
 		
 		long timeRan = System.currentTimeMillis();
 		
@@ -97,6 +98,7 @@ public class TestingJurafskyCorpusExample {
 		lexicon.add("Noun-> flight");
 		lexicon.add("Noun-> meal");
 		lexicon.add("Noun-> money");
+		lexicon.add("Noun-> morning");
 		lexicon.add("Verb-> book");
 		lexicon.add("Verb-> include");
 		lexicon.add("Verb-> prefer");

@@ -6,7 +6,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
@@ -29,6 +32,8 @@ public class ParsedGLC {
 	
 	private LinkedHashSet<String> grammarRules;
 	private LinkedHashSet<String> lexicon;
+	private HashMap<String, String> grammarTrees;
+	private LinkedHashMap<String, String> sentenceIndex;
 	
 	public LinkedHashSet<String> getFullGrammarRules() {
 		LinkedHashSet<String> tmp = new LinkedHashSet<String>();
@@ -51,14 +56,16 @@ public class ParsedGLC {
 		BufferedReader reader;
 		tmp = new LinkedList<String>();
 		grammarRules = new LinkedHashSet<String>();
+		grammarTrees = new HashMap<String, String>();
 		lexicon = new LinkedHashSet<String>();
+		sentenceIndex = new LinkedHashMap<String, String>();
 		
 		try {
 			
 			input = new FileInputStream(grammar);
 			reader = new BufferedReader(new InputStreamReader(input));
 			
-			while ((line = reader.readLine()) != null) 
+			while ((line = reader.readLine()) != null)
 				if(isValidLine()) {
 					char currentLetter = line.charAt(0);
 					readRules(currentLetter, 0);
@@ -72,6 +79,10 @@ public class ParsedGLC {
 		
 		handleSpecialCases();
 		
+	}
+	
+	public HashMap<String, String> getGrammarTrees() {
+		return this.grammarTrees;
 	}
 
 	private boolean isValidLine() {
@@ -182,7 +193,7 @@ public class ParsedGLC {
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
 							  	  
 			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
-			
+			sentenceIndex.put(tmp.toString().substring(tmp.toString().lastIndexOf("IP")-3, tmp.toString().length()-1).replaceAll("\\[", ""), lexiconRule);
 			sentenceWordAdded = true;
 		
 		}
@@ -249,10 +260,40 @@ public class ParsedGLC {
 			String currentTargetLevel = String.valueOf(Integer.parseInt(tmp.getLast().split(" ")[0]) - 1);
 			
 			for(Iterator i = tmp.descendingIterator(); i.hasNext(); ) {
+				
 				String currentItem = i.next().toString();
-				if(currentItem.startsWith(currentTargetLevel)) {
+				if(currentItem.startsWith(currentTargetLevel) && currentPOSTag.split(" ").length>1) {
+					
+					String words = "";
+					boolean continueGetting = false;
+					ArrayList<String> rules = new ArrayList<String>();
 					String item = currentItem.replace(currentTargetLevel + " ", "");
+					
 					grammarRules.add(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
+					String current = currentItem + ", " + currentLevel + " " + currentPOSTag.split(" ")[0];
+					
+ 					for(String currentRule : sentenceIndex.keySet()) {
+						if(currentRule.contains(current) || continueGetting) {
+							rules.add(currentRule);
+							continueGetting = true;
+						}
+						if(currentRule.contains("\\.") || currentRule.contains("\\,") || currentRule.equals("\\;")) {
+							continueGetting = false;
+							break;
+						}
+					}
+					for(String currentValue : rules)
+						words += words.isEmpty() ? sentenceIndex.get(currentValue) : " " + sentenceIndex.get(currentValue);
+						
+					words = words.startsWith(" ") ? words.substring(1, words.length()).toLowerCase() : words.toLowerCase();
+					if(words.contains(".") || words.contains(",") || words.contains(":") || words.contains(";") || words.contains("!"))
+						words = words.replaceFirst("[\\.\\,] ", " ").replaceAll("\\s{2,}", " ");
+					
+					grammarTrees.put(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag, words);
+
+					if(currentItem.equals("1 IP")) 
+						sentenceIndex.clear();
+					
 					break;
 				}
 			}
@@ -262,7 +303,7 @@ public class ParsedGLC {
 		}
 		
 	}
-	
+
 	private void handleSpecialCases() {
 		
 		// Removes recursive rules:

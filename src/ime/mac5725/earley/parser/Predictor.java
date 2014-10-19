@@ -17,14 +17,12 @@ public class Predictor extends Earley implements Runnable {
 	private String currentPOSTag;
 	
 	private ArrayList<String> partialGrammar;
-	private ArrayList<String> rules;
 	
 	public Predictor(String state, ArrayList<String> partialGrammar, String currentPOSTag, int size) {
-		this.size = size;
 		this.state = state;
+		this.size = size;
 		this.currentPOSTag = currentPOSTag;
 		this.partialGrammar = partialGrammar;
-		this.rules = new ArrayList<String>();
 	}
 
 	@Override
@@ -32,18 +30,32 @@ public class Predictor extends Earley implements Runnable {
 		
 		int currentPOSTagCount = 1;
 		currentPOSTag = nextCategory(state);
-		
+		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
+		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
+
 		while(currentPOSTagCount > 0 && partialGrammar.indexOf(currentPOSTag) >= 0) {
+			
 			currentPOSTagCount = Collections.frequency(partialGrammar, getRule(currentPOSTag));
 			int ruleIndex = partialGrammar.indexOf(getRule(currentPOSTag));
-			rules.add(grammar.get(ruleIndex+size));
+			
+			// Insert each grammar rule of the current state being processed
+			// into the chart in case the rule is not already in the current
+			// chart (not all of them).
+			String rule = grammar.get(ruleIndex+size);
+			if(!currentChartWithRules.contains(rule) && specialCase(rule))
+				
+				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i), i)) {
+					stateLevelCount++;
+					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i), state);
+				
+				}
+			
 			partialGrammar.set(partialGrammar.indexOf(currentPOSTag), "");
+			
 		}
 		
 		synchronized (rulesToPredict) {
 			
-			rulesToPredict.addAll(rules);
-			rules.clear();
 			threadCompletedCount++;
 			
 			if(threadCompletedCount >= threadCount) {
@@ -54,5 +66,5 @@ public class Predictor extends Earley implements Runnable {
 		}
 		
 	}
-
+	
 }

@@ -4,11 +4,15 @@ import ime.mac5725.earley.parser.Completer;
 import ime.mac5725.earley.parser.Predictor;
 import ime.mac5725.earley.util.ConstantsUtility;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author rayssak
@@ -17,46 +21,57 @@ import java.util.LinkedList;
  */
 public class Earley {
 	
-	protected int i = 0;
-	protected int j = 0;
-	protected int stateLevelCount = 0;
-	protected int sentenceHeadRuleCount = 0;
+	protected static volatile PrintWriter out;
+	
+	protected static volatile int i = 0;
+	protected static volatile int j = 0;
+	protected static volatile int stateLevelCount = 0;
+	protected static volatile int sentenceHeadRuleCount = 0;
 	protected static volatile int threadCount = 0;
 	protected static volatile int threadCompletedCount = 0;
 	
-	protected boolean printRules;
-	protected boolean grammarRecognized = false;
+	protected static volatile boolean printRules;
+	protected static volatile boolean grammarRecognized = false;
 	protected static volatile boolean threadRuleCompleted = false;
 	
-	protected ArrayList<String> lexicon;
-	protected ArrayList<String> grammarIndex;
+	protected static volatile ArrayList<String> lexicon;
+	protected static volatile ArrayList<String> grammarIndex;
 	protected static volatile ArrayList<String> grammar;
 	
 	protected LinkedList<String> sentenceWords;
 	
 	protected static volatile ArrayList<ArrayList<String>> chart;
-	protected ArrayList<String> chartWithRules;
-	protected ArrayList<String> currentChartWithRules;
-	protected ArrayList<ArrayList<String>> chartTerminalsIndex;
+	protected static volatile ArrayList<String> chartWithRules;
+	protected static volatile ArrayList<String> currentChartWithRules;
+	protected static volatile ArrayList<ArrayList<String>> chartTerminalsIndex;
 
 	protected static volatile ArrayList<String> rulesToPredict;
 	protected static volatile ArrayList<String> rulesToComplete;
 	
 	protected String state;
 	protected String fullState;
-	protected String currentPOSTag;
+	protected static volatile String currentPOSTag;
 	protected String previousState;
-	protected String sentenceHeadRule;
+	protected static volatile String sentenceHeadRule;
 	
 	protected static String DUMMY_STATE;
 	
-	protected enum Methods { PREDICTOR, SCANNER, COMPLETER };
+	public enum Methods { PREDICTOR, SCANNER, COMPLETER };
 	
-	protected ArrayList<String> finalParser;
+	protected static volatile ArrayList<String> finalParser;
 	
 	public void setPrintRules(boolean print) {
 		this.printRules = print;
 	}
+	
+//	public ArrayList<String> parse() {
+//		
+//		GrammarTree tree = new GrammarTree(sentenceHeadRule, i);
+//		tree.getGrammarTree(finalParser);
+//		
+//		return finalParser;
+//		
+//	}
 	
 	public ArrayList<String> parse() {
 		cleanTmp();
@@ -71,6 +86,12 @@ public class Earley {
 	
 	protected void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
 		
+		try {
+			out = new PrintWriter("C:\\rayssak\\dev\\ime\\testing\\testing.txt");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
 		state = "";
 		currentPOSTag = "";
 		sentenceHeadRule = "";
@@ -80,6 +101,7 @@ public class Earley {
 		this.grammar.addAll(grammar);
 		this.lexicon = new ArrayList<String>();
 		this.lexicon.addAll(lexicon);
+		Collections.sort(this.lexicon);
 		
 		startGrammarIndex();
 		
@@ -130,40 +152,10 @@ public class Earley {
 	 */
 	protected void predictor(String state) {
 		
-		currentPOSTag = nextCategory(state);
-		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
-		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
-				
-		int currentPOSTagCount = 1;
-		ArrayList<String> tmpIndex = new ArrayList<String>(grammarIndex);
-		ArrayList<String> rulesToPredict = new ArrayList<String>();
-		
-		while(currentPOSTagCount > 0 && tmpIndex.indexOf(currentPOSTag) >= 0) {
-			currentPOSTagCount = Collections.frequency(tmpIndex, getRule(currentPOSTag));
-			int ruleIndex = tmpIndex.indexOf(getRule(currentPOSTag));
-			rulesToPredict.add(grammar.get(ruleIndex));
-			tmpIndex.set(tmpIndex.indexOf(currentPOSTag), "");
-		}
-		
-//		// Searches for predictions according to the available grammar
-//		// rules.
-//		prepareAndStartThreadsToPredict(state);
-//		System.gc();
-			
-		// Insert each grammar rule of the current state being processed
-		// into the chart in case the rule is not already in the current
-		// chart (not all of them).
-		for(String rule : rulesToPredict)
-		
-			if(!currentChartWithRules.contains(rule) && specialCase(rule))
-				
-				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i), i)) {
-					stateLevelCount++;
-					printRule(rule, Methods.PREDICTOR.name(), String.valueOf(i));
-				
-				}
-		
-		rulesToPredict.clear();
+		// Searches for predictions according to the available grammar
+		// rules.
+		prepareAndStartThreadsToPredict(state);
+		System.gc();
 		j++;
 		
 	}
@@ -246,7 +238,7 @@ public class Earley {
 	 * @param rule
 	 * @return Improvements due to corpus properties)
 	 */
-	private boolean specialCase(String rule) {
+	protected boolean specialCase(String rule) {
 			   // Removing VB rules that are not part of lexicon 
 		return !getRule(rule).equals("VB");
 			   // Removing the only one WPP lexicon rule
@@ -265,9 +257,56 @@ public class Earley {
 	}
 
 	protected void push(String state, ArrayList<String> chartEntry, int i) {
-		chartEntry.add(state);
-		chartWithRules.add(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
-		currentChartWithRules.add(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
+			
+		String currentTerminal = getTerminal(state);
+		String stateWithoutRule = state.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1];
+		ArrayList<String> ruleAndNextTerminal = new ArrayList<String>(Arrays.asList(stateWithoutRule.replaceAll(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE, " ").split(" ")));
+		
+		if(Collections.frequency(ruleAndNextTerminal, currentTerminal) > 1) {
+			stateWithoutRule = "";
+			List<String> tmp = ruleAndNextTerminal.subList(ruleAndNextTerminal.indexOf(ConstantsUtility.DOTTED_RULE), ruleAndNextTerminal.size());
+			for(String element : tmp)
+				stateWithoutRule += element + " ";
+		}
+		
+		synchronized (chartTerminalsIndex) {
+			if(currentTerminal.isEmpty()) {
+				String tmp = stateWithoutRule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0];
+				tmp = tmp.matches("[A-Za-zÀ-Úà-ú0-9]+\\s\\*") || tmp.matches("[\\:\\;\\.\\,\\?\\!]\\s\\*") ? tmp : tmp.split(" ")[tmp.split(" ").length-2] + " " + tmp.split(" ")[tmp.split(" ").length-1];
+				chartTerminalsIndex.get(i).add(tmp);
+			} else if(stateWithoutRule.indexOf(ConstantsUtility.DOTTED_RULE) > stateWithoutRule.indexOf(currentTerminal))
+				chartTerminalsIndex.get(i).add(currentTerminal + " " + ConstantsUtility.DOTTED_RULE);
+			else
+				chartTerminalsIndex.get(i).add(ConstantsUtility.DOTTED_RULE + " " + currentTerminal);
+		}
+		
+		synchronized (chartEntry) {
+			chartEntry.add(state);
+			chartWithRules.add(state.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, ""));
+			currentChartWithRules.add(state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
+		}
+			
+		
+	}
+	
+	private String getTerminal(String state) {
+		
+		String terminal = "";
+		String tmp[] = changeFieldSeparator(state).split(" ");
+		
+		for(int aux=0; aux<tmp.length; aux++)
+			if(!tmp[aux].equals(ConstantsUtility.DOTTED_RULE) && (tmp[aux].replace("-", "").matches("[A-Z]+.*") || isPontuation(tmp[aux].charAt(0))))
+				if(aux>0 && tmp[aux-1].equals(ConstantsUtility.DOTTED_RULE)) {
+					terminal = tmp[aux];
+					break;
+				}
+		
+		return terminal;
+		
+	}
+	
+	private boolean isPontuation(char currentLetter) {
+		return currentLetter == ':' || currentLetter == ';' || currentLetter == ',' || currentLetter == '.' || currentLetter == '!' || currentLetter == '?';
 	}
 	
 	protected void printHeadRule() {
@@ -276,20 +315,23 @@ public class Earley {
 							   "\t\t\t\t\t\t\t\t DUMMY START STATE");
 	}
 	
-	protected void printRule(String rule, String method, String chartValue) {
+	protected void printRule(String rule, String method, String chartValue, String state) {
 		if(printRules) {
 			rule = rule.contains(ConstantsUtility.DOTTED_RULE) ? rule : addStateAndStartEndPointsFields(rule); 
 			rule += rule.length()<24 ? "\t\t\t\t\t\t\t" : (rule.length()<32 ? "\t\t\t\t\t\t" : "\t\t\t\t\t");
 			System.out.println("\tChart[" + chartValue + "]\t\t" + rule.replace("|", " ") + " " + method);
+			out.println("\tChart[" + chartValue + "]\t\t" + rule.replace("|", " ") + " " + method + ".... state: " + state);
 		}
 	}
 	
 	protected void getNextStateToRun() {
-		state = chart.get(i).get(j);
-		addStateField(state, chart.get(i));
+		synchronized (chart) {
+			state = chart.get(i).get(j);
+			addStateField(state, chart.get(i));
+		}
 	}
 	
-	protected void addStateField(String state, ArrayList<String> chartEntry) {
+	protected synchronized void addStateField(String state, ArrayList<String> chartEntry) {
 		if(!state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0].matches("S[0-9]+")) {
 			fullState = "S" + stateLevelCount + ConstantsUtility.FIELD_SEPARATOR + state;
 			chartEntry.set(chartEntry.indexOf(state), fullState);
@@ -328,8 +370,9 @@ public class Earley {
 	 * @param String state
 	 * @param String terminal
 	 */
-	protected void scanner(String state, String terminal) {
+	protected void scanner(String state) {
 		
+		String terminal = getTerminal(state);
 		ArrayList<String> terminals = new ArrayList<String>();
 		
 		// Gathers all the possible words for this terminal.
@@ -352,7 +395,7 @@ public class Earley {
 						
 						String rule = getTerminalCompletedRule(terminal, word, sentenceWords.indexOf(word), sentenceWords.indexOf(word)+1);
 						if(enqueue(rule, chart.get(sentenceWords.indexOf(word)+1), sentenceWords.indexOf(word)+1)) {
-							printRule(rule, Methods.SCANNER.name(), String.valueOf(sentenceWords.indexOf(word)+1));
+							printRule(rule, Methods.SCANNER.name(), String.valueOf(sentenceWords.indexOf(word)+1), state);
 							sentenceWords.set(sentenceWords.indexOf(word), "");
 							addToFinalParser(rule, Methods.SCANNER.name());
 							break;
@@ -391,81 +434,10 @@ public class Earley {
 	 */
 	protected void completer(String state) {
 		
-		int stateStart = Integer.parseInt(state.split("\\[")[1].split(",")[0]);
-		currentPOSTag = nextCompletedCategory(state);
-		ArrayList<String> tmp = new ArrayList<String>();
-		
-		// Checks if a final state entry was already processed and the
-		// sentence already recognized.
-		if(isComplete(state) && hasCompletedSentence(state)) 
-			grammarRecognized = true;
-		
-		int currentPOSTagCount = 1, chartIndex = 0;
-
-		while(chartIndex < chartTerminalsIndex.size()) {
-
-			ArrayList<String> tmpChartOnlyWithTerminals = new ArrayList<String>(chartTerminalsIndex.get(chartIndex));
-			while(currentPOSTagCount > 0 && tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag) >= 0) {
-
-				currentPOSTagCount = Collections.frequency(tmpChartOnlyWithTerminals, ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
-				int ruleIndex = tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag);
-				rulesToComplete.add(chart.get(chartIndex).get(ruleIndex));
-				tmpChartOnlyWithTerminals.set(tmpChartOnlyWithTerminals.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag), "");
-				
-			}
-			chartIndex++;
-		}
-		
-//		// Searches for states with the category of the current state
-//		// to update its progress.
-//		prepareAndStartThreadsToComplete(state);
-//		System.gc();
-		
-		// Checks each one of the gathered rules...
-		for(int count = 0; count<rulesToComplete.size(); count++) {
-			
-			String rule = rulesToComplete.get(count);
-			int ruleEnd = Integer.parseInt(rule.split("\\[")[1].split(",")[1].replace("]", ""));
-			
-			// ...and check if there is any of them ending in the state state position to 
-			// mark as complete.
-			// e.g.: 
-			// 		~ Current state: N-> virtudes [1,2]
-			// 		~ Current rule: NP-> * N [0,1]
-			if(!isComplete(rule) && ruleEnd==stateStart && !rule.contains(DUMMY_STATE)) {
-				
-				String cleanNonTerminal = rule.substring(rule.indexOf(ConstantsUtility.DOTTED_RULE)+2, rule.indexOf("[")-1).split(" ")[0];
-				String tmpRule = rule.substring(0, rule.indexOf('['));
-				
-				if(currentPOSTag.equals(cleanNonTerminal) && ruleFullyProcessedAndNotInChart(tmp, rule, cleanNonTerminal)) {
-					
-					previousState = state.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0];
-					int ruleStart = Integer.parseInt(rule.split("\\[")[1].split(",")[0]);
-					tmp.add(tmpRule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1]);
-					tmpRule = tmpRule.replace(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag, currentPOSTag + " " + ConstantsUtility.DOTTED_RULE)
-								.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "S" + ++stateLevelCount + ConstantsUtility.FIELD_SEPARATOR) + 
-								"[" + ruleStart + "," + i + "]";
-					
-					if(enqueue(tmpRule, chart.get(i), i)) {
-						printRule(tmpRule, Methods.COMPLETER.name(), String.valueOf(i));
-						finalParser.add("tmp: " + tmpRule + ConstantsUtility.FIELD_SEPARATOR + "(" + previousState + ")");
-					}
-					
-					rule = tmpRule;
-					
-				}
-				
-			}
-			
-			// Handles grammar tree rules and end of the sentence
-			if(isComplete(rule) && hasCompletedSentence(rule)) 
-				grammarRecognized = true;
-			if(isComplete(rule) && isFinalStateToGrammarTree(rule))
-				addToFinalParser(rule, "(" + previousState + ")");
-			
-		}
-		rulesToComplete.clear();
-		j++;
+		// Searches for states with the category of the current state
+		// to update its progress.
+		prepareAndStartThreadsToComplete(state);
+		System.gc();
 		
 	}
 
@@ -512,7 +484,7 @@ public class Earley {
 					partialChart1.add(chartTerminalsIndex.get(chartIndex).get(aux));
 				
 				threadCount++;
-				new Thread(new Completer(chartIndex, state, partialChart1, currentPOSTag, 0)).start();
+				new Thread(new Completer(chartIndex, state, partialChart1, 0)).start();
 				
 			// Otherwise...
 			} else if(size!=0){
@@ -533,11 +505,11 @@ public class Earley {
 				threadCount += ConstantsUtility.THREAD_NUMBER_COMPLETER;
 				
 				// Threads initialization.
-				new Thread(new Completer(chartIndex, state, partialChart1, currentPOSTag, 0)).start();
-				new Thread(new Completer(chartIndex, state, partialChart2, currentPOSTag, size)).start();
-				new Thread(new Completer(chartIndex, state, partialChart3, currentPOSTag, (2*size))).start();
-				new Thread(new Completer(chartIndex, state, partialChart4, currentPOSTag, (3*size))).start();
-				new Thread(new Completer(chartIndex, state, partialChart5, currentPOSTag, (4*size))).start();
+				new Thread(new Completer(chartIndex, state, partialChart1, 0)).start();
+				new Thread(new Completer(chartIndex, state, partialChart2, size)).start();
+				new Thread(new Completer(chartIndex, state, partialChart3, (2*size))).start();
+				new Thread(new Completer(chartIndex, state, partialChart4, (3*size))).start();
+				new Thread(new Completer(chartIndex, state, partialChart5, (4*size))).start();
 
 			}
 
@@ -546,16 +518,20 @@ public class Earley {
 			try {
 				if(size>0)
 					synchronized (rulesToComplete) {
+						if(grammarRecognized)
+							break;
 						if(!threadRuleCompleted)
 							rulesToComplete.wait();
 					}
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+			} catch (InterruptedException interruptedException) {
+				System.out.println(interruptedException.getMessage());
 			}
 			
 			chartIndex++;
 		
 		}
+		j++;
+		
 	}
 	
 	protected boolean ruleFullyProcessedAndNotInChart(ArrayList<String> tmp, String rule, String cleanNonTerminal) {
@@ -581,10 +557,12 @@ public class Earley {
 
 	// !isAtFinalParser
 	protected boolean isFinalStateToGrammarTree(String rule){
-		for(String current : finalParser) {
-			String tmp = current.replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";
-			if(tmp.equals(rule))
-				return false;
+		synchronized (finalParser) {
+			for(String current : finalParser) {
+				String tmp = current.replace("Chart", "").replaceAll("\\[[0-9]+\\] ", "").split("\\]")[0] + "]";
+				if(tmp.equals(rule))
+					return false;
+			}
 		}
 		return true;
 	}
@@ -595,32 +573,36 @@ public class Earley {
 	
 	protected void addToFinalParser(String rule, String method) {
 		
-		String states = "";
-		String previousRule = "";
-		
-		for(int aux=finalParser.size()-1; aux>=0; aux--) {
+		synchronized (finalParser) {
 			
-			String tmp = finalParser.get(aux);
-			String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
+			String states = "";
+			String previousRule = "";
 			
-			if(ruleAlreadyInTree(tmp, rule))
-				return;
-			
-			else if(tmpRule.equals(rule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, ""))
-					&& !previousRule.equals(tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1])) {
-				
-				if(tmp.contains("("))
-					states += states.isEmpty() ? tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "") :
-								"," + tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "");
+			for(int aux=finalParser.size()-1; aux>=0; aux--) {
 					
-				previousRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1];
+				String tmp = finalParser.get(aux);
+				String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
 				
+				if(ruleAlreadyInTree(tmp, rule))
+					return;
+				
+				else if(tmpRule.equals(rule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, ""))
+						&& !previousRule.equals(tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1])) {
+					
+					if(tmp.contains("("))
+						states += states.isEmpty() ? tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "") :
+									"," + tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "");
+						
+					previousRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1];
+					
+				}
 			}
+					
+			previousState = "";
+			int aux = i == chart.size()-1 ? i : i+1;
+			finalParser.add("Chart[" + aux + "] " + rule + (method.matches(".*[A-Z]{2,}.*") ? " " + method : " (" + states + ")"));
+		
 		}
-			
-		int aux = i == chart.size()-1 ? i : i+1;
-		finalParser.add("Chart[" + aux + "] " + rule + (method.matches(".*[A-Z]{2,}.*") ? " " + method : " (" + states + ")"));
-		previousState = "";
 		
 	}
 	

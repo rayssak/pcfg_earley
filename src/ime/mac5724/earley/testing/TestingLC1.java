@@ -1,6 +1,7 @@
 package ime.mac5724.earley.testing;
 
 import ime.mac5725.earley.EarleyFinger;
+import ime.mac5725.earley.util.ConstantsUtility;
 import ime.mac5725.earley.util.ParsedGLC;
 
 import java.io.File;
@@ -8,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 
 /**
@@ -20,14 +22,18 @@ import java.util.LinkedHashSet;
  */
 public class TestingLC1 {
 	
+	private static ParsedGLC glc;
+	private static EarleyFinger earley;
+
+	private static String time;
+	
+	private static boolean grammarRecognized;
+	private static boolean printRules;
+	
 	private static LinkedHashSet<String> lexicon;
 	private static LinkedHashSet<String> fullGrammarRules;
 	private static LinkedHashSet<String> grammarRules;
-	private static boolean grammarRecognized;
-	private static String time;
-	private static EarleyFinger earley;
-	private static ParsedGLC glc;
-	private static boolean printRules;
+	private static HashMap<String, String> grammarTrees;
 	
 	public static void main(String[] args) {
 		
@@ -43,9 +49,13 @@ public class TestingLC1 {
 		 * 		declamei contra a vaidade ,
 		 * 		a confissão da culpa costuma fazer menor a pena .
 		 * 		e que só em vossa majestade não tem : feliz indigência
+		 *		então sejam bem aceites
+		 *		mas vem por compaixão e lástima
+		 *		necessita que primeiro morra o seu autor
+		 *		ficam reservadas para serem obras póstumas
 		 * 
 		 */
-		String sentence = "a confissão da culpa costuma fazer menor a pena .";
+		String sentence = "então sejam bem aceites";
 //		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
@@ -114,6 +124,7 @@ public class TestingLC1 {
 		glc.readGrammar(new File(args[0]));
 		grammarRules = glc.getGrammarRules();
 		lexicon = glc.getLexicon();
+		grammarTrees = glc.getGrammarTrees();
 	}
 	
 }
