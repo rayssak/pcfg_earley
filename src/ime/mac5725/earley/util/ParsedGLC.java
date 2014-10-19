@@ -180,16 +180,11 @@ public class ParsedGLC {
 		return currentLetter == ':' || currentLetter == ';' || currentLetter == ',' || currentLetter == '.' || currentLetter == '!' || currentLetter == '?';
 	}
 	
-	private boolean hasOnlyPOS() {
-		return line.matches(".*[a-zà-ú0-9]+.*") ? false : true;
-	}
-	
 	private void getWord() {
 		
-		if(!hasOnlyPOS() && !sentenceWordAdded) {
+		if(!sentenceWordAdded) {
 			
-			String lexiconRule = !line.split("\\s")[line.split("\\s").length-1].contains("(") && 
-							  	  line.split("\\s")[line.split("\\s").length-1].matches("[A-Za-zÀ-Úà-ú0-9]+.*") ? 
+			String lexiconRule = !line.split("\\s")[line.split("\\s").length-1].contains("(") ? 
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
 							  	  
 			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
