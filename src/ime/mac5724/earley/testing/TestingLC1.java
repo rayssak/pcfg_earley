@@ -2,7 +2,7 @@ package ime.mac5724.earley.testing;
 
 import ime.mac5725.earley.EarleyFinger;
 import ime.mac5725.earley.util.ConstantsUtility;
-import ime.mac5725.earley.util.ParsedGLC;
+import ime.mac5725.earley.util.TreeBankHandler;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.util.Scanner;
 
 /**
  * @author rayssak
@@ -22,7 +23,7 @@ import java.util.LinkedHashSet;
  */
 public class TestingLC1 {
 	
-	private static ParsedGLC glc;
+	private static TreeBankHandler glc;
 	private static EarleyFinger earley;
 
 	private static String time;
@@ -40,44 +41,44 @@ public class TestingLC1 {
 		/* 
 		 * - SENTENCE EXAMPLES:
 		 * 
-		 * 		pequeno livro
 		 * 		senhor ofereço a vossa majestade
 		 * 		todas são iguais e todas grandes
-		 * 		declamei virtudes
 		 * 		veio até fé
-		 * 		senhor : ofereço a vossa majestade as reflexões sobre a vaidade dos homens ;
 		 * 		declamei contra a vaidade ,
+		 * 		as reflexões sobre a vaidade dos homens
 		 * 		a confissão da culpa costuma fazer menor a pena .
 		 * 		e que só em vossa majestade não tem : feliz indigência
 		 *		então sejam bem aceites
-		 *		mas vem por compaixão e lástima
+		 *		vem por compaixão e lástima
 		 *		necessita que primeiro morra o seu autor
 		 *		ficam reservadas para serem obras póstumas
 		 * 
 		 */
 		String sentence = "então sejam bem aceites";
-//		String sentence = new File(args[2]);
 		printRules = Boolean.valueOf(args[1]);
 		
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();
 		readGrammar(args);
-//		printRules();
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		ArrayList<String> grammarTree = earley.parse();
 		
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
+		System.out.println("- SENTENCE PRECISION: " + (earley.parse(glc.getGrammarTrees()) ? "precise" : "not precise, " + earley.getPrecision() + " % precision " + earley.getOriginalAndParsedTree()));
 		
-//		if(grammarRecognized) {
-//			System.out.println("- SYNTATIC TREE (the whole one):");
-//			for(int aux=grammarTree.size()-1; aux>=0; aux--)
-//					System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
-//			
-//		}
+		Scanner input = new Scanner(System.in);
+		System.out.println("Do you want to show grammar whole tree (all backpointers)? (y/N)");
+		boolean showBackPointers = input.next().equalsIgnoreCase("y") ? true : false;
+		if(grammarRecognized && showBackPointers) {
+			ArrayList<String> tree = earley.getBackPointersTree();
+			System.out.println("- SYNTATIC TREE (with backpointers):");
+			for(int aux=tree.size()-1; aux>=0; aux--)
+					System.out.println("\t" + tree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+			
+		}
 		
 	}
 
@@ -112,7 +113,7 @@ public class TestingLC1 {
 	}
 
 	private static void initializeRequiredObjects() {
-		glc = new ParsedGLC();
+		glc = new TreeBankHandler();
 		earley = new EarleyFinger();
 		fullGrammarRules = new LinkedHashSet<String>();
 		grammarRules = new LinkedHashSet<String>();

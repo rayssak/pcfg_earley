@@ -1,0 +1,70 @@
+	Chart[6]		S33207 FRAG-> CONJ PP NP * . [3,6]					 COMPLETER
+
+- SENTENCE: "todas são iguais e todas grandes"
+- TIME: 3 minutes, 56 seconds e 236898 milliseconds
+- SENTENCE STATUS: recognized
+
+	Chart[6]		S31450 ADJP-> PP ADJP CONJP * [0,6]					 COMPLETER
+
+- SENTENCE: "todas são iguais e todas grandes"
+- TIME: 2 minutes, 51 seconds e 171420 milliseconds
+- SENTENCE STATUS: recognized
+
+	Chart[2]		S5680 FRAG-> IP * . [1,2]						 COMPLETER
+
+- SENTENCE: "pequeno livro"
+- TIME: 0 minutes, 51 seconds e 51479 milliseconds
+- SENTENCE STATUS: recognized
+
+
+
+sem threads:
+
+	Chart[6]		S33189 IP-> CONJ ADVP NP * VB NP PP . [3,6]					 COMPLETER
+
+- SENTENCE: "todas são iguais e todas grandes"
+- TIME: 3 minutes, 12 seconds e 192801 milliseconds
+- SENTENCE STATUS: recognized
+
+	Chart[2]		S5859 FRAG-> NP * , [0,2]						 COMPLETER
+
+- SENTENCE: "pequeno livro"
+- TIME: 0 minutes, 31 seconds e 31091 milliseconds
+- SENTENCE STATUS: recognized
+
+	Chart[6]		S33189 IP-> CONJ ADVP NP * VB NP PP . [3,6]					 COMPLETER
+Ending COMPLETER........ 
+
+- SENTENCE: "todas são iguais e todas grandes"
+- TIME: 3 minutes, 7 seconds e 187092 milliseconds
+- SENTENCE STATUS: recognized
+
+
+
+
+
+
+
+
+
+
+	Chart[10]		S65470 IP-> PP PP HV NP . * [0,10]					 COMPLETER
+
+- SENTENCE: "alguma vez havia de ver a vaidade sem lugar ."
+- TIME: 7 minutes, 22 seconds e 442998 milliseconds
+- SENTENCE STATUS: recognized
+
+
+!-4 threads grammar (predictor) e 2 threads chart (completer)
+	Chart[10]		S91805 IP-> VB IP . * [4,10]						 COMPLETER
+
+- SENTENCE: "alguma vez havia de ver a vaidade sem lugar ."
+- TIME: 9 minutes, 33 seconds e 573626 milliseconds
+
+!-6 threads grammar (predictor) e 4 threads chart (completer)
+	Chart[10]		S63272 IP-> VB CP . * [4,10]						 COMPLETER
+
+- SENTENCE: "alguma vez havia de ver a vaidade sem lugar ."
+- TIME: 6 minutes, 23 seconds e 383292 milliseconds
+- SENTENCE STATUS: recognized
+- SENTENCE STATUS: recognized

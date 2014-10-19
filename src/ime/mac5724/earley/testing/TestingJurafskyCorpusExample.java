@@ -51,19 +51,18 @@ public class TestingJurafskyCorpusExample {
 		initializeRequiredObjects();
 		populateGrammarLists(grammarRules, lexicon);
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
-		ArrayList<String> grammarTree = earley.parse();
 
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
-		
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
-		if(grammarRecognized) {
-			System.out.println("- SYNTATIC TREE:");
-			for(int aux=grammarTree.size()-1; aux>=0; aux--)
-				System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
-			
-		}
+		
+//		if(grammarRecognized) {
+//			System.out.println("- SYNTATIC TREE:");
+//			for(int aux=grammarTree.size()-1; aux>=0; aux--)
+//				System.out.println("\t" + grammarTree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+//			
+//		}
 		
 	}
 

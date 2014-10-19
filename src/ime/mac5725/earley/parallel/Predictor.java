@@ -1,4 +1,4 @@
-package ime.mac5725.earley.parser;
+package ime.mac5725.earley.parallel;
 
 import ime.mac5725.earley.Earley;
 

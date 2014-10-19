@@ -18,7 +18,7 @@ import java.util.LinkedList;
  * @author rayssak
  * @reason Reads a corpus file and gather its grammar rules.
  */
-public class ParsedGLC {
+public class TreeBankHandler {
 	
 	private int ruleLevelCount = 0;
 	
@@ -139,7 +139,7 @@ public class ParsedGLC {
 
 	// Skips first parenthesis
 	private char getValidNextLetter(char currentLetter, int index) {
-		return String.valueOf(currentLetter).matches("\\t") && index+1>line.length() ? line.charAt(index+1) : line.charAt(index);
+		return String.valueOf(currentLetter).matches("\\t") ? line.charAt(index+1) : line.charAt(index);
 	}
 	
 	private boolean isOpeningParenthesis(char currentLetter) {
@@ -184,12 +184,14 @@ public class ParsedGLC {
 		
 		if(!sentenceWordAdded) {
 			
-			String lexiconRule = !line.split("\\s")[line.split("\\s").length-1].contains("(") ? 
+			String lexiconRule = !line.matches("\\s+") && !line.split("\\s")[line.split("\\s").length-1].contains("(") ?
 							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
-							  	  
-			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
-			sentenceIndex.put(tmp.toString().substring(tmp.toString().lastIndexOf("IP")-3, tmp.toString().length()-1).replaceAll("\\[", ""), lexiconRule);
-			sentenceWordAdded = true;
+							  	 
+			if(!lexiconRule.isEmpty() && !currentRule.isEmpty()) {
+				lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
+				sentenceIndex.put(tmp.toString().substring(tmp.toString().lastIndexOf("IP")-3, tmp.toString().length()-1).replaceAll("\\[", ""), lexiconRule);
+				sentenceWordAdded = true;
+			}
 		
 		}
 	}

@@ -1,7 +1,7 @@
 package ime.mac5725.earley;
 
-import ime.mac5725.earley.parser.Completer;
-import ime.mac5725.earley.parser.Predictor;
+import ime.mac5725.earley.parallel.Completer;
+import ime.mac5725.earley.parallel.Predictor;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.io.FileNotFoundException;
@@ -9,10 +9,12 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map.Entry;
 
 /**
  * @author rayssak
@@ -29,6 +31,8 @@ public class Earley {
 	protected static volatile int sentenceHeadRuleCount = 0;
 	protected static volatile int threadCount = 0;
 	protected static volatile int threadCompletedCount = 0;
+	
+	protected double precision;
 	
 	protected static volatile boolean printRules;
 	protected static volatile boolean grammarRecognized = false;
@@ -48,11 +52,14 @@ public class Earley {
 	protected static volatile ArrayList<String> rulesToPredict;
 	protected static volatile ArrayList<String> rulesToComplete;
 	
+	protected String sentence;
 	protected String state;
 	protected String fullState;
 	protected static volatile String currentPOSTag;
 	protected String previousState;
 	protected static volatile String sentenceHeadRule;
+	protected static volatile String finalState;
+	protected static volatile String sentenceOriginalTree;
 	
 	protected static String DUMMY_STATE;
 	
@@ -64,28 +71,9 @@ public class Earley {
 		this.printRules = print;
 	}
 	
-//	public ArrayList<String> parse() {
-//		
-//		GrammarTree tree = new GrammarTree(sentenceHeadRule, i);
-//		tree.getGrammarTree(finalParser);
-//		
-//		return finalParser;
-//		
-//	}
-	
-	public ArrayList<String> parse() {
-		cleanTmp();
-		return finalParser;
-	}
-	
-	protected void cleanTmp() {
-		for(Iterator it=finalParser.iterator(); it.hasNext(); )
-			if(it.next().toString().startsWith("tmp"))
-				it.remove();
-	}
-	
 	protected void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
 		
+		// rayssak testing
 		try {
 			out = new PrintWriter("C:\\rayssak\\dev\\ime\\testing\\testing.txt");
 		} catch (FileNotFoundException e) {
@@ -96,6 +84,9 @@ public class Earley {
 		currentPOSTag = "";
 		sentenceHeadRule = "";
 		previousState = "";
+		finalState = "";
+		precision = 0d;
+		sentenceOriginalTree = "";
 		
 		this.grammar = new ArrayList<String>();
 		this.grammar.addAll(grammar);
@@ -124,6 +115,7 @@ public class Earley {
 	}
 
 	protected void prepareSentenceWords(String words) {
+		sentence = words;
 		sentenceWords = new LinkedList<String>();
 		String tmp[] = words.split(" ");
 		for(int aux=0; aux<tmp.length; aux++) {
@@ -377,7 +369,8 @@ public class Earley {
 		
 		// Gathers all the possible words for this terminal.
 		for(String rule : lexicon) 
-			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(terminal))
+			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(terminal) &&
+			  !rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE)[1].matches("\\s+"))
 				terminals.add(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR + " ")[1]);
 		
 		// If there is any word for this terminal...
@@ -612,6 +605,65 @@ public class Earley {
 	
 	protected void resetChartControl() {
 		currentChartWithRules = new ArrayList<String>();
+	}
+	
+	/**
+	 * @author rayssak
+	 * @reason Check wheter the parsed tree is exactly the same original
+	 * 		   one from the grammar tree.
+	 * 		   The precision will be measured by number of sentences with
+	 * 		   same tree by the number of recognized sentences.
+	 * 		   Also, precision measure will be detailed in percentage of
+	 * 		   correctness ("out of all brackets found by the parser, how 
+	 * 		   many are also present in the gold standard?" 
+	 * 							[Stymne, Sara. 2013. Uppsala Universitet]).
+	 * 
+	 * @param grammarTrees
+	 * @return
+	 */
+	public boolean parse(HashMap<String,String> grammarTrees) {
+		
+		String finalParserState = finalState.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "")
+											.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0]
+											.replace(" " + ConstantsUtility.DOTTED_RULE, "");
+		
+		if(grammarTrees.containsValue(sentence))
+			for(Entry<String, String> rule : grammarTrees.entrySet())
+				if(rule.getValue().equals(sentence)) {
+					
+					String tmpParserState[] = finalParserState.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
+
+					int count = 0;
+					for(int aux=0; aux<tmpParserState.length; aux++)
+						if(rule.getKey().contains(tmpParserState[aux]))
+							count++;
+					
+					precision = (count*100)/tmpParserState.length;
+					
+					if(rule.getKey().equals(finalParserState)) {
+						sentenceOriginalTree = "(" + rule.getKey() + " and " + finalParserState + ")";
+						return true;
+					}
+					
+				}
+		
+		return false;
+		
+	}
+	
+	public ArrayList<String> getBackPointersTree() {
+		for(Iterator it=finalParser.iterator(); it.hasNext(); )
+			if(it.next().toString().startsWith("tmp"))
+				it.remove();
+		return finalParser;
+	}
+	
+	public double getPrecision() {
+		return precision;
+	}
+	
+	public String getOriginalAndParsedTree() {
+		return sentenceOriginalTree;
 	}
 	
 }
