@@ -2,6 +2,7 @@ package ime.mac5725.earley;
 
 import ime.mac5725.earley.util.ConstantsUtility;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 

@@ -1,6 +1,7 @@
-package ime.mac5725.earley.parallel;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.Earley;
+import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -65,6 +66,17 @@ public class Predictor extends Earley implements Runnable {
 			
 		}
 		
+	}
+	
+	private boolean isRequiredToProcess(String rule) {
+		synchronized (rulesToPredict) {
+			String tags[] = rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
+			for(String current : rulesToPredict)
+				for(int aux=0; aux<tags.length; aux++)
+					if(current.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals(tags[aux]))
+						return true;
+		}
+		return false;
 	}
 	
 }

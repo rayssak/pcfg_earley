@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 /**
@@ -54,13 +55,14 @@ public class TestingLC1 {
 		 *		ficam reservadas para serem obras póstumas
 		 * 
 		 */
-		String sentence = "então sejam bem aceites";
+		String sentence = "pequeno livro";
 		printRules = Boolean.valueOf(args[1]);
 		
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();
 		readGrammar(args);
+		printRules();
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
 		
 		handleTimeRan(timeRan);
@@ -69,15 +71,17 @@ public class TestingLC1 {
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 		System.out.println("- SENTENCE PRECISION: " + (earley.parse(glc.getGrammarTrees()) ? "precise" : "not precise, " + earley.getPrecision() + " % precision " + earley.getOriginalAndParsedTree()));
 		
-		Scanner input = new Scanner(System.in);
-		System.out.println("Do you want to show grammar whole tree (all backpointers)? (y/N)");
-		boolean showBackPointers = input.next().equalsIgnoreCase("y") ? true : false;
-		if(grammarRecognized && showBackPointers) {
-			ArrayList<String> tree = earley.getBackPointersTree();
-			System.out.println("- SYNTATIC TREE (with backpointers):");
-			for(int aux=tree.size()-1; aux>=0; aux--)
-					System.out.println("\t" + tree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
-			
+		if(grammarRecognized) {
+			Scanner input = new Scanner(System.in);
+			System.out.println("Do you want to show grammar whole tree (all backpointers)? (y/N)");
+			boolean showBackPointers = input.next().equalsIgnoreCase("y") ? true : false;
+			if(showBackPointers) {
+				ArrayList<String> tree = earley.getBackPointersTree();
+				System.out.println("- SYNTATIC TREE (with backpointers):");
+				for(int aux=tree.size()-1; aux>=0; aux--)
+						System.out.println("\t" + tree.get(aux).replace(ConstantsUtility.FIELD_SEPARATOR, " "));
+				
+			}
 		}
 		
 	}
@@ -90,21 +94,23 @@ public class TestingLC1 {
 	}
 
 	private static void printRules() {
-		ArrayList<String> tmp = new ArrayList<String>();
-		tmp.addAll(grammarRules);
-		Collections.sort(tmp);
-		
-		int count=0;
+
 		PrintWriter out = null;
 		try {
-			out = new PrintWriter("C:\\rayssak\\dev\\ime\\all-rules_sorted.txt");
+			out = new PrintWriter("C:\\rayssak\\dev\\ime\\all-sentences.txt");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		for(String rule : tmp)
-			out.println(rule);	
-			// Print only head rules
+		
+		for(Entry<String, String> entry : grammarTrees.entrySet()) {
+			out.println(entry.getKey());
+			out.println(entry.getValue());
+		}
+		
+//		for(String rule : tmp)
+//			out.println(rule);	
+//			// Print only head rules
 //			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("ADJ")) {
 //				count++;
 //				System.out.println(rule);

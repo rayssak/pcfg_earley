@@ -1,0 +1,3860 @@
+IP-> CP , IP , ADV VB CP .
+por mais insensível que esteja um cadáver na sepultura permita-se o hipérbole , lá parece que a lembrança de uma infâmia , que existe na memória dos que ficam , lhe está animando as cinzas , para o fazer capaz de aflição , e sentimento .
+IP-> CONJ NP PP SR NP .
+porque a vaidade às vezes é um vício que serve de moderar , ou impedir os outros .
+NP-> D N , CONJP , CP
+as implicâncias e defeitos , que os outros lhe não vêem
+IP-> SR ADJP PP
+seja universal nos homens
+IP-> CONJ ADVP NP , SR PP ,
+e além disto os primeiros princípios ou as primeiras verdades , são de todos ,
+ADVP-> DEM SR , ADV
+isto é confusamente
+IP-> IP , PP
+fazer reconhecer de nenhuma sorte
+IP-> PP ADV
+com as do espírito sim
+PP-> P+D NP
+naquele em que elas nos acham
+IP-> NP VB NP , CP
+a vaidade estabeleça regras se estas sempre ficam dependentes da aprovação dos homens . e se estes não sabem sujeitar os seus conceitos , senão àquilo que é comum , que toca a todos , e que a todos compreende
+CP-> CONJ PP , WPP IP .
+e nesta forma de que se desvanecem esses rios .
+IP-> NP NP HV PP .
+alguma vez se havia de ver a vaidade sem lugar .
+IP-> NP SR ,
+nenhuma é ,
+IP-> PP NP HV PP .
+por isso as há de menos e mais valor .
+IP-> PP VB
+a todos compreende
+IP-> NP ADV NP VB PP NP .
+as notícias das vitórias também se vinham a extinguir umas pelas outras .
+IP-> PP NEG HV NP .
+em uma pedra vil não há imperfeição a que se atenda muito .
+NP-> Q D PRO$ N , CONJP
+todo o nosso reparo e atenção
+IP-> PP NEG HV NP ,
+nas sombras não há que distinguir ,
+IP-> NP SR ADJP PP ,
+algumas são incompatíveis entre si ,
+PP-> CONJ P NP
+nem a todos
+ADJP-> ADV ADV VB
+então mais concentradas
+IP-> NP SR ADJP PP .
+só a vaidade é constante em nós .
+CP-> CP , CONJP
+de que um dos privilégios da grandeza é ser superior às máximas do vulgo , e que nela o descrédito não desacredita , a desonra não desonra , e a infâmia não infama
+IP-> PP NP VB IP ,
+por isso as ideias novas reputam-se como partos ilegítimos e supostos ,
+IP-> IP , CONJP , ADVP
+indica poder em uns e nos outros medo , semelhante à estátua de júpiter , diante da qual todos se prostram , não por amor do ídolo , mas por causa do raio , que tem na mão
+IP-> NP PP VB PP IP .
+esta no primeiro estado da inocência vive em nós como oculta e escondida .
+IP-> ADV NP
+sim quem está em lugar oposto
+IP-> PP VB IP NP
+em todos pode ter lugar a causa da ignomínia
+NP-> D ADJ N ADJP
+uma mesma ideia uniforme e igual
+IP-> VB PP , PP .
+escrevi das vaidades mais para instrução minha , que para doutrina dos outros , mais para distinguir as minhas paixões , que para que os outros distingam as suas .
+CP-> P ADV C IP
+por mais que causem deformidade enorme
+IP-> IP , CONJP , CP
+contraímos a obrigação connosco de não admitirmos alívio nas nossas mágoas , e nos armamos de rigor , e de aspereza contra tudo o que pode consolar-nos , como querendo , que a constância na pena nos justifique , e sirva de mostrar a injustiça da fortuna
+CP-> Q D N C IP
+todas as vezes que se vestem
+IP-> CONJ ADV NP VB NP . CP .
+mas raramente se arrepende quem a tem em lugar que o arrojo costuma trazer depois um sentimento largo .
+ADJP-> ADJ , CONJP , CONJP , CONJP
+alheia distinta , separada , e estranha
+IP-> PP PP SR ADJP NP .
+por isso nos contratos é mais perigosa a fé nos que sabem mais .
+CP-> CP , WNP IP .
+se os mesmos conceitos se acham ditos que haverá que nunca o fosse .
+IP-> NP HV PP , CP
+se haviam de observar se a vaidade que em tudo nos governa , não nos obrigasse a guardar a fé nas nossas convenções
+NP-> ADJ NPR
+mesmos heróis
+IP-> SR NP .
+é uma herança que se distribui igualmente a todos , e que todos largam , e entregam na mesma forma 0 que recebem .
+CONJP-> CONJ WNP
+ou cujo mal
+NP-> PRO$ N
+sua esfera
+PP-> P+D , NP
+daquilo em que a não pode haver
+NP-> ADJ ADJP
+outra pronta para o abraçar
+IP-> SR NP ,
+são duas cousas ,
+IP-> VB , CP
+importa que a vaidade estabeleça regras , se estas sempre ficam dependentes da aprovação dos homens . e se estes não sabem sujeitar os seus conceitos , senão àquilo que é comum , que toca a todos , e que a todos compreende
+IP-> PP , VB CP
+para merecer algum sufrágio necessita que primeiro morra o seu autor
+NP-> D ADV ADJ
+as mais sublimes
+IP-> PP NP , NEG VB NP .
+por isso o ser cruel traidor , tirano , não faz horror a quem necessita da traição , da tirania , e da crueldade .
+IP-> NP HV CP .
+mil vinganças há que se suprimem só pelo perigo de que se não perceba o desacato pela vingança .
+IP-> PP , SR CP .
+no desprezo da vida é donde a vaidade se mostra altiva , e arrogante .
+CP/IP-> PP SR NP
+nos mais homens é comércio
+IP-> NP NP
+a nossa sombra vida e a nossa estátua sentimento
+IP-> CONJ VB NP CP .
+e perdemos a razão assim que tornamos ao estado da inocência .
+IP-> NEG NP VB IP , CP .
+não se pode esconder por mais que tome a figura de humildade , de submissão , e de reverência .
+IP-> CONJ CP , ADV NP VB IP .
+e por mais que o contentamento nos extasie nunca nos deixa em estado de não sentir .
+IP-> NP VB IP , CP
+nos vão fugindo até que nós vimos a desaparecer também
+IP-> FRAG , IP .
+não porque suposto se ausentasse o delinquente , cá deixou o nome , e a memória .
+IP-> CONJ NEG NP VB PP ,
+porque não se opõe à corrente das águas ,
+NP-> N , CP , CP . CONJP
+viventes que moram em nós , cuja vida , e existência , semelhante à nossa , também tem um tempo certo , e limitado . e assim vivem , e acabam em nós , da mesma sorte que nós vivemos no mundo , e acabamos nele
+IP-> NP , SR NP PP ,
+o que é fortuna em uma parte é desgraça em outra ,
+ADJP-> ADVP VB
+mais ou menos largos . de se juntarem uns com outros , e fazerem mais volume . de encontrarem diamantes . ou de acharem um campo mais , ou menos dilatado
+PP-> ADV P+D PRO$ N , CP .
+primeiro pela nossa indiferença que pelo fim delas .
+IP-> PP VB ADVP NP ,
+a uns penetra mais vivamente a dor ,
+IP-> ADV NEG VB PP ,
+já não servem de espelho às verdes ramas ,
+IP-> PP NP NEG NP VB ,
+por isso as feridas não se sentem ,
+ADJP-> ADJP , CONJP ,
+mais activa e mais durável ,
+PP-> CONJ P IP
+nem por fugir ao castigo
+IP-> ADV NEG VB PP .
+já não servem de animar o prado nem de triste companhia a um amante solitário .
+IP-> CP , FP NP HV PP .
+se a vaidade fosse uma virtude só nos havia de inspirar meios virtuosos .
+NP-> D PRO$
+o mesmo vitupério visto em sujeitos grandes , não só desfaça o nosso
+IP-> PP CP , ADV PP VB IP NP .
+por isso assim como em todos pode ter lugar a causa da ignomínia também em todos pode ter lugar o efeito dela .
+IP-> NP VB IP , CP .
+isto deve ser porque os nossos sentidos usam-se . a vaidade não .
+IP-> CONJ VB IP .
+e fica sendo como um sacrilégio irremissível e como um princípio de donde se originam tantas aversões hereditárias .
+IP-> PP , Q NP VB NP ,
+com toda esta ventagem que achamos no juízo , pouco nos desvanece o ter juízo ,
+NP-> D ADJ N CP ,
+o mesmo mármore de que em atenas se faria uma minerva ,
+IP-> CONJ VB IP ,
+e faz-nos contemplar o futuro com esperança ,
+CONJP-> CONJ OUTRO
+e outro
+NP-> N , CONJ N
+temor e cobardia
+NP-> ADJP N
+mais ou menos abundância
+IP-> PP NP ADV SR ADJP .
+por isso a alegria então é imperfeita .
+ADVP-> SENAO CP
+senão como fruto da experiência da meditação , dos preceitos , e dos anos
+IP-> NP PP VB NP .
+muitos por vaidade confessam benefícios que nunca receberam .
+IP-> PP PP VB NP ,
+por isso nas acções de um homem conhecemos o seu juízo ,
+NP-> D N ADJ ADJP
+a pena vil imposta em uma estátua
+WNP-> WD N ADJP
+que imaginação bárbara e fèroz
+IP-> PP , ADV VB ADJP .
+donde a encontra aí fica suspensa , e cega .
+IP-> VB NP IP CP
+podem as nossas ideias serem fixas e sempre as mesmas se nós sempre vamos sendo outros
+VB-> VB CONJ VB
+incorporam e unem
+IP-> PP , NP SR NP .
+antes com correspondência certa a dissonância é uma parte da harmonia .
+NP-> ADJ CP
+primeiro que encontra
+IP-> ADV ADV VB PP .
+depois também depende dos outros .
+IP-> ADJP PP
+valorosos só pelo valor
+IP-> NP NEG VB PP PP .
+a morte não serve de limite à desonra .
+IP-> PP FP VB NP .
+a outros só faz uma impressão ligeira .
+IP-> CONJ VB ADVP ,
+porque dura mais do que nós mesmos ,
+IP-> SR NP , PP
+é a natureza do que uma perpétua , e singular metamorfósis
+PP-> ADV P IP , CP
+menos para ser que para ter sido
+IP-> NP NEG VB NP ,
+a fortuna não escolhe os homens ,
+NP-> FP , CP
+só a quem as virtudes mais sublimes fizeram merecer um favor celeste
+CONJP-> CONJ ADJX
+e sombrias
+IP-> NP NEG VB NP .
+o homem não penetra a ruína que o tempo causa ao entendimento .
+IP-> NP , ADVP NP VB NP .
+um lugar tão sagrado nem sempre o consideram os homens com imunidade .
+WPP-> P NP
+de que
+IP-> CONJ NP VB PP , PP .
+e se muda em alegria por meio das aclamações do aplauso .
+IP-> PP PP
+de mão em mão
+IP-> CONJ VB , CP .
+e impede que vejamos a fatalidade , ou indignidade dos seus meios .
+NP-> Q CP
+tudo o que vemos
+IP-> ADV NP VB , CP
+claramente se sabe que não são
+IP-> NP TR NP PP .
+a nossa sensibilidade tem maior força na nossa mesma apreensão .
+IP-> VB PP NP IP
+faz com que apenas os vejamos em uma distância imensa ao mesmo tempo que expõe à nossa vista os defeitos dos outros ainda mais perto , e maiores do que são
+IP-> TR NEG VB CP
+têm não sei que gala e brio
+IP-> PP TR NP PP ,
+no mesmo retiro temos todo o mundo no coração ,
+IP-> NP CP , ADV VB NP ,
+uns assim que nascem logo formam um dilúvio de água ,
+PP-> SENAO P NP
+senão com outro maior
+IP-> NP ADV NP VB , PP .
+o nosso entendimento facilmente se inficiona não só com as opiniões próprias , mas também com as alheias . não só com as próprias vaidades , mas também com as dos outros .
+NP-> ADV C
+mais que imaginação
+IP-> VB IP NP , CP
+pode deixar de ser pura a alegria dos primeiros anos se ainda então a vaidade não domina em nós
+NP-> ADV D
+já este
+IP-> NP , VB PP NP .
+o silêncio da noite anuncia a todos o descanso .
+NP-> D PRO$ ADJ N
+o seu verdadeiro ser
+IP-> ADJP NP
+sensível a razão que nos molesta
+IP-> CONJ IP , IP , CONJP .
+porque sendo o benefício uma espécie de socorro sempre indica superioridade em quem o faz , e necessidade naquele que o recebe .
+IP-> CONJ NP NEG NP VB PP .
+porém o exercício da vaidade não se perde com a razão nem com o tempo .
+IP-> ADV PP
+sim naquele em que elas nos acham
+IP-> NP VB , NP , CP .
+todos sabem senhor , que antes que as nossas vozes aclamassem a vossa majestade já o tinham aclamado os nossos corações .
+IP-> NP TR NP PP ,
+uns têm nome famoso nos anais da história ,
+IP-> PP NEG NP VB PP .
+por isso não nos defendemos de um defeito que indica o termos entendimento .
+IP-> CONJ NP ADV NP VB ,
+e tudo enfim se altera ,
+NP-> NPR , CP
+homeros que as fizessem durar um certo tempo , e isto por meio do encanto de um poema ilustre
+IP-> IP CONJP
+trocados os clarins em flautas tristes os hinos em trenos , os cânticos em elegias , e em epitáfios os emblemas . as rosas encarnadas convertidas em lírios roxos , os girassóis em desmaiadas assucenas , entrelaçados os louros no cipreste , os cajados confundidos com os ceptros , e com o burel a púrpura
+NP-> D N ADJ PP
+um receio insensível de a perdermos
+IP-> NP ADV VB .
+a vaidade sempre persiste e dura .
+IP-> SR VB
+sermos entendidos
+IP-> NP , CP , VB .
+as condições por mais que sejam claras , escurecem-se .
+CONJP-> CONJ ADJP
+e maior
+IP-> NP , CP , VB ,
+o incenso que algumas vezes é símbolo da vaidade e da lisonja , primeiro que exale o seu perfume , arde ,
+NP-> ADV N
+mais efeito
+IP-> CONJ NP VB PP . IP .
+e nos induz a buscarmos esses mesmos nadas como meios de nos distinguir . sendo que nem deus , nem a natureza nos distinguiu nunca .
+IP-> SR NP , NP
+é a ciência humana senão uma humana vaidade
+NP-> ADV Q
+ainda ninguém
+IP-> NP ADV VB ,
+a figura do mundo sempre muda ,
+IP-> CONJ CP , SR PP .
+e se muda é só de espécie .
+IP-> CONJ ADV NP VB , CP .
+e assim nos persuade que para as razões da mágoa , e do contentamento , a nossa semelhança tem ser , a nossa sombra vida , e a nossa estátua sentimento .
+IP-> PP VB IP NP PP
+em menos de um instante viram desvanecidos os triunfos da vida pelos triunfos da morte
+IP-> VB NP IP , IP
+chamam as nações últimas honras devendo antes chamá-la vaidades últimas
+NP-> D NPR
+um planeta
+NP-> D N , CONJP
+a antiguidade enobrece as vaidades e opiniões
+IP-> CONJ ADV FP VB NP .
+e assim só estimamos o que já não temos .
+IP-> PP NP
+nelas a duração
+IP-> CONJ PP CP , NEG HV NP .
+e com efeito se há vaidade sem fortuna não há fortuna sem vaidade .
+IP-> Q ADVP
+todo debaixo do seu poder
+IP-> CONJ SR NP .
+porque é uma espécie de possessão daquilo que se espera .
+IP-> PP ADV NP VB IP NP .
+no vício também se podem encontrar alguns raios de virtude .
+PP-> NEG NP
+não no entendimento
+IP-> NP HV IP
+o havemos possuir
+IP-> CONJ TR PP NP .
+e temos em nós uma propensão oculta que sobre a aparência de buscar os objectos , só procura neles a mudança .
+NP-> ADV D N PP
+já um princípio dele
+IP-> CONJ TR PP NP ,
+porém têm de menos o estarem próximas a nós ,
+NP-> PP Q D NPR
+com eles todos os impérios
+IP-> VB NP PP NP .
+trazem os homens entre si uma contínua guerra de vaidade .
+IP-> PP NEG
+de outros não
+NP-> NPR NPR
+virgílios quantos alexandres sem quintos cúrcios
+IP-> NP NP SR VB ADVP . NP .
+tudo nos é dado como por conta a vida , a fortuna , a desgraça , a alegria , e a tristeza .
+NP-> D ADV ADJ N
+a mais pura alegria
+IP-> ADV SR NP NP , CP .
+então é fortuna a publicidade se é que nos não parece , que o mundo inteiro não basta para testemunha .
+IP-> ET PP
+está de sentinela
+CP-> VB IP
+suposto se ausentasse o delinquente
+CP-> CP . CONJP . CONJP
+que umas nasçam nos montes e outras nos vales . que umas venham das nuvens , e outras da terra . que umas corram claras , e outras turvas
+IP-> ADV VB
+já vieram
+IP-> NP CP
+isto porque não exercitamos as virtudes pela excelência delas mas pela honra do exercício , nem deixamos de ser maus por aversão ao mal , mas pelo que se segue de o ser
+NP-> D N PP Q
+o emprego da vaidade todo
+NP-> CONJ NP
+nem o esquecimento
+IP-> NP VB ADVP , PP , NP
+se ouvem ainda hoje entre o rouco som de caixas , e trombetas , vozes mal articuladas , alaridos confusos , e lamentos tristes
+IP-> NEG HV PP NP
+não há-de ser o corpo
+NP-> OUTRO N
+outro extremo
+IP-> CONJ PP FP NP VB NP .
+e nesta só se salva a vida .
+IP-> PP , HV NP
+contra o que eu disse há muito que dizer
+IP-> NP NP VB PP .
+quási sempre nos ocupa em considerar futuros .
+IP-> NP NP VB PP ,
+a fortuna nos dispõe para a alegria ,
+IP-> ADV SR
+assim seja
+IP-> SR ADJP PP , CP .
+é preciso com efeito que sejamos loucos , e que deixemos muitas vezes a realidade das cousas , só por seguir a aparência , e vaidade delas .
+IP-> NP NP VB PP PP .
+cada um se põe no teatro com a pompa com que a fortuna , e a vaidade o põem .
+WADVP-> ADV PP
+diante da qual
+IP-> FP NP VB PP ,
+até nos desvanecemos da mesma barbaridade ,
+IP-> NP ADV VB CP .
+o homem entendido nunca alcança que só o foi .
+IP-> NP SR ADV ADJP ,
+só deus é sempre o mesmo ,
+IP-> PP NEG VB NP
+deles não depende a existência do mundo
+NP-> PP N ADJ
+por consequência pena curta
+NP-> ADJ ADV N
+outros mais conquistadores
+IP-> NP TR NP IP ,
+outros têm o mesmo nascimento baixo ,
+NP-> D N ADJ CP
+um tempo certo em que começam e em que acabam
+IP-> CONJ NP ADV SR ADJP .
+porque a fortuna do vencer sempre foi vária e inconstante .
+PP-> ADV PP
+mais do que em palavras
+CP-> , WNP IP ,
+ que comummente move ,
+IP-> NP , ADV NP VB .
+quem os recebe sempre os reconhece .
+IP-> PP NP .
+em epitáfios os emblemas .
+IP-> NP ADV VB NP .
+as idades e a fortuna continuamente combatem a nossa constância .
+IP-> CONJ ADV NP HV , CP .
+e assim virtudes há que primeiro começam pela nossa incapacidade , do que por nós mesmos .
+NP-> P+D N
+no retiro
+IP-> ADV NP SR ADJP ,
+finalmente uns são frios com excesso ,
+CP-> CONJ WNP IP .
+mas que importa que a vaidade estabeleça regras , se estas sempre ficam dependentes da aprovação dos homens . e se estes não sabem sujeitar os seus conceitos , senão àquilo que é comum , que toca a todos , e que a todos compreende .
+ADVP-> ADV , CONJ ADV
+mais ou menos
+IP-> ADV FP VB IP
+propriamente só podemos dizer que as cousas estão acabando , e não que estão sendo
+IP-> CONJ PP CP , NP VB PP PP .
+e com efeito assim como o excesso na virtude parece vício também o excesso no vício vem de algum modo a parecer virtude .
+NP-> FP D N PP
+só a vaidade dos reis
+CP-> CONJ NP WADVP IP .
+e quem nunca a viu como a há-de amar .
+IP-> PP NP ADV SR ADJP , CP
+nestes o favor sempre é puro e generoso , em lugar que nos mais homens sempre é inficionado de algum género de interesse
+VB-> VB , CONJ VB
+autorize e ilustre
+IP-> NP TR NP .
+outros têm calor .
+CP-> FP CONJS IP
+só porque não tiveram homeros que as fizessem durar um certo tempo , e isto por meio do encanto de um poema ilustre
+IP-> NP TR NP ,
+a vaidade tem certas regras ,
+IP-> CONJ NP PP VB IP .
+e nós daqui a pouco vamos ser também antepassados dos que hão-de vir .
+IP-> CONJ ADV NP VB PP .
+porque nunca a gozamos sem alguma perturbação .
+PP-> ADV P NP , CP
+mais em benefício de uns que de outros
+IP-> NEG SR
+não são
+IP-> CONJ NEG NP VB IP .
+mas não o pode armar senão por fora .
+IP-> SR ADJP NP , PP
+é mais glorioso o merecer do que o alcançar
+IP-> SR PP
+é de pura fantasia arbitrária , artificial , e separável
+IP-> CONJ ADV VB PP NP
+e sempre recebe com alvoroço a ideia de um ardor amortecido
+IP-> PP FP VB ADVP .
+em outras só assiste como cousa natural .
+IP-> NP , ADV VB IP ,
+o não fazer caso do que é vão também pode nascer de uma excessiva vaidade ,
+IP-> NP PP VB ADV , CP .
+o sol no meio-dia brilha mais não porque deixe de ser o mesmo , nem porque então tenha mais luz , mas porque esta faz mais efeito em um lugar , que em outro .
+IP-> NP PP TR NP ,
+a morte que está de sentinela em uma mão tem o relógio do tempo ,
+IP-> CP VB NP .
+quando se não pode negar o ajuste nega-se-lhe o sentido .
+IP-> NP CONJ ADV NP VB NP .
+a vaidade porém sempre se apropria o modo ou o sentido , em que a cousa em nós fica sendo superior , e admirável .
+NP-> NPR NPR ,
+quinto cúrcio ,
+IP-> NP PP SR ADJP ,
+os meatos da terra em umas partes são estreitos ,
+IP-> NP PP SR ADJP .
+esta nos monarcas é-lhes menos importante que a memória .
+NP-> ADV PRO
+também nós
+IP-> NP NEG TR NP ,
+os seus anos não têm fim ,
+CP-> CONJ ADV NP , WNP IP .
+e verdadeiramente quem não temer a lei de deus nem as leis dos homens , que princípio lhe fica por onde haja de obrar bem .
+IP-> NP VB , PP .
+a vaidade aumenta e diminui , à proporção do seu motivo .
+IP-> SR NP
+ser alvos do tempo
+IP-> CONJ VB ADV NP , CP .
+e discorre santamente um rei quando se desvanece da qualidade de ser justo .
+IP-> NEG VB
+não sentir
+IP-> PP IP
+a outros descer
+IP-> CONJ SR CP .
+e é porque o desprezo todo se dirige e ofende à vaidade .
+IP-> NP SR VB PP
+a terra fosse feita para todos
+IP-> CONJ NP , VB .
+e o que devia ignorar sabe .
+IP-> SR ADJP
+sendo mais reparável e maior
+IP-> CONJ SR NP ,
+mas é erro ,
+ADJP-> ADJP , CONJP
+mais reparável e maior
+NP-> N ADJ ,
+instituição política ,
+IP-> CONJ VB PP .
+pois serve de acalmar os nossos males .
+IP-> HV CONJ PP NP .
+há porém na vaidade a diferença que tudo o que se faz por vaidade , queremos que se veja , que se diga , e que se saiba .
+IP-> NP VB ADVP
+se sente como outro mal maior
+IP-> NP , IP , NEG FP VB NP PP
+o mesmo vitupério visto em sujeitos grandes , não só desfaça o nosso pela imitação
+IP-> NP VB ADJP
+a nossa presunção fique abatida
+IP-> VB+SE PP NP
+sentar-se no mesmo trono a soberania e a benignidade a justiça e a clemência , o poder supremo e a razão
+IP-> ADVP VB IP
+mais longe vão ficando
+NP-> ADJ N , CP
+tal sorte que o conceito , que formamos das cousas , por mais que nos seja indiferente , ou incerto , sempre faz em nós uma verdadeira impressão de alegria , ou de tristeza
+IP-> ET IP
+está vendo os faustos do triunfo
+IP-> NP NEG VB IP , PP .
+a vida não pode subsistir sem estar subordinada às impressões do gosto , e do sentimento .
+IP-> NP ADV VB IP
+nós sempre vamos sendo outros
+IP-> PP , TR PP NP .
+no seu género têm com as águas um paralelo , ou figura igual .
+CP-> WADV IP
+quanto maiores são os ais os gemidos , e os clamores
+IP-> NP , CP , ADV VB PP NP
+o conceito que formamos das cousas , por mais que nos seja indiferente , ou incerto , sempre faz em nós uma verdadeira impressão de alegria , ou de tristeza
+IP-> NP IP SR ADJP .
+o mesmo homem que fez a admiração da guerra , posto em um bosque é outro .
+IP-> TR HV , CP
+terão havido cujas notícias se acabaram , só porque não tiveram homeros , que as fizessem durar um certo tempo , e isto por meio do encanto de um poema ilustre
+ADJP-> VB , CONJ VB
+fingida e sonhada
+IP-> CONJ VB ,
+e desoprime ,
+NP-> ADV N , CP
+mais bem que aquele com que a vaidade as considera
+IP-> CONJ VB .
+e desaparece .
+NP-> ADV ADJ N
+mais lastimosas tragédias
+IP-> CONJ SR ADJP PP NP , CP .
+mas é tão natural nos homens a defesa que não posso passar sem advertir , que se os conceitos neste livro não são justos , é porque em certo género de discursos , estes não se devem tomar rigorosamente pelo que as palavras soam nem em , toda a extensão , ou significação delas .
+ADVP-> ADV PP
+debaixo de um ar altivo e arrogante
+IP-> NP NEG SR ADJP PP
+a carne não é frágil só por um princípio
+IP-> VB PP PP
+gozar das cousas na sua simplicidade natural
+IP-> CONJ NP VB CP .
+e nos parece que há falta naquilo que vimos a conseguir .
+PP-> P ADV
+por ora
+IP-> HV PP
+há-de passar por nós precisamente
+WNP-> WD ADJ N
+que notáveis diferenças
+NP-> Q NPR
+muitos reis
+IP-> ADVP NP VB NP .
+depois de celebradas em cada ponto se acham mil motivos de disputa .
+IP-> ADV NP VB IP .
+nunca o homem pode ser mais nem menos do que homem .
+CP-> ADVP C IP
+primeiro que a vaidade
+IP-> CP , ADV HV NP .
+se há quem os admire também há quem os reprove .
+IP-> CONJ NP VB NP .
+e todas recebem o valor que a vaidade lhes dá .
+IP-> CONJ Q NP VB NP .
+e muito nos lisonjeia o ter entendimento .
+IP-> ADV HV PP
+certamente há-de vir a ser daqui a pouco
+IP-> CONJ ADV NEG VB NP PP , PP .
+e assim não diferem os rios das fontes senão no diâmetro do canal , e em esse se terminar em algum monte , ou algum vale .
+PP-> P+DEM CP
+naquilo que vimos a conseguir
+NP-> VB , CONJP
+culpados e inocentes
+IP-> NP , NP NP VB IP
+tudo o que os outros têm nós o merecíamos melhor
+IP-> PP NEG VB PP NP ,
+com os anos não diminui em nós a vaidade ,
+IP-> ADV NP VB IP ,
+bem se pode dizer que o juízo é o mesmo que entendimento ,
+WNP-> WPRO$ N , CONJP , ADJP
+cuja vida e existência , semelhante à nossa
+IP-> NP VB ADJP NP
+nos pareça imensa a sua esfera
+IP-> CONJ ADV NP VB PP PP .
+e reciprocamente uns servimos de objecto às iniquidades dos outros .
+PP-> PP , CONJP , CONJP , CONJP
+do tempo da idade , da fortuna , e dos sucessos
+NP-> NEG FP D N PP
+não só a virtude da razão
+IP-> CONJ NP ADV SR PP PP NP .
+e cada instante de mais também é de mais em nós uma mudança .
+NP-> Q P+DEM
+nada disso
+IP-> CONJ PP NP NEG NP VB PP ,
+e deste todas as mudanças não se dirigem a nós ,
+IP-> ADV ADV VB IP
+aqui ainda corre fumando e cheio de espírito , e calor
+IP-> ADV VB+CL IP
+antes chamá-la vaidades últimas
+IP-> CP NP ET ADJP
+quando as cousas chegam ao entendimento já este está vencido
+IP-> CONJ CP , CONJ VB .
+e ainda que a vaidade não tira o medo contudo esconde-o .
+IP-> HV NP
+há uma certa porção de alegria e de tristeza , que há-de passar por nós precisamente
+NP-> ADV , CONJ ADV
+mais nem menos
+IP-> CONJ PP VB IP , CP .
+e desta sorte imos passando sucessivamente a vida entretidos em um laberinto de vaidades , até que chegamos à vaidade dos velhos . vaidade discursiva , prudencial , histórica , e muitas vezes imbecil .
+IP-> CONJ PP NEG VB ,
+e desta sorte não vivemos ,
+IP-> PP NP NP VB IP .
+em uma pedra preciosa qualquer defeito lhe faz perder a estimação .
+IP-> CONJ IP FP NP VB , CP .
+porque induzida pela mesma vaidade só nos mostra que devemos sentir , sem discorrer sobre a qualidade do sentimento .
+ADJP-> ADJ , ADJ , CONJP
+vagarosos cobardes , e descuidados
+IP-> CONJ NP , NEG VB .
+e quem não vê não distingue , nem elege .
+IP-> SR NP ADJP
+ser o mundo estreito e limitado
+IP-> VB CONJ NP NP ,
+creia pois a grandeza o que quiser de si ,
+IP-> CONJ CP , VB ADJP NP .
+mas se é certo que a vaidade é vício , parece difícil o haver virtude , que proceda dele .
+CONJP-> CONJ PP NP
+e lisonjas e por consequência vaidades
+IP-> VB NP PP , IP
+fazer ídolo da reputação fazendo-nos por essa causa dependentes , não só das acções dos homens , mas também das suas opiniões . não só das suas obras , mas também dos seus conceitos
+PP-> P+DEM , NP
+naquilo em que a imaginação não tem a maior parte , e a vaidade empenho
+IP-> FP SR NP NP
+só fosse desonra aquela que se sabe
+IP-> NP PP NP VB , PP . NP .
+a vaidade em todo o tempo e em todo o lugar nos acompanha , e segue , não só nas cidades , mas também nos desertos , não só na primavera dos anos , mas em toda a vida , não só no estado da fortuna , mas ainda no tempo da desgraça . paixão fiel , constante companhia , e permanente amor .
+IP-> NP VB ADV NP ,
+um ânimo alegre disfarça mal o riso ,
+IP-> NP VB ADV NP .
+um coração triste encobre mal o seu desgosto .
+IP-> CONJ NP ADV NP VB , CP .
+e outras também nos entristecem que tomadas só por si , não têm outro mal , que aquele que a mesma vaidade lhes supõe .
+IP-> NP VB CP ,
+a vaidade da grandeza parece que é mais subtil e mais vã do que as outras vaidades ,
+IP-> ET ADJP NP
+está descontente a vaidade
+IP-> CONJ NP ADV VB IP ,
+porque o tempo insensivelmente vai destruindo o homem em todas as suas partes ,
+IP-> CP , NP , VB NP .
+se alguma vez se chora donde só se deve rir ou se ri por aquilo por que se deve chorar , a alma então penetrada de dor , ou de prazer , desmente aquele exterior fingido , e falso .
+NP-> N ADJ , CP
+estado venturoso em que nada distinguimos por discurso , mas por instinto . e em que nada considera a razão , mas sim a natureza
+IP-> SR IP NP ,
+é saber o saber ignorar ,
+IP-> NP PP VB IP
+a grandeza só em nós fica sendo natural
+NP-> ADJ ADJ
+outro maior
+IP-> VB PP PP .
+vimos ao mundo a mostrar-nos e a fazer parte da diversidade dele .
+IP-> ADV ADV NEG SR NP NP ,
+finalmente já não são cristais as suas águas ,
+IP-> NP VB CP .
+outras vezes faz que achemos nos exemplos um alívio constante e que o mesmo vitupério , visto em sujeitos grandes , não só desfaça o nosso pela imitação , mas que também o autorize , e ilustre pela razão da semelhança .
+IP-> ADVP VB NP
+primeiro morra o seu autor
+IP-> CONJ IP , NP VB NP .
+e conhecendo todos a vaidade alheia nenhum conhece a sua .
+IP-> NP VB NP ,
+a antiguidade enobrece as vaidades e opiniões ,
+IP-> PP VB NP NP , PP .
+no silêncio de uma urna depositam os homens as suas memórias para com a fé dos mármores fazerem seus nomes imortais .
+IP-> NP VB NP .
+cada um recebe o que lhe dão .
+IP-> CP , SR NP ,
+o que acabou com a fugida ou com a morte , foi a pena temporal , e por consequência pena curta ,
+IP-> ADV PP HV NP .
+assim também no corpo da vaidade há partes em que penetra mais o sentimento .
+NP-> Q DEM CP
+tudo aquilo que respira
+IP-> NP ADV VB ADJP
+estas sempre ficam dependentes da aprovação dos homens
+IP-> CONJ NP NEG VB IP .
+porque esta não pode ter lugar de nós para eles .
+IP-> VB NP IP
+vemos um prodígio em vossa majestade
+IP-> CONJ CP , NP NP VB
+porém por mais que as confunda a morte a história as separa
+IP-> PP NP , VB NP ,
+por isso a lembrança de um benefício humilha , e mortifica a nossa vaidade ,
+IP-> CONJ NP VB PP PP .
+e tudo leva consigo ao profundo de uma eternidade .
+IP-> PP NP SR NP .
+por isso a perspicácia nos homens é qualidade suspeitosa e que tem menos valor , que o que comummente se lhe dá .
+IP-> NP VB IP PP .
+outros correm presos e oprimidos por entre serras agrestes , e sombrias .
+IP-> NEG HV NP PP .
+não há gosto nem desgosto grande naquilo , em que a imaginação não tem a maior parte , e a vaidade empenho .
+IP-> PP NP SR NP ,
+naquelas a vaidade é uma paixão com ímpeto ,
+NP-> D ADJ , CONJP N
+os primeiros e principais movimentos
+IP-> PP VB ADVP ,
+por isso correm mansamente e sem ruído ,
+IP-> PP CP VB PP .
+por isso ainda quando descem passam com estrépito e furor .
+IP-> NP , SR PP .
+tudo o que descobre é sem adorno .
+NP-> NP , CONJP N
+todos e quaisquer modos
+IP-> PP , NEG TR NP .
+para obrarmos bem não temos mais do que consultar a natureza , e fazer o contrário .
+PP-> NEG FP P+D NP
+não só no sangue dos que estão
+NP-> WNP IP
+o que a motiva
+IP-> VB NP ADVP
+seguindo a posteridade como uma herança bárbara e infeliz
+IP-> PP , NP , SR NP
+nos anais da história a parte que se admira mais , e que mais se imprime na lembrança , é aquela em que a narração se compõe de sucessos mais cruéis . e em que os campos , que foram de batalha , cobertos ainda hoje de esqueletos informes , e partidos , conservam certo horror
+IP-> VB PP PP , CP .
+começa a melhorar-se desde a sua primeira origem até que vem a tornar àquilo de que procedeu .
+IP-> CONJ PP , NP ADVP ET ADJP .
+e para haver ainda menos firmeza nos sentidos estes quási sempre estão enfermos .
+PP-> P IP , PP
+por isso a vaidade antes nos resolve a ser ingratos do que a conhecer uma obrigação de que nunca podemos estar livres
+NP-> NEG FP D N
+não só o excesso
+NP-> D N , CP
+a vaidade a regra de que um dos privilégios da grandeza , é ser superior às máximas do vulgo , e que nela o descrédito não desacredita , a desonra não desonra , e a infâmia não infama
+IP-> ADV NP VB NP . IP
+mais nos inclina a vaidade sendo que o mesmo ar , que lhe dilata os ecos , lhe confunde , e apaga a voz
+IP-> VB PP NP
+crer dela o que quisermos
+NP-> NUM N ADJP
+mil princípios diferentes incertos , e duvidosos
+IP-> NP SR ADJP , CP .
+o arrependimento é certo quando em um ajuste , ou não há conveniência , ou esta já passou .
+NP-> D WADV
+o como
+NP-> NPR , CONJ NPR
+alexandre e césar
+PP-> PP . CONJP . CONJP
+menos pela consequência deles que pelo estrago . menos pela utilidade , que pela ruína . menos pela fortuna de uns , que pela desgraça de outros
+NP-> D N , ADJP
+uma peleja esclarecida pelas circunstâncias da vitória
+IP-> CONJ NP VB , CP .
+porque nos parece que tudo o que os outros têm , nós o merecíamos melhor .
+IP-> CONJ ADV HV NP .
+porque também há cousas grandes pela sua execração .
+IP-> NP , ADVP VB IP ,
+o deixar de a seguir nem sempre pode ser ,
+IP-> SR ADJP CP .
+é necessário que outro maior motivo nos incite .
+NP-> D ADJ N , CP ,
+o mesmo homem que fez a admiração da guerra ,
+ADVP-> CONJ ADV
+nem sempre
+NP-> PRO$ N , CONJP
+nosso pesar e desagrado
+IP-> PP , CONJ IP , CONJP
+em um ajuste ou não há conveniência , ou esta já passou
+IP-> ADVP NP , CONJ NP VB ,
+quási sempre o modo ou nos obriga ,
+PP-> P+ADV PP
+daqui a pouco
+IP-> IP CONJP CONJP CONJP
+trocados os clarins em flautas tristes os hinos em trenos , os cânticos em elegias , e em epitáfios os emblemas .
+ADJP-> D ADJ
+o mesmo
+IP-> CONJ PP NP , SR PP .
+e desta sorte tudo quanto obramos é por um princípio vicioso .
+IP-> TR NP NP .
+tem malícia quem descobre o mal para o evitar .
+NP-> Q , CP
+algumas que não deixem conhecer que vêm do homem
+NP-> DEM SR , D N ADJP
+isto é uma pena permanente , sucessiva , indelébil
+IP-> VB+SE CP
+examinar-se de donde lhe vêm os resplendores
+IP-> NP VB PP NP ,
+este atrai a si toda a nossa sensibilidade ,
+IP-> PP NP NP VB , CP .
+por isso muitas cousas nos alegram que tomadas em si mesmas , não têm mais bem , que aquele com que a vaidade as considera .
+IP-> ADV NEG VB IP ,
+finalmente não vem ser homem ,
+IP-> NP VB PP NP .
+que umas nasçam nos montes e outras nos vales . que umas venham das nuvens , e outras da terra . que umas corram claras , e outras turvas . nada disso faz nas águas diversidade alguma .
+IP-> NP , VB ADJP PP .
+as acções de alexandre e césar , que estavam brevemente para sair à luz no idioma português , ficam reservadas para serem obras póstumas , e talvez que então sejam bem aceites .
+IP-> ADV NEG VB IP .
+naturalmente não podemos amar a quem devemos .
+CP-> CP CONJP
+em que se observam espectros debaixo da visão de umas luzes voláteis , em que se ouvem ainda hoje , entre o rouco som de caixas , e trombetas , vozes mal articuladas , alaridos confusos , e lamentos tristes
+IP-> NP ADV VB PP
+o braço logo fica sem vigor
+NP-> ADV N ,
+primeiramente terra ,
+IP-> CP , HV PP .
+se fizermos reflexão havemos de admirar o pouco que basta para fazer o nosso bem , ou o nosso mal .
+IP-> NP ADV SR VB
+alguns já foram ditos
+IP-> NP PP VB NP
+outros também por vaidade reconhecem benefícios verdadeiros
+IP-> NP , NP FP NP VB PP .
+o que os mais devem ao exercício vossa majestade só o deve à omnipotência .
+IP-> PP VB IP . CP .
+com os anos imos mudando de umas vaidades par outras não porque queiramos mudar de vaidade , mas porque algumas há , que em certos anos são incompatíveis , e só têm lugar em outros .
+IP-> NP , PP , VB PP NP .
+o mesmo firmamento com giro rápido , esconde pela tarde os astros que amanheceram com a aurora .
+ADJP-> ADJ , N , N
+cruel traidor , tirano
+IP-> SR ADJP NP .
+é subtil a vaidade em discorrer .
+IP-> ADV TR NP .
+ainda temos o bem que com pouco se alimenta a vaidade .
+IP-> CONJ NP NP NP VB PP .
+e o nosso contentamento tudo nos mostra com agrado .
+IP-> SR ADJP NP ,
+é próprio da vaidade o dar valor a muitas cousas que o não têm ,
+IP-> CONJ NP VB IP , CP .
+e nos vão parecendo maiores até que os vimos a perder da vista , e muitas vezes da memória .
+IP-> VB NP , ADVP
+buscarmos esses mesmos nadas como meios de nos distinguir
+NP-> CONJ D N
+nem a morte
+IP-> NP FP VB NP
+os olhos só vejam fogo e sangue
+IP-> Q VB IP .
+todos fazem a causa sua .
+IP-> CONJ NP , VB IP , CP .
+porque as cadeias ainda as que são mais pesadas , ficam sendo leves , quando é o amor quem as faz , e as suporta .
+IP-> PP NP ADV VB NP .
+por isso a paciência nunca faz rogos inúteis .
+WPP-> P+D WPRO
+das quais
+IP-> SR CP
+é o que venceu
+IP-> PP FP VB PP
+por ora só consiste na circunstância do tempo isto é , em ser com antecedência , e ser já , aquilo que certamente há-de vir a ser daqui a pouco
+IP-> IP , ADV VB IP
+prostrado já fica agonizando
+IP-> PP ADV VB CP .
+em outros também parece que descansam .
+NP-> D PRO$ ADJ N , CONJP
+o seu mesmo sofrimento e silêncio
+IP-> VB PP IP
+fazendo-nos por essa causa dependentes não só das acções dos homens , mas também das suas opiniões . não só das suas obras , mas também dos seus conceitos
+IP-> PP ADV VB NP .
+por nosso mal lá chega a idade em que não queremos mais fortunas , que o viver .
+IP-> CONJ ADV NP VB
+mas também se extinguem
+CP-> P ADV ADJ C IP
+por mais infinita que nos pareça a distância de um a outro extremo
+IP-> FP NP SR
+só o foi
+IP-> CONJ PP NP TR NP ,
+e para o uso dele todos têm igual direito ,
+IP-> CONJ ADV CP SR PP .
+e assim quando a vaidade busca o entendimento é só por formalidade e só para a defender , e autorizar , e não para aconselhar .
+IP-> NP NP TR PP ,
+a vaidade nos tem em um contínuo movimento ,
+IP-> NEG SR PP .
+não é só nesta parte em que sou repreensível .
+IP-> CONJ PP NEG SR ADJP NP .
+e com efeito não é grande o mal que sempre é infalível por outra parte , e que por ora só consiste na circunstância do tempo . isto é , em ser com antecedência , e ser já , aquilo que certamente há-de vir a ser daqui a pouco .
+NP-> Q D N , CONJP
+todas estas propensões e inclinações
+CONJP-> CONJ ADVP
+ou menos largos de se juntarem uns com outros , e fazerem mais volume . de encontrarem diamantes . ou de acharem um campo mais , ou menos
+IP-> NP VB NP PP .
+todos fazem vaidade de ter malícia .
+IP-> VB PP PP NP
+ver perturbadas as gentes cheias de aflição , e espanto . o achar todos os caminhos humedecidos com lágrimas , rubricados com sangue , e impedidos com os despedaçados corpos de mil agonizantes . o ouvir no ar em ecos entercadentes uma multidão de soluços , e suspiros
+IP-> NP VB NP PP ,
+os sucessos fazem efeito em nós ,
+IP-> PP NP VB
+em qualquer parte do corpo nos anima
+IP-> CONJ NP CP , SR NP .
+e os heróis o que os faz mais visíveis é a distância , e desproporção dos outros homens em que os põem as suas acções .
+PP-> PP P+D NP
+entre elas das nossas vaidades
+NP-> SENAO D ADJ N
+senão uma humana vaidade
+NP-> D N PP CP
+as acções de alexandre e césar , que estavam brevemente para sair à luz no idioma português
+PP-> P NP , PP
+de nós isto é das nossas paixões , e entre elas das nossas vaidades
+IP-> PP PP NP VB NP .
+por isso deles nos defende a vaidade .
+IP-> PP NP , VB IP PP .
+por isso as façanhas que só têm por princípio a vaidade do valor reputam-se grandes à proporção da impiedade , com que o mesmo valor as executa .
+IP-> NP NP VB IP , CP .
+ninguém se quer expor se a vaidade o não expõe .
+NP-> N , CP , CP
+impressão que temos , de que o juízo é menos sujeito ao erro , que em deus é impossível
+IP-> NP ET ADJP
+tudo estava já sujeito
+IP-> NP NEG NP VB PP PP .
+a mesma morte não se mostra com igual semblante nos suplícios .
+IP-> ADV HV IP
+sempre havemos conservar a memória dele
+IP-> VB NP NP , PP
+deixemos muitas vezes a realidade das cousas só por seguir a aparência , e vaidade delas
+IP-> NEG TR NP , CP
+não temos vaidade senão enquanto não temos ciência dela
+PP-> P+D WPRO
+da qual
+PP-> P+DEM NP
+àquilo de que procedeu
+IP-> CONJ ADV ADVP NP VB NP , PP ,
+e assim mais nos agrada o discorrermos subtilmente do que o discorrermos com acerto ,
+IP-> CONJ NP CP , ADVP VB NP ,
+e o respeito ainda quando degenera em adoração nem sempre tributa um incenso puro ,
+IP-> NP NEG TR ADV PP NP ,
+a natureza não tem lá por objecto mais do que a si mesma ,
+IP-> ADV NP VB PP .
+antes nos expõe a toda a actividade deles .
+IP-> NP NP VB ADV ,
+a excelência do fim nos ocupa inteiramente ,
+IP-> NP , PP VB ,
+a vaidade que de todas as paixões é a mais forte , a todas arrasta ,
+IP-> NEG NP VB NP , PP ,
+não se paga um benefício senão com outro maior ,
+IP-> CONJ CP , CP , SR NP .
+e por mais que o não sintamos , o que primeiro cansa , é o entendimento .
+IP-> NP ADVP NP VB IP , PP
+os objectos primeiro se deixam ver na ideia do que se mostrem na realidade
+IP-> NP NP NP VB ,
+também a vaidade e a humildade muitas vezes se encontram ,
+ADJP-> ADJ , CONJP
+ilegítimos e supostos
+IP-> PP , NP NP VB .
+para nada ser permanente em nós até o ódio se extingue .
+IP-> CONJ NP CP , NP ET , ADJP .
+e esse quando vem já nós estamos , ou abatidos de tristeza , ou cheios de alegria .
+IP-> VB IP ,
+poderá querer introduzir ,
+IP-> NP , NP ET IP , PP
+a lembrança de uma infâmia que existe na memória dos que ficam , lhe está animando as cinzas , para o fazer capaz de aflição , e sentimento
+ADJP-> ADJ , ADJ , CONJ ADJ
+arbitrária artificial , e separável
+IP-> PP , NP NP VB ,
+para donde quer que vamos , a vaidade nos leva ,
+IP-> PP NEG VB NP ,
+por isso não conhecemos o seu verdadeiro ser ,
+IP-> NP FP NP VB PP .
+o merecimento só se pesa naqueles que caem e não nos que sobem .
+IP-> IP , ADV ET IP ,
+mudado o nome e o teatro , agora estão formando a imensidade do oceano ,
+NP-> D PRO$ NPR
+o seu autor
+IP-> VB ADV NP ,
+deixamos livremente o comércio dos homens ,
+IP-> PP SR ADJP
+em certos anos são incompatíveis
+IP-> NP , NEG SR NP .
+o que chamamos inveja não é senão vaidade .
+IP-> VB ADV NP .
+vemos confusamente as aparências de que o mundo se compõe .
+IP-> CONJ CP , PP SR NP .
+porque se não é sinal de um ânimo dobrado e infiel , ao menos é prova de que o pode ser .
+NP-> D CONJP
+um e outro
+IP-> NP NP NP VB PP .
+as virtudes humanas muitas vezes se compõem de melancolia e de um retiro agreste .
+IP-> NEG VB NP , PP
+não temem o castigo pelo que este tem de insuportável
+NP-> N CONJ N
+crueldades nem inveja
+IP-> ET ADV PP
+estavam brevemente para sair à luz no idioma português
+IP-> VB CP , CP
+importa que no exterior do homem haja tanta diferença se no seu interior não há nenhuma . que importa que sejam diversos os lugares , se nos sujeitos não há diversidade
+NP-> ADJ N
+várias isenções
+IP-> ADV VB NP , CP
+nunca mostramos o que somos senão quando entendemos que ninguém nos vê
+IP-> , NP , CP
+ senhor , que as vaidades estejam só aos pés de vossa majestade , se as virtudes o ocupam todo
+IP-> SR NP NP , CP
+serem as águas muitas de sorte que cheguem a formar um rio
+IP-> NP NP VB PP , CP
+a eficácia delas se incorpore em nós muito antes que elas cheguem
+IP-> ADV NEG SR NP CP ,
+verdadeiramente não é o homem o que muda ,
+NP-> ADV D ADJ N PP
+ainda a mesma lembrança do seu nome
+IP-> NP FP VB PP
+um furor heróico até chega a invocar o céu e a terra , para estarem atentos a uma acção
+IP-> NP VB ADV , CP .
+a vaidade propõe e decide logo , de sorte que quando as cousas chegam ao entendimento já este está vencido .
+IP-> ADVP VB IP ,
+assim devia ser ,
+IP-> PP SR ADJP IP .
+para a virtude é-nos preciso conhecer e saber tudo .
+WNP-> WD ADJP N , CP
+que maior loucura que a que nos expõe a perder a vida na expectação de podermos servir de objecto ao vaidoso ruído da fama . que maior delírio , que sacrificarmos o descanso ao desejo de sermos admirados
+IP-> NP NEG VB ,
+as obrigações não bastam ,
+IP-> NP , NEG VB PP PP .
+aqueles prelúdios ou ensaios , não cedem na perfeição a nenhuma parte da obra .
+IP-> VB IP .
+vem fazer-se .
+PP-> DEM SR , P IP
+isto é em ser com antecedência , e ser já , aquilo que certamente há-de vir a ser daqui a pouco
+IP-> SR NP PP NP .
+era desgraça neles o não poderem fazer mais desgraçados .
+IP-> CONJ NP HV , CP .
+porém alguns há em quem a vaidade é misteriosa , e esquisita .
+NP-> ADJ , CP
+mortais que ainda quando vão passando o insultam , e se servem desse mesmo instante , em que passam , para o ofenderem
+IP-> CP , VB NP , PP .
+se alguma ofensa nos irrita deixamos a sociedade , não por arrependidos , mas por queixosos , e menos por amar a deus , que por aborrecer os homens .
+NP-> D N VB
+a vaidade satisfeita
+IP-> PP VB ADV PP NP ,
+na infância do mundo começaram logo a haver combates ,
+IP-> CONJ NP VB IP ,
+e a tranquilidade pode dar descanso ,
+IP-> CONJ NP VB IP .
+contudo a hipocrisia da vaidade pode durar muito .
+IP-> CP , NP NP VB .
+se por alguma causa imaginamos o contrário a mesma imaginação nos perturba , e inquieta .
+FRAG-> CONJ PP NP .
+e por isso virtude mercenária .
+IP-> CONJ ADV PP IP , CONJP .
+e assim para a infidelidade só nos falta o modo a resolução não .
+IP-> VB+CL PP
+afastar-nos do contrato
+CP-> CONJS C IP
+como que o reclama
+IP-> CONJ PP ADV HV NP .
+porque no tempo também há um ponto de perspectiva donde como em espelho vão crescendo todos os objectos , e em chegando a um certo termo , desaparecem .
+IP-> PP SR NP .
+para todos é o mesmo .
+IP-> NP , NEG VB CP .
+a diferença dos lugares não faz que as águas sejam diferentes .
+NP-> NP . CONJP . CONJP . CONJP . CONJP
+o ser causa de que o mundo tome outra figura outra ordem , outro movimento . o ver perturbadas as gentes , cheias de aflição , e espanto . o achar todos os caminhos humedecidos com lágrimas , rubricados com sangue , e impedidos com os despedaçados corpos de mil agonizantes . o ouvir no ar em ecos entercadentes uma multidão de soluços , e suspiros . o abater impérios , e fazer deles desertos solitários
+IP-> VB ADVP PP
+cobertos ainda hoje de esqueletos informes e partidos
+IP-> PP SR NP ,
+no ocaso e no oriente é o mesmo sol , e a mesma luz ,
+IP-> ADV NP SR ADJP NP ,
+naturalmente nos é odiosa a irresolução ,
+IP-> Q VB NP , CP
+pouco vale um livro quando para merecer algum sufrágio , necessita que primeiro morra o seu autor
+IP-> PP SR CP .
+para este mundo é 0 que obramos .
+IP-> NP HV , CP .
+alguns sentimentos há que se incorporam e unem de tal sorte a nós , que vêm a ficar sendo uma parte de nós mesmos .
+IP-> IP NP VB PP
+divertido e empregado o nosso pensamento chegue a contemplar vistosa a nossa mesma morte , e luzida a nossa mesma sombra
+NP-> NP , D
+aquele que sai sem fausto nem cortejo , e que logo no rosto indica , que é sujeito à dor , à aflição , e à miséria , esse
+IP-> CONJ ADV VB CP . CP .
+e assim perdemos quando o alcançamos de sorte que a fortuna parece não está tanto em possui-la , como em desejá-la .
+NP-> NP , CONJP , CONJP
+a natureza o princípio , e o fim
+IP-> NP NEG VB PP
+a não busquem por todos e quaisquer modos
+IP-> NEG TR NP NP .
+não têm mais duração as cinzas dos heróis .
+IP-> CONJ ADV NP TR IP .
+e logo nos tem certo e disposto para ele .
+IP-> ADV NP VB , CP .
+assim se vê que há vícios , de que a vaidade nos preserva , e que há virtudes , que a mesma vaidade nos ensina .
+IP-> PP NP NP VB , PP .
+no crime o ânimo se abate menos pelo medo do castigo , que pela qualidade dele .
+NP-> D ADV N
+os mais homens
+CP-> WNP IP , CONJP
+que as não vê quem está no mesmo lugar mas sim quem está em lugar oposto
+IP-> ADVP NP NEG VB PP
+ainda então a vaidade não domina em nós
+IP-> PP , PP SR CP , CONJP .
+na parte em que domina algum usurpador para ele é 0 que se olha , e não para a usurpação .
+VB-> VB , VB , VB
+abatem forçam , levam
+WNP-> ADV CONJS
+somente como
+IP-> PP CP , SR PP .
+com efeito por mais que vivamos juntos e nos vejamos sempre , é por um modo como vago , e passageiro .
+IP-> CONJ VB IP
+nem pode ser em nós
+PP-> PP CONJP
+de religião e de bons costumes
+IP-> VB ADVP IP , PP .
+importa menos saber quem é o que venceu , ou como venceu , do que saber somente quem venceu .
+IP-> SR CP CP .
+é o que basta para que a vaidade nos faça persistir no sentimento .
+NP-> D NEG IP
+este por vaidade afecta o não lembrar-se do benefício feito
+NP-> Q D N PP
+toda a vastidão do mar
+CP-> WADJP IP
+que as outras vaidades
+IP-> HV , CP , CONJP
+há que se formam do gosto , e quantos gostos , que resultam da dor
+ADJP-> Q ADJ
+mui difícil
+IP-> CONJ ADV NP NP VB IP .
+e finalmente a vaidade ou amor da reputação os faz virtuosos .
+IP-> NP NEG VB NP
+lhes não ignorássemos as causas
+IP-> SR ADJP ADVP
+ser capazes depois da morte
+IP-> VB+SE IP
+considerar-se vítima de que é propriedade o ser inocente
+IP-> VB ADVP NP
+seguimos como por força os movimentos dela e do mesmo modo os da tristeza
+IP-> NP NEG VB , IP
+se não esqueçam vendo-se em estado de inspirar amor
+NP-> NP . CONJP . CONJP . CONJP
+um riso agradável que achamos nas pessoas eminentes , e que por mais , que seja equívoco , sempre a vaidade o interpreta a seu favor . um obséquio , que tem por princípio a dependência , e em que o interesse se esconde subtilmente . uma submissão , que nos faz crer que os homens têm obrigação de respeitar-nos . uma lisonja dita com tal arte , que fica sendo impossível , conhecermos-lhe o veneno
+IP-> ADV NP VB NP .
+insensivelmente se forma uma espécie de divórcio entre quem recebe um favor e quem o faz .
+CP-> P ADV C IP ,
+por mais que queiramos ser humildes ,
+IP-> ADV NP VB CP .
+assim se vê que a vaidade nos livra de uma dor como por encanto .
+IP-> CONJ PP VB NP .
+e nisto consiste a sua maior e mais estimada vaidade .
+IP-> NP , NEG VB NP ,
+os impérios e repúblicas , não tiveram outra origem ,
+IP-> CONJ PP VB NP ,
+e em todos põe um sinal de diferença e um carácter de desigualdade ,
+PP-> P NPR
+a deus
+NP-> VB N , CP
+emprestadas águas que recebem
+IP-> ADV NP VB PP NP
+logo se forma em nós um desejo imperceptível de o esquecer
+IP-> PP VB , CP
+logo no rosto indica que é sujeito à dor , à aflição , e à miséria
+IP-> NP NEG NP VB , CP .
+um infeliz não se persuade que a sua sorte possa ter mudança .
+IP-> ET ADJP
+está contente e como há-de rir quem está triste
+IP-> NP NEG NP VB , CP ,
+a vaidade não nos deixa senão depois que nos entrega à morte ,
+IP-> NEG TR NP NP
+não tenha parte a vaidade
+IP-> VB IP , CP .
+faz-nos obrar mal se desse mal pode resultar um nome , um reparo , uma memória .
+NP-> N Q
+diversidade alguma
+ADVP-> ADV CP
+tanto como a vida
+IP-> PP VB PP , NP .
+a um homem infeliz serve de alívio o considerar-se sábio .
+IP-> CP , ADJP SR NP .
+quanto maiores são os ais os gemidos , e os clamores , tanto maior é a acção , e a vaidade de quem os move .
+IP-> VB+SE PP
+assinalar-se em um dia que há-de servir de época aos séculos vindouros
+IP-> NP VB PP , PP .
+alguns fogem da sociedade ou por cansados do tumulto , ou porque conhecem os enganos do aplauso .
+NP-> ADV N CP
+mais mundos que pudessem invadir devastar , vencer
+IP-> CONJ NEG TR NP PP
+porque não temos inveja nem vaidade , que nos preocupe contra os que passaram há muitos séculos
+PP-> PP CONJP CONJP CONJP CONJP CONJP
+de olhar de ver , de ouvir , de andar , de preguntar , e de responder ,
+IP-> ADV FP VB .
+depois só possuímos .
+NP-> CONJ NP , CONJP
+nem a ignomínia do nome nem o esclarecido
+NP-> N N
+umas vezes
+IP-> NP NP VB , PP .
+deus a infunde não em todos , mas naqueles só , a quem as virtudes mais sublimes fizeram merecer um favor celeste .
+IP-> IP . CONJP , CONJP .
+a tradição anima essas mesmas cinzas umas para honra da natureza , outras para horror da posteridade .
+IP-> NP VB ADJP PP .
+a mais ilustre acção fica infame pelo motivo .
+IP-> PP VB ADJP NP .
+em vossa majestade ficaram concordes e fáceis aqueles impossíveis .
+IP-> PP VB PP NP
+em ecos entrega aos ventos partidos , os nossos ais
+IP-> ADV NP NP VB IP
+continuamente os anos nos vão fazendo incapazes de obrar mal
+IP-> ADVP VB ADV PP
+ainda assim fiz mal em formar das minhas reflexões um livro
+IP-> ADV HV NP .
+apenas haverá algumas que não deixem conhecer que vêm do homem .
+IP-> NP , CP , ADV NP VB ,
+o tirano que é o mesmo executor da crueldade por mais que no semblante inculque um aspecto duro , interiormente se estremece ,
+IP-> NP , VB PP . IP .
+todas estas diferenças encontram-se nos rios . uns pequenos , outros grandes . uns elevados , outros abatidos .
+NP-> D VB N PP
+uma desolação universal o ser causa de que o mundo tome outra figura , outra ordem , outro movimento . o ver perturbadas as gentes , cheias de aflição , e espanto . o achar todos os caminhos humedecidos com lágrimas , rubricados com sangue , e impedidos com os despedaçados corpos de mil agonizantes
+IP-> PP SR NP IP .
+por isso é loucura sacrificar a vida por eternizar o nome .
+IP-> ADV VB PP .
+depois procede de uma natureza já instruída e por consequência vaidosa .
+IP-> NP NP TR
+os outros a tivessem
+IP-> NP ADV VB ADJP ,
+o coração nunca fica indiferente ,
+IP-> VB+SE NP
+saber-se um desacerto
+IP-> ADV VB PP ,
+ordinariamente falamos no juízo e não no entendimento de deus ,
+IP-> PP NP NP VB PP .
+por isso esta se funda em princípios de vaidade .
+IP-> PP NP NP VB PP ,
+por isso este se engana pela facilidade com que decide ,
+IP-> CP , PP VB , CP .
+como os príncipes são os melhores avaliadores dos homens por isso supomos , que o favor , que fazem , sempre se dirige ao nosso merecimento .
+NP-> D N PP
+as manchas de um planeta
+IP-> NP , HV PP ,
+quem levantar as roupas há-de ver o engano , e a suposição ,
+IP-> PP , VB NP NP .
+do fugir das proporções e das medidas , resulta muitas vezes uma fantasia tosca , e impolida , mas brilhante , e forte .
+IP-> ADV FP NP VB IP , CP .
+assim até nos fazemos dependentes das acções e dos pensamentos dos mais homens , quando cremos , que eles nos atendem , e consideram .
+CP-> ADV C IP
+ainda que indica contentamento
+NP-> N PP , CP
+impulso das ondas a que não resiste o frágil de uma nau , quando o mar embravecido a faz correr com a tormenta
+IP-> VB+CL NP
+fingir-lhe várias isenções
+IP-> NEG SR ADJP CP ,
+não foi preciso que os sucessos verificassem aquele vaticínio ,
+IP-> NP NEG NP VB ,
+a fortuna e a desgraça não a produz ,
+IP-> NP NEG ET PP
+a dificuldade não está em persuadir a nossa vontade
+IP-> ADV VB PP
+apressadamente correm para o mar donde perdem a doçura , e acabam
+CP-> C IP ,
+que sejamos loucos ,
+IP-> CONJ ADV VB NP , CP .
+porque apenas deixam a brenha ou rocha donde nascem , quando em uma parte ficam sendo limo , em outra flor , e em outra diamante .
+ADJP-> ADV ADJ , CP
+tão sensíveis que os sucessos para nos moverem , não é necessário que estejam em nós
+PP-> NP P NP
+muitas vezes ainda com menos talento que o comum dos homens
+CONJP-> ADJ NP
+outro movimento
+IP-> NP NP VB
+elas nos acham
+NP-> D N ADJ , CP
+uma prova muda que todos entendem , e que todos vêem com admiração , e com respeito
+IP-> NEG VB PP NP NP ,
+não presume de si nada quem não tem vaidade ,
+IP-> CONJ NEG VB IP , PP . CP .
+e não pode haver constância donde pode haver enfermidade . de sorte que a inconstância não é mais do que enfermidade dos sentidos .
+NP-> D ADJ N , CP
+a mesma terra que foi feita para todos
+WNP-> WD N , CP
+quantos gostos que resultam da dor
+IP-> CONJ PP NP CP , ADV SR NP .
+e deste modo as cousas antes que as tenhamos já são nossas .
+IP-> ADVP SR ADJP .
+nem sempre somos sensíveis ao mesmo sentimento .
+IP-> CONJ NEG HV PP .
+e não há-de achar mais do que um homem como os outros cujo ornato é de pura fantasia , arbitrária , artificial , e separável .
+IP-> NP , NEG VB NP PP
+a maior parte das empresas memoráveis não tiveram a virtude por origem
+PP-> P Q
+com pouco
+IP-> NP NEG
+a vaidade não
+IP-> ADV SR ADJP PP
+sempre é infalível por outra parte
+IP-> PP VB NP PP ,
+em umas domina a vaidade com império e com furor ,
+IP-> ADV VB IP CP
+já sabia reinar quando nasceu
+IP-> NP SR NP , CP .
+o juízo é a mesma parte que discorre quando discorre bem .
+PP-> P D
+de uns
+IP-> PP VB NP PP .
+aos outros reis servem os homens por força do preceito .
+NP-> D N NP
+as feridas umas sobre as outras
+IP-> ADV VB NP
+facilmente recebe a figura que se lhe imprime
+IP-> CONJ NP CP , NP NP VB IP .
+e esta assim como nos faz constantes na virtude também outras vezes nos faz constantes na culpa .
+PP-> DEM SR P+D NP
+isto é das nossas paixões
+PP-> P N
+sem loucura
+IP-> CONJ NP , ADV NP VB PP .
+e quem apetece já se expõe aos delírios do riso , e às amarguras das lágrimas .
+CP-> Q ADV C IP
+muito antes que elas cheguem
+IP-> CONJ TR NP PP .
+e temos pejo de acertar rusticamente .
+ADJP-> VB PP
+esclarecida pelas circunstâncias da vitória
+IP-> CONJ ADV VB ADJP , CP .
+e talvez seriam detestáveis se lhes não ignorássemos as causas .
+IP-> NEG TR NP
+não temos ciência dela
+IP-> NP ADV VB NP , CP .
+a terra apenas alenta as suas produções quando logo as deixa , e desanima .
+IP-> CONJ NP , SR NP
+porque a mesma vaidade que nos faz ser ingratos para com os mais homens , é a que nos faz ser agradecidos para com os príncipes
+PP-> P PP
+por entre serras agrestes e sombrias
+IP-> VB+CL IP
+fazê-la unicamente sua
+IP-> NP ADV SR NP .
+esses campos fatais em que se observam espectros , debaixo da visão de umas luzes voláteis , em que se ouvem ainda hoje , entre o rouco som de caixas , e trombetas , vozes mal articuladas , alaridos confusos , e lamentos tristes . esses campos , que depois de muitos séculos , ainda trazem à memória representações funestas , e em que as plantas , parece nascem com medo , e que o humor , que recebem da terra , é sensitivo . esses campos finalmente foram os mesmos , em que a vaidade vencedora , arrancou os louros para coroar as suas empresas .
+IP-> PP ADV NP VB ,
+do presente continuamente nos queixamos ,
+IP-> CONJ PP ADV VB NP .
+porque nos príncipes nunca acaba a glória nem a infâmia .
+NP-> D ADV , CP
+o mal que sempre é infalível por outra parte , e que por ora só consiste na circunstância do tempo . isto é , em ser com antecedência , e ser já , aquilo que certamente há-de vir a ser daqui a pouco
+CP-> CONJS CONJS IP
+como se o hábito infundisse uma nova natureza
+IP-> ADV VB , CP .
+antes lisonjeiam quando foram alcançadas no ardor de uma peleja , esclarecida pelas circunstâncias da vitória .
+IP-> NP , IP , VB NP
+os campos que foram de batalha , cobertos ainda hoje de esqueletos informes , e partidos , conservam certo horror
+IP-> NP , SR CP .
+tudo o que sabemos é como por tradição .
+IP-> NP FP VB PP , PP
+a mulher só viesse ao mundo para ser querida
+IP-> NEG VB NP , CP
+não resiste o frágil de uma nau quando o mar embravecido a faz correr com a tormenta
+ADVP-> NEG ADV PP
+não depois de conhecidos
+IP-> CONJ ADV SR NP NP .
+e assim são poucas as cousas que fazemos só pela obrigação , que temos de as fazer .
+NP-> N CP ADJP
+cousa que nos faça buscar a fortuna tanto como a vaidade
+PP-> P NP
+por isso
+IP-> NP PP SR NP .
+este em nós é a vaidade .
+IP-> NP PP SR NP ,
+o labéu para todos é o mesmo ,
+NP-> D N , CP ,
+a vaidade que também interiormente acusa ,
+IP-> CONJ ADV NP VB .
+e também se acaba .
+IP-> CONJ ADV NP VB ,
+e também os debilita ,
+IP-> P+ADV VB CP .
+daqui vem que é útil o ter alguma tintura de vaidade a substância não .
+IP-> NP SR PP VB .
+o menor eclipse é de todos conhecido .
+IP-> VB PP ,
+favorece ao primeiro que encontra ,
+ADJP-> ADJ PP
+dependentes da aprovação dos homens
+IP-> NP , VB NP PP
+a vaidade vencedora arrancou os louros para coroar as suas empresas
+IP-> CONJ NP NP VB NP .
+porém esses mesmos combates se desfaziam uns a outros .
+IP-> VB PP .
+dirigem-se à nossa vaidade .
+NP-> Q N , CP
+algum motivo que ou diminui a pena , ou totalmente a tira
+IP-> CONJ PP VB NP IP .
+e neste vivem as paixões então mais concentradas e por isso mais vigorosas , e mais fortes .
+CP-> WNP , IP .
+que imaginação bárbara e fèroz , seria a que ideou no vencimento o ser superior aquele , de que resulta uma desolação universal .
+IP-> NP VB PP PP , CP
+se incorporam e unem de tal sorte a nós que vêm a ficar sendo uma parte de nós mesmos
+IP-> CONJ NP , PP VB PP NP
+porque a vaidade que está vendo a atenção do golpe , deste esconde ao mesmo tempo o horror
+IP-> NP NEG HV PP
+os não há de diferente fábrica
+NP-> Q D PRO$ N
+toda a nossa sensibilidade
+NP-> N PRO$
+instrução minha
+IP-> ADV SR ADV VB
+então sejam bem aceites
+IP-> CONJ NP ADV NP VB PP . CP .
+porque os erros facilmente se desculpam em favor de um morto se bem que pouco vale um livro , quando para merecer algum sufrágio , necessita que primeiro morra o seu autor .
+IP-> IP , CONJP , CONJP
+nela o descrédito não desacredita a desonra não desonra , e a infâmia não infama
+IP-> NP FP NP VB IP .
+esta até nos faz achar consolação nas mesmas razões do nosso dano .
+IP-> NP VB PP
+nós influímos em nós mesmos
+IP-> PP , NP VB IP NP .
+neste abismo donde tudo entra , e nada sai , se vão precipitar todos os sucessos , e com eles todos os impérios .
+IP-> VB IP , CP , CP
+pode haver que tenha em si menos substância do que umas certas felicidades , que ponderada a melhor parte delas , consiste , ou em palavras , ou em gestos
+CP-> CP . CONJP
+se estas sempre ficam dependentes da aprovação dos homens e se estes não sabem sujeitar os seus conceitos , senão àquilo que é comum , que toca a todos , e que a todos compreende
+IP-> VB CP
+importa que a vaidade assim discorra se sempre é certo , que os homens todos são uns , e que os não há de diferente fábrica . e que tudo quanto a vaidade ajunta ao homem , é emprestado , fingido , suposto , e exterior
+IP-> NP SR VB
+os mais homens são ouvidos
+IP-> NP , SR NP ,
+o julgar por este modo aos reis é sacrilégio ,
+IP-> CONJ IP , ADV VB NP PP .
+porque sendo próprio na vaidade o separar os homens também serve muitas vezes de os unir .
+IP-> NP , SR NP .
+a vaidade satisfeita ou ofendida , é a que nos faz buscar a solidão , e o retiro . como temerosos de perder a tristeza , em que achamos um agrado de género diverso .
+IP-> NEG VB IP , CP
+não podemos suportar sempre por mais que seja leve
+IP-> CONJ NEG VB IP .
+mas não sabe fazer .
+NP-> Q D ADV
+tudo o mais
+NP-> NP CONJP CONJP CONJP CONJP CONJP
+a alegria a tristeza , o amor , o ódio , o desejo , ou a indiferença
+IP-> CONJ PP VB CP .
+e a todos parece que o soberano os vê .
+ADJP-> ADV VB PP
+então penetrada de dor ou de prazer
+IP-> NP , NEG NP VB PP
+a vaidade que em tudo nos governa não nos obrigasse a guardar a fé nas nossas convenções
+IP-> NEG TR NP , CP . CP .
+não temos alegria se está descontente a vaidade . da mesma sorte , que a desgraça não aflige tanto , quando se acha a vaidade satisfeita .
+NP-> N FP
+delito só consistisse na atenção e opinião dos homens , e não no delito mesmo
+IP-> PP VB IP .
+na mesma injúria do desprezo sabe descobrir algum motivo que ou diminui a pena , ou totalmente a tira .
+IP-> NP , ADV NP VB PP NP ,
+a vaidade que os leva , e acompanha , logo lhes tira da memória o lugar de que vieram , e os que andaram ,
+IP-> CONJ NP TR PP , NP .
+e as outras têm de mais o valor que recebem de uma antiguidade venerável .
+IP-> ADV NP VB Q PP
+nunca nos entrega todos à tristeza
+IP-> ADVP , CP , SR NP .
+debaixo de um semblante descarnado e macilento , o que descobrimos , é um austero anacoreta .
+IP-> SR ADJP .
+são como uma prova muda que todos entendem , e que todos vêem com admiração , e com respeito .
+IP-> SR ADJP ,
+somos tão sensíveis que os sucessos para nos moverem , não é necessário que estejam em nós ,
+IP-> PP VB IP ,
+a uns vemos subir ,
+IP-> CONJ PP SR ADJP CP .
+e com efeito é certo que então o aplauso não procede de justiça mas vem por compaixão , e lástima .
+IP-> CONJ NP NEG VB Q PP .
+porém este pensamento não dura muito em nós .
+IP-> CONJ CP , ADV NP NEG VB IP , PP .
+mas se ainda assim fiz mal em formar das minhas reflexões um livro já me não posso emendar por esta vez , senão com prometer , que não hei-de fazer outro .
+IP-> PP FP NP VB NP .
+nesta só se alvergam foragidos .
+IP-> NP , ADV NP VB PP
+o sangue que sai e vai regando a terra , ali se congela em parte
+IP-> CONJ PP SR ADJP NP .
+e no ermo é natural a cobardia .
+IP-> CONJ PP SR ADJP NP ,
+e ainda dos que são verdadeiramente humildes é raro o que é insensível ao respeito e ao desprezo ,
+IP-> PP , NEG VB CP ,
+destes dois vínculos não sei qual é maior ,
+IP-> NP IP ADV VB PP .
+o mesmo mármore de que em atenas se faria uma minerva transportado a outro lugar , apenas servirá de base a uma coluna .
+IP-> PP , NP HV PP NP
+por obrigação da mesma lei se havia de seguir a disposição , que lhe fosse mais contrária
+IP-> CONJ IP , CONJP
+ou diminui a pena ou totalmente a tira
+NP-> N . NP
+inocência estado venturoso , em que nada distinguimos por discurso , mas por instinto . e em que nada considera a razão , mas sim a natureza
+IP-> CONJ PP PP VB NP ,
+e com efeito naquela parte adquire-se a fama ,
+IP-> ADV VB IP
+nunca podemos estar livres
+IP-> SR NP NP .
+é temperamento o que chamamos desengano .
+CP-> CONJS PP ADV NP VB PP
+porque nelas sempre a solução da dúvida vem a consistir em outra dúvida maior
+IP-> CP , VB , CP .
+quando nos queremos dar por uma bondade sem exemplo dizemos , que não temos malícia alguma .
+IP-> CP , VB CP .
+quando pretendemos um favor parece-nos que sempre havemos conservar a memória dele .
+IP-> CONJ ADJP SR IP .
+porém melhor fora dizer que gostos , e desgostos não são mais do que vaidades .
+IP-> NP , ADV NP SR ADJP .
+a ausência ou a ruína daquele a quem somos obrigados , nunca nos é desagradável .
+IP-> PP , VB PP NP , CP ,
+antes nas disposições de uma pompa fúnebre dá ao nosso cuidado uma aplicação , ainda que triste ,
+IP-> VB PP PP . IP .
+caminhamos com pressa e com gosto para o fim . semelhantes aos rios , que apressadamente correm para o mar , donde perdem a doçura , e acabam .
+IP-> NP , SR ADJP
+muitos homens juntos na razão de homens sejam diferentes daqueles que estão sós
+IP-> CONJ ADV VB .
+e já foram .
+IP-> CONJ PP PP , VB NP PP ,
+e com esta de um golpe certo e inevitável , dá fim à tragédia ,
+IP-> ET ADVP
+estarem muito perto
+PP-> NEG FP P IP
+não só para frutificar melhor
+CONJP-> CONJ CP/IP
+e a infâmia não infama
+IP-> NP SR CP .
+aquele que sai sem fausto nem cortejo , e que logo no rosto indica , que é sujeito à dor , à aflição , e à miséria , esse é o que representa o papel de homem .
+NP-> NP Q
+o mundo e a vida tudo
+PP-> NP P+D NP
+muitas vezes da memória
+IP-> NP SR CP ,
+a razão é porque a malícia consiste em penetração ,
+IP-> PP NP VB , CP .
+por isso nos inspira que há desigualdade no que é igual . que há diferença no que é o mesmo . e que há diversidade donde a não pode haver .
+PP-> P IP
+de crer dela o que quisermos
+NP-> PP D N
+pela outra a vaidade
+IP-> CONJ NP NEG SR PP
+porque a nossa maldade não é pelo que toca a cada um de nós
+NP-> N CP
+imperfeição a que se atenda muito
+NP-> D N FP
+as cousas mesmas
+IP-> CONJ NP , VB , CP .
+porque a mesma essência de que são imagens , parece , lhes comunica uma porção da ideia , que representam .
+IP-> NP PP ,
+os hinos em trenos os cânticos em elegias , e em epitáfios os emblemas . as rosas encarnadas convertidas em lírios roxos , os girassóis em desmaiadas assucenas ,
+IP-> CONJ FP NP VB PP .
+e só nos acompanham em lugares certos .
+IP-> VB IP PP .
+fazem-se famosas pela mesma impiedade .
+WNP-> WPRO ADV
+que mais
+IP-> CONJ PP SR CP
+e a este homem de fora é a quem se dirigem os respeitos e atenções
+IP-> NP SR NP .
+tudo são efeitos da tristeza .
+IP-> TR PP NP
+tenha em si menos substância do que umas certas felicidades
+IP-> NEG VB CP .
+não sei quando é que perdemos ou ganhamos .
+PP-> ADV P+PRO
+já nele
+IP-> NP SR NP ,
+a guarnição é a que faz o homem ,
+IP-> IP , CONJP . CP .
+o homem não só se desvanece da fortuna mas também da desgraça . de sorte que a vaidade é o mesmo que uma consolação universal .
+IP-> NP IP , SR NP .
+os soberanos sendo a fonte da justiça são os que mais injustamente são julgados .
+IP-> SR ADV , NP
+ser já aquilo que certamente há-de vir a ser daqui a pouco
+IP-> NP NP VB NP PP ,
+poucas vezes se expõe a honra por amor da vida ,
+IP-> NP , CONJ VB PP
+as fortunas humanas ou consistem na abundância
+IP-> NP SR NP
+um homem sem vaidade seria o mesmo que um homem insensível
+PP-> P NPR ,
+de júpiter ,
+IP-> VB+CL , CP
+parecer-nos que vossa majestade não só nasceu para reinar , mas que já sabia reinar quando nasceu
+IP-> NP VB NP PP
+se juntarem uns com outros
+IP-> NP NEG NP SR
+muitas vezes não o é
+IP-> PP VB ADJP PP
+de todas fique isento ao mesmo tempo
+IP-> NP VB CP . CP .
+os homens mudam-se todas as vezes que se vestem como se o hábito infundisse uma nova natureza .
+PP-> FP P+PRO
+só neles
+NP-> NP , D ADJ
+as que recebemos dos que já vieram essas mesmas
+IP-> NP , NEG FP NP VB NP
+a coroa que os cinge , não só lhes ilustra a cabeça
+IP-> VB IP PP
+faz doer para curar
+IP-> CONJ PP , NEG VB NP .
+e na ordem com que dispôs a natureza não conheceu exceições , nem privilégios .
+IP-> CONJ NP PP
+e isto em ordem a mostrar que se mudamos , é por vício do contrato , e não por nosso vício
+IP-> CP ADV
+a que cumpra sim
+PP-> ADV P+WADV NP
+ainda donde parece que o não tem
+IP-> SR ADJP PP NP
+seria mais útil ao homem o ser incomunicável
+IP-> NP VB IP
+a sua vaidade poderá prometer-lhe ou fingir-lhe várias isenções
+IP-> PP , VB PP , CP .
+para donde quer que vamos imos com os nossos mesmos desvarios , se bem que as vaidades do ermo são vaidades inocentes .
+NP-> ADVP PP
+mais nem menos do que homem
+NP-> NP CONJP
+a fortuna e a vaidade
+IP-> NP ADV
+a vaidade sim
+IP-> CP , VB IP
+quando as águas chegam à superfície do globo sucede saírem com mais , ou menos abundância
+IP-> VB IP
+introduzir mas fazer reconhecer
+NP-> DEM , CP
+aquilo que nos devia defender do mal
+IP-> CONJ CP , PP NP VB , CP .
+e por mais que a terra fosse feita para todos nem por isso a vaidade crê , que um homem seja o mesmo que outro homem .
+IP-> CONJ NP SR PP ,
+porque este é na parte mais remota de um vale inferior ,
+NP-> ADJ N ADJP
+outra cousa mais do que fortuna
+NP-> D PRO$ N , CONJP ADJ
+o nosso acompanhamento e assistência funeral
+IP-> NP VB NP , ADVP ,
+se observam espectros debaixo da visão de umas luzes voláteis ,
+IP-> NP SR , CP .
+uma delas é que a singularidade não só se adquire pelo bem , mas também pelo mal , não só pelo caminho da virtude , mas também pelo da culpa . não só pela verdade , mas também pelo engano .
+NP-> D ADJ N , PP
+a mesma ingratidão de quem recebe um benefício
+NP-> D N CP
+as aparências de que o mundo se compõe
+IP-> CONJ CP , SR NP .
+mas primeiro que a vaidade foi o comércio comum das gentes .
+IP-> CONJ NP NP VB .
+porque nenhuma se conhece .
+CP-> C IP
+que nós influímos em nós mesmos
+IP-> NP VB Q PP , CP .
+a vaidade parece-se muito com o amor-próprio se é que não é o mesmo .
+IP-> CP , HV ADV NP PP ,
+assim como nos lugares há também horizontes na idade ,
+IP-> PP NEG SR ADJP
+ao menos não é tanto como a satisfação a faz
+ADVP-> Q ADV
+muito perto
+NP-> D ADJ N PP , CP
+uma certa porção de alegria e de tristeza , que há-de passar por nós precisamente
+ADVP-> ADJ PP
+semelhante ao impulso das ondas a que não resiste o frágil de uma nau , quando o mar embravecido a faz correr com a tormenta
+IP-> PP VB ADJP NP
+daquela sorte ficou impunido o crime
+IP-> CONJ CP , SR CP .
+e se há nele diferença é que nas pessoas eminentes fica sendo mais reparável , e maior .
+IP-> NP VB NP , CP ,
+o valor falta-lhe a alma se lhe falta a vaidade ,
+NP-> Q PP
+nada de impossível
+IP-> ADV VB IP NP .
+então circula veloz o nosso sangue e os humores que em um mundo novo , e resumido , apenas têm tomado os seus primeiros movimentos .
+NP-> PRO$ N PP
+nosso modo de entender
+VB-> VB , VB , VB , VB
+clama ameaça , julga , condena
+PP-> SENAO P+D NP
+senão no diâmetro do canal
+IP-> ADJP , VB IP ,
+contente procura aparecer ,
+PP-> ADV P NP , PP
+mais a quem as disse antes do que àqueles que as disseram depois
+CP-> SENAO ADV C IP
+senão depois que nos entrega à morte
+NP-> D PRO$ N ADJP
+a nossa imagem apenas acabada de formar
+IP-> VB+SE IP PP
+conservar-se puro no meio da impureza
+IP-> CP NP VB ,
+ainda quando vão passando o insultam ,
+IP-> CONJ NP , ADV NEG ET ADVP .
+e quem sabe o como o engano se pratica também não está longe de enganar .
+ADJP-> ADV ADJ , CONJP
+menos horríveis e sombrias
+PP-> P+D NP , PP
+da opinião isto é , da vaidade
+IP-> NP NEG TR PP NP .
+outros não têm no fundo mais do que humildes conchas pardos seixos , verdes limos .
+IP-> CP , PP NEG NP VB PP NP ,
+como só o presente é nosso por isso não nos serve de alívio o bem futuro ,
+IP-> CONJ PP VB .
+e a todos igualam .
+IP-> CONJ PP VB ,
+e no homem dure ,
+NP-> N PP CP
+representação da morte que da vida
+IP-> PP , NEG NP VB IP ,
+no meio do precipício não nos deixa ver toda a extensão dele ,
+IP-> TR NP .
+temos uma vontade pronta para conhecer e detestar o vício .
+NP-> Q D N
+todas as mudanças
+IP-> PP , NP NP VB NP .
+na mesma sombra de um carvalho se lhe figura um esquadrão armado .
+IP-> VB NP
+perder a estimação
+IP-> NP VB NP
+os agrava alguma vez
+IP-> CONJ VB CP . CP .
+porque cremos que a ignomínia só consiste em se saber de sorte que se somos bons , é por causa dos mais homens , e não por nossa causa .
+IP-> NP NEG FP NP VB PP ,
+a fama não só se compõe do que é justo ,
+IP-> VB IP NP , PP
+podia excogitar a vaidade do que fazer que alguns se lamentassem de ser o mundo estreito , e limitado
+IP-> NP SR ADJP
+nos seja indiferente ou incerto
+IP-> NP NEG VB IP .
+a nossa admiração não pode passar além .
+IP-> CP , NP NEG SR ADJP .
+por mais que seja universal nos homens os motivos dela não são universais .
+IP-> NP NEG VB IP ,
+a mulher não pode deixar de ver o estrago que os anos fazem na beleza ,
+IP-> PP , IP , CONJP , CONJP
+para as razões da mágoa e do contentamento , a nossa semelhança tem ser , a nossa sombra vida , e a nossa estátua sentimento
+IP-> NP ADV VB
+esta já passou
+IP-> ADVP VB
+também interiormente acusa
+ADVP-> ADV , PP
+mais do que nós mesmos
+IP-> ADV FP VB PP
+ainda só considerado em um cadáver em uma posteridade , em um nome
+PP-> ADV P IP , PP
+mais em se saber do que em se obrar
+CP-> CP , CONJP , CONJP
+que é comum que toca a todos , e que a todos compreende
+NP-> ADJ ADJ N PP . NP
+outra infeliz porção de terra tributo inexorável
+IP-> CONJ SR PP ,
+ou seja pela ordem da sua natureza ,
+IP-> CONJ SR PP .
+ou seja pela ordem da sua mesma instituição .
+IP-> PP NP VB PP .
+naquela a alegria vem de uma natureza ainda ignorante e sem vaidade .
+IP-> CONJ VB NP .
+e deixam um lugar cheio de horror e sombras , e donde só reina o luto , a verdade , e o desengano .
+IP-> NP , VB ,
+a tristeza que devia resultar da fealdade , confunde-se ,
+NP-> ADV D N
+sim a natureza
+NP-> D ADJ N ,
+o mesmo nascimento em todas a mesma propriedade ,
+IP-> CONJ NP , CP , Q NP VB .
+e as cláusulas por mais que sejam fortes , todas se controvertem , e pervertem .
+IP-> PP NP VB PP ,
+por isso o valor sobra na campanha ,
+IP-> NP , VB .
+quem disse que o amor é cego errou .
+IP-> CONJ VB NP ,
+porque contêm um carácter de reprovação universal ,
+WNP-> WPRO Q
+que poucos
+NP-> SENAO D N PP
+senão uma ira contra si próprio
+IP-> CONJ NP VB ,
+ou nos ofende ,
+IP-> CONJ NP VB .
+e se conservam .
+IP-> VB PP
+quiser de si
+IP-> NP HV PP
+o seu nome há-de escrever-se nos anais da história
+IP-> PP NP ADV NP VB , CP .
+por isso o amor continuamente nos promete que há-de acabar a tirania , e que cedo há-de vir a feliz correspondência .
+WPP-> P WADV
+por onde
+IP-> CONJ VB CP ,
+mas confesso que consenti sem repugnância ,
+IP-> TR NP , CP
+têm mais fortuna quando estão separadas do lugar em que nasceram
+IP-> CONJ NP VB
+e o medem
+IP-> CONJ VB CP .
+e julgamos que o futuro está ainda mui distante .
+IP-> CONJ NEG VB PP .
+mas não consentimos em não ser lembrados .
+IP-> NEG FP NP SR ADJP NP PP .
+não só nos é preciso constância para sofrer .
+IP-> CONJ NEG VB .
+e não queremos .
+NP-> PP D PP
+do mesmo modo os da tristeza
+IP-> NP SR NP NP .
+as mais das vezes é humor o que julgamos razão .
+IP-> NP ET IP
+as cousas estão acabando
+IP-> CP , SR PP
+se mudamos é por vício do contrato , e não por nosso vício
+CP-> CP , CONJP . CONJP
+que os homens todos são uns e que os não há de diferente fábrica . e que tudo quanto a vaidade ajunta ao homem , é emprestado , fingido , suposto , e exterior
+IP-> NEG VB PP , ADVP .
+não reflectimos sobre o pouco tempo que devemos gozar um bem , senão depois de o ter .
+IP-> PP VB NP IP ,
+nos primeiros anos vemos as cousas como elas são ,
+IP-> NP , CP , ADV VB ,
+não só os homens mas ainda os sucessos , quanto mais longe vão ficando , mais crescem ,
+IP-> NP , CP , ADV NP VB IP .
+as cousas quando chegam , já nos acham saciados .
+IP-> CONJ ADVP NP VB NP PP .
+e quási sempre se sacrifica a vida por amor da honra .
+IP-> NEG NP VB CONJ CP .
+não me obrigo porém a que vivendo quase retirado , deixe de ocupar o tempo em escrever em outra língua .
+IP-> PP SR ADJP .
+por isso é tímido .
+IP-> IP , NEG TR NP
+tomadas só por si não têm outro mal , que aquele que a mesma vaidade lhes supõe
+ADJP-> ADJP , CONJP , CONJP PP
+comum vulgar , e uniforme em todos
+IP-> NP CP , TR NP .
+o pensamento enquanto não sai da sua esfera tem uma liberdade inteira , impenetrável , e muitas vezes invencível .
+IP-> VB NP , ADV CP
+serve a púrpura mais que de encobrir o homem a si mesmo , e uma figura simples , comua , e igual em todos , mostrá-la desfigurada , e outra debaixo de um véu puramente exterior
+IP-> CONJ FP NP VB IP .
+e só a deixa ver ornada de palmas e troféus .
+IP-> CP , SR CP
+se os conceitos neste livro não são justos é porque em certo género de discursos , estes não se devem tomar rigorosamente pelo que as palavras soam nem em , toda a extensão , ou significação delas
+WNP-> D WPRO
+o que
+IP-> PP VB PP ,
+em uns vão sem rodeio ,
+IP-> PP VB PP .
+no caminho engrossam com emprestadas águas que recebem .
+CP-> ADV , IP , WNP IP .
+verdadeiramente perdida a vaidade , e perdido o amor , que nos fica .
+IP-> NP NEG SR ADVP NP
+esta não fosse quási sempre um desvario que se sustenta da estimação dos homens , e só vive da opinião deles
+PP-> ADV PP , PP
+menos em nós do que nós influímos em nós mesmos
+IP-> NP PP NP VB IP ,
+a vaidade no meio da agonia nos faz saborear a ostentação de um luxo que nos é posterior ,
+FRAG-> CP .
+infeliz metamorfósis .
+IP-> CONJ ADV VB NP .
+porque nunca faltam agradecimentos e lisonjas , e por consequência vaidades .
+IP-> NP NP VB IP PP
+as acções heróicas se fazem imortais por meio das narrações da história
+NP-> ADV D N , CONJP
+ainda estes termos ou palavras
+IP-> NP PP NP VB IP .
+vossa majestade só neste livro a pode sentir e ver .
+IP-> PP , NP VB IP .
+por isso a mesma cousa pode ser pequena , e grande .
+CP/IP-> NP VB PP
+a vida das suas acções compõe-se de séculos
+IP-> NP TR ADV PP
+as paixões têm sempre em acção
+IP-> PP PP VB ADV NP ,
+por isso em umas obra mais o sentimento ,
+IP-> PP CONJ NEG VB IP ,
+destas porém não devemos fugir sempre ,
+IP-> CONJ VB PP NP .
+e dá ao nosso conceito a forma que lhe parece .
+IP-> TR NP PP
+ter uso de razão
+IP-> NP ADV NP VB PP , CP .
+o violar a boa fé nunca nos serve de embaraço contanto que a violação se atribua a outrem .
+IP-> NP TR
+as tenhamos
+IP-> NP NEG VB , CP
+nos não parece que o mundo inteiro não basta para testemunha
+IP-> SR NP , PP NP
+sendo a vaidade de si mesma uma cousa arrebatada
+FRAG-> NP ,
+venturoso e claro presságio ,
+IP-> ADV NP SR
+nunca o fosse
+NP-> Q D N , CP
+toda a força que a providência repartiu por muitos
+PP-> P+D NP , ADVP
+pelo modo com que as podemos ver isto é , confusamente
+ADJP-> ADJP , CONJP , CP
+maior e mais considerável , que os mais homens
+NP-> D N , CONJP PP CP
+os heróis o que os faz mais visíveis é a distância , e desproporção dos outros homens em que os põem as suas acções
+IP-> ADV NP VB ADV ,
+assim o mostrou logo ,
+IP-> PP VB PP IP .
+por isso quis de alguma sorte pintar as vaidades com cores lisonjeiras e que as fizessem menos horríveis , e sombrias , e por consequência menos fugitivas da minha lembrança , e do meu conhecimento .
+NP-> D ADJP
+a mais forte
+IP-> IP CONJP .
+poderá querer introduzir mas fazer reconhecer , de nenhuma sorte .
+IP-> NEG FP VB ADJP NP ,
+não só seriam raras as acções de valor de generosidade , e de constância ,
+IP-> PP PP HV NP .
+por isso em cumprir há uma espécie de violência .
+IP-> ADVP NP VB , PP
+mais o agrade do que aquele , que o representa superior aos mais , e superior no entendimento , que é nele a parte mais sublime
+IP-> NP NEG TR . NP
+só vossa majestade não tem feliz indigência
+IP-> IP CONJP ,
+são duas cousas e ambas vãs ,
+IP-> CONJ FP ADV VB NP .
+e só assim acaba a sua vaidade .
+IP-> ADV NP NEG VB PP
+então o aplauso não procede de justiça
+IP-> Q VB PP
+toda consiste em procurarmos que se fale em nós
+ADJP-> PP ADJ , CONJ ADJ
+por isso tímido e cobarde
+CP-> INTJ WADVP IP .
+oh quanto é especiosa a tranquilidade do destro .
+IP-> CP SR IP ,
+o que faz é aprovar a preocupação anterior que a vaidade lhe introduz ,
+IP-> CONJ NP , SR NP .
+e só a morte que nos acaba é a que acaba também a nossa vaidade .
+IP-> PP , VB PP ,
+para o que nos é útil necessitamos de estudo ,
+IP-> CP SR IP .
+o que sucede é passarem por lugares diferentes .
+IP-> PP , VB PP .
+nessa hora em que estamos para deixar o mundo , ou em que o mundo está para nos deixar , entramos a compor , e a ordenar o nosso acompanhamento , e assistência funeral .
+NP-> D ADJ N Q
+o mesmo obséquio todo
+NP-> D NPR , CONJP
+os impérios e repúblicas
+NP-> D ADJ N
+o menor eclipse
+IP-> ADV NP VB , PP
+insensivelmente se forma do que vemos , do que ouvimos , e ainda do que imaginamos
+NP-> ADV D N ADJ
+ainda as cousas inanimadas
+IP-> IP , NEG TR NP NP .
+sendo o termo da vida limitado não tem limite a nossa vaidade .
+NP-> D ADJ Q
+esses mesmos nadas
+IP-> CONJ ADV VB CP ,
+pois nunca quer que fiquem indecisas ,
+IP-> CONJ NP ADV NEG VB PP
+porque esta verdadeiramente não assenta em se perder a vida
+NP-> ADV Q CP
+quási tudo o que a vaidade estima
+IP-> CONJ ADV VB CP .
+porque então parece que respira a vaidade como livre de um peso insuportável .
+IP-> IP , HV NP
+sendo a vaidade de si mesma uma cousa arrebatada , haja ocasiões , em que nos pacifique , e ensine a ser prudentes
+IP-> SR VB ADVP
+serem vistas como são
+IP-> NP , ADV VB PP ,
+o conceito que fazemos de qualquer bem , sempre excede ao mesmo bem ,
+IP-> VB ADV , CP
+deram os homens e quanto valeriam mais , se pudessem , ainda que fosse por estudo , alcançar uma ignorância tão ditosa
+PP-> NEG P+D NP
+não na matéria original
+NP-> D ADJ NPR PP
+a real pessoa de vossa majestade
+NP-> NP CONJP N
+uma e outra cousa
+ADVP-> FP ADV
+só assim
+IP-> NP VB
+as achamos
+IP-> ADV NP NEG SR
+já o não é
+IP-> CP , PP HV PP .
+se quisermos remontar ao tempo que passou a poucos passos havemos de encontrar a fábula , coberta de um véu escuro , e impenetrável .
+IP-> ADV NP VB
+totalmente a tira
+IP-> CP , NP HV PP
+assim como há arte para saber a houvesse também para ignorar
+IP-> ADV VB IP ,
+aqui correm transparentes ,
+NP-> ADJP N , CP
+maior injúria que o desprezo
+IP-> IP . CONJP ,
+porque não temos inveja nem vaidade , que nos preocupe contra os que passaram há muitos séculos . contra os que existem sim ,
+IP-> ADV VB IP .
+lá vai buscar a religião para fazer da paciência o maior merecimento .
+IP-> IP . CONJP .
+a vaidade naturaliza em nós as opiniões do mundo e de tal sorte , que o conceito , que formamos das cousas , por mais que nos seja indiferente , ou incerto , sempre faz em nós uma verdadeira impressão de alegria , ou de tristeza .
+NP-> VB N
+desmaiadas assucenas
+NP-> ADV Q D ADV N , CP
+enfim todos os mais modos que são inseparáveis de qualquer acção
+IP-> NP CP , ADV NP VB , PP .
+a vaidade que também interiormente acusa , assim como aumenta as forças , donde vê alguma ocasião de brio , também as debilita , donde encontra uma aparência de desdouro .
+IP-> CONJ PP NP VB PP .
+e da mesma sorte o valor diminui e aumenta à proporção da sua vaidade .
+IP-> NP , ADV NP VB NP .
+esta imaginação que lisonjeia a vaidade , precisamente nos dá gosto .
+ADJP-> ADV ADJ ,
+mais firme ,
+NP-> D ADJ N PP CP
+os soberanos têm um certo modo de olhar de ver , de ouvir , de andar , de preguntar , e de responder , que só neles é natural
+NP-> NP , CONJP , CONJP , CONJP
+o desembaraço a confiança , o arrojo , e a certeza
+IP-> NP PP NP VB IP
+a mesma vaidade às vezes nos faz perder a vida em um instante
+IP-> PP , FP VB PP NP
+sobre a aparência de buscar os objectos só procura neles a mudança
+IP-> CONJ SR ADJP , CP .
+mas é certo que um deles é violento às vezes , o outro é suave sempre .
+IP-> CONJ VB IP NP ,
+mas fica subsistindo a pena da ignomínia pena quási sem fim ,
+IP-> CONJ NP FP VB .
+e o tacto só sente .
+IP-> CONJ VB IP NP .
+porque fica sendo memorável a acção a que assiste um rei .
+IP-> CONJ NP FP VB ,
+porque os olhos só vêem ,
+IP-> NP NEG VB NP PP ,
+o ser antigo não dá juízo a todos ,
+IP-> NP , VB , CP .
+os homens a quem a concorrência de acasos felices faz chamar grandes , presumem , que ainda que deles não depende a existência do mundo , contudo depende deles a ordem , e a economia das cousas .
+IP-> NP , SR CP . CP .
+a diversidade que vemos na duração delas , é porque umas gastam mais tempo em acabar que outras . de sorte que propriamente só podemos dizer , que as cousas estão acabando , e não que estão sendo .
+IP-> CONJ CP , ADV NP VB ADJP PP .
+e por mais que o joelho dobre sempre o desprezo fica inflexível no conceito .
+IP-> NP , VB ADVP IP , PP .
+quem olha para os montes do ocidente vê primeiro nascer o sol , do que quem inclina a vista no oriente .
+IP-> PP NP VB NP PP .
+em um instante nos precipita a vaidade naquilo que nos vem a servir de tormento toda a vida .
+NP-> D OUTRO
+a outra
+IP-> NP PP
+esta em contentamento
+IP-> NP NP VB IP . CP .
+este pensamento ou esta vaidade lhe faz adormecer o mal que sente . como se a mulher só viesse ao mundo , para ser querida , e o homem só nascesse para ser discreto .
+WADJP-> WADV ADJ
+quão diversos
+IP-> NP FP SR PP ,
+a diversidade só foi no nome e no lugar ,
+IP-> SR NP PP ADJP
+é a vida para todos mais do que um enleio de vaidades e um giro sucessivo entre o gosto , a dor , a alegria , a tristeza , a aversão , e o amor
+IP-> CONJ ADVP VB NP .
+ou ao menos então adquirem maior força .
+IP-> PP NP VB PP PP .
+por isso as honras do cadafalso servem de alívio ao delinquente .
+IP-> NP NEG SR NP
+a inconstância não é mais do que enfermidade dos sentidos
+IP-> CONJ CP , ADV NP PP , NP VB IP .
+e por mais que seja certo o nosso estrago sempre a vaidade para animar-nos , o mostra como duvidoso .
+IP-> NP CP , CONJ ADV SR NP .
+o sossego ainda que indica contentamento contudo mais é representação da morte que da vida .
+IP-> VB VB
+sermos admirados
+IP-> NP ET PP
+o mundo está para nos deixar
+IP-> FP NP VB .
+só a desperta .
+IP-> NP , NEG NP VB IP .
+o valor com que puderam perpetuar nos seus descendentes o poder e a majestade , não lhes pôde perpetuar o nome .
+IP-> NP SR
+elas sejam
+IP-> NP NEG VB IP
+estes não sabem sujeitar os seus conceitos senão àquilo que é comum , que toca a todos , e que a todos compreende
+IP-> VB ,
+perde-se ,
+IP-> VB .
+amamos e aborrecemos .
+IP-> CONJ NP PP NP VB IP .
+porque a lembrança do agravo a cada instante as faz abrir de novo e verter sangue .
+NP-> Q D N , CONJP PP
+toda a extensão ou significação delas
+ADVP-> ADV ADV
+ainda então
+CP-> NEG C IP
+não que estão sendo
+IP-> CONJ PP ADVP NP VB IP .
+e por isso quási sempre as vemos como elas não são .
+IP-> CONJ PP VB NP ADVP .
+porque dele resulta a vaidade como contágio contraído no trato e conversação dos homens .
+NP-> NP . NP
+a fortuna e a vaidade , que vêem desbaratada a cena , caídas por terra as aparências , prostrados os actores , emudecido o coro , trocados os clarins em flautas tristes , os hinos em trenos , os cânticos em elegias , e em epitáfios os emblemas . as rosas encarnadas convertidas em lírios roxos , os girassóis em desmaiadas assucenas , entrelaçados os louros no cipreste , os cajados confundidos com os ceptros , e com o burel a púrpura . a vaidade
+IP-> NP NP NEG VB
+os outros lhe não vêem
+IP-> VB IP NP
+ver perturbadas as gentes cheias de aflição , e espanto
+IP-> NP TR NP , CP .
+ainda o mesmo pensamento tem limite por mais que nos pareça imensa a sua esfera .
+IP-> ADJP SR IP .
+mais certo é ser cega a vaidade .
+IP-> NP VB CP
+a vaidade parece se deleita
+NP-> Q D N CP
+todas as mudanças por onde passam as águas de uma fonte
+CP-> CONJ PP , WADVP IP .
+e com efeito quando se viu senão agora , sentar-se no mesmo trono a soberania e a benignidade , a justiça e a clemência , o poder supremo e a razão .
+CP/IP-> NP SR NP
+este é efeito da vaidade
+NP-> ADJ N ADJ
+outro mal maior
+NP-> D VB N
+uma interposta nuvem
+IP-> CONJ NP ADV SR NP .
+porque malícia propriamente é aquela inteligência ou acto , que prevê o mal , ou o medita .
+IP-> NP , NEG NP VB ADV ,
+aquilo que o ofende não se perdoa facilmente ,
+IP-> PP NP , NEG NP VB ADV , CP .
+por isso quem não tivesse vaidade não lhe importaria nunca , que os outros a tivessem .
+IP-> CP , CONJ PP NEG NP VB NP
+por mais que os sucessos sejam regidos pelo acaso contudo aos reis não os faz a fortuna , nem o valor
+IP-> FP NP VB IP ,
+só se deixam ver ,
+IP-> VB Q
+durar muito
+IP-> NP SR IP
+o nosso empenho é conservar a estimação e opinião dos homens
+IP-> FP NP VB IP .
+até nos faz descobrir utilidade na nossa mesma perda .
+NP-> D ADJP N , CP
+um breve mas soberbo domicílio , que a vaidade edificou para habitação de uma cinza fria
+IP-> NP NEG VB PP .
+a primeira não consiste mais do que em palavras .
+IP-> NP ADV VB PP .
+aquela sempre vai com um passo vacilante e trémulo .
+IP-> PP NP VB ADVP . CP .
+por isso a perda da honra aflige mais que a da fortuna não porque esta deixe de ter um objecto mais certo , e mais visível , mas porque aquela toda se compõe de vaidade , que é em nós a parte mais sensível .
+IP-> NP ADV VB PP ,
+uma conquista injusta sempre começa pela opressão dos homens conquistados e pelo destroço de uma terra alheia ,
+PP-> FP P+D NP
+até no modo de pensar
+IP-> PP NP , SR ADJP .
+por isso o preso que se mata , é como um preso que foge .
+NP-> Q N ADV
+muitas vezes ainda
+WPP-> P P+WADV
+para donde
+IP-> ADV NP NP VB PP .
+hoje as planícies se reduzem a montes .
+NP-> D ADJ IP
+esse mesmo apetecer
+IP-> CONJ PP NP VB ,
+e no ar se extingue ,
+IP-> ADV NEG HV NP .
+lá não há ódio nem soberba .
+NP-> OUTRO N ADJP
+outros rios mais pequenos no princípio
+IP-> NEG SR NP ADV PP .
+não é isto assim na solidão de um ermo .
+NP-> D ADJ ADJ N PP
+o mesmo pobre horror da sepultura
+IP-> NP , VB PP PP .
+a corrupção da natureza chega neles a desprezar a sua própria conservação , mas não a sua reputação .
+IP-> PP SR ADJP NP .
+nas paixões é natural o entreter-nos cada uma com a esperança que lhe é própria .
+CP-> P+D N , C IP
+à proporção que ouvimos esta , ou aquela voz
+IP-> NP FP VB ,
+os ouvidos só ouvem ,
+IP-> NP FP VB .
+outros só murmuram .
+NP-> ADV D CP
+ainda as que são mais pesadas
+NP-> D PRO$ N
+o nosso contentamento
+CP-> P+D ADJ N C IP
+da mesma sorte que nós vivemos no mundo e acabamos nele
+IP-> NP , ADV NP VB ADV .
+o que aqui se busca com empenho ali se despreza totalmente .
+IP-> NP NEG VB NP , PP
+se não perceba o desacato pela vingança
+IP-> NP , PP VB IP .
+os primeiros homens que à força de fogo , e sangue se fizeram árbitros da terra , nos mesmos fundamentos das suas conquistas deixaram sepultadas as suas acções .
+IP-> CP , VB ADV PP ,
+quando havemos de cumprir ficamos mal connosco ,
+IP-> NP ET PP ,
+o nosso cuidado todo está em descobrir o expediente ,
+ADJP-> VB , CONJP
+fingido e falso
+IP-> CONJ NP , SR ADJP .
+mas que de todas fique isento ao mesmo tempo é mui difícil .
+IP-> VB ADV NP , IP
+passando sucessivamente a vida entretidos em um laberinto de vaidades
+PP-> P NP ,
+em qualquer parte que os ponham ,
+IP-> NP NEG VB IP NP
+se não pode negar o ajuste
+IP-> NP , VB IP , CP .
+as pedras de que se formam os padrões , vão perdendo a união das suas partes , em que consiste a sua dureza , até que vêm a reduzir-se ao princípio comum de tudo . terra , e pó .
+IP-> NP PP VB .
+essa transparente região a todos abraça .
+IP-> NP , CP , VB ADVP NP , CP
+os outros quando lhe falam , articulem mais um som , que outro
+IP-> NP PP VB ,
+o ar a água , e a terra a cada instante mudam ,
+IP-> IP , CP , SR NP .
+tirada a insígnia o que fica , é um homem simples .
+IP-> CONJ NP NEG SR PP NP .
+porque a vaidade não é em toda a parte a mesma .
+IP-> SR VB PP
+foram alcançadas no ardor de uma peleja esclarecida pelas circunstâncias da vitória
+NP-> D N PP ADJP
+o desejo é uma espécie de gozar mais activa e mais durável , mais forte , e mais contínua
+IP-> ADV NEG VB
+ainda não sentimos
+IP-> VB Q PP , CP
+nascem todas sem penas ainda que todas em si trazem a matéria delas
+IP-> PP NP VB IP NP
+ainda em um estilo impróprio se pode achar alguma propriedade feliz e agradável
+IP-> CP , ADV SR CP .
+se está menos satisfeita então é que toma um ar de devoção , e desengano .
+CONJP-> CONJ IP
+mas sim naquele em que elas nos acham
+IP-> NP ADV VB PP NP .
+a vaidade logo traz consigo o desembaraço a confiança , o arrojo , e a certeza .
+IP-> CONJ CP , ADV TR VB NP .
+e quando a causa se apresenta já temos sentido os seus efeitos .
+IP-> NP PP VB PP .
+a aurora a todos desperta para o trabalho .
+CP-> CONJ ADV WADVP IP .
+e verdadeiramente como há-de acabar a pena quando a lembrança da ofensa basta para fazer , que dure em nós a aflição .
+IP-> CONJ NEG SR FP NP .
+mas não é só o que causa .
+PP-> PP CONJP CONJP CONJP
+de passarem por caminhos mais ou menos largos . de se juntarem uns com outros , e fazerem mais volume . de encontrarem diamantes . ou de acharem um campo mais , ou menos dilatado
+IP-> CONJ CP , NP , IP , ADV SR ADJP .
+e por mais que a vaidade lhe esteja sugerindo uns certos atributos , ou certas qualidades , que o fazem parecer maior , e mais considerável , que os mais homens , essas mesmas qualidades , ainda sendo verdadeiras , sempre são imaginárias .
+IP-> PP NP SR ADJP PP , IP .
+por isso muitas vezes somos firmes só por evitar o desprezo vindo a parecer persistência na vocação , o que só é constância na vaidade .
+IP-> PP NEG VB PP .
+para o vício não necessitamos de conhecer nem saber nada .
+IP-> PP NP NEG SR NP
+por isso esta não é paixão do corpo
+PP-> SENAO P ADVP
+senão por fora
+IP-> CONJ NP NEG NP VB ADV .
+porém alegria não a dá sempre .
+IP-> NP , ADV SR PP ,
+quem cumpre já é por força da obrigação ,
+NP-> D NPR ADJ
+um rei justo
+IP-> NP NP ET IP
+a vaidade lhe esteja sugerindo uns certos atributos ou certas qualidades , que o fazem parecer maior , e mais considerável , que os mais homens
+IP-> CP ADV NP TR VB NP
+antes que as nossas vozes aclamassem a vossa majestade já o tinham aclamado os nossos corações
+IP-> VB ADV CP
+venceu do que saber somente quem venceu
+IP-> NP NP VB IP
+o mar embravecido a faz correr com a tormenta
+NP-> D N , CP PP
+a lembrança que às vezes nos ocorre de um amor , que parece que acabou
+IP-> CONJ ADV NP NEG NP VB PP
+e assim a constância na virtude não a devemos à vontade
+IP-> VB NP , IP . CP .
+exercitamos o vício ficando da mesma sorte 0 que somos . em lugar que as virtudes , não as praticamos , sem que nos mudemos .
+NP-> NP , CONJP , CONJP , CONJP , CONJP , CONJP
+o gosto a dor , a alegria , a tristeza , a aversão , e o amor
+NP-> FP PRO$ NPR
+só vossa majestade
+IP-> NP , NEG NP VB
+quem a tem não a conhece , nem distingue
+IP-> NEG VB PP NP
+não venha a nascer algum bem
+CONJP-> CONJ CP
+e se estes não sabem sujeitar os seus conceitos senão àquilo que é comum , que toca a todos , e que a todos compreende
+IP-> SR NP CP
+é o amor quem as faz e as suporta
+ADJP-> VB ADV
+adquirido injustamente
+NP-> NEG D CP
+não aquela que se ignora
+IP-> ADV NEG TR
+já não temos
+NP-> D ADJ NPR
+o mesmo sol
+IP-> NEG NP VB PP
+não a conservamos por gosto
+ADJP-> ADV ADJ
+mais reparável
+IP-> CP , ET ADJP NP .
+se este documento fosse universal e não tivesse alguma , ou muitas limitações , estava achado o meio de abreviar uma das ciências que nos é mais importante .
+IP-> PP NP VB , CONJP .
+a estas nem o esquecimento cura nem o tempo .
+IP-> NP NP NEG VB IP
+a fraqueza dos nossos sentidos a não pode conservar
+IP-> PP NP ADV SR PP .
+por isso as vitórias sempre foram de todas as idades .
+IP-> SR PP NP
+é nele a parte mais sublime
+IP-> CONJ ADV NP VB CP .
+porque então se vê que tem limite .
+IP-> CP , ADV VB PP IP NP
+por mais que fuja do lugar em que recebeu o golpe sempre leva no peito atravessada a seta
+NP-> NPR PP
+autor do mundo
+IP-> ADV NP VB CP
+nunca o favor esquece quando se dirige e tem por objecto a vaidade de quem recebe o benefício
+IP-> ADVP SR NP NP
+ainda assim era curto império todo o circuito da terra e toda a vastidão do mar
+IP-> CONJ PP , CP , ADV VB NP .
+e destes se sabemos as acções , também sabemos as circunstâncias delas .
+IP-> NP VB NP PP CP
+umas gastam mais tempo em acabar que outras
+IP-> NP , CP , NEG SR PP
+se haviam de observar se a vaidade que em tudo nos governa , não nos obrigasse a guardar a fé nas nossas convenções . estas , quando se cumprem , não é por vontade
+IP-> NP NEG SR ADJP PP .
+o valor não é igual em toda a parte .
+NP-> NEG D PRO$ N
+não a sua reputação
+NP-> D WADV Q CP
+o quão pouco são estimáveis em si esses mesmos objectos , que buscamos com fadiga
+IP-> CP NP VB IP .
+se a lisonja os iguala ao sol a censura sabe compará-los ao cometa .
+NP-> D IP
+o excogitar a vaidade a regra de que um dos privilégios da grandeza , é ser superior às máximas do vulgo , e que nela o descrédito não desacredita , a desonra não desonra , e a infâmia não infama
+IP-> HV CONJ PP NP PP , CONJP CONJP .
+há pois nas águas o mesmo nascimento em todas a mesma propriedade , e o mesmo fim .
+IP-> NP VB ADV PP
+se distribui igualmente a todos
+IP-> PP PP VB PP PP
+de um instante a outro mudamos da alegria para a tristeza
+IP-> CONJ NP , NEG NP VB PP NP . CP .
+porém o que perde a honra não lhe serve de alívio a vida , que conserva . como se os homens mais nascessem para terem honra , que elliptical para terem vida , ou fossem formados menos para existirem no ser , que para durarem na vaidade .
+IP-> CONJ NP SR PP ADJP ,
+porque a vaidade é em nós como um espírito dobrado que nos anima ,
+IP-> CONJ NP SR PP ADJP .
+porque o amor de cousas vãs é em nós quási inseparável .
+ADJP-> ADV PP
+mais do que um costume de ver de ouvir , e de entender
+IP-> NP SR ADJP PP
+um deles é violento às vezes
+IP-> IP , NEG
+prometer-lhe ou fingir-lhe várias isenções , porém fundá-las , não
+NP-> N , N CONJ N
+anos meses e horas
+IP-> NP , SR VB PP
+os atributos com que a vaidade veste ao homem , são substituídos no lugar do mesmo homem
+CP-> PP P C IP
+ao menos para que a eficácia delas se incorpore em nós muito antes que elas cheguem
+IP-> NP NEG FP NP VB PP
+o homem não só se desvanece da fortuna
+NP-> D ADJ N PP
+o conceito que formamos das cousas , por mais que nos seja indiferente , ou incerto , sempre faz em nós uma verdadeira impressão de alegria , ou de tristeza
+IP-> NP PP , NEG SR ADJ CP
+os sucessos para nos moverem não é necessário que estejam em nós
+ADJP-> PP ADJ
+por consequência vaidosa
+IP-> ADV , CP
+infelizmente porque nelas sempre a solução da dúvida vem a consistir em outra dúvida maior
+IP-> VB CONJ NP PP ,
+acabe pois a vaidade na mulher ,
+IP-> CONJS CP , ADV VB NP
+porque suposto se ausentasse o delinquente cá deixou o nome , e a memória
+IP-> CONJ VB NP PP .
+e acha mais resistência em outras .
+IP-> NP , CP , VB IP .
+as águas que saltam de um rochedo e que correm velozmente para o mar , antes que lá cheguem , vão passando por lugares diferentes .
+IP-> CONJ PP NP NEG VB Q PP .
+e com efeito a vaidade não persiste muito em fazer sensível a razão que nos molesta .
+IP-> VB ADV PP
+correm velozmente para o mar
+PP-> P+D N , CP
+do raio que tem na mão
+IP-> VB , CP , IP
+pudessem ainda que fosse por estudo , alcançar uma ignorância tão ditosa
+IP-> NEG VB NP PP
+não exercitamos as virtudes pela excelência delas
+NP-> FP D N
+só a vaidade
+IP-> PP NP NEG VB NP
+logo no princípio se não toma uma derrota falsa
+IP-> PP CONJ VB .
+por isso nem buscamos nem pedimos .
+PP-> NEG P ADJP
+não por arrependidos
+IP-> NP VB ADVP .
+este despreza-se como uma cousa comum vulgar , e uniforme em todos .
+PP-> P ADVP
+de fora
+IP-> CP ADV SR ADJP NP .
+assim como é justa a vaidade de um rei justo também é iníqua a vaidade de um tirano .
+IP-> CONJ PP ET ADJP .
+e por isso estamos sujeitos às mesmas paixões e às mesmas vaidades .
+IP-> NP VB ADVP ,
+a torrente das idades e dos séculos corre diante dos seus olhos ,
+NP-> D Q N , CP
+o pouco tempo que devemos gozar um bem
+ADJP-> ADJ , CONJP ,
+tosca e impolida ,
+IP-> PP NP VB NP , PP .
+por isso nos infunde temor e cobardia , na incerteza de acontecimentos felices , ou infaustos .
+IP-> NP NP VB NP
+o costume nos tire a admiração
+ADVP-> Q ADV PP
+mui perto de o fazer
+NP-> ADV D PRO$ N
+também a nossa vaidade
+NP-> D Q CP
+o pouco que basta para fazer o nosso bem ou o nosso mal
+IP-> NP CP , VB NP ,
+o estrépito das armas antes que chegue ao coração inflama a vaidade ,
+IP-> NP VB PP PP
+nos armamos de rigor e de aspereza contra tudo o que pode consolar-nos
+IP-> NP VB IP . CP
+nos faz buscar a solidão e o retiro . como temerosos de perder a tristeza , em que achamos um agrado de género diverso
+IP-> PP NP NEG VB PP
+em hora tão fatal o morrer não bastasse para ocupação
+IP-> NP VB NP IP
+se acha a vaidade satisfeita
+IP-> CONJ CP , CONJ NEG VB CP .
+e ainda que a vulgar é um tesouro que contém riqueza imensa para quem se soubesse servir dela , contudo não sei que fatalidades me têm feito olhar com susto , e desagrado para tudo quanto nasceu comigo .
+IP-> SR+CL ADJP
+ser-lhes menos preciosa do que a fama
+NP-> Q . NP
+tudo terra , e pó
+IP-> CP , NEG HV PP .
+se tirarmos do capitão a lança o casco de ferro , e o peito de aço , não havemos de achar mais do que um homem inútil , e sem defesa , e por isso tímido , e cobarde .
+IP-> CONJ NP SR VB , CP .
+e os meios são desaprovados quando por eles se não conseguiu .
+IP-> NP NEG VB ADV , CP
+a desgraça não aflige tanto quando se acha a vaidade satisfeita
+IP-> CONJ NP NEG FP NP VB IP
+e o raio não só se faz atendível pela luz
+IP-> CONJ NP VB IP CP .
+e quási todas vão mudando de forma à medida que vão ficando distantes de si mesmas .
+IP-> NP , VB NP ,
+quem promete exercita um acto de liberdade ,
+IP-> CONJ HV NP .
+porque há um instante em que a vaidade nos representa o soberano ocupado de nós .
+IP-> CONJ HV NP ,
+nem há quem diga que a não tem ,
+IP-> NP , VB NP .
+o discorrer com liberdade supõe uma exclusão de todas as paixões .
+IP-> FP TR NP PP
+só têm lugar em outros
+WNP-> WD NPR PP
+quantos eneias sem virgílios quantos alexandres sem quintos cúrcios
+IP-> NP NEG VB IP , CP
+se não pode chegar se logo no princípio se não toma uma derrota falsa
+IP-> NEG VB ADV PP .
+não sucede assim nos benefícios que os soberanos fazem .
+IP-> CP , NP HV ADV , CP
+assim como há estudo que nos ensina a lembrar , o houvesse também , que nos ensinasse a esquecer
+IP-> NP NP VB PP ADVP
+a vaidade nos livra de uma dor como por encanto
+CP-> NEG CONJS IP
+não porque deixe de ser o mesmo
+IP-> NP HV PP .
+as que recebemos dos que já vieram essas mesmas havemos de deixar aos que hão-de vir .
+IP-> NP , VB CP .
+as mais sublimes parece que nos cegam , e suspendem .
+IP-> CP , NEG VB PP NP .
+se a melancolia nos desterra para a solidão do ermo não deixa de ir connosco a vaidade .
+IP-> NP , NEG NP VB , CP
+as virtudes não as praticamos , sem que nos mudemos
+NP-> D FP , CP
+esses mesmos que tomados por si sós cabiam em um breve espaço
+IP-> NP PP , NEG VB PP .
+a vaidade por ser causa de alguns males não deixa de ser princípio de alguns bens .
+IP-> CONJ NP , PP , NEG NP HV PP .
+e outras para serem vistas como são , não se hão-de ver direitamente .
+IP-> FP HV NP .
+só houve divisão .
+IP-> CONJ NP VB NP , ADVP .
+e nos inspira a inclinação das armas como dous pólos , que guiam para uma fingida , e sonhada imortalidade .
+IP-> VB PP , CP ,
+conduziram a algum fim grande ainda que injusto ,
+IP-> ADVP , NP VB CP .
+além disto as letras parece que têm mais fortuna , quando estão separadas do lugar em que nasceram .
+IP-> NP VB PP NP
+a vaidade naturaliza em nós as opiniões do mundo
+IP-> NP , SR ADVP .
+tudo quanto vemos é como por uma interposta nuvem .
+NP-> N ADJ CP
+figura própria em que possa ver-se
+PP-> ADV P+D NP , PP
+menos ao discurso do que à nossa própria debilidade
+IP-> VB NP , CP
+custaram mais cuidado ao autor do mundo pois brilham com luz mais firme , mais intensa e mais constante
+IP-> SR PP PP
+ser daqui a pouco
+IP-> IP , ADV VB NP .
+despida a toga consular também fica o mesmo .
+CP-> INTJ WADJP IP .
+oh quão diversos são em si os princípios de que se compõe o homem primeiramente terra , e ultimamente racional .
+IP-> ADV ADV VB NP .
+depois também sentimos o mal e o bem da opinião , isto é , da vaidade .
+IP-> TR NP PP PP
+ter lugar de nós para eles
+IP-> ADV ADV VB NP ,
+finalmente ali nasce a nobreza ,
+IP-> VB PP , NP .
+tomamos por substância e entidade , o que não é mais do que um costume de ver , de ouvir , e de entender .
+NP-> N ADJP CP
+vaidade simples e inocente ainda quando é mentirosa
+ADJP-> NP ADJ
+muitas vezes invencível
+IP-> PP ADV NP VB NP .
+das maiores monarquias ainda se ignora quem foram seus primeiros fundadores .
+NP-> D CP
+a tristeza são as que se manifestam mais e as que são mais difíceis de ocultar
+NP-> Q N ADJP
+muitos homens juntos na razão de homens
+IP-> PP NP NEG NP VB PP .
+por isso as primeiras acções de vossa majestade não se distinguem das que se vão seguindo .
+NP-> Q D PP
+cada uma delas
+PP-> P+D NP , CP
+do mesmo modo que aquelas , que apenas tiveram de existência alguns instantes
+IP-> ET PP PP .
+estamos no mundo para ser alvos do tempo .
+IP-> PP NP NEG NP VB PP ,
+por isso as acções heróicas não se fazem em segredo ,
+CP/IP-> ADVP , NP NP VB PP
+fora daquele tal espaço a adoração se troca em vitupério
+IP-> CONJ CP SR ADJP IP .
+e para que o desejemos é preciso considerá-lo longe .
+IP-> IP , ET IP , CP .
+arrancando os últimos suspiros estamos dispondo a nossa pompa fúnebre , como se em hora tão fatal o morrer não bastasse para ocupação .
+IP-> PP TR NP NP .
+nos contratos tem pouca parte a boa fé .
+IP-> VB PP ADV
+passar por nós precisamente
+CP/IP-> NP NP VB
+a alegria nos move
+PP-> PP . CONJP
+não para existir mas para acabar . menos para ser , que para ter sido
+IP-> CONJ TR NP .
+porque têm a desgraça de começar .
+PP-> P D N ADJP
+de uma vaidade mais ou menos satisfeita
+PP-> ADV P+D NP
+também da desgraça
+CP-> WNP IP .
+que cousa é a ciência humana senão uma humana vaidade . quem nos dera , que assim como há arte para saber , a houvesse também para ignorar . e que assim como há estudo , que nos ensina a lembrar , o houvesse também , que nos ensinasse a esquecer .
+IP-> CONJ ADV NP NP NP VB .
+porém também outras o mesmo modo nos desengana .
+NP-> ADV D ADJ
+sempre as mesmas
+IP-> CONJ IP , VB PP NP .
+e entretida nos faustos do luto desvia da memória uma grande parte da consideração da ruína .
+IP-> VB NP , IP
+respira a vaidade como livre de um peso insuportável
+ADJP-> ADJ , ADJ CONJ ADJ
+simples grosseira e inocente
+IP-> TR NP PP NP
+tenha fim na mulher a vaidade
+WNP-> WD ADJ N ADJP
+que outra cousa mais
+IP-> VB PP CP .
+buscamos a deus quando o mundo nos não busca .
+IP-> CONJ CP , NP NP VB .
+mas como é vício tudo nos ensina .
+IP-> CONJ NP CP , PP , VB NP .
+porque vossa majestade assim que veio ao mundo só com se mostrar , disse o que havia de ser .
+IP-> VB PP CP ,
+consentimos em apartar-nos de sorte que nunca mais sejamos vistos ,
+IP-> NP NP SR VB PP .
+tudo nos é dado por um certo tempo .
+WNP-> WD N PP
+que felicidade de morrer
+IP-> PP VB PP PP .
+com o tempo e a razão vimos a perder uma grande parte da sensibilidade no exercício das paixões .
+IP-> VB ADV NP
+confundidas hoje as suas águas
+WNP-> WNP , CONJP ,
+cujos efeitos ou cujo mal ,
+IP-> CONJ NEG SR ADJP , CP .
+porém não é difícil quando ponderarmos , que há efeitos contrários às suas causas .
+IP-> CONJ NP ADV NP VB NP .
+porém ainda esses lá se formam uma crença vaidosa de que os homens falam neles , e discorrem sobre a causa dos seus retiros .
+CP-> P N , C IP
+em forma que seguimos como por força os movimentos dela . e do mesmo modo os da tristeza
+IP-> IP VB PP
+tomados por si sós cabiam em um breve espaço
+PP-> P+WADV NP
+donde a não pode haver
+IP-> , IP , VB PP
+ vivendo quase retirado , deixe de ocupar o tempo em escrever em outra língua
+IP-> SR NP NP
+ser a culpa nossa
+NP-> D ADJ CP
+um homem sem vaidade seria o mesmo que um homem insensível
+IP-> PP NP VB PP PP , NP
+em cada um de nós se entregue à terra com solenidade e fausto , outra infeliz porção de terra . tributo inexorável
+IP-> ADVP VB NP .
+só então consideramos o muito que custou a alcançar e o pouco que o havemos possuir .
+IP-> NP , ADV SR ADVP .
+o que imaginamos também é como por entre o embaraço de mil princípios diferentes , incertos , e duvidosos .
+IP-> CONJ NP CP , VB ,
+e este quando se não pode mudar interpreta-se ,
+IP-> ADV VB , CP
+raramente deixamos se eles primeiro nos não deixam
+NP-> D ADJP N
+um mesmo e igual princípio
+IP-> NP VB PP .
+os objectos influem menos em nós do que nós influímos em nós mesmos .
+IP-> NP NP VB PP
+alguma vez se chora donde só se deve rir
+NP-> D N ADJP , NP . CP
+uma pena ainda maior isto é , uma pena permanente , sucessiva , indelébil . que compreenda culpados , e inocentes . que induza infecção fatal , não só no sangue dos que estão , mas também no sangue dos que hão-de vir . e que faça detestável , não só o autor do crime , e a sua descendência , mas ainda a mesma lembrança do seu nome
+IP-> NP VB PP ,
+a desgraça conduz para a tristeza ,
+IP-> CONJ PP NP VB , CP .
+e nisto se vê que a vaidade exercita o seu poder , ainda donde parece , que o não tem .
+NP-> Q N ADJ
+algum fim grande
+PP-> P P+D NP
+apesar dos milagres da estampa
+ADJP-> PP ADJP CONJP
+por consequência material e visível
+IP-> NP NP VB NP .
+a fraqueza dos nossos sentidos nos impede o gozar das cousas na sua simplicidade natural .
+IP-> CONJ ADV NP NP VB CP .
+e verdadeiramente a alegria nos governa em forma que seguimos como por força os movimentos dela . e do mesmo modo os da tristeza .
+IP-> CP , ADV NP NP VB PP
+por mais que seja equívoco , sempre a vaidade o interpreta a seu favor
+IP-> NP NP VB NP ,
+a imaginação nos anticipa tudo ,
+WNP-> WD Q
+que muito
+IP-> NEG VB PP , CP
+não sacrifiquemos ao desejo de parecer entendidos ainda que seja à custa de um vício , ou de uma culpa
+WNP-> WD N
+que cousa
+NP-> D PP CP
+este documento fosse universal e não tivesse alguma , ou muitas limitações , estava achado o meio de abreviar uma das ciências que nos é mais importante
+IP-> PP , FP VB NP
+ainda dos primeiros princípios visíveis e materiais , só conhecemos a existência
+NP-> D N PP , PP
+a obrigação connosco de não admitirmos alívio nas nossas mágoas
+IP-> SR NP PP
+é fortuna em uma parte
+NP-> D N
+o mundo
+IP-> FP SR NP
+só é constância na vaidade
+NP-> D Q
+aquela toda
+IP-> IP , CONJP , CONJP .
+da dúvida nasce o argumento do argumento a desunião , e desta a dissolução do contrato , ou a acção para o desfazer .
+IP-> NP , NEG TR NP .
+a diferença que há entre eles , não tem outro fundamento , que o que vem da preocupação , e do conceito .
+NP-> NP , CONJP , CONJP , NP
+os alexandres os césares , e outros mais conquistadores , heróis não por princípio de virtude , ou de justiça , mas por um excesso de fortuna , de ambição , e de vaidade
+PP-> P ADV N PP
+com mais fervor do que as luzes do dia
+NP-> D N ADJ PP . NP
+a estimação dos homens é o objecto maior da vaidade objecto vago , e que não tem figura própria em que possa ver-se
+IP-> NP NEG VB Q PP .
+a presença de um monarca não influi pouco na fortuna militar .
+NP-> NPR CP
+oráculo por onde a natureza se explicou
+IP-> PP NP VB , IP .
+por isso o desprezo aflige ainda só considerado em um cadáver , em uma posteridade , em um nome .
+IP-> ADV TR NP
+então tenha mais luz
+CP-> CP , CONJP , IP
+como cousa popular ou somente como uma espécie de prudência , sendo aliás cousa mui rara
+IP-> PP , NP HV CP .
+entre os males da natureza alguns há que têm remédio .
+IP-> ADJP SR NP . CP
+rara é a cousa que se nos mostra , sem um certo véu que a esconde . de sorte que não vemos , nem buscamos os objectos , mas a sombra deles
+NP-> PRO FP
+nós mesmos
+IP-> NP NP SR VB ADV .
+tudo quanto aquele tempo encerra nos é desconhecido totalmente .
+IP-> CONJ ADV NP FP NP VB NP .
+e finalmente a vaidade só nos oferece ideias de respeito e de grandeza .
+IP-> CONJ NP SR ADJP .
+porque a firmeza é como um peso que não podemos suportar sempre , por mais que seja leve .
+IP-> IP CONJP , CONJP .
+os homens só na razão de homens têm igual direito uns para subirem e outros para descerem .
+NP-> ADJ Q N , CP
+outro algum motivo que o de uma vaidade mais , ou menos satisfeita
+IP-> NEG NP NP VB PP
+não se lhe resiste com as forças do corpo
+IP-> NEG SR ADJP
+não ser firme nem constante
+ADJP-> ADV Q ADJ
+ainda mui distante
+IP-> HV PP CP
+há-de haver que diga que o homem que está posto no elevado de uma torre , seja mais homem , que aquele que está posto em campo raso
+CP-> ADV CONJS IP
+assim como em todos pode ter lugar a causa da ignomínia
+IP-> NP , NEG VB PP NP .
+o serem as águas muitas de sorte que cheguem a formar um rio , ou serem poucas , de sorte que só formem uma fonte , não introduz nelas diferença .
+IP-> ADJP SR NP
+maiores são os ais os gemidos , e os clamores
+PP-> FP P NP
+só por si
+IP-> FP NP VB NP
+só nos falta o modo
+ADJP-> CONJ ADJP , CONJP
+ou abatidos de tristeza ou cheios de alegria
+IP-> CONJ ADV VB IP NP .
+porém mal pode caber na lembrança dos homens todos os grandes sucessos de que se compõe a variedade do mundo .
+ADJP-> ADV CP
+tanto como a vaidade
+IP-> CONJ CP , NEG VB .
+e se alguma vez chega a ser excessiva essa mesma complacência não importa .
+ADJP-> ADJ PP , PP
+vãos em si mesmos de instituição política ,
+IP-> PP , ADV
+contra as acções sim
+CP-> WPP IP .
+de que serve a púrpura mais que de encobrir o homem a si mesmo , e uma figura simples , comua , e igual em todos , mostrá-la desfigurada , e outra debaixo de um véu puramente exterior .
+IP-> VB PP NP ,
+caídas por terra as aparências ,
+IP-> VB PP NP .
+transportamos para o tempo da vida aquela vaidade de que não podemos ser capazes depois da morte .
+IP-> CONJ NP , VB PP .
+e a vaidade que tem na complacência , com que se contempla , consiste em reflectir sobre os enganos do século , e sobre as verdades da solidão .
+IP-> ADV NP TR PP NP . PP .
+então cada um de nós tinha em si o caso e a lei . só com a diferença , de que por obrigação da mesma lei , se havia de seguir a disposição , que lhe fosse mais contrária .
+IP-> PP HV NP ,
+naquela há muitos que vejam que digam , e que escrevam ,
+IP-> PP HV NP .
+em tudo há um ponto certo e fixo .
+CP-> WPP IP ,
+com que se diz com que se fala , com que se ouve , com que se olha , com que se vê ,
+IP-> NP PP NP VB ADV ,
+as cousas nem por estarem muito perto se vêem melhor ,
+IP-> CONJ NP VB ADJP .
+mas ainda estes termos ou palavras seriam como bárbaras , e ignoradas totalmente .
+IP-> NEG VB ADJP
+não fica livre para discorrer na cousa senão no estado de grandeza em que a vê , e não para indagar de donde veio , nem como veio
+IP-> NP ET ADJP .
+a nossa alma está disposta para receber e concentrar em si as impressões da vaidade .
+NP-> D ADJ N , CP . NP
+a gentileza é a primeira vaidade que a natureza nos inspira . vaidade simples , e inocente ainda quando é mentirosa
+IP-> ADV SR ADJP
+ainda sendo verdadeiras
+IP-> VB IP , IP
+fica sendo impossível conhecermos-lhe o veneno
+IP-> NP , NP VB .
+o furor com que se quebram , as conserva .
+IP-> NP , NP VB ,
+a fatal revolução do tempo e o seu curso rápido , que cousa nenhuma pára , nem suspende , tudo arrasta ,
+IP-> NP NP VB ADV
+o homem se desvaneça sempre
+PP-> NEG FP P NP
+não só com as próprias vaidades
+PP-> ADV FP P NP
+ainda só por si
+WNP-> WD N , CONJP
+que gala e brio
+IP-> NP , ADV SR IP , CP .
+aquilo em que ontem não havia nada de impossível porque era questão de receber , hoje é todo impraticável , porque é questão de dar .
+IP-> CONJ SR NP NP .
+e é enfermidade o que nos parece virtude .
+IP-> NP . VB PP NP .
+senhor ofereço a vossa majestade as reflexões sobre a vaidade dos homens .
+IP-> FP VB NP
+só formem uma fonte
+ADJP-> ADJP , CONJP PP
+mais subtil e mais vã do que as outras vaidades
+IP-> NP , NEG SR NP
+os clarins que incitam ao combate , não são vozes , que a natureza intenda
+IP-> VB ADVP
+ver debaixo de um ar altivo e arrogante
+IP-> NP NEG NP VB PP , PP .
+a vaidade satisfeita não nos entrega à alegria sem primeiro a temperar , com a mesma equidade com que nunca nos entrega todos à tristeza .
+IP-> NP VB ADV ,
+o vício pratica-se ocultamente ,
+IP-> NP VB ADV .
+umas sofrem e resistem mais .
+IP-> PP NP NEG VB , CP .
+por isso muitos não fogem porque os vêem .
+NP-> D NPR ADJP
+o espírito vivificante e eterno
+IP-> ADV SR NP .
+assim são os homens .
+IP-> ADV SR NP ,
+assim é a vaidade ,
+IP-> CP , PP VB NP .
+por mais que se encontrem precipícios e que os olhos só vejam fogo , e sangue , nem por isso desmaia o coração que a vaidade anima .
+IP-> CONJ PP , NEG NP VB .
+porque em instantes cheios de dor e de amargura , não nos desempara .
+IP-> PP , NEG FP VB IP
+na repartição da terra não só fez ajuntar os homens os mesmos géneros de interesses
+IP-> CONJ VB NP IP .
+e deixa a natureza como insensível absorta , e indolente .
+IP-> CONJ CP , NEG SR CP .
+e quando com o tempo seguimos o exercício de obrar bem não é porque o conhecimento , ou a experiência nos determine mas porque continuamente os anos nos vão fazendo incapazes de obrar mal .
+IP-> NEG VB IP , CP .
+não vivemos contentes se a nossa vaidade não vive satisfeita .
+IP-> VB NP PP ,
+vemos as cousas pelo modo com que as podemos ver isto é , confusamente ,
+PP-> NEG FP P+D NP ,
+não só pela verdade ,
+IP-> CP , PP VB CP .
+como o nosso empenho é conservar a estimação e opinião dos homens , por isso tememos que alguém diga , que mudamos , que faltamos ao ajuste , e à palavra , ou que enganamos .
+IP-> NP ADV NP VB PP .
+o licor sempre se contamina com a infecção do vaso .
+NP-> DEM FP
+isto mesmo
+IP-> CONJ NP ADV VB .
+e esta que comummente move , então acende .
+IP-> CONJ NP ADV VB ,
+mas quem deseja vingar-se ainda ama ,
+IP-> PP ADV SR ADJP IP .
+para acertar também é necessário ver primeiro o desacerto .
+CP-> CONJS ADV C IP
+se bem que as vaidades do ermo são vaidades inocentes
+NP-> PRO$ ADJ N
+nossa mesma apreensão
+IP-> PP , NP VB ADJP .
+na lei universal ninguém ficou isento da dor , nem da tristeza .
+IP-> PP NEG HV PP NP ,
+na criação do mundo não houve nas águas diferença ,
+CP-> CONJS PP VB NP
+quando com o tempo seguimos o exercício de obrar bem
+IP-> PP , VB ADV PP
+por temperamento por razão , ou por virtude se fazem menos sensíveis aos impulsos da vaidade , são os que pela sua parte , contribuem menos na comunicação dos homens
+NP-> NP , CONJP , CONJP , CONJP , CONJP
+a vida a fortuna , a desgraça , a alegria , e a tristeza
+IP-> ADV NP VB PP
+também o autorize e ilustre pela razão da semelhança
+IP-> VB NP PP .
+puseram distinção no modo de as executar .
+NP-> D , CP
+aquele de que resulta uma desolação universal
+IP-> CONJ NP SR ADJP NP , CP .
+porque a traição é maior aquela que se dirige à fama que a que conspira contra a vida .
+IP-> CONJ PP PP , NP SR NP .
+e por isso com veneração e com respeito , a vaidade foi o primeiro artífice , que inventou o distinguir os homens pela especialidade do ornato e pela singularidade da cor .
+IP-> VB PP NP , CP
+voltar de tal sorte as cousas que fiquem parecendo , o que claramente se sabe , que não são
+IP-> NP CONJ , CONJP , CP , ADV VB ,
+a fortuna e a vaidade , que vêem desbaratada a cena , caídas por terra as aparências , prostrados os actores , emudecido o coro , trocados os clarins em flautas tristes , os hinos em trenos , os cânticos em elegias , e em epitáfios os emblemas . as rosas encarnadas convertidas em lírios roxos , os girassóis em desmaiadas assucenas , entrelaçados os louros no cipreste , os cajados confundidos com os ceptros , e com o burel a púrpura . a vaidade pois , e a fortuna , que em menos de um instante viram desvanecidos os triunfos da vida pelos triunfos da morte , precipitadamente fogem ,
+IP-> NP , IP , ADV VB PP .
+esses mesmos que tomados por si sós cabiam em um breve espaço , medidos pelas suas vaidades , apenas cabiam em todo o mundo .
+IP-> NP , NEG SR PP
+a vaidade que nos move , não é pela substância da virtude
+IP-> NP NP VB IP , CP
+uma acção se faça atender e admirar , seja pelo motivo , ou razão que for
+IP-> NP PP NP VB
+os homens de tudo se intumecem
+PP-> FP P IP
+só para a defender e autorizar
+IP-> CONJ PP NP NP NP VB . NP .
+e ainda sem vaidade a alegria muitas vezes nos soçobra não só o excesso , mas ainda a mediocridade dela .
+CONJP-> CONJ VB
+e supostos
+IP-> SR NP VB
+sendo o termo da vida limitado
+IP-> NP SR NP , IP .
+o confessar ignorância é acto a que se opõe a vaidade sendo que rara é a cousa , que se nos mostra , sem um certo véu que a esconde . de sorte que não vemos , nem buscamos os objectos , mas a sombra deles .
+CP-> CONJ WADVP IP .
+e como há-de rir quem está triste .
+IP-> ADJ , NP
+detestável não só o autor do crime , e a sua descendência , mas ainda a mesma lembrança do seu nome
+PP-> PP , CONJP PP
+no juízo e não no entendimento de deus
+IP-> CONJ CP , ADV SR CP ,
+e quando nos parece que a nossa vista rompeu a nuvem e que o nosso discurso desfez o embaraço , então é que estamos cegos ,
+NP-> N ADJ PP
+canto singular das aves
+NP-> NP . NP , CONJP
+um riso agradável que achamos nas pessoas eminentes , e que por mais , que seja equívoco , sempre a vaidade o interpreta a seu favor . um obséquio , que tem por princípio a dependência , e em que o interesse se esconde subtilmente . uma submissão , que nos faz crer que os homens têm obrigação de respeitar-nos . uma lisonja dita com tal arte , que fica sendo impossível , conhecermos-lhe o veneno . qualquer cousa destas , e ainda menos
+IP-> NP VB , CP .
+as mais das cousas admiram-se porque se não conhecem . e juntamente porque nelas há um rico véu , que as cobre .
+IP-> PP , CP
+com razão porque nestes o favor sempre é puro , e generoso , em lugar que nos mais homens sempre é inficionado de algum género de interesse
+IP-> CONJ NP . CP , NP VB ,
+e a alma que em qualquer parte do corpo nos anima , ou se mostra prostrada e sem acção , ou cheia de uma justa desordem , e de alento . se se vê aflita , nos desempara ,
+IP-> PP TR NP ,
+na outra tem a fouce fatal ,
+NP-> ADV N PP
+unicamente criaturas da vaidade
+IP-> PP , SR ADJP CP ,
+para dizermos bem do tempo é necessário que ele tenha passado ,
+IP-> NP NP VB .
+a mesma delícia nos importuna .
+IP-> NP NP VB ,
+um mesmo e igual princípio os anima ,
+CP-> SENAO CONJS IP
+senão enquanto não temos ciência dela
+CONJP-> CONJ PP
+e com respeito
+IP-> ADV NP VB NP
+apenas se distingue a elevação das águas
+IP-> CONJ CP , NP , SR NP .
+e se acaso se conforma a violência com que o faz , é um sacrifício .
+IP-> CONJ PP NP , NP VB .
+e em todos eles a mesma vaidade que nos cega , nos guia .
+NP-> D N ,
+a fortuna ,
+CP/IP-> NP SR ADJP ADV
+o outro é suave sempre
+IP-> NP NEG SR PP ADJP .
+os elementos não são em si como nós os vemos .
+NP-> DEM CP
+aquilo por que se deve chorar
+ADJP-> NP CONJP
+primeiramente terra e ultimamente racional
+NP-> N ADJP PP
+fundo mais interior de nós mesmos
+IP-> NP NP NP VB ADV ,
+o estado da grandeza poucas vezes se adquire justamente ,
+IP-> CONJ NP SR NP . CP .
+porque algumas vezes é questão do destino de um império em lugar que o ardor é lento , quando só se disputa um posto ventajoso .
+IP-> NP ADV NP VB PP . CP .
+os olhos facilmente se esquecem do que sempre vêem não porque o costume nos tire a admiração , mas porque a fraqueza dos nossos sentidos a não pode conservar .
+IP-> NP NEG SR
+elas não são
+IP-> CONJ ADVP VB PP NP .
+mas nem sempre domina em nós o mesmo género de vaidade .
+IP-> VB NP IP .
+nascem os homens iguais .
+IP-> PP NP ADV NP VB PP .
+por isso a vaidade antes nos resolve a ser ingratos do que a conhecer uma obrigação de que nunca podemos estar livres .
+IP-> VB NP PP . PP
+esperamos as sombras da noite com mais fervor do que as luzes do dia não por vício do desejo , mas porque não temos forças para suportar o bem , nem para conservar o mal
+IP-> IP CONJP CONJP CONJP CONJP CONJP CONJP CONJP
+nascem para o descanso outros para o trabalho . uns para a grandeza , outros para a humildade . uns para a opulência , outros para a miséria . uns para o respeito , outros para o desprezo . uns para a memória , outros para o esquecimento . uns para a bonança , outros para a tormenta . uns para venturas , outros para desgraças . uns para as atenções , outros para os descuidos
+IP-> NP NP VB CP . CP .
+muitos se retiram enquanto os não conhecem mas não depois de conhecidos . como se a desonra não estivesse na retirada , mas na notícia dela .
+NP-> D N Q
+os homens todos
+NP-> ADV D N ADJP
+ainda as acções mais pias
+IP-> CONJ CP , VB IP , PP .
+e se se justificam fazem perder o nome , e o respeito , à maneira de uma proscrição , ou anátema civil .
+IP-> CONJ ADV NP VB PP . CP .
+porque primeiro o fazem na nossa vaidade de sorte que um homem sem vaidade seria o mesmo que um homem insensível .
+IP-> CONJ PP VB NP NP .
+e desta declara a inscrição o nome e a grandeza .
+NP-> Q N
+qualquer alteração
+IP-> FP VB PP
+só vive da opinião deles
+IP-> NP NEG TR
+a não têm
+IP-> NP NEG NP VB PP ,
+o ser o lugar mais apertado não nos livra do combate ,
+IP-> NP VB ADVP , IP
+se viu senão agora sentar-se no mesmo trono a soberania e a benignidade , a justiça e a clemência , o poder supremo e a razão
+IP-> VB NP , PP .
+perdemos as cousas primeiro pela nossa indiferença , que pelo fim delas . primeiro porque se acaba em nós o gosto , do que nelas a duração . unicamente sensíveis quando começamos a ter , ou a alcançar .
+IP-> VB ADVP ,
+correm facilmente e com sossego ,
+PP-> P+D N
+ao homem
+IP-> CONJ NEG SR FP , NP .
+porém não é só o que a motiva .
+CP-> C I
+que da vida
+NP-> N ADJ
+pessoas eminentes
+IP-> NP , VB NP PP .
+uma circunstância leve e incerta , em que a vaidade se entretenha , basta muitas vezes para suspender a actividade do nosso mal , e para desviar do nosso pensamento a maior parte dele .
+NP-> Q D
+cada um
+IP-> CONJ PP SR NP .
+e em nenhuma é mais nem menos .
+IP-> NP , VB CP
+as plantas parece nascem com medo , e que o humor , que recebem da terra , é sensitivo
+PP-> PP , CONJP , CONJP
+de humildade de submissão , e de reverência
+IP-> CONJ CP , ADV VB CP . IP .
+e enquanto não chega a feliz hora de vermos na mão de vossa majestade o ceptro universal já vemos que vossa majestade é digno dele . sendo que é mais glorioso o merecer , do que o alcançar .
+IP-> NP TR IP NP ,
+uns têm alto o nascimento ,
+IP-> CONJ PP , NP VB .
+e com violência e peso , tudo abatem , forçam , levam .
+IP-> NP , SR IP
+um dos privilégios da grandeza é ser superior às máximas do vulgo
+ADJP-> ADV ADV ADJ PP
+ainda mais cega do que o amor
+IP-> NP NEG VB
+se não chegou
+IP-> VB ADVP NP ,
+vemos como de fora as aparências de que o mundo se compõe ,
+IP-> NP ADVP SR NP .
+a observância das regras nem sempre é prova da bondade do livro .
+IP-> CONJ NP VB PP .
+e se retira ao fundo mais interior de nós mesmos .
+IP-> CP , SR PP ,
+quando os soberanos favorecem é sem a expectativa de retribuição alguma ,
+NP-> N PP
+aprovação dos homens
+NP-> D ADJ N CP
+a mesma equidade com que nunca nos entrega todos à tristeza
+IP-> CONJ NP VB PP ,
+e esta promessa entro a cumprir já ,
+IP-> NP ADVP SR NP ,
+os retiros e as solidões nem sempre são efeitos do desengano ,
+NP-> D ADJ PP
+o frágil de uma nau
+IP-> NP SR Q VB ,
+a jurisdição dos sentidos é muito limitada ,
+PP-> PP , CONJ CP
+não por vício do desejo mas porque não temos forças para suportar o bem , nem para conservar o mal
+NP-> PRO CP
+eu que disse mal das vaidades
+IP-> CONJ NEG VB IP , PP .
+mas não pode enganar a todos pelo que respeita a cada um .
+IP-> NP , SR NP
+o homem que está posto no elevado de uma torre seja mais homem , que aquele que está posto em campo raso
+NP-> D PRO$ N ADJ
+o seu curso rápido
+NP-> NUM N
+mil interpretações
+IP-> PP VB IP NP ,
+desta sabe afastar-se a natureza ,
+WNP-> WD NPR
+quantos aquiles
+NP-> NP , CONJP PP
+remédio e simpatia do louvor
+CONJP-> CONJ PP .
+mas também das suas opiniões .
+NP-> D Q , CP
+uns nadas que não têm mais corpo , que o que recebem do nosso modo de entender
+IP-> CONJ PP NP NP VB PP .
+e à mulher todos a idolatram por fermosa .
+CONJP-> IP ,
+os hinos em trenos ,
+IP-> NP PP VB PP NP
+o delinquente às vezes declara por vaidade a culpa
+IP-> ADV NP VB ,
+antes as segue ,
+IP-> NP , VB IP
+o mal que já se sente pode consolar-se
+IP-> NP SR IP .
+o ponto é saber o como .
+NP-> N VB
+aplicações forçadas
+IP-> CP , ADV VB NP PP .
+se o amor lhes prepara agrados também encontram aversões no ódio .
+NP-> NUM N ADJ
+mil revoluções diversas
+NP-> N , CP
+estado em que as achamos
+IP-> ADV VB PP , CP
+também tem um tempo certo e limitado . e assim vivem , e acabam em nós , da mesma sorte que nós vivemos no mundo , e acabamos nele
+IP-> CONJ PP NP SR NP ,
+e com efeito a constância no sofrimento é um justo motivo de vaidade ,
+IP-> CONJ PP NP SR NP .
+e entre elas a alegria e a tristeza são as que se manifestam mais , e as que são mais difíceis de ocultar .
+IP-> ADVP TR NP
+quási sempre tem menos parte
+NP-> D N , CONJP ADJ
+uma forma ou figura encantadora
+ADJP-> ADJ , CONJ ADJ
+felices ou infaustos
+CONJP-> CONJ NX
+e opiniões
+IP-> NP NEG VB IP , PP
+se não podem alcançar senão pelo caminho do erro
+IP-> NP VB PP CP
+se entregarem a nós assim que as imaginamos
+NP-> D ADJ N ADJ
+as mesmas partes essenciais
+IP-> PP NP SR ADJP ,
+por isso nos é útil ,
+IP-> NP VB PP PP ,
+ninguém adora ao homem por entendido ,
+IP-> NP VB ADV PP ,
+muitas vezes obramos bem por vaidade ,
+IP-> PP NP SR ADJP .
+na luz qualquer alteração é reparável .
+IP-> NP PP VB , NP ,
+este por vaidade afecta o não lembrar-se do benefício feito ,
+CONJP-> CONJ NP
+e a autoridade
+IP-> NP VB ADV PP .
+a qualidade da luz distingue-se melhor pelos efeitos da sombra .
+ADVP-> ADV ADV ADV
+ainda mais perto
+ADJP-> ADV ADJ CP
+unicamente sensíveis quando começamos a ter ou a alcançar
+IP-> CONJ ADV VB NP , PP .
+e sabiamente introduziram nobreza até no modo de morrer .
+IP-> NP VB PP PP .
+o esplendor alheio passa no nosso conceito por desordem do acaso e por miséria do tempo .
+IP-> PP NP SR ADJP PP ,
+por isso o valor é próprio na campanha ,
+IP-> PP VB ADV .
+em outros cabem mal .
+PP-> P ADJP
+do que um enleio de vaidades e um giro sucessivo entre o gosto , a dor , a alegria , a tristeza , a aversão , e o amor . ainda ninguém nasceu com a propriedade de insensível
+IP-> CONJ NP VB IP , PP .
+e a consideramos ainda mais cega do que o amor na repartição das felicidades .
+IP-> HV PP NP , CP
+há-de acabar a pena quando a lembrança da ofensa basta para fazer , que dure em nós a aflição
+IP-> NEG SR VB
+não ser lembrados
+IP-> FP NP VB IP
+só se deve rir
+IP-> NEG VB PP
+não sai da sua esfera
+NP-> CONJ Q
+nem todos
+CP-> WADVP IP
+como de fora
+NP-> Q PRO
+todos eles
+CP-> P N C IP
+de sorte que um homem sem vaidade seria o mesmo que um homem insensível
+IP-> SR PP NP . ADJP
+são em si os princípios de que se compõe o homem primeiramente terra , e ultimamente racional
+IP-> ADV NP VB IP
+apenas se faz sentir
+IP-> NP NEG FP VB PP
+vossa majestade não só nasceu para reinar
+IP-> CONJ ADVP , FP NP VB , CP .
+e como uma paixão inconsolável até nos persuade , que ainda depois de mortos podemos sentir a infâmia .
+ADJP-> ADJ , ADJ , ADJ
+permanente sucessiva , indelébil
+IP-> PP SR NP
+de todas as paixões é a mais forte
+IP-> CONJ NP HV PP .
+porque também nós havemos de crer dela o que quisermos .
+IP-> IP . CONJP
+uns pequenos outros grandes . uns elevados , outros abatidos
+IP-> NP PP NP VB .
+a fermosura em tudo nos atrai .
+IP-> NP PP SR PP .
+tudo nele é sem calor .
+PP-> PP CONJP . CONJP
+primeiro pela nossa indiferença que pelo fim delas . primeiro porque se acaba em nós o gosto , do que nelas a duração . unicamente sensíveis quando começamos a ter , ou a alcançar
+IP-> VB ADJP
+parecer maior
+NP-> ADVP N
+menos e mais valor
+PP-> P NP , CP
+de anos como nos mais homens
+IP-> ADVP , VB NP .
+debaixo de um apresto militar concebemos um guerreiro valeroso .
+IP-> PP PP NEG HV NP .
+por isso na arte de reinar não há regras que possam ser sabidas por quem não é rei .
+IP-> SR ADJP PP , NP
+são estimáveis em si esses mesmos objectos , que buscamos com fadiga
+ADVP-> SENAO ADV
+senão agora
+IP-> NEG VB NP
+não temer a lei de deus nem as leis dos homens
+IP-> VB+SE NP , PP
+medir-se a glória dos combates menos pela consequência deles , que pelo estrago . menos pela utilidade , que pela ruína . menos pela fortuna de uns , que pela desgraça de outros
+IP-> CONJ NP TR NP .
+porque nenhuma tem realidade .
+IP-> NP , ADV VB NP ,
+esse triste resto daquilo que foi homem , já parece um ídolo colocado em um breve , mas soberbo domicílio , que a vaidade edificou para habitação de uma cinza fria ,
+PP-> P IP , CP
+para terem honra que elliptical para terem vida
+IP-> NP , ADV VB NP .
+o ceptro que indica a majestade , também inspira o esforço .
+IP-> NP VB , PP
+a temperar com a mesma equidade com que nunca nos entrega todos à tristeza
+ADJP-> PP ADV ADJ PP
+por consequência menos fugitivas da minha lembrança e do meu conhecimento
+IP-> PP VB IP
+nas pessoas eminentes fica sendo mais reparável e maior
+NP-> D PRO$ ADJP N
+a sua maior e mais estimada vaidade
+IP-> VB+CL NP PP
+entreter-nos cada uma com a esperança que lhe é própria
+IP-> NP TR VB PP
+nos tinha induzido para desejar
+ADVP-> ADV ADV PP
+ainda depois de passados muitos anos
+NP-> N , PP
+objectos não só dos louvores , mas também da crítica . não só das admirações , mas também dos reparos . não só do amor , mas também do ódio
+IP-> CONJ NP , CP , SR ADJP , CP .
+e esta que insensivelmente se forma , do que vemos , do que ouvimos , e ainda do que imaginamos , quando cresce em nós , é imperceptível , da mesma sorte , que cresce imperceptivelmente a luz , e que apenas se distingue a elevação das águas .
+IP-> ADVP VB IP NP
+como em espelho vão crescendo todos os objectos
+CP-> C IP , CP
+que todos os meios e caminhos são bons , quando se alcança
+IP-> CONJ CP , ADV VB IP ,
+e se é certa aquela memorável profecia que promete a um rei de portugal o ser senhor de toda a terra , já podemos crer que chegou o tempo de cumprir-se ,
+CP-> ADV CONJS IP ,
+assim como é justa a vaidade de um rei justo ,
+IP-> NP VB NP CP .
+tudo o que tem ar de grande prende a nossa imaginação de sorte que não fica livre para discorrer na cousa , senão no estado de grandeza em que a vê , e não para indagar de donde veio , nem como veio .
+IP-> PP ADV SR ADJP NP .
+por isso então é pura a alegria .
+IP-> PP NP VB IP
+à força de fogo e sangue se fizeram árbitros da terra
+NP-> ADJ N , ADJP
+pura fantasia arbitrária , artificial , e separável
+IP-> PP , NP NEG NP VB IP
+em certo género de discursos estes não se devem tomar rigorosamente pelo que as palavras soam nem em , toda a extensão , ou significação delas
+IP-> NP , FP NP VB PP .
+as graças dos reis e as de deus , só se pagam com amor .
+NP-> NUM N PP
+mil motivos de disputa
+IP-> SR ADJP PP .
+somos perversos por comparação .
+IP-> NP NEG VB , CP . CP .
+só a vaidade não enfraquece por mais , que o vigor nos falte . como se fora um afecto da alma independente da disposição do corpo .
+IP-> NP ET PP , CP
+as vaidades estejam só aos pés de vossa majestade se as virtudes o ocupam todo
+PP-> P ADJ IP
+à alegria sem primeiro a temperar , com a mesma equidade com que nunca nos entrega todos à tristeza
+WNP-> WD ADJP N , PP
+que maior prova do que a fábrica de um elevado mausoléu
+IP-> PP , NP NP HV PP , CP .
+das virtudes meramente humanas poucas se haviam de achar nos homens , se nos homens não houvesse vaidade .
+IP-> VB NP ADJP
+parecer tudo o que vemos triste
+NP-> D ADV CP
+a ciência humana o mais a que se estende
+IP-> ADV VB NP IP ,
+então quer o soldado distinguir-se com maior excesso ,
+IP-> HV+SE VB PP
+haver-se esquecido dele
+IP-> NP , ADV VB CP .
+aquele a quem o escudo da fortuna cobre e que marcha resoluto já cuida que está vendo os faustos do triunfo .
+CP-> WNP , IP
+que moram em nós cuja vida , e existência , semelhante à nossa , também tem um tempo certo , e limitado
+IP-> CONJ PP NEG HV NP .
+e com efeito não há alegria sem grande movimento .
+CONJP-> CONJ ADJ
+e indolente
+IP-> NEG HV NP .
+não há imagem mais própria da vaidade humana do que esses mesmos rios .
+IP-> IP , ADV NEG SR NP .
+confundidas hoje as suas águas já não são águas de uma fonte .
+IP-> PP , NP NP VB
+a cada instante e sem palavras , o valor se justifica
+WNP-> WPRO$ NP
+cujos efeitos
+IP-> SR NP . CP .
+é justiça rigorosa de sorte que a vaidade sendo uma parte de nós mesmos , contra nós mesmos se revolta , e se dirige .
+IP-> NP NEG VB ADVP , ADVP .
+a virtude não vem comummente senão como fruto da experiência , da meditação , dos preceitos , e dos anos .
+IP-> PP , NP , SR NP .
+de todas as paixões a que mais se esconde , é a vaidade .
+NP-> D N PP , CP
+a mão do artista que faz doer para curar
+IP-> NP PP , SR NP .
+esse mesmo apetecer ainda só por si é uma espécie de sentimento , e de prazer .
+IP-> NP VB PP , ADVP
+se imprime na alma como um carácter imortal
+IP-> NP CP , NP VB .
+a mesma pena quando é excessiva nos lisonjeia .
+PP-> CONJ PP
+ou nos braços da vitória
+IP-> CONJ CP , VB PP .
+porque logo que nascemos entramos em um estado contínuo de mudar .
+IP-> NP NEG SR ADV ,
+a desgraça não é assim ,
+CP-> CONJS IP
+se há nele diferença
+IP-> NP HV , CP
+algumas há que em certos anos são incompatíveis , e só têm lugar em outros
+ADJP-> ADJ , CONJ ADJ ,
+puras e excelentes ,
+IP-> CONJ ADV CP , NEG SR NP ,
+e depois quando quis retroceder não era tempo ,
+IP-> CONJ PP VB PP .
+mas nem por isso deixamos de os seguir .
+IP-> NP VB NP NP .
+a real pessoa de vossa majestade guarde deus infinitos anos .
+WPP-> P WPRO
+em que
+IP-> PP VB NP
+da dúvida nasce o argumento
+ADJP-> ADV ADJ PP , PP
+mais própria da vaidade humana do que esses mesmos rios
+IP-> FP CONJ NP VB IP .
+só porque a ficou conhecendo .
+IP-> NP VB IP PP
+nos vemos superiores aos mais homens pelo bem que obramos
+IP-> CONJ ADV VB PP PP .
+e assim vimos ao mundo para fugirmos de nós isto é das nossas paixões , e entre elas das nossas vaidades .
+IP-> NP SR ADJP , PP
+raras vezes somos generosos só pela generosidade
+IP-> CONJ ADV SR CP .
+e então é que erramos mais .
+IP-> NEG VB IP
+não pode subsistir sem dissonância
+IP-> HV NP PP
+há arte para saber
+IP-> CONJ NP ADV VB NP .
+e a grandeza no poder também influi extensão no espírito .
+NP-> N , CONJP PP
+excesso e proporção da tirania
+IP-> NP ADV NP VB .
+outros apenas se conhecem .
+IP-> NP ADV NP VB ,
+os vivos e os mortos continuamente se sucedem ,
+IP-> NP , VB NP IP .
+a mesma terra que foi feita para todos , quiseram alguns fazê-la unicamente sua .
+IP-> CP , VB PP .
+logo que vimos ao mundo começamos a ter ódio , ou amor , tristeza , ou alegria .
+IP-> CONJ NP VB PP
+nem vestígios deixam por onde ao menos lhes recordemos as ruínas
+NP-> NP . Q
+o ser causa de que o mundo tome outra figura outra ordem , outro movimento . o ver perturbadas as gentes , cheias de aflição , e espanto . o achar todos os caminhos humedecidos com lágrimas , rubricados com sangue , e impedidos com os despedaçados corpos de mil agonizantes . o ouvir no ar em ecos entercadentes uma multidão de soluços , e suspiros . o abater impérios , e fazer deles desertos solitários . tudo
+IP-> CONJ ADV SR ADJP .
+e então somos como a ave desgraçada que por mais que fuja do lugar em que recebeu o golpe , sempre leva no peito atravessada a seta .
+IP-> PP SR NP , CP .
+nas cousas é trânsito o que nos parece permanência .
+IP-> NP NP VB , PP
+se nos mostra sem um certo véu que a esconde
+IP-> CONJ NP ADV VB CP .
+porque a vaidade de ser virtuoso também parece que é virtude .
+IP-> NP NEG VB PP , PP
+o não receiam pelo que toca a si senão pelo que há-de tocar aos seus
+IP-> CONJ PP
+mas não na matéria original
+IP-> PP VB NP NP .
+nestes levantou o mesmo amor o primeiro trono a que vossa majestade subiu .
+IP-> NP NEG VB PP IP
+o homem não vem ao mundo mostrar o que é
+IP-> CONJ ADV NEG VB PP .
+e assim não olhamos para o homem .
+IP-> HV CP
+há que não temem o castigo pelo que este tem de insuportável , mas pelo que tem de infame . e que o não receiam pelo que toca a si , senão pelo que há-de tocar aos seus
+IP-> PP VB NP NP ,
+naquela fazem corte os soberanos ,
+ADJP-> VB ADV PP
+unido intimamente à cousa escondida
+IP-> PP SR NP , NP .
+nos príncipes é virtude uma vaidade bem intendida .
+IP-> NEG SR NP
+não é sinal de um ânimo dobrado e infiel
+CP-> WNP IP
+o que vemos
+ADJP-> ADJP , CONJP , CONJP , CONJP
+imaginário mudável , de instituição nacional , e variante
+IP-> CONJ NP NP VB PP NP .
+porque a vaidade lhe sugere em si a imagem de um martírio .
+IP-> PP NP VB NP
+em atenas se faria uma minerva
+NP-> SENAO N
+senão vaidade
+IP-> VB NP PP NP
+deixando uns aos outros as inteligências em que se fundam as nossas vaidades
+IP-> PP VB PP
+nos mais homens procedem de premeditação
+NP-> D ADV N PP
+os mais homens na humanidade
+CP-> CONJ WNP
+e que maior ventura que a esperança com que a buscamos
+IP-> CONJ SR ADJP ,
+porque foi tão excessiva ,
+IP-> CONJ PP HV NP .
+e ainda nas verdades há algumas que se não podem alcançar , senão pelo caminho do erro .
+IP-> CONJ SR ADJP .
+porque são como degraus que se pisam .
+IP-> NP VB ADVP PP , CP .
+nada contribui tanto para a sociedade dos homens como a mesma vaidade deles .
+IP-> VB+SE , CP
+dizer-se que vive no escuro aquele de quem se não fala
+IP-> HV NP PP , CP .
+há vícios necessários em certos homens assim como há virtudes impróprias em outros .
+IP-> PP PP SR ADJP , CP .
+por isso para nascerem umas é preciso que acabem outras .
+IP-> NP ADV SR ADJP .
+o ter muito juízo sempre é útil .
+IP-> VB NP NP
+excogitar a vaidade a regra de que um dos privilégios da grandeza , é ser superior às máximas do vulgo , e que nela o descrédito não desacredita , a desonra não desonra , e a infâmia não infama
+IP-> SR NP PP .
+somos narcisos logo no berço .
+IP-> ADV VB NP .
+nunca faltam pretextos para duvidar nem meios para se fazer questão daquilo , em que a não pode haver .
+IP-> ADV VB NP ,
+assim acabam as suas glórias ,
+IP-> CONJ NP NP VB . CP .
+e ninguém os ouve como se a preeminência da dignidade os fizesse incapazes , ou indignos da defesa .
+IP-> NP CP , ADV NP VB ,
+a mesma vaidade quando está contente logo se descobre ,
+IP-> VB NP NP ,
+presume muito de si quem tem vaidade ,
+PP-> ADV P IP
+também para ignorar
+IP-> ADVP SR VB
+mais injustamente são julgados
+ADVP-> SENAO ADV PP
+senão depois de o ter
+IP-> PP , CP , SR NP ,
+no tempo de prometer o que vemos , são agrados ,
+IP-> CONJ PP VB ADV .
+e também por vaidade obramos mal .
+IP-> PP , CP , SR NP .
+no tempo de cumprir o que achamos , são durezas .
+IP-> CONJ SR ADJP CP .
+porque é justo que o homem se desvaneça sempre e que tenha fim na mulher a vaidade .
+IP-> NP SR ADJP , CP
+o ardor é lento quando só se disputa um posto ventajoso
+IP-> NP NEG SR VB PP .
+o mundo não foi feito mais em benefício de uns que de outros .
+PP-> P+D NP ,
+das cidades ,
+IP-> NP SR PP .
+tudo o que nasce é para não ser firme nem constante .
+NP-> D N , NP
+as cadeias ainda as que são mais pesadas
+IP-> NP VB PP IP ,
+nenhum entra na peleja indiferente ,
+IP-> CONJ SR ADJP NP .
+porém é feliz o engano que nos anima sempre .
+IP-> CONJ ADV VB IP ,
+porque sucessivamente imos deixando uns aos outros as inteligências em que se fundam as nossas vaidades ,
+CP-> WPP C IP
+0 que recebem
+IP-> SR CP PP .
+é o que basta para a vaidade as seguir e aprovar .
+IP-> CONJ FP NP VB NP .
+e só lhes mostra aquele adonde estão .
+IP-> PP NP VB PP
+às vezes me afasto do sujeito
+IP-> ADV VB CP .
+antes parece que há uma certa porção de alegria e de tristeza , que há-de passar por nós precisamente .
+IP-> CP , CONJ VB PP NP
+ainda que deles não depende a existência do mundo contudo depende deles a ordem , e a economia das cousas
+IP-> CONJ ADV VB IP .
+e ali vão turvas e limosas .
+CP-> ADV ADV C IP
+ainda depois que acaba quem o tem
+IP-> ADV VB CP ,
+ontem parece que os montes se reduziam a planícies ,
+NP-> D N , CONJP PP
+a fatalidade ou indignidade dos seus meios
+IP-> CP , NP NEG VB NP IP
+se há uma arte de reinar essa não podem os monarcas aprender
+IP-> NEG HV NP
+não haver mais mundos que pudessem invadir devastar , vencer
+IP-> NP SR ADV CP .
+este resto de vaidade é unicamente o que os reprime .
+ADJP-> VB , CONJP , CONJP , CONJP
+emprestado fingido , suposto , e exterior
+NP-> NP , CONJP , CONJP ADJ
+vilas cidades , e nações inteiras
+IP-> CONJ VB ADV ,
+e caminham docemente ,
+PP-> P , NP
+em toda a extensão , ou significação delas
+WNP-> WPRO$ N
+cujo ornato
+ADJP-> ADVP ADJ
+mais ou menos largos
+IP-> NP VB PP NP , ADVP
+se acaba em nós o gosto do que nelas a duração
+NP-> FP D PRO$ N
+até o nosso pensamento
+NP-> Q N PP
+qualquer parte do corpo
+IP-> NP VB PP , CP
+a sumptuosidade do túmulo sirva de inspirar veneração como se fossem relíquias as suas cinzas
+IP-> ADVP VB PP
+primeiro começam pela nossa incapacidade do que por nós mesmos
+NP-> D N ADJP , CP
+um homem como os outros cujo ornato é de pura fantasia , arbitrária , artificial , e separável
+FRAG-> IP .
+em um lugar tantos motivos de vaidade e nenhuns em outro .
+IP-> NP NEG VB NP PP
+o tempo não conta a nossa idade pelos anos
+IP-> NP , ADV VB NP
+as feridas umas sobre as outras apenas mostram lugar livre de golpe
+IP-> TR HV CP
+tem havido a quem parece que de algum modo enobreceu a sua iniquidade
+IP-> CONJ ADV TR NP .
+mas também temos outra pronta para o abraçar .
+IP-> CONJ CP , SR ADJP .
+e se os agrava alguma vez é como a mão do artista , que faz doer para curar .
+IP-> CONJ PP ADV TR NP NP .
+e nesta ainda tem lugar a pena .
+ADJP-> ADV ADJ PP
+mais difíceis de ocultar
+IP-> VB+CL PP PP
+transformá-los em muralhas para defesa das cidades e dos reinos
+IP-> HV PP NP
+há nele diferença
+PP-> NEG P NP
+não por vício do desejo
+IP-> PP ADV NP VB ADV .
+do passado nunca se diz mal .
+NP-> D N , PP
+aquele de quem se não fala dando a entender , que as empresas , por meio das quais se fala nos homens
+IP-> NP NP NP VB IP .
+a nossa alegria tudo nos mostra alegre .
+IP-> PP NP , VB ADVP .
+por isso o nosso contentamento ou a nossa pena , chegam primeiro do que o seu objecto .
+NP-> D ADJ N , CP , Q
+as diferentes produções que vemos , todas
+IP-> PP VB PP PP , PP .
+por isso olhamos com desgosto para as cousas alheias por nos parecer , que deviam ser nossas .
+IP-> NP , NP VB PP .
+quem imagina o que deseja tudo pinta com cores lisonjeiras , e mais vivas .
+IP-> CONJ VB PP PP
+nem gozamos delas no estado em que as achamos
+ADJP-> ADJ CONJ ADJ
+vago e incerto
+IP-> CP SR NP .
+o que diversifica os modos é a alegria a tristeza , o amor , o ódio , o desejo , ou a indiferença , e mais que tudo a vaidade .
+IP-> PP NEG FP HV NP PP
+por isso não só há vaidade na alegria
+IP-> CONJ PP VB PP ADJP NP .
+porque em virtude dela ficam desde logo suprimidas as traduções de quinto cúrcio e de lucano .
+IP-> PP CP , ADV SR PP .
+por isso quando o vemos e encontramos , sempre é com nosso pesar , e desagrado .
+NP-> ADJ N , NP , CP
+miseráveis homens género infeliz , que nesse momento , que lhes dura a vida , preparam a sua mesma reprovação . e que tendo vaidade , que lhes faz parecer , que tudo meditam , que tudo sabem , e que tudo prevêem , só a não têm para anteverem as vinganças de um deus irado , e que com o seu mesmo sofrimento , e silêncio , clama , ameaça , julga , condena
+IP-> NEG VB CP
+não mostra que se aflige
+IP-> NEG HV PP
+não há-de saber-se um desacerto
+IP-> ADVP VB VB
+nunca mais sejamos vistos
+IP-> CONJ NP NP VB PP ,
+e cada um se irrita de ver um modo impróprio ,
+NP-> N NPR
+monte olimpo
+IP-> CONJ NP NP VB PP .
+porque cada uma delas se apropria à natureza das paixões por onde passa .
+C-> C IP
+que imaginação
+IP-> NEG NP VB , CP . IP
+não se acaba ainda depois que acaba quem o tem . sendo a única desgraça , que se imprime na alma , como um carácter imortal
+CP/IP-> NP FP VB PP
+o homem só nascesse para ser discreto
+IP-> PP NEG NP VB IP NP , PP
+na ordem das suas partes não se podem conhecer umas sem se conhecerem todas
+IP-> PP NP NP VB NP .
+a cada passo que damos no discurso da vida , se nos oferece um teatro novo , composto de representações diversas , as quais sucessivamente vão sendo objectos da nossa atenção , e da nossa vaidade .
+IP-> NP NEG SR Q ADJP .
+as submissões não são todas voluntárias .
+PP-> NEG P IP
+não para existir
+IP-> NP ADV NP VB PP , ADVP ,
+a justiça também se compõe de iniquidade semelhante à harmonia , que não pode subsistir sem dissonância ,
+IP-> NP , ADV NEG SR ADJP .
+as empresas que hoje vemos , talvez não são inferiores às que a tradição refere do tempo do heroísmo .
+WNP-> WD ADJP N CP
+que maior ventura que a esperança com que a buscamos
+PP-> CONJ PP , CONJP
+nem na sua origem nem no seu progresso
+IP-> TR NP
+ter lugar
+IP-> VB NP ,
+inundam a campanha ,
+IP-> VB NP .
+perdem todo o nosso reparo e atenção .
+IP-> CONJ VB NP , PP .
+pois introduz o poder e a autoridade , até no modo de pensar .
+NP-> D NPR CP
+o mesmo firmamento com giro rápido , esconde pela tarde os astros que amanheceram com a aurora
+IP-> CONJ CP , NP NEG SR NP .
+porque como em nós tudo é vaidade também a nossa razão não é outra cousa mais do que a nossa mesma vaidade .
+IP-> CONJ VB
+mas desaparecem
+NP-> FP NPR
+só deus
+IP-> NP , VB IP NP .
+as gentes penetradas de admiração e de respeito , acham unidos em vossa majestade muitos atributos gloriosos , que raramente se puderam unir bem .
+NP-> PRO$ N ADJ
+sua simplicidade natural
+NP-> CONJ ADJP D N
+e mais que tudo a vaidade
+IP-> PP NP NP VB ,
+naqueles o costume os enfraquece ,
+NP-> NP , CONJP , CP
+prova e instrumento visível , por onde a cada instante , e sem palavras , o valor se justifica
+IP-> PP NP VB ,
+por isso as desprezamos ,
+IP-> PP NP NP VB .
+no sol qualquer vapor o ofusca .
+IP-> ADV VB ADJP
+antes parecer maus com entendimento do que bons sem ele
+PP-> P+D NP CP
+da mesma sorte 0 que somos
+IP-> NP VB PP , CP .
+a mesma luz arma-se de raios para que não possa examinar-se de donde lhe vêm os resplendores .
+IP-> NEG ET PP
+não está tanto em possui-la como em desejá-la
+IP-> CONJ NP , VB IP .
+e quem o não pode pagar assim fica devendo sempre .
+IP-> VB CP .
+parece que também nas águas há fortuna e vaidade .
+NP-> ADV D N PP , CP
+mais o atrevimento da injúria que o prejuízo do mal
+NP-> P+D NP
+da culpa
+IP-> ADV NP NP VB
+comummente se lhe dá
+IP-> PP NP NEG VB
+nela o descrédito não desacredita
+IP-> NP NEG SR ADJP , CP .
+a união do gosto com o pesar não é incompatível por mais infinita que nos pareça a distância de um a outro extremo .
+IP-> NP , VB+CL IP
+uma figura simples comua , e igual em todos , mostrá-la desfigurada , e outra debaixo de um véu puramente exterior
+ADJP-> ADJ , CONJP , CONJP
+insensível absorta , e indolente
+NP-> CP . Q PP
+que umas nasçam nos montes e outras nos vales . que umas venham das nuvens , e outras da terra . que umas corram claras , e outras turvas . nada disso
+IP-> VB NP PP
+buscar a religião para fazer da paciência o maior merecimento
+NP-> D N ADV CP
+uma semelhança mais que material e indiferente
+IP-> PP , NEG VB IP
+no mal que se espera , ou se receia , não pode haver alívio
+IP-> CONJ ADVP VB IP ,
+e assim devia ser ,
+NP-> D , CONJP
+um e outro
+IP-> TR PP
+temos de as fazer
+NP-> D N PP , NP
+a pena da ignomínia pena quási sem fim
+IP-> NP TR VB IP
+a vulgar é um tesouro que contém riqueza imensa para quem se soubesse servir dela , contudo não sei que fatalidades me têm feito olhar com susto , e desagrado para tudo quanto nasceu comigo
+PP-> DEM SR , P+D NP
+isto é da vaidade
+IP-> PP NP VB .
+nem a todos a fortuna lisonjeia .
+PP-> P NP CP
+para a fama como para um objecto vago e incerto e que na realidade vale menos do que custa a conseguir
+IP-> CONJ NEG NP VB .
+e não se ouvem .
+IP-> NP NP VB , CP .
+a vaidade nos insinua que todos os meios , e caminhos são bons , quando se alcança .
+IP-> NP , ET ADVP .
+quem sabe o como o mal se faz está mui perto de o fazer .
+IP-> NP , ADV NP VB IP ,
+outros rios mais pequenos no princípio depois se fazem caudalosos ,
+IP-> NP , NEG NP VB NP .
+o correrem mais juntas não lhes muda a natureza .
+IP-> VB PP , CP
+importa à felicidade do homem que os outros , quando lhe falam , articulem mais um som , que outro , e que nas reverências que introduziu a lisonja , se dobrem mais , ou menos
+PP-> PP , CONJP
+com admiração e com respeito
+IP-> PP , NP VB NP .
+com a honra que adquire , se consola o que perde a vida .
+CP-> WADVP IP .
+como há-de chorar quem está contente .
+CP-> WADVP IP ,
+quanto deram os homens ,
+IP-> NP , SR ADJP ,
+a satisfação própria que a alma recebe , é como um espelho em que nos vemos superiores aos mais homens pelo bem que obramos ,
+IP-> NP VB , NP
+nos ensinam o quão pouco são estimáveis em si , esses mesmos objectos , que buscamos com fadiga
+IP-> NP , SR ADJP .
+o prazer e o desgosto , que não vêm das primeiras leis da natureza , são vãos em si mesmos , de instituição política , e unicamente criaturas da vaidade .
+IP-> VB NP CP .
+acabam-se as tradições muito antes que acabe o mundo .
+IP-> IP , CONJP ,
+o tempo não conta a nossa idade pelos anos mas sim pelos instantes ,
+NP-> D PRO$ N Q
+o nosso cuidado todo
+IP-> VB NP CP ,
+perdemos a inocência assim que entramos a ter uso de razão ,
+IP-> NP PP TR NP
+os homens só na razão de homens têm igual direito
+IP-> NP NEG SR NP .
+os homens não são todos igualmente sensíveis ao bem e ao mal .
+NP-> D N PP PP
+o pesar não é incompatível por mais infinita que nos pareça a distância de um a outro extremo
+CP-> WPP IP
+em que elas nos acham
+IP-> IP , CONJP .
+nem gozamos delas no estado em que as achamos , mas sim naquele em que elas nos acham .
+IP-> CONJ PP NEG VB NP .
+ou ao menos não tiveram outro princípio em que mais seguramente se fundassem .
+CP-> P C IP
+de que um dos privilégios da grandeza é ser superior às máximas do vulgo
+IP-> CONJ CP , PP VB ,
+e como é paixão dominante em nós a todas as mais sujeita ,
+IP-> NP ADVP
+outra debaixo de um véu puramente exterior
+CP/IP-> NP NEG VB
+a desonra não desonra e a infâmia não infama
+IP-> CONJ NP , SR ADJP NP .
+porém os que têm a vaidade por origem são incuráveis quási todos .
+IP-> NP , NP VB NP
+o mesmo ar que lhe dilata os ecos , lhe confunde , e apaga a voz
+NP-> PRO$ NPR
+minhas reflexões
+IP-> NP , VB PP .
+a circunstância de chorar mais ou menos , resulta de cada um de nós .
+IP-> CONJ NP CP , ADV NP VB PP
+porque a providência já quando os formou para a dominação logo os destinou para figuras da divindade
+IP-> CONJ IP , NP SR NP .
+porém posto em parte donde o vejam todo é acção , movimento , esforço .
+IP-> NP , VB PP ,
+um receio insensível de a perdermos basta para oprimir-nos ,
+IP-> NEG SR PP , NP , CP .
+não é só nesta parte senhor , em que vemos um prodígio em vossa majestade .
+NP-> ADV D N PP , PP
+menos a dor das feridas do que o arrojo do impulso
+NP-> N , N , N
+acção movimento , esforço
+IP-> VB IP . CP .
+vem ser um homem graduado ilustrado , inspirado . de sorte que os atributos , com que a vaidade veste ao homem , são substituídos no lugar do mesmo homem .
+CP-> CP CONJP CONJP CONJP CONJP CONJP CONJP
+com que se propõe com que se diz , com que se fala , com que se ouve , com que se olha , com que se vê , com que se anda
+CP-> WQ IP
+se teremos
+NP-> FP D N CP
+só a morte que nos acaba
+IP-> CONJ CP , PP VB NP NP .
+porque como os homens de tudo se intumecem em tudo acha a vaidade um exercício essencial .
+NP-> NP . CONJP
+os movimentos dela e do mesmo modo os da tristeza
+IP-> SR NP , CP
+serem poucas de sorte que só formem uma fonte
+NP-> Q D N ADJ
+toda a natureza humana
+IP-> NP CP , NEG VB ,
+as cicatrizes por mais que causem deformidade enorme não entristecem ,
+IP-> CONJ NP PP SR ADJP ,
+porque todos para a fortuna são iguais ,
+IP-> PP VB , CP .
+por isso vemos que a tristeza nos abate , e a alegria nos move .
+IP-> HV NP .
+há muitos males em que a vaidade parece se deleita .
+IP-> CONJ NP , CP , ADV VB IP , CP .
+e os mesmos epitáfios por mais que sejam profundos os caracteres , insensivelmente vão fugindo dos nossos olhos , até que se apagam totalmente .
+IP-> HV NP ,
+há empresas de mais e de menos vaidade ,
+IP-> PP NP NP VB PP NP ,
+por via do pensamento se lhe comunica de alguma sorte a dor ,
+IP-> TR SR
+ter sido
+IP-> CONJ NP , PP VB ,
+porque as variações do tempo da idade , da fortuna , e dos sucessos , a todos compreendem ,
+ADJP-> ADJP CONJP
+vãos em si mesmos de instituição política , e unicamente criaturas da vaidade
+NP-> D N CP ,
+a morte que está de sentinela ,
+IP-> CONJ NP , NEG VB PP .
+e a natureza a quem as paixões têm sempre em acção , não cessa de guiar o pensamento para aquela mesma parte , para donde a nossa inclinação propende .
+IP-> NP , PP VB NP ,
+a vaidade que governa todas as paixões em umas aumenta a actividade ,
+IP-> NP , PP VB NP .
+o espírito vivificante e eterno , em todas infundiu um movimento próprio , circular , fecundo , e sujeito às leis do peso , e do equilíbrio .
+IP-> NP VB , CP
+nos dera que assim como há arte para saber , a houvesse também para ignorar . e que assim como há estudo , que nos ensina a lembrar , o houvesse também , que nos ensinasse a esquecer
+IP-> ADV VB .
+aqui extingue-se .
+ADJP-> ADJ ADV
+sensível igualmente
+IP-> ADV VB ,
+antes alegram ,
+IP-> NP , TR VB PP NP .
+a ambição dos homens por uma parte e pela outra a vaidade , têm feito da terra um espectáculo de sangue .
+IP-> ADV NP HV PP .
+finalmente outros hão-de reparar que afectei nas expressões alguns termos desusados , e estrangeiros .
+NP-> D VB
+o passado
+IP-> PP ADV SR ADJP
+nos mais homens sempre é inficionado de algum género de interesse
+PP-> SENAO P+DEM NP
+senão àquilo que é comum que toca a todos , e que a todos compreende
+IP-> ADV VB NP PP
+sempre indica superioridade em quem o faz
+IP-> CONJ VB PP PP .
+e vai com resolução para o suplício .
+IP-> VB ADJP NP .
+fica invisível aquele agrado que nos tinha induzido para desejar .
+IP-> CONJ ADV VB PP .
+e assim chegam ao estado da grandeza .
+IP-> NP , PP , ADV VB IP .
+a mesma humildade com ser uma virtude oposta , também costuma nascer de vaidade .
+IP-> NP TR PP
+este tem de insuportável
+IP-> NP NEG SR ADJP
+os conceitos neste livro não são justos
+IP-> NP VB ADV
+se manifestam mais
+IP-> CONJ ADV VB PP , CP .
+e assim vimos a ser destemidos não só porque a vaidade nos obriga , mas também porque nos engana .
+IP-> NP TR NP PP
+o entendimento tem parte de algum modo
+IP-> NP , PP NP VB .
+as qualidades da água e do fogo , a todos se comunicam .
+IP-> NP , PP NP VB ,
+o leito que os sustenta em partes se abre ,
+IP-> CONJ NP SR PP ADJP , CP .
+porque a contextura do universo é em si unida e regular , em forma que na ordem das suas partes não se podem conhecer umas , sem se conhecerem todas .
+IP-> CONJ ADV PP , VB ADJP .
+e assim nem por fugir ao castigo fica livre dele .
+IP-> CP , NP ADV VB ,
+por mais que queiramos ser humildes e que tenhamos vontade de desprezar o fausto , a vontade contrária sempre vence ,
+NP-> ADJ ADJ N
+outro maior motivo
+IP-> NP ADJP
+ambas vãs
+PP-> ADV P NP
+ainda sem vaidade
+IP-> IP , VB , PP
+ponderada a melhor parte delas consiste , ou em palavras , ou em gestos
+IP-> CONJ ADV PP ADV NP VB NP .
+e assim na vaidade nunca se formam cicatrizes firmes e seguras .
+IP-> NP ADVP VB PP .
+a crueldade nem sempre vem de um ânimo bárbaro e feroz .
+IP-> ADVP , NP , ADV NP VB PP .
+ainda depois de passados muitos anos a lembrança , que às vezes nos ocorre de um amor , que parece que acabou , sempre nos vem com sobressalto .
+IP-> NP , PP VB CP .
+a mulher fermosa com o tempo conhece que já o não é .
+IP-> ADV PP , VB NP .
+antes para a conservar lembra mil interpretações , e aplicações forçadas .
+IP-> CONJ NP , NP VB ,
+porque as mesmas urnas que as escondem , se desfazem ,
+IP-> IP , FP NP NEG TR PP
+tendo vaidade que lhes faz parecer , que tudo meditam , que tudo sabem , e que tudo prevêem , só a não têm para anteverem as vinganças de um deus irado , e que com o seu mesmo sofrimento , e silêncio , clama , ameaça , julga , condena
+NP-> Q N ADJ , CP
+muitos atributos gloriosos que raramente se puderam unir bem
+IP-> IP , ADV NP VB IP NP .
+incapazes de um ser constante e sólido , apenas se pode dar em nós virtude sem mancha , ou perfeito vício .
+IP-> CONJ NP SR NP .
+porque o desejo é uma espécie de gozar mais activa e mais durável , mais forte , e mais contínua .
+IP-> CP , PP NP VB IP NP . CP .
+como tudo se faz pelo estímulo da vaidade por isso se julga perdida uma façanha , que não tem quem a divulgue . como se um acto generoso consistisse mais em se saber , do que em se obrar .
+IP-> CONJ NP SR NP ,
+porque a vaidade é um mal comum ,
+IP-> NP , SR ADJP PP
+as descrições com que às vezes me afasto do sujeito , eram naturais em verso , e não em prosa
+NP-> D N , CONJP CP
+a brenha ou rocha donde nascem
+IP-> CONJ VB PP . ADVP .
+e prevalece a todas semelhante ao impulso das ondas , a que não resiste o frágil de uma nau , quando o mar embravecido a faz correr com a tormenta .
+IP-> SR ADJP CP
+é necessário para que os homens queiram medir a grandeza do poder pelo excesso , e proporção da tirania
+IP-> NP NP VB IP CP .
+a vaidade nos faz crer felices à proporção que ouvimos esta , ou aquela voz , e que vemos este , ou aquele culto .
+NP-> NP . D N
+esses campos fatais em que se observam espectros , debaixo da visão de umas luzes voláteis , em que se ouvem ainda hoje , entre o rouco som de caixas , e trombetas , vozes mal articuladas , alaridos confusos , e lamentos tristes . esses campos , que depois de muitos séculos , ainda trazem à memória representações funestas , e em que as plantas , parece nascem com medo , e que o humor , que recebem da terra , é sensitivo . esses campos
+IP-> NP NEG VB , NP ,
+o túmulo não encobre nem a ignomínia do nome , nem o esclarecido ,
+IP-> CONJ VB ADVP NP .
+e sente como um desprezo o achar um modo que não convém a quem usa dele .
+NP-> NP , CONJP
+o poder e a autoridade
+IP-> PP FP VB IP .
+em outros só vão lavando a branca areia .
+IP-> ADV NEG HV NP , CP
+ontem não havia nada de impossível porque era questão de receber
+IP-> VB PP , NP
+vindo a parecer persistência na vocação o que só é constância na vaidade
+IP-> NP VB PP , IP
+se fale em nós vindo a ser ambiciosos das palavras dos outros , e idólatras das narrações da história
+IP-> PP , PP NP VB NP
+no modo de escrever às vezes se encontram umas tais imperfeições , que têm não sei que gala , e brio
+ADJP-> ADJP CONJP CONJP
+mais firme mais intensa e mais constante
+IP-> FP TR PP NP
+só têm por princípio a vaidade do valor
+NP-> D N ADJP
+o pensamento enquanto não sai da sua esfera tem uma liberdade inteira , impenetrável , e muitas vezes invencível
+NP-> ADV PP
+mais do que um homem como os outros cujo ornato é de pura fantasia , arbitrária , artificial , e separável
+IP-> VB , NP
+parecendo o que claramente se sabe , que não são
+IP-> CONJ NP NP VB NP . CP ,
+porque o pensamento lhe dá uma extensão maior em lugar , que o mal que já se sente , pode consolar-se ,
+IP-> PP , NP VB ADVP
+nas reverências que introduziu a lisonja se dobrem mais , ou menos
+PP-> P IP .
+de se juntarem uns com outros e fazerem mais volume . de encontrarem diamantes .
+IP-> NP NEG VB , CP .
+um venturoso não crê que possa deixar de o ser .
+IP-> CONJ PP NP SR ADV VB .
+mas nem por isso o que disseram foi mais seguido ou aprovado .
+PP-> P IP ,
+de ver de ouvir , de andar , de preguntar , e de responder ,
+IP-> NP NEG VB , CP ,
+a vaidade não consente que a nossa presunção fique abatida ,
+NP-> ADV D ADJ N
+ainda o mesmo pensamento
+CP-> CP . CONJP , CONJP
+que o tinham todo debaixo do seu poder que tudo estava já sujeito , e que ainda assim era curto império todo o circuito da terra , e toda a vastidão do mar
+IP-> NP , NP VB PP
+o bosque que nos serve de muda companhia , se magoa dos nossos infortúnios
+NP-> ADV PRO$
+unicamente sua
+NP-> N , CONJP CP
+motivo ou razão que for
+CP-> P+D ADJ N , C IP
+da mesma sorte que a desgraça não aflige tanto , quando se acha a vaidade satisfeita
+ADVP-> PP ADV
+ao menos então
+NP-> N PP . NP
+vaidade dos velhos vaidade discursiva , prudencial , histórica , e muitas vezes imbecil
+IP-> SR ADJP IP ,
+foi preciso pôr o meu nome neste livro ,
+IP-> CONJ ADV VB NP PP .
+e depois alcançamos a inocência à custa da razão .
+NP-> D N VB , CP
+a ave desgraçada que por mais que fuja do lugar em que recebeu o golpe , sempre leva no peito atravessada a seta
+IP-> ADV HV PP NP
+cedo há-de vir a feliz correspondência
+IP-> VB ADV
+suportar sempre
+NP-> D ADJ , CP
+os mesmos em que a vaidade vencedora , arrancou os louros para coroar as suas empresas
+IP-> PP ADJP
+em outras largos
+IP-> ADV VB NP PP ,
+ali perde-se a vida com honra ,
+IP-> NP SR ADJP ,
+a continuação da mesma vida é vaidosa ,
+IP-> VB NP , PP
+sujeitar os seus conceitos senão àquilo que é comum , que toca a todos , e que a todos compre

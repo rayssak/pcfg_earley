@@ -41,10 +41,9 @@ public class TestingJurafskyCorpusExample {
 		 * 		does this flight include Houston
 		 * 		does this flight include a meal
 		 * 		include to me
-		 * 		I prefer a morning flight
 		 * 
 		 */
-		String sentence = "I prefer a morning flight";
+		String sentence = "book that flight";
 		
 		long timeRan = System.currentTimeMillis();
 		
@@ -55,8 +54,8 @@ public class TestingJurafskyCorpusExample {
 		handleTimeRan(timeRan);
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
-		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 		
+		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
 //		if(grammarRecognized) {
 //			System.out.println("- SYNTATIC TREE:");
 //			for(int aux=grammarTree.size()-1; aux>=0; aux--)
@@ -97,7 +96,6 @@ public class TestingJurafskyCorpusExample {
 		lexicon.add("Noun-> flight");
 		lexicon.add("Noun-> meal");
 		lexicon.add("Noun-> money");
-		lexicon.add("Noun-> morning");
 		lexicon.add("Verb-> book");
 		lexicon.add("Verb-> include");
 		lexicon.add("Verb-> prefer");

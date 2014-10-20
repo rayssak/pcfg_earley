@@ -1,7 +1,7 @@
 package ime.mac5725.earley;
 
-import ime.mac5725.earley.parallel.Completer;
-import ime.mac5725.earley.parallel.Predictor;
+import ime.mac5725.earley.parser.Completer;
+import ime.mac5725.earley.parser.Predictor;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.io.FileNotFoundException;
@@ -32,7 +32,7 @@ public class Earley {
 	protected static volatile int threadCount = 0;
 	protected static volatile int threadCompletedCount = 0;
 	
-	protected double precision;
+	protected static double precision;
 	
 	protected static volatile boolean printRules;
 	protected static volatile boolean grammarRecognized = false;
@@ -124,7 +124,23 @@ public class Earley {
 		}
 		// Chart must have N+1 sets of states (N = sentence words)
 		addNewEntryToChart();
+		checkPossibleTerminalsToPredict();
 	}
+	
+	private void checkPossibleTerminalsToPredict() {
+		int count = 0;
+		for(String rule : lexicon) {
+			for(int aux=0; aux<sentenceWords.size(); aux++) {
+				if(rule.contains(sentenceWords.get(aux))) {
+					rulesToPredict.add(rule);
+					count++;
+				}
+				if(count == sentenceWords.size())
+					break;
+			}
+		}
+	}
+
 
 	protected void addNewEntryToChart() {
 		chart.add(new ArrayList<String>());
@@ -623,29 +639,31 @@ public class Earley {
 	 */
 	public boolean parse(HashMap<String,String> grammarTrees) {
 		
-		String finalParserState = finalState.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "")
-											.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0]
-											.replace(" " + ConstantsUtility.DOTTED_RULE, "");
-		
-		if(grammarTrees.containsValue(sentence))
-			for(Entry<String, String> rule : grammarTrees.entrySet())
-				if(rule.getValue().equals(sentence)) {
-					
-					String tmpParserState[] = finalParserState.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
-
-					int count = 0;
-					for(int aux=0; aux<tmpParserState.length; aux++)
-						if(rule.getKey().contains(tmpParserState[aux]))
-							count++;
-					
-					precision = (count*100)/tmpParserState.length;
-					
-					if(rule.getKey().equals(finalParserState)) {
-						sentenceOriginalTree = "(" + rule.getKey() + " and " + finalParserState + ")";
-						return true;
+		if(!finalState.isEmpty()) {
+			String finalParserState = finalState.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "")
+												.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0]
+												.replace(" " + ConstantsUtility.DOTTED_RULE, "");
+			
+			if(grammarTrees.containsValue(sentence))
+				for(Entry<String, String> rule : grammarTrees.entrySet())
+					if(rule.getValue().equals(sentence)) {
+						
+						String tmpParserState[] = finalParserState.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
+	
+						int count = 0;
+						for(int aux=0; aux<tmpParserState.length; aux++)
+							if(rule.getKey().contains(tmpParserState[aux]))
+								count++;
+						
+						precision = (count*100)/tmpParserState.length;
+						
+						if(rule.getKey().equals(finalParserState)) {
+							sentenceOriginalTree = "(" + rule.getKey() + " and " + finalParserState + ")";
+							return true;
+						}
+						
 					}
-					
-				}
+		}
 		
 		return false;
 		

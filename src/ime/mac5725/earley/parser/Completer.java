@@ -1,4 +1,4 @@
-package ime.mac5725.earley.parallel;
+package ime.mac5725.earley.parser;
 
 import ime.mac5725.earley.Earley;
 import ime.mac5725.earley.util.ConstantsUtility;
@@ -89,7 +89,8 @@ public class Completer extends Earley implements Runnable {
 				if(isComplete(currentRule) && hasCompletedSentence(currentRule)) {
 					finalState = currentRule;
 					grammarRecognized = true;
-				} if(isComplete(currentRule) && isFinalStateToGrammarTree(currentRule))
+				}
+				if(isComplete(currentRule) && isFinalStateToGrammarTree(currentRule))
 					addToFinalParser(currentRule, "(" + previousState + ")");
 				
 			}

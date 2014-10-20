@@ -181,19 +181,15 @@ public class TreeBankHandler {
 	}
 	
 	private void getWord() {
-		
-		if(!sentenceWordAdded) {
 			
-			String lexiconRule = !line.matches("\\s+") && !line.split("\\s")[line.split("\\s").length-1].contains("(") ?
-							  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
-							  	 
-			if(!lexiconRule.isEmpty() && !currentRule.isEmpty()) {
-				lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
-				sentenceIndex.put(tmp.toString().substring(tmp.toString().lastIndexOf("IP")-3, tmp.toString().length()-1).replaceAll("\\[", ""), lexiconRule);
-				sentenceWordAdded = true;
-			}
-		
+		String lexiconRule = !line.matches("\\s+") && !line.split("\\s")[line.split("\\s").length-1].contains("(") ?
+						  	  line.split("\\s")[line.split("\\s").length-1].replaceAll("\\s", "").replaceAll("\\)", "").toLowerCase() : "";
+						  	 
+		if(!lexiconRule.isEmpty() && !currentRule.isEmpty()) {
+			lexicon.add(currentRule + NEXT_ELEMENT_CHAR + " " + lexiconRule);
+			sentenceIndex.put(tmp.toString().replaceAll("\\[", ""), lexiconRule);
 		}
+		
 	}
 	
 	private void clearCurrentRule() {
@@ -209,6 +205,7 @@ public class TreeBankHandler {
 		if(hasPontuation() && currentRule.length()>1) {
 			lexicon.add(currentRule.substring(0, 1) + NEXT_ELEMENT_CHAR + " " + currentRule.substring(1, 2));
 			tmp.add(ruleLevelCount + " " + currentRule.substring(0, 1));
+			sentenceIndex.put(tmp.toString().replaceAll("\\[", ""), currentRule.substring(0, 1));
 			clearCurrentRule();
 		} 
 	}
@@ -336,9 +333,6 @@ public class TreeBankHandler {
 		grammarRules.remove("NP-> IP");
 		grammarRules.remove("IP-");
 		
-//		NP-> elliptical
-//		NP-> nos
-//		WPP-> 0
 		lexicon.remove("NP-> elliptical");
 		lexicon.remove("NP-> nos");
 		lexicon.remove("WPP-> 0");
