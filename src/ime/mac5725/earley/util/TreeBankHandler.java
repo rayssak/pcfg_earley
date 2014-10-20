@@ -284,6 +284,8 @@ public class TreeBankHandler {
 						words = words.replaceFirst("[\\.\\,] ", " ").replaceAll("\\s{2,}", " ");
 					
 					grammarTrees.put(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag, words);
+					System.out.println(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
+							System.out.println(words);
 
 					if(currentItem.equals("1 IP")) 
 						sentenceIndex.clear();

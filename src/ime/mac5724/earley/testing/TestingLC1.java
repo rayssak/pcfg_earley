@@ -55,14 +55,13 @@ public class TestingLC1 {
 		 *		ficam reservadas para serem obras póstumas
 		 * 
 		 */
-		String sentence = "pequeno livro";
+		String sentence = "um pequeno livro";
 		printRules = Boolean.valueOf(args[1]);
 		
 		long timeRan = System.currentTimeMillis();
 		
 		initializeRequiredObjects();
 		readGrammar(args);
-		printRules();
 		grammarRecognized = earley.recognize(sentence, grammarRules, lexicon);
 		
 		handleTimeRan(timeRan);
@@ -93,30 +92,30 @@ public class TestingLC1 {
 		time = minutes + " minutes, " + seconds + " seconds e " + timeRan + " milliseconds";
 	}
 
-	private static void printRules() {
-
-		PrintWriter out = null;
-		try {
-			out = new PrintWriter("C:\\rayssak\\dev\\ime\\all-sentences.txt");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		for(Entry<String, String> entry : grammarTrees.entrySet()) {
-			out.println(entry.getKey());
-			out.println(entry.getValue());
-		}
-		
-//		for(String rule : tmp)
-//			out.println(rule);	
-//			// Print only head rules
-//			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("ADJ")) {
-//				count++;
-//				System.out.println(rule);
-//			}
+//	private static void printRules() {
+//
+//		PrintWriter out = null;
+//		try {
+//			out = new PrintWriter("C:\\rayssak\\dev\\ime\\all-sentences.txt");
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
 //		}
-	}
+//		
+//		for(Entry<String, String> entry : grammarTrees.entrySet()) {
+//			out.println(entry.getKey());
+//			out.println(entry.getValue());
+//		}
+//		
+////		for(String rule : tmp)
+////			out.println(rule);	
+////			// Print only head rules
+////			if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR)[0].equals("ADJ")) {
+////				count++;
+////				System.out.println(rule);
+////			}
+////		}
+//	}
 
 	private static void initializeRequiredObjects() {
 		glc = new TreeBankHandler();

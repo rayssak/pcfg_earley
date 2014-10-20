@@ -43,7 +43,7 @@ public class Predictor extends Earley implements Runnable {
 			// into the chart in case the rule is not already in the current
 			// chart (not all of them).
 			String rule = grammar.get(ruleIndex+size);
-			if(!currentChartWithRules.contains(rule) && specialCase(rule))
+			if(!currentChartWithRules.contains(rule) && specialCase(rule) && isRequiredToProcess(rule))
 				
 				if(enqueue(addStateAndStartEndPointsFields(rule), chart.get(i), i)) {
 					stateLevelCount++;
@@ -69,6 +69,10 @@ public class Predictor extends Earley implements Runnable {
 	}
 	
 	private boolean isRequiredToProcess(String rule) {
+		if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[0].equals("IP") ||
+		   rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[0].equals("CP") ||
+		   rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[0].equals("FRAG"))
+			return true;
 		synchronized (rulesToPredict) {
 			String tags[] = rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
 			for(String current : rulesToPredict)
