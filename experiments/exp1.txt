@@ -1,37 +1,2475 @@
+	Chart[0]		S0 Y-> * IP CP FRAG[0,0]								 DUMMY START STATE
 Reading chart[0]...
+	Chart[0]		S3 IP-> * NP . VB PP NP . [0,0]						 PREDICTOR
+	Chart[0]		S3 IP-> * PP SR CP . [0,0]						 PREDICTOR
+	Chart[0]		S3 IP-> * PP NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S5 IP-> * IP SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S4 IP-> * NP NP VB [0,0]						 PREDICTOR
+	Chart[0]		S6 IP-> * PP NP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S7 IP-> * CONJ IP , NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S8 IP-> * PP , VB ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S9 IP-> * ADV VB NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S10 IP-> * PP NP VB [0,0]						 PREDICTOR
+	Chart[0]		S11 IP-> * IP , FP VB PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S12 IP-> * CP , SR PP [0,0]						 PREDICTOR
+	Chart[0]		S13 IP-> * VB PP NP [0,0]						 PREDICTOR
+	Chart[0]		S14 IP-> * SR ADJP PP [0,0]						 PREDICTOR
+	Chart[0]		S15 IP-> * CONJ VB CP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S16 IP-> * NP SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S17 IP-> * VB NP NP , PP [0,0]						 PREDICTOR
+	Chart[0]		S18 IP-> * CONJ ADV NP TR IP . [0,0]					 PREDICTOR
+	Chart[0]		S19 IP-> * VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S20 IP-> * SR ADJP PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S21 IP-> * NP NEG VB NP [0,0]						 PREDICTOR
+	Chart[0]		S22 IP-> * VB NP PP [0,0]						 PREDICTOR
+	Chart[0]		S23 IP-> * VB VB [0,0]							 PREDICTOR
+	Chart[0]		S24 IP-> * NP NEG VB NP PP [0,0]					 PREDICTOR
+	Chart[0]		S25 IP-> * VB PP [0,0]							 PREDICTOR
+	Chart[0]		S26 IP-> * ADV VB NP [0,0]						 PREDICTOR
+	Chart[0]		S27 IP-> * NP NEG VB NP , PP [0,0]					 PREDICTOR
+	Chart[0]		S28 IP-> * VB NP [0,0]							 PREDICTOR
+	Chart[0]		S30 IP-> * VB PP IP [0,0]						 PREDICTOR
+	Chart[0]		S29 IP-> * SR NP , PP NP [0,0]						 PREDICTOR
+	Chart[0]		S31 IP-> * NP NP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S32 IP-> * VB NP PP , IP [0,0]						 PREDICTOR
+	Chart[0]		S33 IP-> * CONJ NEG VB IP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S34 IP-> * NP NEG NP SR [0,0]						 PREDICTOR
+	Chart[0]		S35 IP-> * NP NP VB IP PP [0,0]						 PREDICTOR
+	Chart[0]		S36 IP-> * NP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S37 IP-> * PP NEG SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S38 IP-> * CONJ ADV VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S40 IP-> * CONJ ADV NP VB NP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S41 IP-> * NP VB ADJP NP [0,0]						 PREDICTOR
+	Chart[0]		S39 IP-> * VB NP IP [0,0]						 PREDICTOR
+	Chart[0]		S42 IP-> * PP NP VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S43 IP-> * ADV SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S44 IP-> * NP PP NP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S45 IP-> * NP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S47 IP-> * VB NP PP NP . [0,0]						 PREDICTOR
+	Chart[0]		S46 IP-> * NP , VB . [0,0]						 PREDICTOR
+	Chart[0]		S48 IP-> * PP VB ADV PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S49 IP-> * NP PP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S50 IP-> * ADJP SR IP . [0,0]						 PREDICTOR
+	Chart[0]		S51 IP-> * PP NP ADV SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S52 IP-> * NP SR [0,0]							 PREDICTOR
+	Chart[0]		S53 IP-> * NP VB CP [0,0]						 PREDICTOR
+	Chart[0]		S54 IP-> * CONJ NP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S55 IP-> * NEG VB [0,0]							 PREDICTOR
+	Chart[0]		S56 IP-> * NP VB ADV [0,0]						 PREDICTOR
+	Chart[0]		S57 IP-> * CONJ NP ADV SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S59 IP-> * CONJ NP , NEG VB . [0,0]					 PREDICTOR
+	Chart[0]		S58 IP-> * CONJ ADV PP , SR ADJP CP . [0,0]					 PREDICTOR
+	Chart[0]		S60 IP-> * NP ADV NP VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S61 IP-> * NP , VB CP [0,0]						 PREDICTOR
+	Chart[0]		S62 IP-> * SR PP [0,0]							 PREDICTOR
+	Chart[0]		S63 IP-> * NP NP SR VB ADV . [0,0]					 PREDICTOR
+	Chart[0]		S64 IP-> * VB , CP , IP [0,0]						 PREDICTOR
+	Chart[0]		S65 IP-> * NP NEG VB , CP [0,0]						 PREDICTOR
+	Chart[0]		S66 IP-> * VB ADV , CP [0,0]						 PREDICTOR
+	Chart[0]		S67 IP-> * NP , PP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S68 IP-> * ADV SR NP NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S69 IP-> * NEG SR PP , NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S70 IP-> * NP , NEG NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S72 IP-> * VB ADV [0,0]							 PREDICTOR
+	Chart[0]		S71 IP-> * VB NP , PP [0,0]						 PREDICTOR
+	Chart[0]		S73 IP-> * PP ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S74 IP-> * ADV NP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S75 IP-> * CP , PP NP VB IP NP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S77 IP-> * NP , VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S76 IP-> * SR NP ADJP [0,0]						 PREDICTOR
+	Chart[0]		S78 IP-> * NP , NEG SR PP [0,0]						 PREDICTOR
+	Chart[0]		S79 IP-> * NP PP SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S80 IP-> * NP VB ADVP , IP [0,0]					 PREDICTOR
+	Chart[0]		S81 IP-> * PP , SR CP . [0,0]						 PREDICTOR
+	Chart[0]		S82 IP-> * NP , NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S83 IP-> * PP VB ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S84 IP-> * NP , NEG SR NP [0,0]						 PREDICTOR
+	Chart[0]		S85 IP-> * CONJ NP VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S86 IP-> * NP VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S87 IP-> * NP ADV VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S88 IP-> * ADV NP VB ADV , [0,0]					 PREDICTOR
+	Chart[0]		S89 IP-> * PP , NP VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S90 IP-> * NP FP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S91 IP-> * NP VB [0,0]							 PREDICTOR
+	Chart[0]		S92 IP-> * NP ADV VB , [0,0]						 PREDICTOR
+	Chart[0]		S93 IP-> * CP , PP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S94 IP-> * CONJ NP , ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S95 IP-> * CONJ ADV VB . [0,0]						 PREDICTOR
+	Chart[0]		S96 IP-> * NP , ADV VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S97 IP-> * PP NP VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S98 IP-> * CONJ NP PP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S100 IP-> * CONJ SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S99 IP-> * IP , ADV VB IP [0,0]						 PREDICTOR
+	Chart[0]		S101 IP-> * NP ADV NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S102 IP-> * NEG SR ADJP CP , [0,0]					 PREDICTOR
+	Chart[0]		S103 IP-> * CONJ NP NEG SR PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S104 IP-> * NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S105 IP-> * CONJ NP CP , PP , VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S106 IP-> * NP SR ADV ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S107 IP-> * NP VB , PP . [0,0]						 PREDICTOR
+	Chart[0]		S108 IP-> * NP , SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S109 IP-> * CP NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S110 IP-> * CONJ NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S111 IP-> * PP , NP NP VB [0,0]						 PREDICTOR
+	Chart[0]		S112 IP-> * PP , VB NP [0,0]						 PREDICTOR
+	Chart[0]		S113 IP-> * FP NP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S114 IP-> * CP , NP NEG VB NP IP [0,0]					 PREDICTOR
+	Chart[0]		S115 IP-> * PP , VB [0,0]						 PREDICTOR
+	Chart[0]		S116 IP-> * NP SR ADJP , CP [0,0]					 PREDICTOR
+	Chart[0]		S117 IP-> * NP VB , CP [0,0]						 PREDICTOR
+	Chart[0]		S118 IP-> * CONJ NP SR NP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S119 IP-> * VB ADV NP , [0,0]						 PREDICTOR
+	Chart[0]		S120 IP-> * NP NEG VB Q PP . [0,0]					 PREDICTOR
+	Chart[0]		S121 IP-> * NP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S122 IP-> * VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S123 IP-> * ADV VB NP IP , [0,0]					 PREDICTOR
+	Chart[0]		S124 IP-> * CONJ ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S126 IP-> * CONJ VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S125 IP-> * NP NP VB , PP . [0,0]					 PREDICTOR
+	Chart[0]		S127 IP-> * CONJ PP , ADV NP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S128 IP-> * NP VB PP IP , [0,0]						 PREDICTOR
+	Chart[0]		S129 IP-> * NP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S130 IP-> * NP VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S131 IP-> * Q VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S132 IP-> * NEG SR VB [0,0]						 PREDICTOR
+	Chart[0]		S133 IP-> * VB NP CP . [0,0]						 PREDICTOR
+	Chart[0]		S134 IP-> * NP CP , VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S135 IP-> * CONJ NP NEG NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S136 IP-> * NEG SR NP ADV PP . [0,0]					 PREDICTOR
+	Chart[0]		S137 IP-> * NP VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S138 IP-> * NP , NEG FP NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S139 IP-> * NP IP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S140 IP-> * PP NP NEG NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S141 IP-> * CONJ VB [0,0]						 PREDICTOR
+	Chart[0]		S142 IP-> * PP , NP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S143 IP-> * NP SR ADJP , [0,0]						 PREDICTOR
+	Chart[0]		S144 IP-> * CONJ NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S145 IP-> * VB PP , PP CP [0,0]						 PREDICTOR
+	Chart[0]		S146 IP-> * CONJ NP , NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S147 IP-> * NP , NEG VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S148 IP-> * CONJ PP PP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S149 IP-> * CONJ NP , CP , ADV VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S150 IP-> * NP NEG FP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S151 IP-> * CONJ PP FP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S152 IP-> * NP , VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S153 IP-> * ADV VB IP CP [0,0]						 PREDICTOR
+	Chart[0]		S154 IP-> * PP VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S155 IP-> * NP , VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S156 IP-> * PP FP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S157 IP-> * PP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S158 IP-> * PP SR NP IP . [0,0]						 PREDICTOR
+	Chart[0]		S159 IP-> * PP VB NP NP , [0,0]						 PREDICTOR
+	Chart[0]		S160 IP-> * PP VB NP NP . [0,0]						 PREDICTOR
+	Chart[0]		S161 IP-> * CONJ PP ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S162 IP-> * PP NP NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S163 IP-> * NP PP , PP , VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S165 IP-> * ADV ADV VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S164 IP-> * NP SR , CP . [0,0]						 PREDICTOR
+	Chart[0]		S166 IP-> * NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S167 IP-> * ADV VB . [0,0]						 PREDICTOR
+	Chart[0]		S168 IP-> * CONJ NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S169 IP-> * NP , NP FP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S170 IP-> * PP NP SR ADJP PP , [0,0]					 PREDICTOR
+	Chart[0]		S171 IP-> * CONJ NP , VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S172 IP-> * PP NP SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S173 IP-> * CONJ PP SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S174 IP-> * NP , VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S175 IP-> * CONJ PP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S176 IP-> * NP VB NP , CP , [0,0]					 PREDICTOR
+	Chart[0]		S177 IP-> * CONJ ADV NP VB [0,0]					 PREDICTOR
+	Chart[0]		S178 IP-> * ADV VB PP NP [0,0]						 PREDICTOR
+	Chart[0]		S180 IP-> * PP VB NP PP . [0,0]						 PREDICTOR
+	Chart[0]		S179 IP-> * PP , NP FP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S181 IP-> * NP , NP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S182 IP-> * PP VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S183 IP-> * PP NP NEG VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S184 IP-> * ADV NP VB NP . IP [0,0]					 PREDICTOR
+	Chart[0]		S185 IP-> * SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S186 IP-> * NP NP VB CP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S187 IP-> * PP SR NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S188 IP-> * PP , NEG VB CP , [0,0]					 PREDICTOR
+	Chart[0]		S189 IP-> * NP NP VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S190 IP-> * NP VB NP PP CP [0,0]					 PREDICTOR
+	Chart[0]		S191 IP-> * NP SR ADJP PP [0,0]						 PREDICTOR
+	Chart[0]		S192 IP-> * CONJ CP , CONJ VB . [0,0]					 PREDICTOR
+	Chart[0]		S193 IP-> * CONJ SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S194 IP-> * ADV FP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S195 IP-> * CONJ ADV VB PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S196 IP-> * SR NP CP [0,0]						 PREDICTOR
+	Chart[0]		S197 IP-> * NP , SR CP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S198 IP-> * PP , NEG NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S199 IP-> * CONJ NP , VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S200 IP-> * CONJ CP , ADV NP PP , NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S201 IP-> * ADV VB PP [0,0]						 PREDICTOR
+	Chart[0]		S202 IP-> * CP ADV NP TR VB NP [0,0]					 PREDICTOR
+	Chart[0]		S203 IP-> * CONJ ADV NP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S204 IP-> * NP NP VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S205 IP-> * NP VB , NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S206 IP-> * NP NEG NP VB , CP , [0,0]					 PREDICTOR
+	Chart[0]		S207 IP-> * NP NP VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S208 IP-> * SR NP [0,0]							 PREDICTOR
+	Chart[0]		S209 IP-> * CONJ NP , VB . [0,0]					 PREDICTOR
+	Chart[0]		S210 IP-> * CONJ ADV NP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S211 IP-> * SR ADJP NP [0,0]						 PREDICTOR
+	Chart[0]		S212 IP-> * NP CP , ADV NP VB , PP . [0,0]					 PREDICTOR
+	Chart[0]		S213 IP-> * VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S214 IP-> * VB CP [0,0]							 PREDICTOR
+	Chart[0]		S215 IP-> * PP NP NP VB , PP . [0,0]					 PREDICTOR
+	Chart[0]		S216 IP-> * CONJ CP , ADV VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S217 IP-> * NP NP VB , PP [0,0]						 PREDICTOR
+	Chart[0]		S218 IP-> * NP PP VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S219 IP-> * NEG VB NP [0,0]						 PREDICTOR
+	Chart[0]		S220 IP-> * PP VB ADVP [0,0]						 PREDICTOR
+	Chart[0]		S221 IP-> * CONJ ADV VB NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S222 IP-> * NP SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S223 IP-> * PP NEG VB PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S224 IP-> * NEG VB NP , PP [0,0]					 PREDICTOR
+	Chart[0]		S226 IP-> * ADV VB IP [0,0]						 PREDICTOR
+	Chart[0]		S225 IP-> * SR ADJP NP , PP [0,0]					 PREDICTOR
+	Chart[0]		S227 IP-> * NP NEG VB PP , PP [0,0]					 PREDICTOR
+	Chart[0]		S228 IP-> * PP NP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S229 IP-> * SR CP [0,0]							 PREDICTOR
+	Chart[0]		S230 IP-> * NP , VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S231 IP-> * CP , HV ADV NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S232 IP-> * CONJ CP , ADV VB CP . IP . [0,0]					 PREDICTOR
+	Chart[0]		S233 IP-> * NP SR ADV CP . [0,0]					 PREDICTOR
+	Chart[0]		S234 IP-> * CONJ ADV VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S235 IP-> * CONJ NP ADV NEG VB PP [0,0]					 PREDICTOR
+	Chart[0]		S236 IP-> * NP VB NP NP . [0,0]						 PREDICTOR
+	Chart[0]		S237 IP-> * CONJ PP NP , NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S238 IP-> * ADV SR ADJP PP [0,0]					 PREDICTOR
+	Chart[0]		S239 IP-> * VB ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S240 IP-> * SR PP PP [0,0]						 PREDICTOR
+	Chart[0]		S241 IP-> * ADVP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S242 IP-> * NP , VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S243 IP-> * ADV HV PP [0,0]						 PREDICTOR
+	Chart[0]		S244 IP-> * ADV SR ADJP , [0,0]						 PREDICTOR
+	Chart[0]		S245 IP-> * SR ADV , NP [0,0]						 PREDICTOR
+	Chart[0]		S246 IP-> * NP SR CP . [0,0]						 PREDICTOR
+	Chart[0]		S247 IP-> * CONJ ADVP VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S248 IP-> * PP FP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S249 IP-> * NP ADVP NP NEG VB [0,0]					 PREDICTOR
+	Chart[0]		S250 IP-> * CONJ PP NEG SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S251 IP-> * CONJ VB CP , [0,0]						 PREDICTOR
+	Chart[0]		S252 IP-> * ADV VB , CP [0,0]						 PREDICTOR
+	Chart[0]		S253 IP-> * PP NP , SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S254 IP-> * VB IP [0,0]							 PREDICTOR
+	Chart[0]		S256 IP-> * PP VB ADJP NP [0,0]						 PREDICTOR
+	Chart[0]		S255 IP-> * ADV NP NP VB IP [0,0]					 PREDICTOR
+	Chart[0]		S257 IP-> * CONJ ADV CP , NEG SR NP , [0,0]					 PREDICTOR
+	Chart[0]		S258 IP-> * CONJS CP , ADV VB NP [0,0]					 PREDICTOR
+	Chart[0]		S260 IP-> * CONJ CP , NEG SR CP . [0,0]					 PREDICTOR
+	Chart[0]		S259 IP-> * CONJ VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S261 IP-> * ADVP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S262 IP-> * CONJ PP ADV TR NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S263 IP-> * SR ADJP IP , [0,0]						 PREDICTOR
+	Chart[0]		S264 IP-> * CONJ ADV NP HV , CP . [0,0]					 PREDICTOR
+	Chart[0]		S265 IP-> * CP , SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S266 IP-> * CONJ ADV VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S267 IP-> * CONJ VB IP NP , [0,0]					 PREDICTOR
+	Chart[0]		S268 IP-> * NP NEG VB , CP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S269 IP-> * CONJ NP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S270 IP-> * ADV FP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S271 IP-> * NEG SR PP . [0,0]						 PREDICTOR
+	Chart[0]		S272 IP-> * NP VB NP IP [0,0]						 PREDICTOR
+	Chart[0]		S273 IP-> * PP NP VB , IP . [0,0]					 PREDICTOR
+	Chart[0]		S274 IP-> * SR ADJP NP , [0,0]						 PREDICTOR
+	Chart[0]		S275 IP-> * NP NEG VB ADV , CP [0,0]					 PREDICTOR
+	Chart[0]		S276 IP-> * PP NP NP VB PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S277 IP-> * CONJ ADV PP , VB ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S278 IP-> * VB PP PP [0,0]						 PREDICTOR
+	Chart[0]		S279 IP-> * NP NEG NP VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S280 IP-> * NP , SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S281 IP-> * NP , SR ADJP PP [0,0]					 PREDICTOR
+	Chart[0]		S282 IP-> * PP NP VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S283 IP-> * NP , VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S284 IP-> * PP SR ADJP IP . [0,0]					 PREDICTOR
+	Chart[0]		S285 IP-> * CONJ NP , PP VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S286 IP-> * PP , VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S287 IP-> * PP NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S288 IP-> * CONJ IP , VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S289 IP-> * PP VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S290 IP-> * NP NEG SR ADJP [0,0]					 PREDICTOR
+	Chart[0]		S291 IP-> * SR ADJP CP . [0,0]						 PREDICTOR
+	Chart[0]		S292 IP-> * PP , NP NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S293 IP-> * NP ADV SR VB [0,0]						 PREDICTOR
+	Chart[0]		S294 IP-> * NP NEG VB ADVP , ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S295 IP-> * NP VB , CP . [0,0]						 PREDICTOR
+	Chart[0]		S297 IP-> * PP NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S296 IP-> * ADV NP VB CP [0,0]						 PREDICTOR
+	Chart[0]		S298 IP-> * VB , CP [0,0]						 PREDICTOR
+	Chart[0]		S299 IP-> * NP , NEG NP VB , CP [0,0]					 PREDICTOR
+	Chart[0]		S300 IP-> * NEG VB CONJ NP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S301 IP-> * ADV NP HV PP . [0,0]					 PREDICTOR
+	Chart[0]		S302 IP-> * VB NP , IP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S303 IP-> * CONJ ADV VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S304 IP-> * CONJ ADV PP ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S305 IP-> * ADV VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S306 IP-> * ADV NP TR PP NP . PP . [0,0]					 PREDICTOR
+	Chart[0]		S307 IP-> * CONJ NP PP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S308 IP-> * PP , NP NEG NP VB IP [0,0]					 PREDICTOR
+	Chart[0]		S309 IP-> * NP VB ADV PP . [0,0]					 PREDICTOR
+	Chart[0]		S310 IP-> * NP NEG SR ADJP PP . [0,0]					 PREDICTOR
+	Chart[0]		S311 IP-> * CP , SR CP [0,0]						 PREDICTOR
+	Chart[0]		S312 IP-> * SR VB ADVP [0,0]						 PREDICTOR
+	Chart[0]		S313 IP-> * NP VB ADV . [0,0]						 PREDICTOR
+	Chart[0]		S314 IP-> * NEG VB IP [0,0]						 PREDICTOR
+	Chart[0]		S316 IP-> * PP NP NEG VB NP [0,0]					 PREDICTOR
+	Chart[0]		S315 IP-> * NP PP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S317 IP-> * CONJ SR ADJP PP NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S318 IP-> * NP NEG VB IP , CP [0,0]					 PREDICTOR
+	Chart[0]		S319 IP-> * ADV PP HV NP . [0,0]					 PREDICTOR
+	Chart[0]		S320 IP-> * ADV NP SR [0,0]						 PREDICTOR
+	Chart[0]		S321 IP-> * NP NEG VB IP , PP [0,0]					 PREDICTOR
+	Chart[0]		S322 IP-> * VB ADVP [0,0]						 PREDICTOR
+	Chart[0]		S323 IP-> * VB ADVP NP [0,0]						 PREDICTOR
+	Chart[0]		S324 IP-> * CONJ ADVP NP , SR PP , [0,0]					 PREDICTOR
+	Chart[0]		S325 IP-> * NP , NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S326 IP-> * PP ADV SR ADJP IP . [0,0]					 PREDICTOR
+	Chart[0]		S327 IP-> * CONJ VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S328 IP-> * NP , VB ADVP IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S329 IP-> * CONJ NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S330 IP-> * CONJ ADV VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S331 IP-> * TR NEG VB CP [0,0]						 PREDICTOR
+	Chart[0]		S332 IP-> * NP , NEG NP VB ADV , [0,0]					 PREDICTOR
+	Chart[0]		S333 IP-> * PP CONJ NEG VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S334 IP-> * PP , PP NP VB NP [0,0]					 PREDICTOR
+	Chart[0]		S335 IP-> * IP , NP NEG VB . [0,0]					 PREDICTOR
+	Chart[0]		S336 IP-> * CONJ NP PP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S337 IP-> * CONJ NP ADV VB ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S338 IP-> * P+ADV VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S339 IP-> * CP , ADV VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S340 IP-> * NP ADVP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S341 IP-> * NP NEG VB , [0,0]						 PREDICTOR
+	Chart[0]		S342 IP-> * CP , IP , ADV VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S343 IP-> * NP VB ADVP , [0,0]						 PREDICTOR
+	Chart[0]		S344 IP-> * CONJ NP , CP , Q NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S345 IP-> * NP VB PP , ADVP [0,0]					 PREDICTOR
+	Chart[0]		S346 IP-> * CONJ PP NP SR ADV VB . [0,0]					 PREDICTOR
+	Chart[0]		S347 IP-> * NP , CP , VB . [0,0]					 PREDICTOR
+	Chart[0]		S348 IP-> * NEG NP VB , CP . IP [0,0]					 PREDICTOR
+	Chart[0]		S349 IP-> * NP VB PP NP . [0,0]						 PREDICTOR
+	Chart[0]		S350 IP-> * ADVP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S351 IP-> * NP NEG VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S352 IP-> * NP VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S353 IP-> * NP NEG VB IP NP [0,0]					 PREDICTOR
+	Chart[0]		S354 IP-> * VB NP ADVP [0,0]						 PREDICTOR
+	Chart[0]		S355 IP-> * PP VB IP NP , [0,0]						 PREDICTOR
+	Chart[0]		S356 IP-> * ADVP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S357 IP-> * CP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S358 IP-> * CONJ ADV SR CP . [0,0]					 PREDICTOR
+	Chart[0]		S359 IP-> * CONJ ADVP , FP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S360 IP-> * CONJ NP CP , VB , [0,0]					 PREDICTOR
+	Chart[0]		S361 IP-> * PP , VB NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S363 IP-> * ADV NP NP VB [0,0]						 PREDICTOR
+	Chart[0]		S362 IP-> * NP FP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S364 IP-> * PP NP VB IP NP [0,0]					 PREDICTOR
+	Chart[0]		S365 IP-> * CONJ CP , PP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S366 IP-> * FP SR NP NP [0,0]						 PREDICTOR
+	Chart[0]		S367 IP-> * NP , SR PP . [0,0]						 PREDICTOR
+	Chart[0]		S368 IP-> * CONJ PP VB ADV . CP . [0,0]					 PREDICTOR
+	Chart[0]		S369 IP-> * CONJ NP , ADV NEG ET ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S370 IP-> * VB PP , PP . [0,0]						 PREDICTOR
+	Chart[0]		S371 IP-> * CP , NEG VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S372 IP-> * PP PP SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S373 IP-> * PP VB PP IP . [0,0]						 PREDICTOR
+	Chart[0]		S374 IP-> * CP , ADV VB PP IP NP [0,0]					 PREDICTOR
+	Chart[0]		S375 IP-> * NP ADV VB [0,0]						 PREDICTOR
+	Chart[0]		S376 IP-> * ADVP VB ADV PP [0,0]					 PREDICTOR
+	Chart[0]		S377 IP-> * CONJ ADV SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S378 IP-> * CONJ CP , ADV NP NEG VB IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S380 IP-> * ADV VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S379 IP-> * NP SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S381 IP-> * CONJ NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S382 IP-> * PP , VB PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S384 IP-> * CONJ PP VB PP ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S383 IP-> * CONJ ADV PP IP , CONJP . [0,0]					 PREDICTOR
+	Chart[0]		S385 IP-> * NP NEG TR ADV PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S386 IP-> * ET ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S387 IP-> * NP ADV NP VB PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S388 IP-> * NP VB PP NP [0,0]						 PREDICTOR
+	Chart[0]		S389 IP-> * ADV SR ADV VB [0,0]						 PREDICTOR
+	Chart[0]		S390 IP-> * CONJ NP NEG VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S391 IP-> * CONJ CP , NEG VB . [0,0]					 PREDICTOR
+	Chart[0]		S392 IP-> * NP , VB ADJP PP . [0,0]					 PREDICTOR
+	Chart[0]		S393 IP-> * ADV NEG HV NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S394 IP-> * CONJ NP ADV VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S395 IP-> * ADVP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S396 IP-> * NP , ADV SR IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S397 IP-> * ADV NEG HV NP . [0,0]					 PREDICTOR
+	Chart[0]		S398 IP-> * PP , VB CP [0,0]						 PREDICTOR
+	Chart[0]		S399 IP-> * ADV VB CP , [0,0]						 PREDICTOR
+	Chart[0]		S400 IP-> * VB PP , PP [0,0]						 PREDICTOR
+	Chart[0]		S401 IP-> * Q VB NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S402 IP-> * CONJ NP ADV NP VB PP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S403 IP-> * PP NP VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S404 IP-> * ADV NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S405 IP-> * ADV NP NEG VB PP [0,0]					 PREDICTOR
+	Chart[0]		S406 IP-> * CONJ NP NEG SR PP [0,0]					 PREDICTOR
+	Chart[0]		S407 IP-> * CONJ PP SR ADJP CP . [0,0]					 PREDICTOR
+	Chart[0]		S408 IP-> * ADVP VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S409 IP-> * SR ADJP PP . [0,0]						 PREDICTOR
+	Chart[0]		S410 IP-> * ADV VB [0,0]						 PREDICTOR
+	Chart[0]		S411 IP-> * CONJ NP SR ADJP [0,0]					 PREDICTOR
+	Chart[0]		S412 IP-> * CONJ ADV NP VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S413 IP-> * , IP , VB PP [0,0]						 PREDICTOR
+	Chart[0]		S414 IP-> * NP , ADV SR PP , [0,0]					 PREDICTOR
+	Chart[0]		S415 IP-> * NP ADV SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S416 IP-> * NEG NP VB CONJ CP . [0,0]					 PREDICTOR
+	Chart[0]		S417 IP-> * CONJ CP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S418 IP-> * NP SR NP [0,0]						 PREDICTOR
+	Chart[0]		S419 IP-> * PP NP VB CP [0,0]						 PREDICTOR
+	Chart[0]		S420 IP-> * CONJ PP VB NP ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S421 IP-> * NP TR VB IP [0,0]						 PREDICTOR
+	Chart[0]		S422 IP-> * CP ADV [0,0]						 PREDICTOR
+	Chart[0]		S423 IP-> * CONJ CP , CONJ NEG VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S424 IP-> * NP ADV NP VB , PP . [0,0]					 PREDICTOR
+	Chart[0]		S425 IP-> * PP , CP , SR NP , [0,0]					 PREDICTOR
+	Chart[0]		S426 IP-> * PP , CP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S428 IP-> * ADVP , NP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S427 IP-> * VB ADV NP . [0,0]						 PREDICTOR
+	Chart[0]		S429 IP-> * NP VB , PP [0,0]						 PREDICTOR
+	Chart[0]		S430 IP-> * CP , VB ADV PP , [0,0]					 PREDICTOR
+	Chart[0]		S431 IP-> * PP , FP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S432 IP-> * NP SR ADJP . [0,0]						 PREDICTOR
+	Chart[0]		S433 IP-> * CONJ ADV NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S434 IP-> * SR NP VB [0,0]						 PREDICTOR
+	Chart[0]		S435 IP-> * PP NEG NP VB IP NP , PP [0,0]					 PREDICTOR
+	Chart[0]		S436 IP-> * SR NP , NP [0,0]						 PREDICTOR
+	Chart[0]		S437 IP-> * CONJ VB ADVP , [0,0]					 PREDICTOR
+	Chart[0]		S438 IP-> * CONJ NP SR PP ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S440 IP-> * CONJ NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S439 IP-> * NP , NEG NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S441 IP-> * PP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S442 IP-> * PP NP NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S443 IP-> * PP VB NP NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S444 IP-> * NP , CP , NEG SR PP [0,0]					 PREDICTOR
+	Chart[0]		S445 IP-> * CONJ NP NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S446 IP-> * SR NP NP [0,0]						 PREDICTOR
+	Chart[0]		S447 IP-> * CP , PP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S449 IP-> * NP VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S448 IP-> * NP VB PP , CP [0,0]						 PREDICTOR
+	Chart[0]		S450 IP-> * CONJ VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S451 IP-> * VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S452 IP-> * CONJ ADV NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S453 IP-> * CONJ CP , VB IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S454 IP-> * NP , ADV VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S455 IP-> * CONJ PP VB NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S456 IP-> * CONJ PP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S458 IP-> * NP FP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S457 IP-> * NP IP , PP NP VB [0,0]					 PREDICTOR
+	Chart[0]		S459 IP-> * CONJ ADV VB CP , [0,0]					 PREDICTOR
+	Chart[0]		S460 IP-> * CONJ PP VB . [0,0]						 PREDICTOR
+	Chart[0]		S461 IP-> * SR NP . CP . [0,0]						 PREDICTOR
+	Chart[0]		S462 IP-> * ADV , CP [0,0]						 PREDICTOR
+	Chart[0]		S463 IP-> * CONJ ADV SR NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S464 IP-> * PP NP NEG VB PP [0,0]					 PREDICTOR
+	Chart[0]		S465 IP-> * ADV NP SR ADJP NP , [0,0]					 PREDICTOR
+	Chart[0]		S466 IP-> * NP , VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S467 IP-> * ADJP SR NP . CP [0,0]					 PREDICTOR
+	Chart[0]		S468 IP-> * CONJ PP NP , SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S469 IP-> * PP , VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S470 IP-> * NP ADV NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S471 IP-> * ADV VB+CL IP [0,0]						 PREDICTOR
+	Chart[0]		S472 IP-> * NP SR NP , IP . [0,0]					 PREDICTOR
+	Chart[0]		S473 IP-> * ADV HV NP . [0,0]						 PREDICTOR
+	Chart[0]		S474 IP-> * VB NP IP , IP [0,0]						 PREDICTOR
+	Chart[0]		S475 IP-> * NP VB PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S476 IP-> * CONJ PP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S477 IP-> * CONJ PP NP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S478 IP-> * NP PP NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S479 IP-> * PP NP VB PP PP , NP [0,0]					 PREDICTOR
+	Chart[0]		S480 IP-> * NP TR ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S481 IP-> * NP NEG VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S482 IP-> * PP , ADV VB ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S483 IP-> * CONJ NP , NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S484 IP-> * NP PP NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S485 IP-> * CONJ ADV VB ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S486 IP-> * SR ADJP ADVP [0,0]						 PREDICTOR
+	Chart[0]		S487 IP-> * NEG VB ADJP [0,0]						 PREDICTOR
+	Chart[0]		S488 IP-> * ADV HV PP NP [0,0]						 PREDICTOR
+	Chart[0]		S489 IP-> * VB PP NP . [0,0]						 PREDICTOR
+	Chart[0]		S490 IP-> * NP VB NP CP . [0,0]						 PREDICTOR
+	Chart[0]		S491 IP-> * PP NP ADV NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S492 IP-> * PP SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S493 IP-> * NP , CP , VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S494 IP-> * VB IP NP [0,0]						 PREDICTOR
+	Chart[0]		S495 IP-> * CONJ PP , NEG NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S496 IP-> * PP VB ADV . [0,0]						 PREDICTOR
+	Chart[0]		S497 IP-> * CONJ ADV NP FP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S498 IP-> * PP , VB PP NP , CP , [0,0]					 PREDICTOR
+	Chart[0]		S499 IP-> * PP FP VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S500 IP-> * CONJ PP NEG VB , [0,0]					 PREDICTOR
+	Chart[0]		S501 IP-> * IP NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S502 IP-> * PP NEG VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S503 IP-> * Q VB PP [0,0]						 PREDICTOR
+	Chart[0]		S504 IP-> * CONJ VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S505 IP-> * VB ADVP , [0,0]						 PREDICTOR
+	Chart[0]		S506 IP-> * PP VB CP , [0,0]						 PREDICTOR
+	Chart[0]		S507 IP-> * PP NP VB NP . IP . [0,0]					 PREDICTOR
+	Chart[0]		S508 IP-> * ADV NP VB [0,0]						 PREDICTOR
+	Chart[0]		S509 IP-> * PP ADV VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S510 IP-> * PP CP , SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S511 IP-> * PP , NP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S512 IP-> * ADV VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S513 IP-> * NP PP NP VB ADV , [0,0]					 PREDICTOR
+	Chart[0]		S515 IP-> * NP , NEG NP VB [0,0]					 PREDICTOR
+	Chart[0]		S514 IP-> * NP SR NP , CP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S516 IP-> * CONJ NP CP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S517 IP-> * IP , ADV NEG SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S518 IP-> * NP VB NP PP . [0,0]						 PREDICTOR
+	Chart[0]		S519 IP-> * NP , CP , ADV VB , [0,0]					 PREDICTOR
+	Chart[0]		S521 IP-> * NP VB IP PP [0,0]						 PREDICTOR
+	Chart[0]		S520 IP-> * ADV NEG SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S522 IP-> * CONJ NP VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S523 IP-> * NP , SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S524 IP-> * IP , ADV ET IP , [0,0]					 PREDICTOR
+	Chart[0]		S525 IP-> * ADVP VB IP NP [0,0]						 PREDICTOR
+	Chart[0]		S526 IP-> * CONJ PP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S528 IP-> * ADV NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S527 IP-> * CONJ PP ADV HV NP . [0,0]					 PREDICTOR
+	Chart[0]		S529 IP-> * ADV NEG VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S530 IP-> * NP , ADV NEG SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S531 IP-> * CONJ SR CP . [0,0]						 PREDICTOR
+	Chart[0]		S532 IP-> * ADV ADV NEG SR NP NP , [0,0]					 PREDICTOR
+	Chart[0]		S533 IP-> * SR PP NP [0,0]						 PREDICTOR
+	Chart[0]		S534 IP-> * ADV VB , [0,0]						 PREDICTOR
+	Chart[0]		S535 IP-> * NP NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S536 IP-> * NP , ADV NP VB PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S537 IP-> * PP NP VB ADVP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S538 IP-> * CONJ FP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S539 IP-> * CONJ PP , CP , ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S540 IP-> * NP NP VB NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S541 IP-> * PP NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S542 IP-> * NP NP VB ADV , [0,0]					 PREDICTOR
+	Chart[0]		S543 IP-> * CONJ ADVP NP VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S544 IP-> * CONJ SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S545 IP-> * NP NEG VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S546 IP-> * PP , NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S547 IP-> * NP VB ADJP PP . [0,0]					 PREDICTOR
+	Chart[0]		S548 IP-> * CONJ NP PP SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S549 IP-> * VB ADV CP [0,0]						 PREDICTOR
+	Chart[0]		S551 IP-> * NP ADV VB PP [0,0]						 PREDICTOR
+	Chart[0]		S550 IP-> * NP , NEG SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S552 IP-> * VB ADVP IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S553 IP-> * ADV VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S554 IP-> * SR VB PP [0,0]						 PREDICTOR
+	Chart[0]		S555 IP-> * CONJ NP VB IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S556 IP-> * CONJ NP , NEG NP VB PP NP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S557 IP-> * NP , NP NP VB IP [0,0]					 PREDICTOR
+	Chart[0]		S558 IP-> * PP NP NEG VB [0,0]						 PREDICTOR
+	Chart[0]		S559 IP-> * FP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S560 IP-> * CONJ NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S561 IP-> * CONJ NP SR VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S562 IP-> * NP NEG SR ADVP NP [0,0]					 PREDICTOR
+	Chart[0]		S563 IP-> * NP NEG SR ADV , [0,0]					 PREDICTOR
+	Chart[0]		S564 IP-> * PP VB PP PP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S565 IP-> * VB PP NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S566 IP-> * VB PP , CP , [0,0]						 PREDICTOR
+	Chart[0]		S567 IP-> * NEG VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S568 IP-> * ADJP SR , CP . [0,0]					 PREDICTOR
+	Chart[0]		S569 IP-> * PP , PP SR CP , CONJP . [0,0]					 PREDICTOR
+	Chart[0]		S570 IP-> * CONJ VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S571 IP-> * NEG VB NP PP [0,0]						 PREDICTOR
+	Chart[0]		S573 IP-> * NP , ADV VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S572 IP-> * CONJ NEG NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S574 IP-> * NP VB PP PP . [0,0]						 PREDICTOR
+	Chart[0]		S575 IP-> * CONJ PP NEG VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S576 IP-> * NP CP , NEG NP VB [0,0]					 PREDICTOR
+	Chart[0]		S577 IP-> * VB PP , CP [0,0]						 PREDICTOR
+	Chart[0]		S578 IP-> * NEG SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S579 IP-> * CONJ CP , NP NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S580 IP-> * NP NEG VB IP [0,0]						 PREDICTOR
+	Chart[0]		S581 IP-> * CONJ PP CP , NP VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S582 IP-> * PP NP , NEG VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S583 IP-> * NEG VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S584 IP-> * CONJ NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S585 IP-> * NP NP NP VB ADV , [0,0]					 PREDICTOR
+	Chart[0]		S586 IP-> * ADV TR NP . [0,0]						 PREDICTOR
+	Chart[0]		S587 IP-> * VB NP NP [0,0]						 PREDICTOR
+	Chart[0]		S588 IP-> * CP , ADV NP NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S589 IP-> * NP , TR VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S590 IP-> * CONJ IP , NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S591 IP-> * NP NP VB ADV [0,0]						 PREDICTOR
+	Chart[0]		S592 IP-> * ADV NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S593 IP-> * NP , VB NP IP . [0,0]					 PREDICTOR
+	Chart[0]		S595 IP-> * VB PP NP IP [0,0]						 PREDICTOR
+	Chart[0]		S594 IP-> * VB IP , IP [0,0]						 PREDICTOR
+	Chart[0]		S596 IP-> * IP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S597 IP-> * NP , IP , ADV VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S598 IP-> * NEG VB IP , CP [0,0]					 PREDICTOR
+	Chart[0]		S599 IP-> * PP NP , NEG NP VB ADV , CP . [0,0]					 PREDICTOR
+	Chart[0]		S600 IP-> * VB IP NP , PP [0,0]						 PREDICTOR
+	Chart[0]		S602 IP-> * NP SR ADJP PP , [0,0]					 PREDICTOR
+	Chart[0]		S601 IP-> * NP VB PP , IP [0,0]						 PREDICTOR
+	Chart[0]		S603 IP-> * PP PP SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S604 IP-> * CONJ NP VB NP , ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S605 IP-> * ADVP SR NP NP [0,0]						 PREDICTOR
+	Chart[0]		S606 IP-> * NP , SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S607 IP-> * NP VB PP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S608 IP-> * ADV NP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S609 IP-> * CONJ NP ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S610 IP-> * CONJ ADVP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S611 IP-> * SR NP PP NP . [0,0]						 PREDICTOR
+	Chart[0]		S612 IP-> * NP , NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S613 IP-> * ADV TR NP [0,0]						 PREDICTOR
+	Chart[0]		S614 IP-> * NP VB NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S615 IP-> * NP ADV VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S616 IP-> * PP NEG VB NP [0,0]						 PREDICTOR
+	Chart[0]		S617 IP-> * ADV VB PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S618 IP-> * CP , CONJ VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S619 IP-> * NEG VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S620 IP-> * PP NP , VB IP PP . [0,0]					 PREDICTOR
+	Chart[0]		S621 IP-> * NP , VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S622 IP-> * PP NP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S623 IP-> * CONJ NEG VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S624 IP-> * VB IP PP . [0,0]						 PREDICTOR
+	Chart[0]		S625 IP-> * ADVP VB VB [0,0]						 PREDICTOR
+	Chart[0]		S626 IP-> * NP , PP , ADV VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S627 IP-> * VB ADVP PP [0,0]						 PREDICTOR
+	Chart[0]		S628 IP-> * VB PP CP , [0,0]						 PREDICTOR
+	Chart[0]		S629 IP-> * CONJ PP SR ADJP NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S630 IP-> * ADV VB , CP . [0,0]						 PREDICTOR
+	Chart[0]		S631 IP-> * NP , IP , VB NP [0,0]					 PREDICTOR
+	Chart[0]		S632 IP-> * SR ADJP PP , NP [0,0]					 PREDICTOR
+	Chart[0]		S633 IP-> * CONJ PP SR ADJP NP , [0,0]					 PREDICTOR
+	Chart[0]		S634 IP-> * PP , NP , SR NP [0,0]					 PREDICTOR
+	Chart[0]		S635 IP-> * NP VB , NP [0,0]						 PREDICTOR
+	Chart[0]		S636 IP-> * NP VB NP , ADVP , [0,0]					 PREDICTOR
+	Chart[0]		S637 IP-> * NP VB NP , PP [0,0]						 PREDICTOR
+	Chart[0]		S638 IP-> * NP , NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S639 IP-> * NP VB ADVP , PP , NP [0,0]					 PREDICTOR
+	Chart[0]		S640 IP-> * CONJ NP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S641 IP-> * CONJ PP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S642 IP-> * ADVP , ADV VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S643 IP-> * CONJ PP VB NP IP . [0,0]					 PREDICTOR
+	Chart[0]		S644 IP-> * NP PP , NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S645 IP-> * ADV NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S646 IP-> * NP , VB NP PP [0,0]						 PREDICTOR
+	Chart[0]		S647 IP-> * NP CP , ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S648 IP-> * NP VB ADVP [0,0]						 PREDICTOR
+	Chart[0]		S649 IP-> * ADJP SR NP [0,0]						 PREDICTOR
+	Chart[0]		S650 IP-> * NEG FP VB ADJP NP , [0,0]					 PREDICTOR
+	Chart[0]		S651 IP-> * ADVP , NP , ADV NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S652 IP-> * CP , ADJP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S653 IP-> * NP ADV VB ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S655 IP-> * VB PP PP NP [0,0]						 PREDICTOR
+	Chart[0]		S654 IP-> * CONJ NP VB ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S656 IP-> * CONJ ADV VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S657 IP-> * CONJ ADV NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S658 IP-> * NP SR IP . [0,0]						 PREDICTOR
+	Chart[0]		S659 IP-> * SR VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S660 IP-> * CONJ NP , SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S661 IP-> * SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S662 IP-> * NP PP VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S663 IP-> * IP , VB , PP [0,0]						 PREDICTOR
+	Chart[0]		S664 IP-> * NP , SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S665 IP-> * NP , VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S666 IP-> * VB IP , CP , CP [0,0]					 PREDICTOR
+	Chart[0]		S667 IP-> * PP PP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S668 IP-> * NP , PP NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S669 IP-> * NP , VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S670 IP-> * NP NEG SR VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S671 IP-> * CONJ NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S672 IP-> * NP NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S673 IP-> * CONJ SR PP , [0,0]						 PREDICTOR
+	Chart[0]		S674 IP-> * ADV NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S675 IP-> * NP , CP , VB ADVP NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S676 IP-> * CONJ SR PP . [0,0]						 PREDICTOR
+	Chart[0]		S677 IP-> * SR ADJP , CP [0,0]						 PREDICTOR
+	Chart[0]		S678 IP-> * SR NP PP ADJP [0,0]						 PREDICTOR
+	Chart[0]		S680 IP-> * CONJ CP , VB ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S679 IP-> * PP , NP VB ADVP [0,0]					 PREDICTOR
+	Chart[0]		S681 IP-> * NP NEG VB IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S682 IP-> * CONJ NEG SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S683 IP-> * NP NP VB IP CP . [0,0]					 PREDICTOR
+	Chart[0]		S684 IP-> * CONJ NP , ADV NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S685 IP-> * CONJ NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S686 IP-> * NP NP VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S687 IP-> * NP PP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S688 IP-> * VB NP , ADVP [0,0]						 PREDICTOR
+	Chart[0]		S689 IP-> * NP NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S690 IP-> * PP NP , VB ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S691 IP-> * VB ADJP [0,0]						 PREDICTOR
+	Chart[0]		S692 IP-> * CONJ NP VB PP . IP . [0,0]					 PREDICTOR
+	Chart[0]		S693 IP-> * CONJ NP VB IP CP . [0,0]					 PREDICTOR
+	Chart[0]		S694 IP-> * NP PP , NEG SR ADJ CP [0,0]					 PREDICTOR
+	Chart[0]		S695 IP-> * PP , NP VB ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S696 IP-> * NP PP VB . [0,0]						 PREDICTOR
+	Chart[0]		S697 IP-> * SR ADJP , [0,0]						 PREDICTOR
+	Chart[0]		S698 IP-> * NP VB PP PP , [0,0]						 PREDICTOR
+	Chart[0]		S699 IP-> * PP , NEG VB IP [0,0]					 PREDICTOR
+	Chart[0]		S700 IP-> * CONJ ADV VB NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S701 IP-> * CONJ NP NP VB NP . CP , [0,0]					 PREDICTOR
+	Chart[0]		S702 IP-> * CONJ PP , NEG VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S703 IP-> * SR NP , PP [0,0]						 PREDICTOR
+	Chart[0]		S704 IP-> * NP VB PP CP [0,0]						 PREDICTOR
+	Chart[0]		S705 IP-> * NEG SR NP [0,0]						 PREDICTOR
+	Chart[0]		S706 IP-> * CONJ CP , NP , IP , ADV SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S707 IP-> * NP NP VB PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S708 IP-> * NP VB Q PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S709 IP-> * CONJ PP NP CP , ADV SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S710 IP-> * CONJ ADV HV NP . [0,0]					 PREDICTOR
+	Chart[0]		S711 IP-> * CONJ CP , ADV SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S712 IP-> * CONJ CP , ADV TR VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S713 IP-> * CONJ NP VB PP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S715 IP-> * CONJ NP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S714 IP-> * VB NP PP . [0,0]						 PREDICTOR
+	Chart[0]		S716 IP-> * NP , CP , ADV NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S717 IP-> * CONJ FP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S718 IP-> * VB NP , ADV CP [0,0]					 PREDICTOR
+	Chart[0]		S719 IP-> * NP ADVP NP VB IP , PP [0,0]					 PREDICTOR
+	Chart[0]		S720 IP-> * NP PP NP VB , PP . NP . [0,0]					 PREDICTOR
+	Chart[0]		S721 IP-> * CONJ PP PP , NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S722 IP-> * CONJ ADVP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S723 IP-> * NP VB ADVP PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S724 IP-> * NP SR , [0,0]						 PREDICTOR
+	Chart[0]		S725 IP-> * CONJ NP , PP VB , [0,0]					 PREDICTOR
+	Chart[0]		S726 IP-> * NP , NEG VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S727 IP-> * CONJ VB IP [0,0]						 PREDICTOR
+	Chart[0]		S728 IP-> * CONJ CP , PP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S729 IP-> * ADVP NP VB [0,0]						 PREDICTOR
+	Chart[0]		S730 IP-> * CONJ NP CP , ADV NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S731 IP-> * PP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S732 IP-> * PP , NEG FP VB IP [0,0]					 PREDICTOR
+	Chart[0]		S733 IP-> * CONJ NP , VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S734 IP-> * ADV SR ADJP , CP [0,0]					 PREDICTOR
+	Chart[0]		S735 IP-> * NP SR VB PP [0,0]						 PREDICTOR
+	Chart[0]		S736 IP-> * SR ADJP PP NP [0,0]						 PREDICTOR
+	Chart[0]		S737 IP-> * NP ADV VB , CP [0,0]					 PREDICTOR
+	Chart[0]		S738 IP-> * CP , CONJ PP NEG NP VB NP [0,0]					 PREDICTOR
+	Chart[0]		S739 IP-> * CONJ IP , ADV VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S740 IP-> * IP , CP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S741 IP-> * ADV NP [0,0]						 PREDICTOR
+	Chart[0]		S742 IP-> * IP , ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S743 IP-> * PP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S744 IP-> * NP NEG SR NP [0,0]						 PREDICTOR
+	Chart[0]		S745 IP-> * NP VB CP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S746 IP-> * VB NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S747 IP-> * ADV NEG SR NP CP , [0,0]					 PREDICTOR
+	Chart[0]		S748 IP-> * VB , CP . [0,0]						 PREDICTOR
+	Chart[0]		S749 IP-> * ADVP , VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S750 IP-> * NP , NEG FP NP VB NP [0,0]					 PREDICTOR
+	Chart[0]		S751 IP-> * CONJ ADJP SR IP . [0,0]					 PREDICTOR
+	Chart[0]		S752 IP-> * ADVP , CP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S753 IP-> * NP , ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S754 IP-> * VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S755 IP-> * NP NEG VB PP IP [0,0]					 PREDICTOR
+	Chart[0]		S756 IP-> * ADV NEG VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S757 IP-> * ADV FP NP VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S758 IP-> * CONJ NP ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S759 IP-> * NP , SR VB PP [0,0]						 PREDICTOR
+	Chart[0]		S760 IP-> * NP , ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S761 IP-> * VB IP . CP . [0,0]						 PREDICTOR
+	Chart[0]		S762 IP-> * CP ADV SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S763 IP-> * CP , NP NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S764 IP-> * NP , VB ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S765 IP-> * NP NEG VB NP CP . [0,0]					 PREDICTOR
+	Chart[0]		S767 IP-> * NP , ADVP NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S768 IP-> * CONJ VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S766 IP-> * CONJ ADV NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S769 IP-> * CP , ADV HV NP . [0,0]					 PREDICTOR
+	Chart[0]		S770 IP-> * PP NP VB , CONJP . [0,0]					 PREDICTOR
+	Chart[0]		S771 IP-> * CONJ PP SR CP [0,0]						 PREDICTOR
+	Chart[0]		S772 IP-> * CP NP VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S773 IP-> * CONJ NP , VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S774 IP-> * NP VB ADVP . [0,0]						 PREDICTOR
+	Chart[0]		S775 IP-> * NP NP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S776 IP-> * CP , ADV VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S777 IP-> * NP NP VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S778 IP-> * CONJ NP , SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S779 IP-> * NP NEG SR Q ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S780 IP-> * PP VB , CP [0,0]						 PREDICTOR
+	Chart[0]		S781 IP-> * VB IP NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S782 IP-> * CONJ NP CP , ADVP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S783 IP-> * NP VB PP PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S784 IP-> * ADV CP , ADV NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S785 IP-> * CONJ PP PP , VB NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S786 IP-> * CONJ CP , ADV NP VB ADJP PP . [0,0]					 PREDICTOR
+	Chart[0]		S787 IP-> * NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S788 IP-> * VB PP NP , [0,0]						 PREDICTOR
+	Chart[0]		S789 IP-> * PP SR NP , NP . [0,0]					 PREDICTOR
+	Chart[0]		S790 IP-> * CONJ VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S791 IP-> * CONJ VB ADV NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S792 IP-> * PP NP NEG SR NP [0,0]					 PREDICTOR
+	Chart[0]		S793 IP-> * PP VB IP NP PP [0,0]					 PREDICTOR
+	Chart[0]		S794 IP-> * NP , SR NP [0,0]						 PREDICTOR
+	Chart[0]		S795 IP-> * ADVP SR VB [0,0]						 PREDICTOR
+	Chart[0]		S796 IP-> * NP CONJ , CONJP , CP , ADV VB , [0,0]					 PREDICTOR
+	Chart[0]		S797 IP-> * PP VB , CP . [0,0]						 PREDICTOR
+	Chart[0]		S798 IP-> * NP IP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S799 IP-> * FP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S800 IP-> * ADVP NP VB , PP [0,0]					 PREDICTOR
+	Chart[0]		S801 IP-> * NP SR VB [0,0]						 PREDICTOR
+	Chart[0]		S802 IP-> * CONJ FP ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S803 IP-> * NP NEG SR PP ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S804 IP-> * CONJ NP NP VB . CP . [0,0]					 PREDICTOR
+	Chart[0]		S805 IP-> * NP NP , SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S806 IP-> * CONJ NP ADV NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S807 IP-> * CONJ NP SR ADJP NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S808 IP-> * SR IP NP , [0,0]						 PREDICTOR
+	Chart[0]		S809 IP-> * NP NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S810 IP-> * CONJ ADV VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S811 IP-> * NP NEG VB , NP , [0,0]					 PREDICTOR
+	Chart[0]		S812 IP-> * PP ADV NP VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S813 IP-> * ADV NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S814 IP-> * CONJ CP , NP NP VB [0,0]					 PREDICTOR
+	Chart[0]		S815 IP-> * IP , ADV NP VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S816 IP-> * PP VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S817 IP-> * CONJ NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S818 IP-> * NP ADV NP VB PP , ADVP , [0,0]					 PREDICTOR
+	Chart[0]		S819 IP-> * NP PP VB , [0,0]						 PREDICTOR
+	Chart[0]		S820 IP-> * ADVP NP , CONJ NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S821 IP-> * PP , NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S822 IP-> * NP ADV SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S823 IP-> * CONJ ADV NP NP VB ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S824 IP-> * NP NEG SR [0,0]						 PREDICTOR
+	Chart[0]		S825 IP-> * NP SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S826 IP-> * CONJ ADV NP NP NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S827 IP-> * CONJ PP ADVP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S828 IP-> * NP SR NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S829 IP-> * NP VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S830 IP-> * NP ADV VB . [0,0]						 PREDICTOR
+	Chart[0]		S832 IP-> * CONJ NP NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S831 IP-> * NP VB ADVP NP , [0,0]					 PREDICTOR
+	Chart[0]		S833 IP-> * PP PP VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S834 IP-> * NEG VB PP [0,0]						 PREDICTOR
+	Chart[0]		S835 IP-> * CONJ PP NP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S836 IP-> * NP VB CP , [0,0]						 PREDICTOR
+	Chart[0]		S837 IP-> * CONJ VB ADVP NP . [0,0]					 PREDICTOR
+	Chart[0]		S839 IP-> * CP SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S838 IP-> * PP NP NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S840 IP-> * VB PP , NP . [0,0]						 PREDICTOR
+	Chart[0]		S841 IP-> * NP , ADV VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S842 IP-> * ADV VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S843 IP-> * PP SR NP [0,0]						 PREDICTOR
+	Chart[0]		S844 IP-> * CONJ ADV VB CP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S845 IP-> * PP SR ADJP [0,0]						 PREDICTOR
+	Chart[0]		S846 IP-> * NP , PP VB , [0,0]						 PREDICTOR
+	Chart[0]		S847 IP-> * NP , CONJ VB PP [0,0]					 PREDICTOR
+	Chart[0]		S848 IP-> * PP , Q NP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S849 IP-> * CONJ VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S850 IP-> * CONJ Q NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S851 IP-> * PP ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S852 IP-> * NP VB ADV , CP . [0,0]					 PREDICTOR
+	Chart[0]		S854 IP-> * NEG VB PP , ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S855 IP-> * CP SR IP , [0,0]						 PREDICTOR
+	Chart[0]		S853 IP-> * SR ADV NP [0,0]						 PREDICTOR
+	Chart[0]		S856 IP-> * CONJ ADV CP SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S857 IP-> * ADVP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S858 IP-> * NP , VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S859 IP-> * SR NP PP [0,0]						 PREDICTOR
+	Chart[0]		S860 IP-> * PP VB ADJP PP [0,0]						 PREDICTOR
+	Chart[0]		S861 IP-> * NP , SR NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S862 IP-> * NP , SR ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S863 IP-> * CONJ ADV ADVP NP VB NP , PP , [0,0]					 PREDICTOR
+	Chart[0]		S864 IP-> * NP , ADV NP VB ADV . [0,0]					 PREDICTOR
+	Chart[0]		S865 IP-> * NP , ADV SR ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S866 IP-> * NEG SR [0,0]						 PREDICTOR
+	Chart[0]		S867 IP-> * FP NP VB PP , [0,0]						 PREDICTOR
+	Chart[0]		S868 IP-> * CONJ CP , ADV SR CP , [0,0]					 PREDICTOR
+	Chart[0]		S869 IP-> * ADV NP VB , CP [0,0]					 PREDICTOR
+	Chart[0]		S870 IP-> * NP IP ADV VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S871 IP-> * VB , NP [0,0]						 PREDICTOR
+	Chart[0]		S872 IP-> * CONJ CP , PP VB , [0,0]					 PREDICTOR
+	Chart[0]		S873 IP-> * ADV SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S874 IP-> * NP , VB , [0,0]						 PREDICTOR
+	Chart[0]		S875 IP-> * NEG VB NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S876 IP-> * CP , NP NEG SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S877 IP-> * CONJ NP ADV VB . [0,0]					 PREDICTOR
+	Chart[0]		S878 IP-> * CONJ VB PP . ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S879 IP-> * NEG VB PP NP [0,0]						 PREDICTOR
+	Chart[0]		S880 IP-> * VB NP PP , [0,0]						 PREDICTOR
+	Chart[0]		S881 IP-> * CONJ NEG NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S882 IP-> * CP , PP NEG NP VB PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S883 IP-> * ADV NEG VB [0,0]						 PREDICTOR
+	Chart[0]		S885 IP-> * ADV SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S886 IP-> * NP NEG NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S884 IP-> * CONJ ADVP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S887 IP-> * NP SR CP , [0,0]						 PREDICTOR
+	Chart[0]		S888 IP-> * NP NEG VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S889 IP-> * NP , ADVP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S891 IP-> * PP NP VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S890 IP-> * PP NEG NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S892 IP-> * CONJ SR VB ADV . [0,0]					 PREDICTOR
+	Chart[0]		S893 IP-> * NEG VB PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S894 IP-> * PP PP VB PP PP [0,0]					 PREDICTOR
+	Chart[0]		S895 IP-> * CONJ NP SR NP , [0,0]					 PREDICTOR
+	Chart[0]		S896 IP-> * NP NEG SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S897 IP-> * CP , VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S898 IP-> * CONJ PP SR NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S899 IP-> * PP VB ADVP NP , [0,0]					 PREDICTOR
+	Chart[0]		S900 IP-> * CONJ NP NEG VB Q PP . [0,0]					 PREDICTOR
+	Chart[0]		S901 IP-> * SR NP NP . [0,0]						 PREDICTOR
+	Chart[0]		S902 IP-> * PP FP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S903 IP-> * ADV VB ADJP [0,0]						 PREDICTOR
+	Chart[0]		S904 IP-> * PP VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S905 IP-> * NP NEG VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S906 IP-> * ADV NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S907 IP-> * NP ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S908 IP-> * PP PP VB ADV NP , [0,0]					 PREDICTOR
+	Chart[0]		S909 IP-> * CONJ NP ADV SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S910 IP-> * TR SR [0,0]							 PREDICTOR
+	Chart[0]		S911 IP-> * PP VB NP PP , [0,0]						 PREDICTOR
+	Chart[0]		S912 IP-> * VB PP PP . [0,0]						 PREDICTOR
+	Chart[0]		S913 IP-> * SR ADJP NP . [0,0]						 PREDICTOR
+	Chart[0]		S914 IP-> * PP FP VB ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S915 IP-> * NP VB IP , CP [0,0]						 PREDICTOR
+	Chart[0]		S916 IP-> * CONJ PP NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S917 IP-> * PP NP SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S918 IP-> * SR VB [0,0]							 PREDICTOR
+	Chart[0]		S919 IP-> * PP , FP VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S920 IP-> * PP SR NP . [0,0]						 PREDICTOR
+	Chart[0]		S921 IP-> * PP , NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S922 IP-> * NP NEG VB , IP [0,0]					 PREDICTOR
+	Chart[0]		S923 IP-> * CONJ VB , [0,0]						 PREDICTOR
+	Chart[0]		S924 IP-> * NP PP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S925 IP-> * NP ADV VB IP [0,0]						 PREDICTOR
+	Chart[0]		S927 IP-> * NP CONJ ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S926 IP-> * PP VB PP , NP . [0,0]					 PREDICTOR
+	Chart[0]		S928 IP-> * VB NP IP CP [0,0]						 PREDICTOR
+	Chart[0]		S929 IP-> * NP NEG NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S930 IP-> * NP FP VB PP , PP [0,0]					 PREDICTOR
+	Chart[0]		S931 IP-> * ADV NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S932 IP-> * NP NP SR VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S933 IP-> * VB , PP [0,0]						 PREDICTOR
+	Chart[0]		S934 IP-> * NP NP VB IP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S935 IP-> * NP TR VB PP [0,0]						 PREDICTOR
+	Chart[0]		S936 IP-> * CONJ IP FP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S937 IP-> * ADV NP NEG SR [0,0]						 PREDICTOR
+	Chart[0]		S938 IP-> * VB ADJP NP . [0,0]						 PREDICTOR
+	Chart[0]		S939 IP-> * PP , NP NEG VB PP [0,0]					 PREDICTOR
+	Chart[0]		S940 IP-> * NP , PP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S941 IP-> * VB NP PP . PP [0,0]						 PREDICTOR
+	Chart[0]		S942 IP-> * PP ADV [0,0]						 PREDICTOR
+	Chart[0]		S943 IP-> * FP NP SR [0,0]						 PREDICTOR
+	Chart[0]		S944 IP-> * NEG FP NP SR ADJP NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S945 IP-> * PP NP SR NP [0,0]						 PREDICTOR
+	Chart[0]		S946 IP-> * NP ADV VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S947 IP-> * NP VB PP NP , ADVP [0,0]					 PREDICTOR
+	Chart[0]		S948 IP-> * CONJ CP , NP NEG SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S949 IP-> * NP NEG VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S950 IP-> * VB NP , PP . [0,0]						 PREDICTOR
+	Chart[0]		S951 IP-> * VB NP NP , [0,0]						 PREDICTOR
+	Chart[0]		S952 IP-> * NP NEG VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S953 IP-> * ADV FP VB . [0,0]						 PREDICTOR
+	Chart[0]		S954 IP-> * CONJ CP , SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S955 IP-> * ADV SR [0,0]						 PREDICTOR
+	Chart[0]		S956 IP-> * NP ADVP , VB ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S957 IP-> * NP VB NP PP [0,0]						 PREDICTOR
+	Chart[0]		S958 IP-> * CONJ NEG VB CP , [0,0]					 PREDICTOR
+	Chart[0]		S959 IP-> * NP NP NEG VB IP [0,0]					 PREDICTOR
+	Chart[0]		S960 IP-> * NP , NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S961 IP-> * CONJ SR ADJP CP . [0,0]					 PREDICTOR
+	Chart[0]		S962 IP-> * NP ADV NP VB PP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S963 IP-> * NP VB PP PP [0,0]						 PREDICTOR
+	Chart[0]		S964 IP-> * CONJ PP NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S965 IP-> * SR PP NP . ADJP [0,0]					 PREDICTOR
+	Chart[0]		S966 IP-> * NP NP VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S967 IP-> * VB CONJ NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S968 IP-> * VB PP PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S969 IP-> * CONJ VB . [0,0]						 PREDICTOR
+	Chart[0]		S970 IP-> * CONJ SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S971 IP-> * NP ADV VB NP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S972 IP-> * SR CP CP . [0,0]						 PREDICTOR
+	Chart[0]		S973 IP-> * CONJ PP VB , [0,0]						 PREDICTOR
+	Chart[0]		S974 IP-> * NP , PP , VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S975 IP-> * NP ADVP SR NP , [0,0]					 PREDICTOR
+	Chart[0]		S976 IP-> * CONJ SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S977 IP-> * ADV NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S978 IP-> * NP SR ADJP PP . [0,0]					 PREDICTOR
+	Chart[0]		S979 IP-> * PP ADV NP VB ADV . [0,0]					 PREDICTOR
+	Chart[0]		S980 IP-> * NP CP , NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S981 IP-> * PP VB PP PP . [0,0]						 PREDICTOR
+	Chart[0]		S982 IP-> * PP ADV NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S983 IP-> * NP NP NEG VB [0,0]						 PREDICTOR
+	Chart[0]		S984 IP-> * CONJ ADV VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S985 IP-> * NP VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S986 IP-> * VB PP CP . [0,0]						 PREDICTOR
+	Chart[0]		S987 IP-> * NP ADV NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S988 IP-> * NP SR Q VB , [0,0]						 PREDICTOR
+	Chart[0]		S989 IP-> * NP TR VB [0,0]						 PREDICTOR
+	Chart[0]		S990 IP-> * CP , VB NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S991 IP-> * CONJ NP FP VB , [0,0]					 PREDICTOR
+	Chart[0]		S992 IP-> * PP , SR ADJP CP , [0,0]					 PREDICTOR
+	Chart[0]		S993 IP-> * NP NP VB NP , [0,0]						 PREDICTOR
+	Chart[0]		S994 IP-> * NP FP VB , [0,0]						 PREDICTOR
+	Chart[0]		S995 IP-> * CONJ CP SR ADJP IP . [0,0]					 PREDICTOR
+	Chart[0]		S996 IP-> * NP SR IP [0,0]						 PREDICTOR
+	Chart[0]		S997 IP-> * CONJ NP FP VB . [0,0]					 PREDICTOR
+	Chart[0]		S998 IP-> * CONJ PP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S999 IP-> * CONJ VB PP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1000 IP-> * ADV SR . [0,0]						 PREDICTOR
+	Chart[0]		S1001 IP-> * CONJ VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S1002 IP-> * CONJ NEG VB IP , PP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S1003 IP-> * CONJ NP ADV VB , [0,0]					 PREDICTOR
+	Chart[0]		S1004 IP-> * ADV NEG TR [0,0]						 PREDICTOR
+	Chart[0]		S1005 IP-> * CONJ ADV FP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1007 IP-> * VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S1008 IP-> * NEG VB CP [0,0]						 PREDICTOR
+	Chart[0]		S1009 IP-> * CONJ NP SR PP ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S1010 IP-> * PP VB IP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S1011 IP-> * PP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S1012 IP-> * PP VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S1013 IP-> * NP PP SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S1014 IP-> * SR NP PP . [0,0]						 PREDICTOR
+	Chart[0]		S1015 IP-> * NP , ADV NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S1006 IP-> * CONJ CP , VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1017 IP-> * VB ADV NP , IP [0,0]					 PREDICTOR
+	Chart[0]		S1018 IP-> * CONJ NP ADV SR PP PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1019 IP-> * CONJ PP VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1016 IP-> * PP NP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1020 IP-> * VB PP PP . IP . [0,0]					 PREDICTOR
+	Chart[0]		S1021 IP-> * NP NEG VB NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S1022 IP-> * NP CP , ADV VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S1023 IP-> * ADV NP VB , [0,0]						 PREDICTOR
+	Chart[0]		S1024 IP-> * PP , NP NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1025 IP-> * CONJ NP ADV VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S1026 IP-> * CONJ PP , NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S1027 IP-> * CONJ NEG VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1028 IP-> * ADVP VB [0,0]						 PREDICTOR
+	Chart[0]		S1029 IP-> * NP , PP NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1030 IP-> * CONJ CP , CP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1031 IP-> * NP VB PP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1032 IP-> * NP , ADV NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S1033 IP-> * PP VB [0,0]						 PREDICTOR
+	Chart[0]		S1034 IP-> * NP VB ADV PP , [0,0]					 PREDICTOR
+	Chart[0]		S1035 IP-> * ADV ADV VB IP [0,0]					 PREDICTOR
+	Chart[0]		S1036 IP-> * CONJ PP NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1037 IP-> * NP FP VB . [0,0]						 PREDICTOR
+	Chart[0]		S1038 IP-> * CONJ NP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S1039 IP-> * VB NP NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S1040 IP-> * NP VB IP PP . [0,0]					 PREDICTOR
+	Chart[0]		S1041 IP-> * VB NP CP , [0,0]						 PREDICTOR
+	Chart[0]		S1042 IP-> * FP SR NP [0,0]						 PREDICTOR
+	Chart[0]		S1043 IP-> * CONJ VB NP CP . [0,0]					 PREDICTOR
+	Chart[0]		S1044 IP-> * CONJ NP SR PP , [0,0]					 PREDICTOR
+	Chart[0]		S1045 IP-> * VB PP , NP [0,0]						 PREDICTOR
+	Chart[0]		S1046 IP-> * ADV VB NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S1047 IP-> * PP CP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1048 IP-> * ADV VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S1049 IP-> * PP NP SR ADJP PP , IP . [0,0]					 PREDICTOR
+	Chart[0]		S1050 IP-> * PP VB ADVP , [0,0]						 PREDICTOR
+	Chart[0]		S1051 IP-> * ADV VB NP PP [0,0]						 PREDICTOR
+	Chart[0]		S1052 IP-> * VB IP , [0,0]						 PREDICTOR
+	Chart[0]		S1053 IP-> * FP NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S1054 IP-> * PP NP , VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S1055 IP-> * CONJ ADV NP NEG NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S1056 IP-> * CONJ NEG NP VB . [0,0]					 PREDICTOR
+	Chart[0]		S1057 IP-> * NP PP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1058 IP-> * NEG NP VB PP [0,0]						 PREDICTOR
+	Chart[0]		S1059 IP-> * ADV NP SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S1060 IP-> * SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S1061 IP-> * CONJ NP CP , NP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1062 IP-> * ADV HV IP [0,0]						 PREDICTOR
+	Chart[0]		S1063 IP-> * NP , VB PP . IP . [0,0]					 PREDICTOR
+	Chart[0]		S1064 IP-> * NP PP VB PP IP . [0,0]					 PREDICTOR
+	Chart[0]		S1065 IP-> * CP , VB CP . [0,0]						 PREDICTOR
+	Chart[0]		S1066 IP-> * NP , NEG VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S1067 IP-> * NP PP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S1068 IP-> * CONJ SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S1069 IP-> * NP SR NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S1070 IP-> * ADV NP VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S1072 IP-> * CP SR IP . [0,0]						 PREDICTOR
+	Chart[0]		S1073 IP-> * CONJ ADV NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1074 IP-> * SR NP NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1071 IP-> * VB Q PP , CP [0,0]						 PREDICTOR
+	Chart[0]		S1075 IP-> * FP CONJ NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1076 IP-> * SR NP , CP [0,0]						 PREDICTOR
+	Chart[0]		S1077 IP-> * NEG NP VB NP , PP , [0,0]					 PREDICTOR
+	Chart[0]		S1078 IP-> * NP , NEG VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1079 IP-> * ADV NP VB , PP [0,0]					 PREDICTOR
+	Chart[0]		S1080 IP-> * PP NP ADV NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1081 IP-> * CP , VB IP [0,0]						 PREDICTOR
+	Chart[0]		S1082 IP-> * VB ADV NP [0,0]						 PREDICTOR
+	Chart[0]		S1083 IP-> * NP NEG VB PP [0,0]						 PREDICTOR
+	Chart[0]		S1084 IP-> * CONJ ADV NEG VB NP PP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1085 IP-> * ADV NP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S1086 IP-> * PP CP , ADV SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S1087 IP-> * CONJ PP , NEG NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1088 IP-> * CONJ NP , CP , SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1089 IP-> * NP PP VB , NP , [0,0]					 PREDICTOR
+	Chart[0]		S1090 IP-> * NP , NEG NP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1091 IP-> * CP , VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S1092 IP-> * HV+SE VB PP [0,0]						 PREDICTOR
+	Chart[0]		S1093 IP-> * NP VB ADV , [0,0]						 PREDICTOR
+	Chart[0]		S1094 IP-> * NP NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S1095 IP-> * CONJ VB ADV , [0,0]					 PREDICTOR
+	Chart[0]		S1096 IP-> * NP FP SR PP , [0,0]					 PREDICTOR
+	Chart[0]		S1097 IP-> * NP , ADV NP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S1098 IP-> * PP VB PP NP [0,0]						 PREDICTOR
+	Chart[0]		S1099 IP-> * VB NP , IP [0,0]						 PREDICTOR
+	Chart[0]		S1100 IP-> * NP , PP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1101 IP-> * CONJ CP , SR CP . [0,0]					 PREDICTOR
+	Chart[0]		S1102 IP-> * ADV NEG VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1103 IP-> * NEG VB ADV PP . [0,0]					 PREDICTOR
+	Chart[0]		S1104 IP-> * NP PP SR PP . [0,0]					 PREDICTOR
+	Chart[0]		S1105 IP-> * PP NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S1106 IP-> * CONJ NP , SR NP [0,0]					 PREDICTOR
+	Chart[0]		S1107 IP-> * NP SR PP . [0,0]						 PREDICTOR
+	Chart[0]		S1108 IP-> * PP ADV SR ADJP [0,0]					 PREDICTOR
+	Chart[0]		S1109 IP-> * VB CP , CP [0,0]						 PREDICTOR
+	Chart[0]		S1110 IP-> * CONJ NP SR PP ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S1111 IP-> * PP NP ADV SR ADJP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1112 IP-> * NP NEG VB [0,0]						 PREDICTOR
+	Chart[0]		S1113 IP-> * PP SR NP , [0,0]						 PREDICTOR
+	Chart[0]		S1114 IP-> * PP NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S1115 IP-> * PP NP SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S1116 IP-> * CONJ PP SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1117 IP-> * CP , SR PP , [0,0]						 PREDICTOR
+	Chart[0]		S1118 IP-> * NP ADV VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1119 IP-> * NP VB NP PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1120 IP-> * PP SR ADJP . [0,0]						 PREDICTOR
+	Chart[0]		S1121 IP-> * CONJ NP NEG VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1122 IP-> * NP PP VB ADV , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1123 IP-> * NEG VB PP NP NP , [0,0]					 PREDICTOR
+	Chart[0]		S1124 IP-> * VB , [0,0]							 PREDICTOR
+	Chart[0]		S1125 IP-> * NP NP VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S1126 IP-> * CONJ NEG VB . [0,0]					 PREDICTOR
+	Chart[0]		S1127 IP-> * CONJ NEG NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1128 IP-> * PP CONJ VB . [0,0]						 PREDICTOR
+	Chart[0]		S1129 IP-> * NP , FP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1130 IP-> * PP NP VB NP [0,0]						 PREDICTOR
+	Chart[0]		S1131 IP-> * NP , ADV NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S1132 IP-> * NEG VB IP . [0,0]						 PREDICTOR
+	Chart[0]		S1133 IP-> * CP , PP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1134 IP-> * CONJ NEG VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1135 IP-> * VB IP , CP . [0,0]						 PREDICTOR
+	Chart[0]		S1136 IP-> * NP , CP , VB , [0,0]					 PREDICTOR
+	Chart[0]		S1137 IP-> * NP FP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1138 IP-> * NP VB IP . CP [0,0]					 PREDICTOR
+	Chart[0]		S1139 IP-> * FP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1140 IP-> * CONJ PP NP NP NP VB . NP . [0,0]					 PREDICTOR
+	Chart[0]		S1141 IP-> * CONJ FP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1142 IP-> * CONJ CP , ADV NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1143 IP-> * NP , VB NP PP . [0,0]					 PREDICTOR
+	Chart[0]		S1144 IP-> * ADV NP VB Q PP [0,0]					 PREDICTOR
+	Chart[0]		S1145 IP-> * NP VB NP PP , [0,0]					 PREDICTOR
+	Chart[0]		S1146 IP-> * NP NEG NP VB PP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1147 IP-> * CONJ NP NP VB PP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1148 IP-> * NP NEG SR ADJP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1149 IP-> * NP VB ADV NP , [0,0]					 PREDICTOR
+	Chart[0]		S1150 IP-> * NP NP NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1151 IP-> * CONJ PP NP SR NP , [0,0]					 PREDICTOR
+	Chart[0]		S1152 IP-> * PP , ADV TR VB NP [0,0]					 PREDICTOR
+	Chart[0]		S1153 IP-> * PP NP ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1154 IP-> * ADV VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1155 IP-> * NP CP , CONJ ADV SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1156 IP-> * NP VB PP NP , [0,0]					 PREDICTOR
+	Chart[0]		S1157 IP-> * CONJ NP NEG NP VB ADV . [0,0]					 PREDICTOR
+	Chart[0]		S1158 IP-> * CONJ VB PP PP . [0,0]					 PREDICTOR
+	Chart[0]		S1159 IP-> * ADVP NP NEG VB PP [0,0]					 PREDICTOR
+	Chart[0]		S1160 IP-> * CONJ PP VB ADV . [0,0]					 PREDICTOR
+	Chart[0]		S1161 IP-> * ADV FP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1162 IP-> * NP NP VB IP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1163 IP-> * ADV ADV VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1164 IP-> * SR CP PP . [0,0]						 PREDICTOR
+	Chart[0]		S1165 IP-> * PP NP NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1166 IP-> * NP , NEG VB NP PP [0,0]					 PREDICTOR
+	Chart[0]		S1167 IP-> * CONJ NP ADV NP VB , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1168 IP-> * NP ADV [0,0]						 PREDICTOR
+	Chart[0]		S1169 IP-> * NP , CP , ADV VB PP NP [0,0]					 PREDICTOR
+	Chart[0]		S1170 IP-> * NP , SR CP . [0,0]						 PREDICTOR
+	Chart[0]		S1171 IP-> * NP NEG FP NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S1172 IP-> * VB NP PP NP [0,0]						 PREDICTOR
+	Chart[0]		S1173 IP-> * CONJ NP NEG FP NP VB IP [0,0]					 PREDICTOR
+	Chart[0]		S1174 IP-> * NP VB ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1175 IP-> * NP VB NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1176 IP-> * CONJ NP PP VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1177 IP-> * PP VB IP NP [0,0]						 PREDICTOR
+	Chart[0]		S1178 IP-> * CONJ PP NP SR ADJP , [0,0]					 PREDICTOR
+	Chart[0]		S1179 IP-> * NP NEG FP NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S1180 IP-> * PP ADV SR ADJP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1181 IP-> * ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1182 IP-> * PP NP ADV SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S1183 IP-> * PP VB NP IP , [0,0]					 PREDICTOR
+	Chart[0]		S1184 IP-> * NP ADVP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1185 IP-> * ADV VB , IP . [0,0]					 PREDICTOR
+	Chart[0]		S1186 IP-> * NP , ADV VB NP [0,0]					 PREDICTOR
+	Chart[0]		S1187 IP-> * PP NP FP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1188 IP-> * ADV VB NP . [0,0]						 PREDICTOR
+	Chart[0]		S1189 IP-> * ADV ADV VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1190 IP-> * NP , CP , ADV NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1191 IP-> * ADV VB PP . [0,0]						 PREDICTOR
+	Chart[0]		S1192 IP-> * VB NP IP . [0,0]						 PREDICTOR
+	Chart[0]		S1193 IP-> * CP , NP HV ADV , CP [0,0]					 PREDICTOR
+	Chart[0]		S1194 IP-> * NP , VB IP [0,0]						 PREDICTOR
+	Chart[0]		S1195 IP-> * CONJ NP . CP , NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1196 IP-> * SR ADJP CP [0,0]						 PREDICTOR
+	Chart[0]		S1197 IP-> * ADJP , VB IP , [0,0]					 PREDICTOR
+	Chart[0]		S1198 IP-> * PP VB , [0,0]						 PREDICTOR
+	Chart[0]		S1199 IP-> * CONJ NP VB IP ADVP . [0,0]					 PREDICTOR
+	Chart[0]		S1200 IP-> * PP VB . [0,0]						 PREDICTOR
+	Chart[0]		S1201 IP-> * NEG NP VB IP , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1202 IP-> * VB . [0,0]							 PREDICTOR
+	Chart[0]		S1203 IP-> * NP CP , ADV NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1204 IP-> * CONJ ADV TR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1205 IP-> * CP , ADV SR CP . [0,0]					 PREDICTOR
+	Chart[0]		S1206 IP-> * CP , NP ADV VB , [0,0]					 PREDICTOR
+	Chart[0]		S1207 IP-> * VB Q [0,0]							 PREDICTOR
+	Chart[0]		S1208 IP-> * CONJ CP , NP , SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1209 IP-> * NP PP NP VB [0,0]						 PREDICTOR
+	Chart[0]		S1210 IP-> * NEG NP NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S1211 IP-> * CONJ CP , PP VB NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1212 IP-> * NP NEG SR ADJP PP [0,0]					 PREDICTOR
+	Chart[0]		S1213 IP-> * CONJ NEG SR FP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1214 IP-> * CONJ NP NEG SR NP . [0,0]					 PREDICTOR
+	Chart[0]		S1215 IP-> * CONJ NEG SR FP , NP . [0,0]					 PREDICTOR
+	Chart[0]		S1216 IP-> * PP NP NEG NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S1217 IP-> * VB PP ADV [0,0]						 PREDICTOR
+	Chart[0]		S1218 IP-> * NP NEG NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1219 IP-> * CONJ PP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S1220 IP-> * FP NP VB . [0,0]						 PREDICTOR
+	Chart[0]		S1221 IP-> * NP SR ADJP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1222 IP-> * NP NP SR VB ADVP . NP . [0,0]					 PREDICTOR
+	Chart[0]		S1223 IP-> * NP , PP VB NP , [0,0]					 PREDICTOR
+	Chart[0]		S1224 IP-> * CONJ PP NP NEG NP VB PP , [0,0]					 PREDICTOR
+	Chart[0]		S1225 IP-> * CONJ ADV NP VB PP . CP . [0,0]					 PREDICTOR
+	Chart[0]		S1226 IP-> * NP SR NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1227 IP-> * CONJ SR NP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1228 IP-> * PP NP VB NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1229 IP-> * CONJ ADV NP NP VB CP . [0,0]					 PREDICTOR
+	Chart[0]		S1230 IP-> * NP VB ADV NP . [0,0]					 PREDICTOR
+	Chart[0]		S1231 IP-> * FP NP VB IP [0,0]						 PREDICTOR
+	Chart[0]		S1232 IP-> * CP , NP , VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1233 IP-> * PP NP NEG NP VB , [0,0]					 PREDICTOR
+	Chart[0]		S1234 IP-> * NP CP , NEG VB , [0,0]					 PREDICTOR
+	Chart[0]		S1235 IP-> * SR ADJP . [0,0]						 PREDICTOR
+	Chart[0]		S1236 IP-> * NP ADV NP VB PP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1237 IP-> * CONJ VB NP IP . [0,0]					 PREDICTOR
+	Chart[0]		S1238 IP-> * NP NP VB PP ADVP [0,0]					 PREDICTOR
+	Chart[0]		S1239 IP-> * VB IP PP [0,0]						 PREDICTOR
+	Chart[0]		S1240 IP-> * CONJ CP , SR ADJP . [0,0]					 PREDICTOR
+	Chart[0]		S1241 IP-> * CONJ PP NP NEG VB Q PP . [0,0]					 PREDICTOR
+	Chart[0]		S1242 IP-> * NP , IP , NEG FP VB NP PP [0,0]					 PREDICTOR
+	Chart[0]		S1243 IP-> * NP VB ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1244 IP-> * NP NEG VB , CP , [0,0]					 PREDICTOR
+	Chart[0]		S1245 IP-> * ADV PP , VB NP . [0,0]					 PREDICTOR
+	Chart[0]		S1246 IP-> * NP , SR IP [0,0]						 PREDICTOR
+	Chart[0]		S1247 IP-> * CONJ VB NP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1248 IP-> * NP ADV VB ADJP [0,0]					 PREDICTOR
+	Chart[0]		S1249 IP-> * PP CP , ADV PP VB IP NP . [0,0]					 PREDICTOR
+	Chart[0]		S1250 IP-> * NP VB IP , PP , [0,0]					 PREDICTOR
+	Chart[0]		S1251 IP-> * CONJ NEG VB IP , PP . [0,0]					 PREDICTOR
+	Chart[0]		S1252 IP-> * PP , ADV [0,0]						 PREDICTOR
+	Chart[0]		S1253 IP-> * VB CONJ NP NP , [0,0]					 PREDICTOR
+	Chart[0]		S1254 IP-> * NP PP SR NP , [0,0]					 PREDICTOR
+	Chart[0]		S1255 IP-> * NP VB Q [0,0]						 PREDICTOR
+	Chart[0]		S1256 IP-> * PP NP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1257 IP-> * NP SR PP VB . [0,0]					 PREDICTOR
+	Chart[0]		S1258 IP-> * CONJ NP VB [0,0]						 PREDICTOR
+	Chart[0]		S1259 IP-> * VB NP ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1260 IP-> * NP NP NP VB IP . [0,0]					 PREDICTOR
+	Chart[0]		S1261 IP-> * CONJ NP NP NP VB PP . [0,0]					 PREDICTOR
+	Chart[0]		S1262 PP-> * ADV P IP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1263 PP-> * P ADV [0,0]						 PREDICTOR
+	Chart[0]		S1264 PP-> * P+D N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1265 PP-> * ADV P NP [0,0]						 PREDICTOR
+	Chart[0]		S1266 PP-> * DEM SR , P IP [0,0]					 PREDICTOR
+	Chart[0]		S1267 PP-> * ADV P+D NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1268 PP-> * ADV P NP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1269 PP-> * DEM SR P+D NP [0,0]					 PREDICTOR
+	Chart[0]		S1270 PP-> * ADV P NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1271 PP-> * ADV P IP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1272 PP-> * ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1273 PP-> * ADV FP P NP [0,0]						 PREDICTOR
+	Chart[0]		S1274 PP-> * ADV P IP [0,0]						 PREDICTOR
+	Chart[0]		S1275 PP-> * P ADV N PP [0,0]						 PREDICTOR
+	Chart[0]		S1276 PP-> * P D N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1277 PP-> * ADV P+PRO [0,0]						 PREDICTOR
+	Chart[0]		S1278 PP-> * ADV P+D NP [0,0]						 PREDICTOR
+	Chart[0]		S1279 PP-> * ADV P+D PRO$ N , CP . [0,0]					 PREDICTOR
+	Chart[0]		S1280 PP-> * ADV P+WADV NP [0,0]					 PREDICTOR
+	Chart[0]		S1281 PP-> * P+D N PP [0,0]						 PREDICTOR
+	Chart[0]		S1282 PP-> * DEM SR , P+D NP [0,0]					 PREDICTOR
+	Chart[0]		S1283 PP-> * ADV PP , PP [0,0]						 PREDICTOR
+	Chart[0]		S1284 PP-> * ADV P+D NP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1285 PP-> * P N [0,0]							 PREDICTOR
+	Chart[0]		S1286 PP-> * P+D N [0,0]						 PREDICTOR
+	Chart[0]		S1288 NP-> * D N PP [0,0]						 PREDICTOR
+	Chart[0]		S1288 NP-> * Q N ADV [0,0]						 PREDICTOR
+	Chart[0]		S1289 NP-> * D N , CONJP PP [0,0]					 PREDICTOR
+	Chart[0]		S1290 NP-> * D ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1291 NP-> * ADV N CP [0,0]						 PREDICTOR
+	Chart[0]		S1292 NP-> * D N PP PP [0,0]						 PREDICTOR
+	Chart[0]		S1293 NP-> * D N Q [0,0]						 PREDICTOR
+	Chart[0]		S1294 NP-> * N , N , N [0,0]						 PREDICTOR
+	Chart[0]		S1295 NP-> * ADV D ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1296 NP-> * N ADJ CP [0,0]						 PREDICTOR
+	Chart[0]		S1297 NP-> * ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1298 NP-> * D N ADJ PP . NP [0,0]					 PREDICTOR
+	Chart[0]		S1299 NP-> * D PRO$ ADJ N , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1300 NP-> * D N [0,0]							 PREDICTOR
+	Chart[0]		S1301 NP-> * ADVP N [0,0]						 PREDICTOR
+	Chart[0]		S1302 NP-> * ADJ N , NP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1304 NP-> * FP D N CP [0,0]						 PREDICTOR
+	Chart[0]		S1303 NP-> * ADJ N PP [0,0]						 PREDICTOR
+	Chart[0]		S1305 NP-> * D N PP , CP [0,0]						 PREDICTOR
+	Chart[0]		S1306 NP-> * D N , CP , [0,0]						 PREDICTOR
+	Chart[0]		S1307 NP-> * N ADJ PP [0,0]						 PREDICTOR
+	Chart[0]		S1308 NP-> * ADV D N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1309 NP-> * ADJ N CP [0,0]						 PREDICTOR
+	Chart[0]		S1310 NP-> * D ADJ N , CP , [0,0]					 PREDICTOR
+	Chart[0]		S1311 NP-> * N PP [0,0]							 PREDICTOR
+	Chart[0]		S1312 NP-> * DEM SR , D N ADJP [0,0]					 PREDICTOR
+	Chart[0]		S1313 NP-> * N PP CP [0,0]						 PREDICTOR
+	Chart[0]		S1314 NP-> * Q N [0,0]							 PREDICTOR
+	Chart[0]		S1315 NP-> * VB , CONJP [0,0]						 PREDICTOR
+	Chart[0]		S1316 NP-> * D N PP ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1317 NP-> * D N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1318 NP-> * NEG FP D N PP [0,0]					 PREDICTOR
+	Chart[0]		S1319 NP-> * PRO$ N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1320 NP-> * D N ADJ , CP [0,0]						 PREDICTOR
+	Chart[0]		S1321 NP-> * D N ADJP , NP . CP [0,0]					 PREDICTOR
+	Chart[0]		S1322 NP-> * ADV D N PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1323 NP-> * D N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1324 NP-> * D ADV , CP [0,0]						 PREDICTOR
+	Chart[0]		S1325 NP-> * ADV D N PP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1326 NP-> * Q N ADJ , CP [0,0]						 PREDICTOR
+	Chart[0]		S1327 NP-> * PP N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1328 NP-> * Q D PRO$ N [0,0]						 PREDICTOR
+	Chart[0]		S1329 NP-> * D N PP , NP [0,0]						 PREDICTOR
+	Chart[0]		S1330 NP-> * CONJ D N [0,0]						 PREDICTOR
+	Chart[0]		S1331 NP-> * D N ADJ ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1332 NP-> * N , CONJP PP [0,0]						 PREDICTOR
+	Chart[0]		S1333 NP-> * N FP [0,0]							 PREDICTOR
+	Chart[0]		S1334 NP-> * Q N CP [0,0]						 PREDICTOR
+	Chart[0]		S1335 NP-> * N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1336 NP-> * N CONJ N [0,0]						 PREDICTOR
+	Chart[0]		S1337 NP-> * PP D N [0,0]						 PREDICTOR
+	Chart[0]		S1338 NP-> * N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1339 NP-> * D N ADJ Q [0,0]						 PREDICTOR
+	Chart[0]		S1340 NP-> * NUM N PP [0,0]						 PREDICTOR
+	Chart[0]		S1341 NP-> * D ADJ N PP [0,0]						 PREDICTOR
+	Chart[0]		S1342 NP-> * D N , PP [0,0]						 PREDICTOR
+	Chart[0]		S1343 NP-> * D PRO$ N Q [0,0]						 PREDICTOR
+	Chart[0]		S1344 NP-> * N , CONJ N [0,0]						 PREDICTOR
+	Chart[0]		S1345 NP-> * D N , CONJP PP CP [0,0]					 PREDICTOR
+	Chart[0]		S1346 NP-> * SENAO D N PP [0,0]						 PREDICTOR
+	Chart[0]		S1347 NP-> * PRO$ N [0,0]						 PREDICTOR
+	Chart[0]		S1348 NP-> * NEG FP D N [0,0]						 PREDICTOR
+	Chart[0]		S1349 NP-> * ADJ ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1350 NP-> * D N ADJ PP [0,0]						 PREDICTOR
+	Chart[0]		S1351 NP-> * ADV D N [0,0]						 PREDICTOR
+	Chart[0]		S1352 NP-> * D ADV ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1353 NP-> * ADJP N [0,0]						 PREDICTOR
+	Chart[0]		S1354 NP-> * D ADV ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1355 NP-> * Q D N CP [0,0]						 PREDICTOR
+	Chart[0]		S1356 NP-> * ADJ N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1357 NP-> * SENAO N [0,0]						 PREDICTOR
+	Chart[0]		S1358 NP-> * FP D PRO$ N [0,0]						 PREDICTOR
+	Chart[0]		S1359 NP-> * D N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1360 NP-> * ADV ADV [0,0]						 PREDICTOR
+	Chart[0]		S1361 NP-> * Q D N , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1362 NP-> * D N , CONJP [0,0]						 PREDICTOR
+	Chart[0]		S1363 NP-> * Q N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1364 NP-> * Q N PP [0,0]						 PREDICTOR
+	Chart[0]		S1365 NP-> * NUM N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1366 NP-> * N CP ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1367 NP-> * ADV D [0,0]						 PREDICTOR
+	Chart[0]		S1368 NP-> * D ADV [0,0]						 PREDICTOR
+	Chart[0]		S1369 NP-> * ADV PRO$ [0,0]						 PREDICTOR
+	Chart[0]		S1370 NP-> * N , VB , [0,0]						 PREDICTOR
+	Chart[0]		S1371 NP-> * D N PP Q [0,0]						 PREDICTOR
+	Chart[0]		S1372 NP-> * ADJ ADV N [0,0]						 PREDICTOR
+	Chart[0]		S1373 NP-> * D PRO$ ADJP N [0,0]					 PREDICTOR
+	Chart[0]		S1374 NP-> * NUM N [0,0]						 PREDICTOR
+	Chart[0]		S1375 NP-> * ADV VB [0,0]						 PREDICTOR
+	Chart[0]		S1377 NP-> * ADV D CP [0,0]						 PREDICTOR
+	Chart[0]		S1376 NP-> * D N ADJP PP [0,0]						 PREDICTOR
+	Chart[0]		S1378 NP-> * D N , NP [0,0]						 PREDICTOR
+	Chart[0]		S1379 NP-> * D N , CP PP [0,0]						 PREDICTOR
+	Chart[0]		S1380 NP-> * NP . D N [0,0]						 PREDICTOR
+	Chart[0]		S1381 NP-> * D PRO$ N [0,0]						 PREDICTOR
+	Chart[0]		S1382 NP-> * ADV Q CP [0,0]						 PREDICTOR
+	Chart[0]		S1383 NP-> * D ADJ N CP [0,0]						 PREDICTOR
+	Chart[0]		S1384 NP-> * ADV N PP [0,0]						 PREDICTOR
+	Chart[0]		S1385 NP-> * D VB N PP [0,0]						 PREDICTOR
+	Chart[0]		S1386 NP-> * Q D N [0,0]						 PREDICTOR
+	Chart[0]		S1387 NP-> * NP , CONJP N [0,0]						 PREDICTOR
+	Chart[0]		S1388 NP-> * D ADJ N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1389 NP-> * PRO$ N PP [0,0]						 PREDICTOR
+	Chart[0]		S1390 NP-> * ADV N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1392 NP-> * N CP [0,0]							 PREDICTOR
+	Chart[0]		S1391 NP-> * Q D N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1393 NP-> * D N VB [0,0]						 PREDICTOR
+	Chart[0]		S1394 NP-> * D N , [0,0]						 PREDICTOR
+	Chart[0]		S1395 NP-> * N , N CONJ N [0,0]						 PREDICTOR
+	Chart[0]		S1396 NP-> * Q N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1397 NP-> * D ADJ N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1398 NP-> * D ADJ N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1399 NP-> * D ADV N [0,0]						 PREDICTOR
+	Chart[0]		S1400 NP-> * Q D N , CONJP PP [0,0]					 PREDICTOR
+	Chart[0]		S1401 NP-> * FP D N PP [0,0]						 PREDICTOR
+	Chart[0]		S1402 NP-> * D N ADV CP [0,0]						 PREDICTOR
+	Chart[0]		S1403 NP-> * D ADJ N , [0,0]						 PREDICTOR
+	Chart[0]		S1404 NP-> * ADV PRO [0,0]						 PREDICTOR
+	Chart[0]		S1405 NP-> * D ADJ , CONJP N [0,0]					 PREDICTOR
+	Chart[0]		S1406 NP-> * N PRO$ [0,0]						 PREDICTOR
+	Chart[0]		S1407 NP-> * VB N [0,0]							 PREDICTOR
+	Chart[0]		S1408 NP-> * D ADV N PP [0,0]						 PREDICTOR
+	Chart[0]		S1409 NP-> * Q D ADV [0,0]						 PREDICTOR
+	Chart[0]		S1410 NP-> * N , PP [0,0]						 PREDICTOR
+	Chart[0]		S1411 NP-> * D N PP CP [0,0]						 PREDICTOR
+	Chart[0]		S1412 NP-> * N PP , CP [0,0]						 PREDICTOR
+	Chart[0]		S1413 NP-> * D VB [0,0]							 PREDICTOR
+	Chart[0]		S1414 NP-> * ADV N [0,0]						 PREDICTOR
+	Chart[0]		S1415 NP-> * ADV D ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1416 NP-> * D N CP [0,0]						 PREDICTOR
+	Chart[0]		S1417 NP-> * Q D PRO$ N , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1418 NP-> * ADV Q D ADV N , CP [0,0]					 PREDICTOR
+	Chart[0]		S1419 NP-> * D VB N [0,0]						 PREDICTOR
+	Chart[0]		S1420 NP-> * ADV N , [0,0]						 PREDICTOR
+	Chart[0]		S1421 NP-> * D N FP [0,0]						 PREDICTOR
+	Chart[0]		S1422 NP-> * D ADJP N , CP [0,0]					 PREDICTOR
+	Chart[0]		S1423 NP-> * N N [0,0]							 PREDICTOR
+	Chart[0]		S1424 NP-> * ADV ADV N [0,0]						 PREDICTOR
+	Chart[0]		S1425 NP-> * D ADJ N PP CP [0,0]					 PREDICTOR
+	Chart[0]		S1426 NP-> * D ADJ ADJ N PP [0,0]					 PREDICTOR
+	Chart[0]		S1427 NP-> * N NPR [0,0]						 PREDICTOR
+	Chart[0]		S1428 NP-> * D PRO$ N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1429 NP-> * CONJ ADJP D N [0,0]					 PREDICTOR
+	Chart[0]		S1430 NP-> * OUTRO N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1431 NP-> * N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1432 NP-> * D Q N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1433 NP-> * VB N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1434 NP-> * D PRO$ N , CONJP ADJ [0,0]					 PREDICTOR
+	Chart[0]		S1435 NP-> * N VB [0,0]							 PREDICTOR
+	Chart[0]		S1436 NP-> * D N CP , [0,0]						 PREDICTOR
+	Chart[0]		S1438 NP-> * D ADJ N CP , [0,0]						 PREDICTOR
+	Chart[0]		S1437 NP-> * ADV , CONJ ADV [0,0]					 PREDICTOR
+	Chart[0]		S1439 NP-> * ADJ ADJ N PP . NP [0,0]					 PREDICTOR
+	Chart[0]		S1440 NP-> * ADJ Q N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1442 NP-> * D PRO$ ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1441 NP-> * ADJ N , ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1443 NP-> * N CP , [0,0]						 PREDICTOR
+	Chart[0]		S1444 NP-> * ADJ N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1445 NP-> * D ADJ N Q [0,0]						 PREDICTOR
+	Chart[0]		S1446 NP-> * ADV D N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1447 NP-> * OUTRO N [0,0]						 PREDICTOR
+	Chart[0]		S1448 NP-> * ADJP N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1449 NP-> * N ADJP CP [0,0]						 PREDICTOR
+	Chart[0]		S1450 NP-> * N . NP [0,0]						 PREDICTOR
+	Chart[0]		S1451 NP-> * ADV D N PP [0,0]						 PREDICTOR
+	Chart[0]		S1452 NP-> * D ADJ N , CP . NP [0,0]					 PREDICTOR
+	Chart[0]		S1453 NP-> * SENAO D ADJ N [0,0]					 PREDICTOR
+	Chart[0]		S1454 NP-> * ADV Q [0,0]						 PREDICTOR
+	Chart[0]		S1455 NP-> * D N , CONJP ADJ [0,0]					 PREDICTOR
+	Chart[0]		S1456 NP-> * D ADJ N PP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1457 NP-> * D PRO$ N ADJP [0,0]					 PREDICTOR
+	Chart[0]		S1458 NP-> * D N ADJ CP [0,0]						 PREDICTOR
+	Chart[0]		S1459 NP-> * N ADJ , [0,0]						 PREDICTOR
+	Chart[0]		S1460 NP-> * N PP . NP [0,0]						 PREDICTOR
+	Chart[0]		S1461 NP-> * N , CP , CP . CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1462 NP-> * NP CONJP N [0,0]						 PREDICTOR
+	Chart[0]		S1463 NP-> * D ADJ N , PP [0,0]						 PREDICTOR
+	Chart[0]		S1464 NP-> * ADV D N , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1465 NP-> * PRO$ N , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1466 NP-> * D ADJ N , CP , Q [0,0]					 PREDICTOR
+	Chart[0]		S1467 NP-> * PRO$ ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1468 NP-> * NEG D PRO$ N [0,0]						 PREDICTOR
+	Chart[0]		S1469 NP-> * D N ADJP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1470 NP-> * D N , CONJP CP [0,0]					 PREDICTOR
+	Chart[0]		S1471 NP-> * D ADJP N [0,0]						 PREDICTOR
+	Chart[0]		S1472 NP-> * N , CONJP CP [0,0]						 PREDICTOR
+	Chart[0]		S1473 NP-> * ADV D ADJ N PP [0,0]					 PREDICTOR
+	Chart[0]		S1474 NP-> * N ADJP PP [0,0]						 PREDICTOR
+	Chart[0]		S1475 NP-> * NUM N ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1476 NP-> * PP D N PP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1477 NP-> * ADV C [0,0]						 PREDICTOR
+	Chart[0]		S1478 NP-> * D N NP [0,0]						 PREDICTOR
+	Chart[0]		S1479 NP-> * ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1480 NP-> * NUM N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1481 NP-> * D ADV CP [0,0]						 PREDICTOR
+	Chart[0]		S1482 NP-> * NEG N PP [0,0]						 PREDICTOR
+	Chart[0]		S1483 NP-> * P+D N [0,0]						 PREDICTOR
+	Chart[0]		S1484 NP-> * N , CP , CP [0,0]						 PREDICTOR
+	Chart[0]		S1485 NP-> * Q D N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1486 NP-> * N Q [0,0]							 PREDICTOR
+	Chart[0]		S1487 NP-> * D N , CONJP , CP [0,0]					 PREDICTOR
+	Chart[0]		S1488 NP-> * N ADJ , CP [0,0]						 PREDICTOR
+	Chart[0]		S1489 NP-> * D ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1490 NP-> * Q N , CP [0,0]						 PREDICTOR
+	Chart[0]		S1491 NP-> * Q D N PP [0,0]						 PREDICTOR
+	Chart[0]		S1492 NP-> * ADV D PRO$ N [0,0]						 PREDICTOR
+	Chart[0]		S1493 NP-> * ADJ N ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1494 NP-> * D N PP , PP [0,0]						 PREDICTOR
+	Chart[0]		S1495 NP-> * D N , ADJP [0,0]						 PREDICTOR
+	Chart[0]		S1496 NP-> * ADV ADJ N [0,0]						 PREDICTOR
+	Chart[0]		S1497 NP-> * FP D N [0,0]						 PREDICTOR
+	Chart[0]		S1498 NP-> * D N VB , CP [0,0]						 PREDICTOR
+	Chart[1]		S1499 ADV-> então * [0,1]						 SCANNER
+	Chart[0]		S1500 CP-> * P ADV C IP [0,0]						 PREDICTOR
+	Chart[0]		S1501 CP-> * SENAO ADV C IP [0,0]					 PREDICTOR
+	Chart[0]		S1502 CP-> * Q ADV C IP [0,0]						 PREDICTOR
+	Chart[0]		S1503 CP-> * VB IP [0,0]						 PREDICTOR
+	Chart[0]		S1504 CP-> * ADV C IP [0,0]						 PREDICTOR
+	Chart[0]		S1505 CP-> * P N C IP [0,0]						 PREDICTOR
+	Chart[0]		S1506 CP-> * CONJ ADV NP , WNP IP . [0,0]					 PREDICTOR
+	Chart[0]		S1507 CP-> * CONJS PP VB NP [0,0]					 PREDICTOR
+	Chart[0]		S1508 CP-> * P ADV , C IP [0,0]						 PREDICTOR
+	Chart[0]		S1509 CP-> * P ADV ADJ C IP [0,0]					 PREDICTOR
+	Chart[0]		S1510 CP-> * ADV ADV C IP [0,0]						 PREDICTOR
+	Chart[0]		S1511 CP-> * Q D N C IP [0,0]						 PREDICTOR
+	Chart[0]		S1512 CP-> * CONJS ADV C IP [0,0]					 PREDICTOR
+	Chart[0]		S1513 CP-> * CONJS PP ADV NP VB PP [0,0]					 PREDICTOR
+	Chart[0]		S1514 CP-> * P N , C IP [0,0]						 PREDICTOR
+	Chart[0]		S1515 CP-> * ADV CONJS IP [0,0]						 PREDICTOR
+	Chart[0]		S1516 CP-> * P+D ADJ N C IP [0,0]					 PREDICTOR
+	Chart[0]		S1517 CP-> * ADV , IP , WNP IP . [0,0]					 PREDICTOR
+	Chart[0]		S1518 CP-> * ADV CONJS IP , [0,0]					 PREDICTOR
+	Chart[0]		S1519 CP-> * P+D N , C IP [0,0]						 PREDICTOR
+	Chart[0]		S1520 CP-> * CONJ ADV WADVP IP . [0,0]					 PREDICTOR
+	Chart[0]		S1521 CP-> * P+D ADJ N , C IP [0,0]					 PREDICTOR
+	Chart[0]		S1522 CP-> * P ADV C IP , [0,0]						 PREDICTOR
+	Chart[0]		S1524 ADJP-> * ADJ , N , N [0,0]					 PREDICTOR
+	Chart[0]		S1525 ADJP-> * ADJ ADV [0,0]						 PREDICTOR
+	Chart[0]		S1524 ADJP-> * ADV ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1526 ADJP-> * ADV ADV ADJ PP [0,0]					 PREDICTOR
+	Chart[0]		S1527 ADJP-> * VB PP [0,0]						 PREDICTOR
+	Chart[0]		S1528 ADJP-> * VB , CONJP , CONJP , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1529 ADJP-> * VB , CONJ VB [0,0]					 PREDICTOR
+	Chart[0]		S1530 ADJP-> * ADV ADV VB [0,0]						 PREDICTOR
+	Chart[0]		S1531 ADJP-> * VB , VB , VB [0,0]					 PREDICTOR
+	Chart[0]		S1532 ADJP-> * VB , CONJP [0,0]						 PREDICTOR
+	Chart[0]		S1533 ADJP-> * ADV ADJ , [0,0]						 PREDICTOR
+	Chart[0]		S1534 ADJP-> * ADV ADJ CP [0,0]						 PREDICTOR
+	Chart[0]		S1535 ADJP-> * ADV ADJ , CONJP [0,0]					 PREDICTOR
+	Chart[0]		S1536 ADJP-> * VB ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1537 ADJP-> * PP ADV ADJ PP [0,0]					 PREDICTOR
+	Chart[0]		S1538 ADJP-> * ADV ADJ , CP [0,0]					 PREDICTOR
+	Chart[0]		S1539 ADJP-> * VB ADV [0,0]						 PREDICTOR
+	Chart[0]		S1540 ADJP-> * ADV ADJ PP [0,0]						 PREDICTOR
+	Chart[0]		S1541 ADJP-> * ADV CP [0,0]						 PREDICTOR
+	Chart[0]		S1542 ADJP-> * ADV VB [0,0]						 PREDICTOR
+	Chart[0]		S1543 ADJP-> * ADVP VB [0,0]						 PREDICTOR
+	Chart[0]		S1544 ADJP-> * ADV Q ADJ [0,0]						 PREDICTOR
+	Chart[0]		S1545 ADJP-> * ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1546 ADJP-> * ADV ADJ PP , PP [0,0]					 PREDICTOR
+	Chart[0]		S1547 ADJP-> * ADV VB PP [0,0]						 PREDICTOR
+	Chart[0]		S1550 ADVP-> * SENAO ADV [0,0]						 PREDICTOR
+	Chart[0]		S1550 ADVP-> * NEG ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1550 ADVP-> * ADV ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1551 ADVP-> * ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1552 ADVP-> * Q ADV [0,0]						 PREDICTOR
+	Chart[0]		S1553 ADVP-> * Q ADV PP [0,0]						 PREDICTOR
+	Chart[0]		S1554 ADVP-> * CONJ ADV [0,0]						 PREDICTOR
+	Chart[0]		S1555 ADVP-> * ADV , CONJ ADV [0,0]					 PREDICTOR
+	Chart[0]		S1556 ADVP-> * DEM SR , ADV [0,0]					 PREDICTOR
+	Chart[0]		S1557 ADVP-> * SENAO ADV PP [0,0]					 PREDICTOR
+	Chart[0]		S1558 ADVP-> * ADV ADV [0,0]						 PREDICTOR
+	Chart[0]		S1559 ADVP-> * FP ADV [0,0]						 PREDICTOR
+	Chart[0]		S1560 ADVP-> * ADV , PP [0,0]						 PREDICTOR
+	Chart[0]		S1561 ADVP-> * ADV CP [0,0]						 PREDICTOR
+	Chart[0]		S1562 ADVP-> * ADV ADV ADV [0,0]					 PREDICTOR
+	Chart[0]		S1563 ADVP-> * PP ADV [0,0]						 PREDICTOR
 Reading chart[1]...
+	Chart[1]		S1565 IP-> ADV * VB NP , CP [0,1]					 COMPLETER
+	Chart[1]		S1567 IP-> ADV * VB , CP . [0,1]					 COMPLETER
+	Chart[1]		S1566 IP-> ADV * PP HV NP . [0,1]					 COMPLETER
+	Chart[1]		S1570 IP-> ADV * NP VB IP . [0,1]					 COMPLETER
+	Chart[1]		S1571 IP-> ADV * NP SR [0,1]						 COMPLETER
+	Chart[1]		S1573 IP-> ADV * NP NP VB [0,1]						 COMPLETER
+	Chart[1]		S1574 IP-> ADV * VB IP . [0,1]						 COMPLETER
+	Chart[1]		S1572 IP-> ADV * NP VB , CP . [0,1]					 COMPLETER
+	Chart[1]		S1575 IP-> ADV * SR ADV VB [0,1]					 COMPLETER
+	Chart[1]		S1569 IP-> ADV * VB NP [0,1]						 COMPLETER
+	Chart[1]		S1578 IP-> ADV * SR ADJP , CP [0,1]					 COMPLETER
+	Chart[1]		S1579 IP-> ADV * NP [0,1]						 COMPLETER
+	Chart[1]		S1580 IP-> ADV * NEG SR NP CP , [0,1]					 COMPLETER
+	Chart[1]		S1581 IP-> ADV * NEG VB IP , [0,1]					 COMPLETER
+	Chart[1]		S1582 IP-> ADV * FP NP VB IP , CP . [0,1]					 COMPLETER
+	Chart[1]		S1577 IP-> ADV * SR ADJP [0,1]						 COMPLETER
+	Chart[1]		S1583 IP-> ADV * CP , ADV NP NP VB PP . [0,1]					 COMPLETER
+	Chart[1]		S1564 IP-> ADV * NP NEG SR [0,1]					 COMPLETER
+	Chart[1]		S1584 IP-> ADV * SR NP NP , CP . [0,1]					 COMPLETER
+	Chart[1]		S1586 IP-> ADV * FP VB . [0,1]						 COMPLETER
+	Chart[1]		S1587 IP-> ADV * SR [0,1]						 COMPLETER
+	Chart[1]		S1588 IP-> ADV * NP VB NP . [0,1]					 COMPLETER
+	Chart[1]		S1590 IP-> ADV * SR . [0,1]						 COMPLETER
+	Chart[1]		S1589 IP-> ADV * NP VB IP [0,1]						 COMPLETER
+	Chart[1]		S1585 IP-> ADV * NP VB IP , [0,1]					 COMPLETER
+	Chart[1]		S1592 IP-> ADV * NP VB ADV , [0,1]					 COMPLETER
+	Chart[1]		S1576 IP-> ADV * NEG HV NP , CP [0,1]					 COMPLETER
+	Chart[1]		S1593 IP-> ADV * VB PP , [0,1]						 COMPLETER
+	Chart[1]		S1568 PP-> ADV * P IP , PP [0,1]					 COMPLETER
+	Chart[1]		S1594 IP-> ADV * VB NP IP , [0,1]					 COMPLETER
+	Chart[1]		S1595 IP-> ADV * NP VB , CP [0,1]					 COMPLETER
+	Chart[1]		S1597 IP-> ADV * VB IP CP [0,1]						 COMPLETER
+	Chart[1]		S1595 IP-> ADV * NEG HV NP . [0,1]					 COMPLETER
+	Chart[1]		S1591 IP-> ADV * NEG TR [0,1]						 COMPLETER
+	Chart[1]		S1600 IP-> ADV * VB CP , [0,1]						 COMPLETER
+	Chart[1]		S1598 IP-> ADV * SR NP , [0,1]						 COMPLETER
+	Chart[1]		S1599 IP-> ADV * ADV VB NP , [0,1]					 COMPLETER
+	Chart[1]		S1603 IP-> ADV * NEG VB [0,1]						 COMPLETER
+	Chart[1]		S1602 IP-> ADV * NP NP VB PP . [0,1]					 COMPLETER
+	Chart[1]		S1604 IP-> ADV * SR NP . [0,1]						 COMPLETER
+	Chart[1]		S1605 IP-> ADV * NP NEG VB PP [0,1]					 COMPLETER
+	Chart[1]		S1606 IP-> ADV * VB ADJP [0,1]						 COMPLETER
+	Chart[1]		S1607 IP-> ADV * VB [0,1]						 COMPLETER
+	Chart[1]		S1608 IP-> ADV * VB . [0,1]						 COMPLETER
+	Chart[1]		S1609 IP-> ADV * NP SR NP . [0,1]					 COMPLETER
+	Chart[1]		S1596 PP-> ADV * P NP [0,1]						 COMPLETER
+	Chart[1]		S1601 IP-> ADV * NP VB , [0,1]						 COMPLETER
+	Chart[1]		S1612 IP-> ADV * NP VB PP . [0,1]					 COMPLETER
+	Chart[1]		S1614 IP-> ADV * ADV VB IP [0,1]					 COMPLETER
+	Chart[1]		S1613 PP-> ADV * P+D NP , CP [0,1]					 COMPLETER
+	Chart[1]		S1615 IP-> ADV * VB NP PP , [0,1]					 COMPLETER
+	Chart[1]		S1611 IP-> ADV * VB PP NP [0,1]						 COMPLETER
+	Chart[1]		S1616 PP-> ADV * P NP , PP [0,1]					 COMPLETER
+	Chart[1]		S1618 IP-> ADV * NP VB NP . IP [0,1]					 COMPLETER
+	Chart[1]		S1619 PP-> ADV * P NP , CP [0,1]					 COMPLETER
+	Chart[1]		S1620 IP-> ADV * FP VB IP [0,1]						 COMPLETER
+	Chart[1]		S1621 PP-> ADV * P IP , CP [0,1]					 COMPLETER
+	Chart[1]		S1622 IP-> ADV * VB PP [0,1]						 COMPLETER
+	Chart[1]		S1623 PP-> ADV * PP [0,1]						 COMPLETER
+	Chart[1]		S1617 IP-> ADV * VB NP PP . [0,1]					 COMPLETER
+	Chart[1]		S1624 IP-> ADV * VB IP [0,1]						 COMPLETER
+	Chart[1]		S1610 IP-> ADV * , CP [0,1]						 COMPLETER
+	Chart[1]		S1625 PP-> ADV * FP P NP [0,1]						 COMPLETER
+	Chart[1]		S1628 PP-> ADV * P IP [0,1]						 COMPLETER
+	Chart[1]		S1626 IP-> ADV * VB NP PP [0,1]						 COMPLETER
+	Chart[1]		S1630 PP-> ADV * P+PRO [0,1]						 COMPLETER
+	Chart[1]		S1631 IP-> ADV * NP SR ADJP , [0,1]					 COMPLETER
+	Chart[1]		S1627 IP-> ADV * SR ADJP PP [0,1]					 COMPLETER
+	Chart[1]		S1629 IP-> ADV * NP SR ADJP NP , [0,1]					 COMPLETER
+	Chart[1]		S1632 PP-> ADV * P+D NP [0,1]						 COMPLETER
+	Chart[1]		S1633 IP-> ADV * HV IP [0,1]						 COMPLETER
+	Chart[1]		S1635 PP-> ADV * P+D PRO$ N , CP . [0,1]					 COMPLETER
+	Chart[1]		S1637 IP-> ADV * NP VB PP NP [0,1]					 COMPLETER
+	Chart[1]		S1638 PP-> ADV * P+WADV NP [0,1]					 COMPLETER
+	Chart[1]		S1636 IP-> ADV * VB+CL IP [0,1]						 COMPLETER
+	Chart[1]		S1639 IP-> ADV * NP VB , PP [0,1]					 COMPLETER
+	Chart[1]		S1640 PP-> ADV * PP , PP [0,1]						 COMPLETER
+	Chart[1]		S1634 IP-> ADV * HV PP [0,1]						 COMPLETER
+	Chart[1]		S1642 IP-> ADV * NP VB NP [0,1]						 COMPLETER
+	Chart[1]		S1643 PP-> ADV * P+D NP , PP [0,1]					 COMPLETER
+	Chart[1]		S1644 IP-> ADV * SR ADJP , [0,1]					 COMPLETER
+	Chart[1]		S1645 IP-> ADV * NEG VB IP . [0,1]					 COMPLETER
+	Chart[1]		S1646 IP-> ADV * VB , CP [0,1]						 COMPLETER
+	Chart[1]		S1647 IP-> ADV * NP VB Q PP [0,1]					 COMPLETER
+	Chart[1]		S1648 IP-> ADV * NP NP VB IP [0,1]					 COMPLETER
+	Chart[1]		S1649 IP-> ADV * VB IP NP . [0,1]					 COMPLETER
+	Chart[1]		S1641 IP-> ADV * HV NP . [0,1]						 COMPLETER
+	Chart[1]		S1652 NP-> ADV * N CP [0,1]						 COMPLETER
+	Chart[1]		S1653 IP-> ADV * HV PP NP [0,1]						 COMPLETER
+	Chart[1]		S1654 NP-> ADV * D ADJ N [0,1]						 COMPLETER
+	Chart[1]		S1655 IP-> ADV * NP VB [0,1]						 COMPLETER
+	Chart[1]		S1656 NP-> ADV * D N ADJ [0,1]						 COMPLETER
+	Chart[1]		S1658 NP-> ADV * D N PP , CP [0,1]					 COMPLETER
+	Chart[1]		S1651 IP-> ADV * FP VB NP . [0,1]					 COMPLETER
+	Chart[1]		S1659 NP-> ADV * D N PP , PP [0,1]					 COMPLETER
+	Chart[1]		S1660 IP-> ADV * ADV VB NP . [0,1]					 COMPLETER
+	Chart[1]		S1661 NP-> ADV * D N [0,1]						 COMPLETER
+	Chart[1]		S1662 IP-> ADV * PP [0,1]						 COMPLETER
+	Chart[1]		S1663 IP-> ADV * VB , IP . [0,1]					 COMPLETER
+	Chart[1]		S1664 IP-> ADV * VB NP . [0,1]						 COMPLETER
+	Chart[1]		S1665 IP-> ADV * ADV VB PP . [0,1]					 COMPLETER
+	Chart[1]		S1667 NP-> ADV * ADV [0,1]						 COMPLETER
+	Chart[1]		S1666 IP-> ADV * VB PP . [0,1]						 COMPLETER
+	Chart[1]		S1668 NP-> ADV * D [0,1]						 COMPLETER
+	Chart[1]		S1670 NP-> ADV * PRO$ [0,1]						 COMPLETER
+	Chart[1]		S1650 IP-> ADV * FP VB PP [0,1]						 COMPLETER
+	Chart[1]		S1671 NP-> ADV * VB [0,1]						 COMPLETER
+	Chart[1]		S1672 IP-> ADV * NP VB CP [0,1]						 COMPLETER
+	Chart[1]		S1673 NP-> ADV * D CP [0,1]						 COMPLETER
+	Chart[1]		S1674 IP-> ADV * NP HV PP . [0,1]					 COMPLETER
+	Chart[1]		S1669 IP-> ADV * PP , VB NP . [0,1]					 COMPLETER
+	Chart[1]		S1675 NP-> ADV * Q CP [0,1]						 COMPLETER
+	Chart[1]		S1676 IP-> ADV * VB CP . [0,1]						 COMPLETER
+	Chart[1]		S1677 NP-> ADV * N PP [0,1]						 COMPLETER
+	Chart[1]		S1678 IP-> ADV * NP TR PP NP . PP . [0,1]					 COMPLETER
+	Chart[1]		S1679 NP-> ADV * N , CP [0,1]						 COMPLETER
+	Chart[1]		S1657 IP-> ADV * VB IP , [0,1]						 COMPLETER
+	Chart[1]		S1680 NP-> ADV * PRO [0,1]						 COMPLETER
+	Chart[1]		S1681 IP-> ADV * NEG SR NP . [0,1]					 COMPLETER
+	Chart[1]		S1682 NP-> ADV * N [0,1]						 COMPLETER
+	Chart[1]		S1683 IP-> ADV * NEG VB PP . [0,1]					 COMPLETER
+	Chart[1]		S1684 NP-> ADV * D ADJ [0,1]						 COMPLETER
+	Chart[1]		S1685 IP-> ADV * NEG VB PP , [0,1]					 COMPLETER
+	Chart[1]		S1686 NP-> ADV * Q D ADV N , CP [0,1]					 COMPLETER
+	Chart[1]		S1687 IP-> ADV * ADV NEG SR NP NP , [0,1]					 COMPLETER
+	Chart[1]		S1688 NP-> ADV * N , [0,1]						 COMPLETER
+	Chart[1]		S1689 IP-> ADV * VB , [0,1]						 COMPLETER
+	Chart[1]		S1690 NP-> ADV * ADV N [0,1]						 COMPLETER
+	Chart[1]		S1691 IP-> ADV * VB NP , [0,1]						 COMPLETER
+	Chart[1]		S1692 NP-> ADV * , CONJ ADV [0,1]					 COMPLETER
+	Chart[1]		S1693 IP-> ADV * TR NP . [0,1]						 COMPLETER
+	Chart[1]		S1694 NP-> ADV * D N ADJP [0,1]						 COMPLETER
+	Chart[1]		S1695 IP-> ADV * NP VB PP [0,1]						 COMPLETER
+	Chart[1]		S1696 NP-> ADV * D N PP [0,1]						 COMPLETER
+	Chart[1]		S1697 IP-> ADV * NP VB CP . [0,1]					 COMPLETER
+	Chart[1]		S1698 NP-> ADV * Q [0,1]						 COMPLETER
+	Chart[1]		S1699 IP-> ADV * TR NP [0,1]						 COMPLETER
+	Chart[1]		S1700 NP-> ADV * D N , CONJP [0,1]					 COMPLETER
+	Chart[1]		S1701 IP-> ADV * VB PP , CP [0,1]					 COMPLETER
+	Chart[1]		S1702 NP-> ADV * D ADJ N PP [0,1]					 COMPLETER
+	Chart[1]		S1703 NP-> ADV * C [0,1]						 COMPLETER
+	Chart[1]		S1704 NP-> ADV * PP [0,1]						 COMPLETER
+	Chart[1]		S1705 NP-> ADV * D PRO$ N [0,1]						 COMPLETER
+	Chart[1]		S1706 NP-> ADV * ADJ N [0,1]						 COMPLETER
+	Chart[1]		S1707 CP-> ADV * C IP [0,1]						 COMPLETER
+	Chart[1]		S1708 CP-> ADV * ADV C IP [0,1]						 COMPLETER
+	Chart[1]		S1709 CP-> ADV * CONJS IP [0,1]						 COMPLETER
+	Chart[1]		S1710 CP-> ADV * , IP , WNP IP . [0,1]					 COMPLETER
+	Chart[1]		S1711 CP-> ADV * CONJS IP , [0,1]					 COMPLETER
+	Chart[1]		S1712 ADJP-> ADV * ADJ [0,1]						 COMPLETER
+	Chart[1]		S1713 ADJP-> ADV * ADV ADJ PP [0,1]					 COMPLETER
+	Chart[1]		S1714 ADJP-> ADV * ADV VB [0,1]						 COMPLETER
+	Chart[1]		S1715 ADJP-> ADV * ADJ , [0,1]						 COMPLETER
+	Chart[1]		S1716 ADJP-> ADV * ADJ CP [0,1]						 COMPLETER
+	Chart[1]		S1717 ADJP-> ADV * ADJ , CONJP [0,1]					 COMPLETER
+	Chart[1]		S1718 ADJP-> ADV * ADJ , CP [0,1]					 COMPLETER
+	Chart[1]		S1719 ADJP-> ADV * ADJ PP [0,1]						 COMPLETER
+	Chart[1]		S1720 ADJP-> ADV * CP [0,1]						 COMPLETER
+	Chart[1]		S1721 ADJP-> ADV * VB [0,1]						 COMPLETER
+	Chart[1]		S1722 ADJP-> ADV * Q ADJ [0,1]						 COMPLETER
+	Chart[1]		S1723 ADJP-> ADV * PP [0,1]						 COMPLETER
+	Chart[1]		S1724 ADJP-> ADV * ADJ PP , PP [0,1]					 COMPLETER
+	Chart[1]		S1725 ADJP-> ADV * VB PP [0,1]						 COMPLETER
+	Chart[1]		S1726 ADVP-> ADV * ADV PP [0,1]						 COMPLETER
+	Chart[1]		S1727 ADVP-> ADV * PP [0,1]						 COMPLETER
+	Chart[1]		S1728 ADVP-> ADV * , CONJ ADV [0,1]					 COMPLETER
+	Chart[1]		S1729 ADVP-> ADV * ADV [0,1]						 COMPLETER
+	Chart[1]		S1730 ADVP-> ADV * , PP [0,1]						 COMPLETER
+	Chart[1]		S1731 PP-> * ADV P IP , PP [1,1]					 PREDICTOR
+	Chart[1]		S1732 PP-> * ADV P NP [1,1]						 PREDICTOR
+	Chart[1]		S1733 PP-> * ADV P NP , PP [1,1]					 PREDICTOR
+	Chart[1]		S1734 PP-> * P ADV [1,1]						 PREDICTOR
+	Chart[1]		S1735 PP-> * P+D N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1736 PP-> * DEM SR , P IP [1,1]					 PREDICTOR
+	Chart[1]		S1738 PP-> * ADV P+D NP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1737 PP-> * ADV P NP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1739 PP-> * DEM SR P+D NP [1,1]					 PREDICTOR
+	Chart[1]		S1740 PP-> * ADV P IP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1741 PP-> * ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1742 PP-> * ADV FP P NP [1,1]						 PREDICTOR
+	Chart[1]		S1743 PP-> * P ADV N PP [1,1]						 PREDICTOR
+	Chart[1]		S1744 PP-> * P D N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1745 PP-> * ADV P+D PRO$ N , CP . [1,1]					 PREDICTOR
+	Chart[1]		S1746 PP-> * ADV P IP [1,1]						 PREDICTOR
+	Chart[1]		S1747 PP-> * ADV P+PRO [1,1]						 PREDICTOR
+	Chart[1]		S1748 PP-> * ADV P+D NP [1,1]						 PREDICTOR
+	Chart[1]		S1749 PP-> * P+D N PP [1,1]						 PREDICTOR
+	Chart[1]		S1750 PP-> * ADV P+WADV NP [1,1]					 PREDICTOR
+	Chart[1]		S1751 PP-> * DEM SR , P+D NP [1,1]					 PREDICTOR
+	Chart[1]		S1752 PP-> * ADV PP , PP [1,1]						 PREDICTOR
+	Chart[1]		S1753 PP-> * ADV P+D NP , PP [1,1]					 PREDICTOR
+	Chart[1]		S1754 PP-> * P N [1,1]							 PREDICTOR
+	Chart[1]		S1755 PP-> * P+D N [1,1]						 PREDICTOR
+	Chart[1]		S1756 NP-> * Q N ADV [1,1]						 PREDICTOR
+	Chart[1]		S1757 NP-> * ADV N CP [1,1]						 PREDICTOR
+	Chart[1]		S1759 NP-> * D N , CONJP PP [1,1]					 PREDICTOR
+	Chart[1]		S1758 NP-> * D N PP [1,1]						 PREDICTOR
+	Chart[1]		S1760 NP-> * N , N , N [1,1]						 PREDICTOR
+	Chart[1]		S1761 NP-> * D N PP PP [1,1]						 PREDICTOR
+	Chart[1]		S1762 NP-> * D ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1763 NP-> * N ADJ CP [1,1]						 PREDICTOR
+	Chart[1]		S1764 NP-> * ADV D ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1765 NP-> * D N Q [1,1]						 PREDICTOR
+	Chart[1]		S1766 NP-> * D N ADJ PP . NP [1,1]					 PREDICTOR
+	Chart[1]		S1767 NP-> * ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1768 NP-> * ADVP N [1,1]						 PREDICTOR
+	Chart[1]		S1769 NP-> * FP D N CP [1,1]						 PREDICTOR
+	Chart[1]		S1770 NP-> * D N [1,1]							 PREDICTOR
+	Chart[1]		S1771 NP-> * D PRO$ ADJ N , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S1772 NP-> * D N , CP , [1,1]						 PREDICTOR
+	Chart[1]		S1773 NP-> * ADJ N PP [1,1]						 PREDICTOR
+	Chart[1]		S1774 NP-> * ADJ N CP [1,1]						 PREDICTOR
+	Chart[1]		S1775 NP-> * N ADJ PP [1,1]						 PREDICTOR
+	Chart[1]		S1776 NP-> * ADJ N , NP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1777 NP-> * DEM SR , D N ADJP [1,1]					 PREDICTOR
+	Chart[1]		S1778 NP-> * D ADJ N , CP , [1,1]					 PREDICTOR
+	Chart[1]		S1779 NP-> * D N PP , CP [1,1]						 PREDICTOR
+	Chart[1]		S1780 NP-> * VB , CONJP [1,1]						 PREDICTOR
+	Chart[1]		S1781 NP-> * N PP [1,1]							 PREDICTOR
+	Chart[1]		S1782 NP-> * ADV D N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1783 NP-> * NEG FP D N PP [1,1]					 PREDICTOR
+	Chart[1]		S1784 NP-> * Q N [1,1]							 PREDICTOR
+	Chart[1]		S1785 NP-> * D N ADJP , NP . CP [1,1]					 PREDICTOR
+	Chart[1]		S1786 NP-> * D N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1787 NP-> * N PP CP [1,1]						 PREDICTOR
+	Chart[1]		S1788 NP-> * D ADV , CP [1,1]						 PREDICTOR
+	Chart[1]		S1789 NP-> * D N ADJ , CP [1,1]						 PREDICTOR
+	Chart[1]		S1790 NP-> * D N PP ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1791 NP-> * PP N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1792 NP-> * D N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1793 NP-> * PRO$ N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1794 NP-> * D N PP , NP [1,1]						 PREDICTOR
+	Chart[1]		S1795 NP-> * Q N ADJ , CP [1,1]						 PREDICTOR
+	Chart[1]		S1796 NP-> * ADV D N PP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1797 NP-> * D N ADJ ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1798 NP-> * ADV D N PP , PP [1,1]					 PREDICTOR
+	Chart[1]		S1799 NP-> * Q D PRO$ N [1,1]						 PREDICTOR
+	Chart[1]		S1800 NP-> * Q N CP [1,1]						 PREDICTOR
+	Chart[1]		S1801 NP-> * CONJ D N [1,1]						 PREDICTOR
+	Chart[1]		S1802 NP-> * PP D N [1,1]						 PREDICTOR
+	Chart[1]		S1803 NP-> * N , CONJP PP [1,1]						 PREDICTOR
+	Chart[1]		S1804 NP-> * N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1805 NP-> * NUM N PP [1,1]						 PREDICTOR
+	Chart[1]		S1806 NP-> * N FP [1,1]							 PREDICTOR
+	Chart[1]		S1807 NP-> * N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1808 NP-> * D PRO$ N Q [1,1]						 PREDICTOR
+	Chart[1]		S1809 NP-> * D ADJ N PP [1,1]						 PREDICTOR
+	Chart[1]		S1810 NP-> * SENAO D N PP [1,1]						 PREDICTOR
+	Chart[1]		S1811 NP-> * N CONJ N [1,1]						 PREDICTOR
+	Chart[1]		S1812 NP-> * ADJ ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1813 NP-> * N , CONJ N [1,1]						 PREDICTOR
+	Chart[1]		S1814 NP-> * D N ADJ Q [1,1]						 PREDICTOR
+	Chart[1]		S1815 NP-> * D ADV ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1816 NP-> * PRO$ N [1,1]						 PREDICTOR
+	Chart[1]		S1817 NP-> * D N , PP [1,1]						 PREDICTOR
+	Chart[1]		S1818 NP-> * Q D N CP [1,1]						 PREDICTOR
+	Chart[1]		S1819 NP-> * D N ADJ PP [1,1]						 PREDICTOR
+	Chart[1]		S1820 NP-> * D N , CONJP PP CP [1,1]					 PREDICTOR
+	Chart[1]		S1821 NP-> * ADJP N [1,1]						 PREDICTOR
+	Chart[1]		S1822 NP-> * FP D PRO$ N [1,1]						 PREDICTOR
+	Chart[1]		S1823 NP-> * NEG FP D N [1,1]						 PREDICTOR
+	Chart[1]		S1824 NP-> * ADJ N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1825 NP-> * Q D N , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S1827 NP-> * D N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1826 NP-> * ADV D N [1,1]						 PREDICTOR
+	Chart[1]		S1828 NP-> * Q N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1829 NP-> * D ADV ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1830 NP-> * D N , CONJP [1,1]						 PREDICTOR
+	Chart[1]		S1831 NP-> * N CP ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1832 NP-> * Q N PP [1,1]						 PREDICTOR
+	Chart[1]		S1833 NP-> * SENAO N [1,1]						 PREDICTOR
+	Chart[1]		S1834 NP-> * ADV PRO$ [1,1]						 PREDICTOR
+	Chart[1]		S1835 NP-> * D ADV [1,1]						 PREDICTOR
+	Chart[1]		S1836 NP-> * ADV ADV [1,1]						 PREDICTOR
+	Chart[1]		S1837 NP-> * ADJ ADV N [1,1]						 PREDICTOR
+	Chart[1]		S1838 NP-> * D N PP Q [1,1]						 PREDICTOR
+	Chart[1]		S1839 NP-> * NUM N [1,1]						 PREDICTOR
+	Chart[1]		S1840 NP-> * NUM N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1841 NP-> * ADV VB [1,1]						 PREDICTOR
+	Chart[1]		S1842 NP-> * ADV D CP [1,1]						 PREDICTOR
+	Chart[1]		S1843 NP-> * ADV D [1,1]						 PREDICTOR
+	Chart[1]		S1844 NP-> * D N , NP [1,1]						 PREDICTOR
+	Chart[1]		S1845 NP-> * N , VB , [1,1]						 PREDICTOR
+	Chart[1]		S1846 NP-> * NP . D N [1,1]						 PREDICTOR
+	Chart[1]		S1847 NP-> * D PRO$ N [1,1]						 PREDICTOR
+	Chart[1]		S1848 NP-> * D PRO$ ADJP N [1,1]					 PREDICTOR
+	Chart[1]		S1849 NP-> * D ADJ N CP [1,1]						 PREDICTOR
+	Chart[1]		S1850 NP-> * D VB N PP [1,1]						 PREDICTOR
+	Chart[1]		S1851 NP-> * Q D N [1,1]						 PREDICTOR
+	Chart[1]		S1852 NP-> * D ADJ N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1853 NP-> * D N ADJP PP [1,1]						 PREDICTOR
+	Chart[1]		S1854 NP-> * Q D N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1855 NP-> * D N , CP PP [1,1]						 PREDICTOR
+	Chart[1]		S1856 NP-> * N CP [1,1]							 PREDICTOR
+	Chart[1]		S1857 NP-> * N , N CONJ N [1,1]						 PREDICTOR
+	Chart[1]		S1858 NP-> * ADV Q CP [1,1]						 PREDICTOR
+	Chart[1]		S1859 NP-> * D N VB [1,1]						 PREDICTOR
+	Chart[1]		S1860 NP-> * D ADJ N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1861 NP-> * ADV N PP [1,1]						 PREDICTOR
+	Chart[1]		S1862 NP-> * Q N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1863 NP-> * NP , CONJP N [1,1]						 PREDICTOR
+	Chart[1]		S1864 NP-> * Q D N , CONJP PP [1,1]					 PREDICTOR
+	Chart[1]		S1866 NP-> * PRO$ N PP [1,1]						 PREDICTOR
+	Chart[1]		S1865 NP-> * ADV PRO [1,1]						 PREDICTOR
+	Chart[1]		S1867 NP-> * D ADJ N , [1,1]						 PREDICTOR
+	Chart[1]		S1868 NP-> * ADV N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1869 NP-> * N PRO$ [1,1]						 PREDICTOR
+	Chart[1]		S1870 NP-> * VB N [1,1]							 PREDICTOR
+	Chart[1]		S1871 NP-> * D N , [1,1]						 PREDICTOR
+	Chart[1]		S1872 NP-> * Q D ADV [1,1]						 PREDICTOR
+	Chart[1]		S1873 NP-> * D N PP CP [1,1]						 PREDICTOR
+	Chart[1]		S1874 NP-> * D ADJ N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1876 NP-> * ADV N [1,1]						 PREDICTOR
+	Chart[1]		S1877 NP-> * D ADV N [1,1]						 PREDICTOR
+	Chart[1]		S1878 NP-> * D N CP [1,1]						 PREDICTOR
+	Chart[1]		S1875 NP-> * N PP , CP [1,1]						 PREDICTOR
+	Chart[1]		S1879 NP-> * FP D N PP [1,1]						 PREDICTOR
+	Chart[1]		S1880 NP-> * D VB N [1,1]						 PREDICTOR
+	Chart[1]		S1881 NP-> * ADV D ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1882 NP-> * D N ADV CP [1,1]						 PREDICTOR
+	Chart[1]		S1883 NP-> * D ADJP N , CP [1,1]					 PREDICTOR
+	Chart[1]		S1884 NP-> * Q D PRO$ N , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S1885 NP-> * D ADJ , CONJP N [1,1]					 PREDICTOR
+	Chart[1]		S1886 NP-> * ADV N , [1,1]						 PREDICTOR
+	Chart[1]		S1887 NP-> * D ADJ ADJ N PP [1,1]					 PREDICTOR
+	Chart[1]		S1888 NP-> * D ADV N PP [1,1]						 PREDICTOR
+	Chart[1]		S1889 NP-> * ADV ADV N [1,1]						 PREDICTOR
+	Chart[1]		S1890 NP-> * N , PP [1,1]						 PREDICTOR
+	Chart[1]		S1891 NP-> * D PRO$ N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1893 NP-> * D VB [1,1]							 PREDICTOR
+	Chart[1]		S1892 NP-> * N NPR [1,1]						 PREDICTOR
+	Chart[1]		S1895 NP-> * ADV Q D ADV N , CP [1,1]					 PREDICTOR
+	Chart[1]		S1894 NP-> * N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1896 NP-> * OUTRO N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1898 NP-> * D N FP [1,1]						 PREDICTOR
+	Chart[1]		S1897 NP-> * D PRO$ N , CONJP ADJ [1,1]					 PREDICTOR
+	Chart[1]		S1899 NP-> * VB N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1901 NP-> * N VB [1,1]							 PREDICTOR
+	Chart[1]		S1902 NP-> * ADJ ADJ N PP . NP [1,1]					 PREDICTOR
+	Chart[1]		S1903 NP-> * ADV , CONJ ADV [1,1]					 PREDICTOR
+	Chart[1]		S1904 NP-> * D PRO$ ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1905 NP-> * ADJ N , ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1900 NP-> * N N [1,1]							 PREDICTOR
+	Chart[1]		S1906 NP-> * ADJ N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1907 NP-> * D ADJ N Q [1,1]						 PREDICTOR
+	Chart[1]		S1909 NP-> * ADV D N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1910 NP-> * OUTRO N [1,1]						 PREDICTOR
+	Chart[1]		S1908 NP-> * D ADJ N PP CP [1,1]					 PREDICTOR
+	Chart[1]		S1911 NP-> * ADJP N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1912 NP-> * N . NP [1,1]						 PREDICTOR
+	Chart[1]		S1913 NP-> * CONJ ADJP D N [1,1]					 PREDICTOR
+	Chart[1]		S1914 NP-> * ADV D N PP [1,1]						 PREDICTOR
+	Chart[1]		S1915 NP-> * SENAO D ADJ N [1,1]					 PREDICTOR
+	Chart[1]		S1916 NP-> * D Q N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1917 NP-> * ADV Q [1,1]						 PREDICTOR
+	Chart[1]		S1918 NP-> * D ADJ N PP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1919 NP-> * D N CP , [1,1]						 PREDICTOR
+	Chart[1]		S1920 NP-> * D N ADJ CP [1,1]						 PREDICTOR
+	Chart[1]		S1921 NP-> * N , CP , CP . CONJP [1,1]					 PREDICTOR
+	Chart[1]		S1922 NP-> * D ADJ N CP , [1,1]						 PREDICTOR
+	Chart[1]		S1923 NP-> * N ADJ , [1,1]						 PREDICTOR
+	Chart[1]		S1924 NP-> * ADJ Q N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1925 NP-> * ADV D N , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S1926 NP-> * N CP , [1,1]						 PREDICTOR
+	Chart[1]		S1927 NP-> * D ADJ N , CP , Q [1,1]					 PREDICTOR
+	Chart[1]		S1928 NP-> * N ADJP CP [1,1]						 PREDICTOR
+	Chart[1]		S1929 NP-> * PRO$ ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1930 NP-> * D ADJ N , CP . NP [1,1]					 PREDICTOR
+	Chart[1]		S1931 NP-> * D N , CONJP CP [1,1]					 PREDICTOR
+	Chart[1]		S1932 NP-> * D N , CONJP ADJ [1,1]					 PREDICTOR
+	Chart[1]		S1933 NP-> * D ADJP N [1,1]						 PREDICTOR
+	Chart[1]		S1934 NP-> * D PRO$ N ADJP [1,1]					 PREDICTOR
+	Chart[1]		S1935 NP-> * ADV D ADJ N PP [1,1]					 PREDICTOR
+	Chart[1]		S1936 NP-> * N PP . NP [1,1]						 PREDICTOR
+	Chart[1]		S1937 NP-> * NUM N ADJ [1,1]						 PREDICTOR
+	Chart[1]		S1938 NP-> * NP CONJP N [1,1]						 PREDICTOR
+	Chart[1]		S1939 NP-> * D ADJ N , PP [1,1]						 PREDICTOR
+	Chart[1]		S1940 NP-> * ADV C [1,1]						 PREDICTOR
+	Chart[1]		S1941 NP-> * ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1942 NP-> * PRO$ N , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S1943 NP-> * NEG D PRO$ N [1,1]						 PREDICTOR
+	Chart[1]		S1944 NP-> * D ADV CP [1,1]						 PREDICTOR
+	Chart[1]		S1945 NP-> * D N ADJP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1946 NP-> * NEG N PP [1,1]						 PREDICTOR
+	Chart[1]		S1947 NP-> * N , CONJP CP [1,1]						 PREDICTOR
+	Chart[1]		S1948 NP-> * P+D N [1,1]						 PREDICTOR
+	Chart[1]		S1949 NP-> * N , CP , CP [1,1]						 PREDICTOR
+	Chart[1]		S1950 NP-> * N ADJP PP [1,1]						 PREDICTOR
+	Chart[1]		S1951 NP-> * Q D N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1952 NP-> * PP D N PP , PP [1,1]					 PREDICTOR
+	Chart[1]		S1953 NP-> * N Q [1,1]							 PREDICTOR
+	Chart[1]		S1954 NP-> * D N , CONJP , CP [1,1]					 PREDICTOR
+	Chart[1]		S1955 NP-> * D N NP [1,1]						 PREDICTOR
+	Chart[1]		S1956 NP-> * N ADJ , CP [1,1]						 PREDICTOR
+	Chart[1]		S1957 NP-> * D ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1958 NP-> * NUM N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1959 NP-> * Q N , CP [1,1]						 PREDICTOR
+	Chart[1]		S1960 NP-> * Q D N PP [1,1]						 PREDICTOR
+	Chart[1]		S1961 NP-> * ADV D PRO$ N [1,1]						 PREDICTOR
+	Chart[1]		S1962 NP-> * ADJ N ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1963 NP-> * D N PP , PP [1,1]						 PREDICTOR
+	Chart[1]		S1964 NP-> * D N , ADJP [1,1]						 PREDICTOR
+	Chart[1]		S1965 NP-> * ADV ADJ N [1,1]						 PREDICTOR
+	Chart[1]		S1966 NP-> * FP D N [1,1]						 PREDICTOR
+	Chart[1]		S1967 NP-> * D N VB , CP [1,1]						 PREDICTOR
+	Chart[2]		S1968 SR-> sejam * [1,2]						 SCANNER
+	Chart[1]		S1969 CP-> * SENAO ADV C IP [1,1]					 PREDICTOR
+	Chart[1]		S1970 CP-> * P ADV C IP [1,1]						 PREDICTOR
+	Chart[1]		S1971 CP-> * ADV C IP [1,1]						 PREDICTOR
+	Chart[1]		S1972 CP-> * VB IP [1,1]						 PREDICTOR
+	Chart[1]		S1973 CP-> * CONJ ADV NP , WNP IP . [1,1]					 PREDICTOR
+	Chart[1]		S1974 CP-> * Q ADV C IP [1,1]						 PREDICTOR
+	Chart[1]		S1975 CP-> * P N C IP [1,1]						 PREDICTOR
+	Chart[1]		S1976 CP-> * CONJS ADV C IP [1,1]					 PREDICTOR
+	Chart[1]		S1977 CP-> * CONJS PP VB NP [1,1]					 PREDICTOR
+	Chart[1]		S1978 CP-> * Q D N C IP [1,1]						 PREDICTOR
+	Chart[1]		S1979 CP-> * P ADV , C IP [1,1]						 PREDICTOR
+	Chart[1]		S1980 CP-> * P ADV ADJ C IP [1,1]					 PREDICTOR
+	Chart[1]		S1981 CP-> * ADV CONJS IP [1,1]						 PREDICTOR
+	Chart[1]		S1982 CP-> * ADV ADV C IP [1,1]						 PREDICTOR
+	Chart[1]		S1983 CP-> * P+D ADJ N C IP [1,1]					 PREDICTOR
+	Chart[1]		S1984 CP-> * CONJS PP ADV NP VB PP [1,1]					 PREDICTOR
+	Chart[1]		S1985 CP-> * P+D N , C IP [1,1]						 PREDICTOR
+	Chart[1]		S1986 CP-> * P N , C IP [1,1]						 PREDICTOR
+	Chart[1]		S1987 CP-> * CONJ ADV WADVP IP . [1,1]					 PREDICTOR
+	Chart[1]		S1988 CP-> * ADV , IP , WNP IP . [1,1]					 PREDICTOR
+	Chart[1]		S1989 CP-> * P+D ADJ N , C IP [1,1]					 PREDICTOR
+	Chart[1]		S1990 CP-> * ADV CONJS IP , [1,1]					 PREDICTOR
+	Chart[1]		S1991 CP-> * P ADV C IP , [1,1]						 PREDICTOR
+	Chart[1]		S1993 ADVP-> * SENAO ADV [1,1]						 PREDICTOR
+	Chart[1]		S1994 ADVP-> * ADV ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1992 ADVP-> * NEG ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1995 ADVP-> * ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1996 ADVP-> * Q ADV [1,1]						 PREDICTOR
+	Chart[1]		S1997 ADVP-> * CONJ ADV [1,1]						 PREDICTOR
+	Chart[1]		S1998 ADVP-> * Q ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S1999 ADVP-> * ADV , CONJ ADV [1,1]					 PREDICTOR
+	Chart[1]		S2000 ADVP-> * ADV ADV [1,1]						 PREDICTOR
+	Chart[1]		S2001 ADVP-> * DEM SR , ADV [1,1]					 PREDICTOR
+	Chart[1]		S2002 ADVP-> * SENAO ADV PP [1,1]					 PREDICTOR
+	Chart[1]		S2003 ADVP-> * ADV , PP [1,1]						 PREDICTOR
+	Chart[1]		S2004 ADVP-> * ADV CP [1,1]						 PREDICTOR
+	Chart[1]		S2005 ADVP-> * FP ADV [1,1]						 PREDICTOR
+	Chart[1]		S2006 ADVP-> * ADV ADV ADV [1,1]					 PREDICTOR
+	Chart[1]		S2007 ADVP-> * PP ADV [1,1]						 PREDICTOR
+	Chart[1]		S2008 ADJP-> * ADV ADJ [1,1]						 PREDICTOR
+	Chart[1]		S2010 ADJP-> * ADJ ADV [1,1]						 PREDICTOR
+	Chart[1]		S2009 ADJP-> * ADJ , N , N [1,1]					 PREDICTOR
+	Chart[1]		S2011 ADJP-> * VB PP [1,1]						 PREDICTOR
+	Chart[1]		S2012 ADJP-> * ADV ADV ADJ PP [1,1]					 PREDICTOR
+	Chart[1]		S2013 ADJP-> * VB , CONJ VB [1,1]					 PREDICTOR
+	Chart[1]		S2014 ADJP-> * VB , CONJP , CONJP , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S2015 ADJP-> * ADV ADV VB [1,1]						 PREDICTOR
+	Chart[1]		S2016 ADJP-> * VB , CONJP [1,1]						 PREDICTOR
+	Chart[1]		S2017 ADJP-> * ADV ADJ , [1,1]						 PREDICTOR
+	Chart[1]		S2018 ADJP-> * VB , VB , VB [1,1]					 PREDICTOR
+	Chart[1]		S2019 ADJP-> * ADV ADJ , CONJP [1,1]					 PREDICTOR
+	Chart[1]		S2020 ADJP-> * VB ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S2022 ADJP-> * PP ADV ADJ PP [1,1]					 PREDICTOR
+	Chart[1]		S2021 ADJP-> * ADV ADJ CP [1,1]						 PREDICTOR
+	Chart[1]		S2023 ADJP-> * VB ADV [1,1]						 PREDICTOR
+	Chart[1]		S2024 ADJP-> * ADV ADJ , CP [1,1]					 PREDICTOR
+	Chart[1]		S2025 ADJP-> * ADV ADJ PP [1,1]						 PREDICTOR
+	Chart[1]		S2026 ADJP-> * ADV CP [1,1]						 PREDICTOR
+	Chart[1]		S2027 ADJP-> * ADVP VB [1,1]						 PREDICTOR
+	Chart[1]		S2028 ADJP-> * ADV VB [1,1]						 PREDICTOR
+	Chart[1]		S2029 ADJP-> * ADV Q ADJ [1,1]						 PREDICTOR
+	Chart[1]		S2030 ADJP-> * ADV PP [1,1]						 PREDICTOR
+	Chart[1]		S2031 ADJP-> * ADV ADJ PP , PP [1,1]					 PREDICTOR
+	Chart[1]		S2032 ADJP-> * ADV VB PP [1,1]						 PREDICTOR
 Reading chart[2]...
+	Chart[2]		S2033 IP-> ADV SR * ADV VB [0,2]					 COMPLETER
+	Chart[2]		S2034 IP-> ADV SR * ADJP , CP [0,2]					 COMPLETER
+	Chart[2]		S2035 IP-> ADV SR * ADJP [0,2]						 COMPLETER
+	Chart[2]		S2036 IP-> ADV SR * NP NP , CP . [0,2]					 COMPLETER
+	Chart[2]		S2037 IP-> ADV SR * [0,2]						 COMPLETER
+	Chart[2]		S2038 IP-> ADV SR * . [0,2]						 COMPLETER
+	Chart[2]		S2039 IP-> ADV SR * NP , [0,2]						 COMPLETER
+	Chart[2]		S2040 IP-> ADV SR * NP . [0,2]						 COMPLETER
+	Chart[2]		S2041 IP-> ADV SR * ADJP PP [0,2]					 COMPLETER
+	Chart[2]		S2042 IP-> ADV SR * ADJP , [0,2]					 COMPLETER
+	Chart[3]		S2043 ADV-> bem * [2,3]							 SCANNER
+	Chart[2]		S2044 ADJP-> * ADV ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2045 ADJP-> * ADJ , N , N [2,2]					 PREDICTOR
+	Chart[2]		S2046 ADJP-> * ADJ ADV [2,2]						 PREDICTOR
+	Chart[2]		S2047 ADJP-> * VB PP [2,2]						 PREDICTOR
+	Chart[2]		S2048 ADJP-> * ADV ADV ADJ PP [2,2]					 PREDICTOR
+	Chart[2]		S2049 ADJP-> * VB , CONJP , CONJP , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2050 ADJP-> * VB , CONJ VB [2,2]					 PREDICTOR
+	Chart[2]		S2051 ADJP-> * VB , CONJP [2,2]						 PREDICTOR
+	Chart[2]		S2053 ADJP-> * ADV ADV VB [2,2]						 PREDICTOR
+	Chart[2]		S2052 ADJP-> * VB , VB , VB [2,2]					 PREDICTOR
+	Chart[2]		S2054 ADJP-> * ADV ADJ , [2,2]						 PREDICTOR
+	Chart[2]		S2055 ADJP-> * ADV ADJ , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2056 ADJP-> * ADV ADJ CP [2,2]						 PREDICTOR
+	Chart[2]		S2057 ADJP-> * PP ADV ADJ PP [2,2]					 PREDICTOR
+	Chart[2]		S2058 ADJP-> * VB ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2059 ADJP-> * ADV ADJ , CP [2,2]					 PREDICTOR
+	Chart[2]		S2060 ADJP-> * VB ADV [2,2]						 PREDICTOR
+	Chart[2]		S2061 ADJP-> * ADV CP [2,2]						 PREDICTOR
+	Chart[2]		S2062 ADJP-> * ADV ADJ PP [2,2]						 PREDICTOR
+	Chart[2]		S2063 ADJP-> * ADVP VB [2,2]						 PREDICTOR
+	Chart[2]		S2064 ADJP-> * ADV VB [2,2]						 PREDICTOR
+	Chart[2]		S2065 ADJP-> * ADV Q ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2066 ADJP-> * ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2067 ADJP-> * ADV ADJ PP , PP [2,2]					 PREDICTOR
+	Chart[2]		S2068 ADJP-> * ADV VB PP [2,2]						 PREDICTOR
+	Chart[2]		S2069 NP-> * D N PP [2,2]						 PREDICTOR
+	Chart[2]		S2071 NP-> * Q N ADV [2,2]						 PREDICTOR
+	Chart[2]		S2070 NP-> * D N , CONJP PP [2,2]					 PREDICTOR
+	Chart[2]		S2072 NP-> * ADV N CP [2,2]						 PREDICTOR
+	Chart[2]		S2073 NP-> * D ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2074 NP-> * D N PP PP [2,2]						 PREDICTOR
+	Chart[2]		S2075 NP-> * N , N , N [2,2]						 PREDICTOR
+	Chart[2]		S2076 NP-> * ADV D ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2077 NP-> * D N Q [2,2]						 PREDICTOR
+	Chart[2]		S2078 NP-> * N ADJ CP [2,2]						 PREDICTOR
+	Chart[2]		S2079 NP-> * D N ADJ PP . NP [2,2]					 PREDICTOR
+	Chart[2]		S2080 NP-> * ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2081 NP-> * ADVP N [2,2]						 PREDICTOR
+	Chart[2]		S2082 NP-> * D PRO$ ADJ N , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2083 NP-> * FP D N CP [2,2]						 PREDICTOR
+	Chart[2]		S2084 NP-> * D N [2,2]							 PREDICTOR
+	Chart[2]		S2085 NP-> * D N , CP , [2,2]						 PREDICTOR
+	Chart[2]		S2086 NP-> * ADJ N , NP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2087 NP-> * ADJ N PP [2,2]						 PREDICTOR
+	Chart[2]		S2088 NP-> * D N PP , CP [2,2]						 PREDICTOR
+	Chart[2]		S2089 NP-> * ADJ N CP [2,2]						 PREDICTOR
+	Chart[2]		S2090 NP-> * N ADJ PP [2,2]						 PREDICTOR
+	Chart[2]		S2091 NP-> * ADV D N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2092 NP-> * DEM SR , D N ADJP [2,2]					 PREDICTOR
+	Chart[2]		S2093 NP-> * D ADJ N , CP , [2,2]					 PREDICTOR
+	Chart[2]		S2094 NP-> * VB , CONJP [2,2]						 PREDICTOR
+	Chart[2]		S2095 NP-> * N PP [2,2]							 PREDICTOR
+	Chart[2]		S2096 NP-> * N PP CP [2,2]						 PREDICTOR
+	Chart[2]		S2097 NP-> * NEG FP D N PP [2,2]					 PREDICTOR
+	Chart[2]		S2098 NP-> * D N PP ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2099 NP-> * Q N [2,2]							 PREDICTOR
+	Chart[2]		S2100 NP-> * D N ADJP , NP . CP [2,2]					 PREDICTOR
+	Chart[2]		S2101 NP-> * PRO$ N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2102 NP-> * D ADV , CP [2,2]						 PREDICTOR
+	Chart[2]		S2103 NP-> * ADV D N PP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2104 NP-> * D N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2105 NP-> * PP N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2106 NP-> * ADV D N PP , PP [2,2]					 PREDICTOR
+	Chart[2]		S2107 NP-> * D N ADJ , CP [2,2]						 PREDICTOR
+	Chart[2]		S2108 NP-> * D N PP , NP [2,2]						 PREDICTOR
+	Chart[2]		S2110 NP-> * D N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2109 NP-> * Q D PRO$ N [2,2]						 PREDICTOR
+	Chart[2]		S2111 NP-> * D N ADJ ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2112 NP-> * Q N ADJ , CP [2,2]						 PREDICTOR
+	Chart[2]		S2113 NP-> * CONJ D N [2,2]						 PREDICTOR
+	Chart[2]		S2114 NP-> * Q N CP [2,2]						 PREDICTOR
+	Chart[2]		S2115 NP-> * N , CONJP PP [2,2]						 PREDICTOR
+	Chart[2]		S2116 NP-> * PP D N [2,2]						 PREDICTOR
+	Chart[2]		S2117 NP-> * N FP [2,2]							 PREDICTOR
+	Chart[2]		S2118 NP-> * NUM N PP [2,2]						 PREDICTOR
+	Chart[2]		S2119 NP-> * N CONJ N [2,2]						 PREDICTOR
+	Chart[2]		S2120 NP-> * D PRO$ N Q [2,2]						 PREDICTOR
+	Chart[2]		S2121 NP-> * D N ADJ Q [2,2]						 PREDICTOR
+	Chart[2]		S2122 NP-> * N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2123 NP-> * SENAO D N PP [2,2]						 PREDICTOR
+	Chart[2]		S2124 NP-> * N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2125 NP-> * ADJ ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2126 NP-> * D N , PP [2,2]						 PREDICTOR
+	Chart[2]		S2127 NP-> * D ADJ N PP [2,2]						 PREDICTOR
+	Chart[2]		S2128 NP-> * D ADV ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2129 NP-> * D N , CONJP PP CP [2,2]					 PREDICTOR
+	Chart[2]		S2130 NP-> * N , CONJ N [2,2]						 PREDICTOR
+	Chart[2]		S2131 NP-> * Q D N CP [2,2]						 PREDICTOR
+	Chart[2]		S2132 NP-> * NEG FP D N [2,2]						 PREDICTOR
+	Chart[2]		S2133 NP-> * PRO$ N [2,2]						 PREDICTOR
+	Chart[2]		S2134 NP-> * FP D PRO$ N [2,2]						 PREDICTOR
+	Chart[2]		S2135 NP-> * ADV D N [2,2]						 PREDICTOR
+	Chart[2]		S2136 NP-> * D N ADJ PP [2,2]						 PREDICTOR
+	Chart[2]		S2137 NP-> * ADJP N [2,2]						 PREDICTOR
+	Chart[2]		S2138 NP-> * D ADV ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2139 NP-> * Q D N , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2140 NP-> * ADJ N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2141 NP-> * SENAO N [2,2]						 PREDICTOR
+	Chart[2]		S2142 NP-> * Q N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2143 NP-> * D N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2144 NP-> * N CP ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2146 NP-> * D N , CONJP [2,2]						 PREDICTOR
+	Chart[2]		S2145 NP-> * ADV ADV [2,2]						 PREDICTOR
+	Chart[2]		S2147 NP-> * ADV PRO$ [2,2]						 PREDICTOR
+	Chart[2]		S2148 NP-> * Q N PP [2,2]						 PREDICTOR
+	Chart[2]		S2149 NP-> * ADJ ADV N [2,2]						 PREDICTOR
+	Chart[2]		S2150 NP-> * NUM N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2151 NP-> * D ADV [2,2]						 PREDICTOR
+	Chart[2]		S2152 NP-> * ADV VB [2,2]						 PREDICTOR
+	Chart[2]		S2153 NP-> * ADV D [2,2]						 PREDICTOR
+	Chart[2]		S2154 NP-> * D N PP Q [2,2]						 PREDICTOR
+	Chart[2]		S2155 NP-> * NP . D N [2,2]						 PREDICTOR
+	Chart[2]		S2156 NP-> * N , VB , [2,2]						 PREDICTOR
+	Chart[2]		S2157 NP-> * D VB N PP [2,2]						 PREDICTOR
+	Chart[2]		S2158 NP-> * NUM N [2,2]						 PREDICTOR
+	Chart[2]		S2159 NP-> * D PRO$ ADJP N [2,2]					 PREDICTOR
+	Chart[2]		S2160 NP-> * Q D N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2161 NP-> * ADV D CP [2,2]						 PREDICTOR
+	Chart[2]		S2162 NP-> * N , N CONJ N [2,2]						 PREDICTOR
+	Chart[2]		S2163 NP-> * D N ADJP PP [2,2]						 PREDICTOR
+	Chart[2]		S2164 NP-> * D N , NP [2,2]						 PREDICTOR
+	Chart[2]		S2165 NP-> * D ADJ N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2166 NP-> * D PRO$ N [2,2]						 PREDICTOR
+	Chart[2]		S2167 NP-> * D N , CP PP [2,2]						 PREDICTOR
+	Chart[2]		S2168 NP-> * D ADJ N CP [2,2]						 PREDICTOR
+	Chart[2]		S2169 NP-> * ADV Q CP [2,2]						 PREDICTOR
+	Chart[2]		S2170 NP-> * ADV PRO [2,2]						 PREDICTOR
+	Chart[2]		S2171 NP-> * Q D N [2,2]						 PREDICTOR
+	Chart[2]		S2172 NP-> * ADV N PP [2,2]						 PREDICTOR
+	Chart[2]		S2173 NP-> * D ADJ N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2174 NP-> * VB N [2,2]							 PREDICTOR
+	Chart[2]		S2175 NP-> * NP , CONJP N [2,2]						 PREDICTOR
+	Chart[2]		S2176 NP-> * PRO$ N PP [2,2]						 PREDICTOR
+	Chart[2]		S2177 NP-> * ADV N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2178 NP-> * N CP [2,2]							 PREDICTOR
+	Chart[2]		S2179 NP-> * Q D ADV [2,2]						 PREDICTOR
+	Chart[2]		S2180 NP-> * D N VB [2,2]						 PREDICTOR
+	Chart[2]		S2181 NP-> * D N , [2,2]						 PREDICTOR
+	Chart[2]		S2182 NP-> * N PP , CP [2,2]						 PREDICTOR
+	Chart[2]		S2183 NP-> * Q N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2184 NP-> * D ADJ N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2185 NP-> * ADV D ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2186 NP-> * D ADV N [2,2]						 PREDICTOR
+	Chart[2]		S2187 NP-> * Q D N , CONJP PP [2,2]					 PREDICTOR
+	Chart[2]		S2188 NP-> * Q D PRO$ N , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2189 NP-> * FP D N PP [2,2]						 PREDICTOR
+	Chart[2]		S2190 NP-> * D ADJ N , [2,2]						 PREDICTOR
+	Chart[2]		S2192 NP-> * ADV N , [2,2]						 PREDICTOR
+	Chart[2]		S2191 NP-> * D N ADV CP [2,2]						 PREDICTOR
+	Chart[2]		S2193 NP-> * N PRO$ [2,2]						 PREDICTOR
+	Chart[2]		S2194 NP-> * ADV ADV N [2,2]						 PREDICTOR
+	Chart[2]		S2195 NP-> * D ADJ , CONJP N [2,2]					 PREDICTOR
+	Chart[2]		S2196 NP-> * D N PP CP [2,2]						 PREDICTOR
+	Chart[2]		S2197 NP-> * N NPR [2,2]						 PREDICTOR
+	Chart[2]		S2198 NP-> * ADV N [2,2]						 PREDICTOR
+	Chart[2]		S2199 NP-> * OUTRO N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2201 NP-> * D N CP [2,2]						 PREDICTOR
+	Chart[2]		S2200 NP-> * D ADV N PP [2,2]						 PREDICTOR
+	Chart[2]		S2202 NP-> * VB N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2203 NP-> * D VB N [2,2]						 PREDICTOR
+	Chart[2]		S2204 NP-> * N , PP [2,2]						 PREDICTOR
+	Chart[2]		S2205 NP-> * ADV , CONJ ADV [2,2]					 PREDICTOR
+	Chart[2]		S2206 NP-> * D ADJP N , CP [2,2]					 PREDICTOR
+	Chart[2]		S2208 NP-> * ADJ N , ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2207 NP-> * D VB [2,2]							 PREDICTOR
+	Chart[2]		S2209 NP-> * D ADJ N Q [2,2]						 PREDICTOR
+	Chart[2]		S2210 NP-> * D ADJ ADJ N PP [2,2]					 PREDICTOR
+	Chart[2]		S2211 NP-> * OUTRO N [2,2]						 PREDICTOR
+	Chart[2]		S2212 NP-> * ADV Q D ADV N , CP [2,2]					 PREDICTOR
+	Chart[2]		S2213 NP-> * N . NP [2,2]						 PREDICTOR
+	Chart[2]		S2214 NP-> * D PRO$ N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2215 NP-> * D N FP [2,2]						 PREDICTOR
+	Chart[2]		S2216 NP-> * SENAO D ADJ N [2,2]					 PREDICTOR
+	Chart[2]		S2217 NP-> * N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2218 NP-> * N N [2,2]							 PREDICTOR
+	Chart[2]		S2219 NP-> * D ADJ N PP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2220 NP-> * D PRO$ N , CONJP ADJ [2,2]					 PREDICTOR
+	Chart[2]		S2221 NP-> * D ADJ N PP CP [2,2]					 PREDICTOR
+	Chart[2]		S2222 NP-> * N ADJ , [2,2]						 PREDICTOR
+	Chart[2]		S2223 NP-> * N VB [2,2]							 PREDICTOR
+	Chart[2]		S2224 NP-> * CONJ ADJP D N [2,2]					 PREDICTOR
+	Chart[2]		S2225 NP-> * ADJ ADJ N PP . NP [2,2]					 PREDICTOR
+	Chart[2]		S2226 NP-> * D Q N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2227 NP-> * D PRO$ ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2228 NP-> * D N CP , [2,2]						 PREDICTOR
+	Chart[2]		S2229 NP-> * ADJ N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2230 NP-> * D ADJ N CP , [2,2]						 PREDICTOR
+	Chart[2]		S2231 NP-> * ADV D N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2232 NP-> * ADJ Q N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2233 NP-> * ADJP N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2234 NP-> * N CP , [2,2]						 PREDICTOR
+	Chart[2]		S2235 NP-> * ADV D N PP [2,2]						 PREDICTOR
+	Chart[2]		S2236 NP-> * N ADJP CP [2,2]						 PREDICTOR
+	Chart[2]		S2237 NP-> * ADV Q [2,2]						 PREDICTOR
+	Chart[2]		S2238 NP-> * D ADJ N , CP . NP [2,2]					 PREDICTOR
+	Chart[2]		S2239 NP-> * D N ADJ CP [2,2]						 PREDICTOR
+	Chart[2]		S2240 NP-> * D N , CONJP ADJ [2,2]					 PREDICTOR
+	Chart[2]		S2241 NP-> * N , CP , CP . CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2242 NP-> * D PRO$ N ADJP [2,2]					 PREDICTOR
+	Chart[2]		S2243 NP-> * N PP . NP [2,2]						 PREDICTOR
+	Chart[2]		S2244 NP-> * ADV D N , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2245 NP-> * NP CONJP N [2,2]						 PREDICTOR
+	Chart[2]		S2246 NP-> * D ADJ N , CP , Q [2,2]					 PREDICTOR
+	Chart[2]		S2247 NP-> * D ADJ N , PP [2,2]						 PREDICTOR
+	Chart[2]		S2248 NP-> * PRO$ ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2249 NP-> * PRO$ N , CONJP [2,2]					 PREDICTOR
+	Chart[2]		S2250 NP-> * D N , CONJP CP [2,2]					 PREDICTOR
+	Chart[2]		S2251 NP-> * D ADJP N [2,2]						 PREDICTOR
+	Chart[2]		S2252 NP-> * NEG D PRO$ N [2,2]						 PREDICTOR
+	Chart[2]		S2253 NP-> * D N ADJP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2254 NP-> * ADV D ADJ N PP [2,2]					 PREDICTOR
+	Chart[2]		S2255 NP-> * NUM N ADJ [2,2]						 PREDICTOR
+	Chart[2]		S2256 NP-> * N , CONJP CP [2,2]						 PREDICTOR
+	Chart[2]		S2257 NP-> * ADV C [2,2]						 PREDICTOR
+	Chart[2]		S2258 NP-> * N ADJP PP [2,2]						 PREDICTOR
+	Chart[2]		S2259 NP-> * ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2260 NP-> * PP D N PP , PP [2,2]					 PREDICTOR
+	Chart[2]		S2261 NP-> * D N NP [2,2]						 PREDICTOR
+	Chart[2]		S2262 NP-> * D ADV CP [2,2]						 PREDICTOR
+	Chart[2]		S2263 NP-> * NUM N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2264 NP-> * NEG N PP [2,2]						 PREDICTOR
+	Chart[2]		S2265 NP-> * P+D N [2,2]						 PREDICTOR
+	Chart[2]		S2266 NP-> * N , CP , CP [2,2]						 PREDICTOR
+	Chart[2]		S2267 NP-> * Q D N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2268 NP-> * N Q [2,2]							 PREDICTOR
+	Chart[2]		S2269 NP-> * D N , CONJP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2270 NP-> * N ADJ , CP [2,2]						 PREDICTOR
+	Chart[2]		S2271 NP-> * D ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2272 NP-> * Q N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2273 NP-> * Q D N PP [2,2]						 PREDICTOR
+	Chart[2]		S2274 NP-> * ADV D PRO$ N [2,2]						 PREDICTOR
+	Chart[2]		S2275 NP-> * ADJ N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2276 NP-> * D N PP , PP [2,2]						 PREDICTOR
+	Chart[2]		S2277 NP-> * D N , ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2278 NP-> * ADV ADJ N [2,2]						 PREDICTOR
+	Chart[2]		S2279 NP-> * FP D N [2,2]						 PREDICTOR
+	Chart[2]		S2280 NP-> * D N VB , CP [2,2]						 PREDICTOR
+	Chart[2]		S2281 IP-> IP * , NP NEG VB . [0,2]					 COMPLETER
+	Chart[2]		S2281 IP-> IP * SR NP . [0,2]						 COMPLETER
+	Chart[2]		S2282 IP-> IP * , VB , PP [0,2]						 COMPLETER
+	Chart[2]		S2283 IP-> IP * NP VB PP [0,2]						 COMPLETER
+	Chart[2]		S2285 IP-> IP * , CP , SR NP . [0,2]					 COMPLETER
+	Chart[2]		S2286 IP-> IP * , ADV NEG SR NP . [0,2]					 COMPLETER
+	Chart[2]		S2284 IP-> IP * , FP VB PP NP , [0,2]					 COMPLETER
+	Chart[2]		S2287 IP-> IP * , ADV VB NP . [0,2]					 COMPLETER
+	Chart[2]		S2288 IP-> IP * , ADV ET IP , [0,2]					 COMPLETER
+	Chart[2]		S2289 IP-> IP * , ADV NP VB IP NP . [0,2]					 COMPLETER
+	Chart[2]		S2290 IP-> IP * VB PP [0,2]						 COMPLETER
+	Chart[2]		S2291 IP-> IP * , ADV VB IP [0,2]					 COMPLETER
+	Chart[2]		S2292 PP-> * ADV P IP , PP [2,2]					 PREDICTOR
+	Chart[2]		S2293 PP-> * P+D N , CP [2,2]						 PREDICTOR
+	Chart[2]		S2294 PP-> * ADV P NP [2,2]						 PREDICTOR
+	Chart[2]		S2295 PP-> * P ADV [2,2]						 PREDICTOR
+	Chart[2]		S2296 PP-> * ADV P+D NP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2297 PP-> * ADV P NP , PP [2,2]					 PREDICTOR
+	Chart[2]		S2298 PP-> * DEM SR , P IP [2,2]					 PREDICTOR
+	Chart[2]		S2299 PP-> * ADV P NP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2300 PP-> * DEM SR P+D NP [2,2]					 PREDICTOR
+	Chart[2]		S2301 PP-> * ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2302 PP-> * ADV P IP , CP [2,2]					 PREDICTOR
+	Chart[2]		S2303 PP-> * ADV FP P NP [2,2]						 PREDICTOR
+	Chart[2]		S2305 PP-> * P D N ADJP [2,2]						 PREDICTOR
+	Chart[2]		S2304 PP-> * ADV P IP [2,2]						 PREDICTOR
+	Chart[2]		S2306 PP-> * ADV P+PRO [2,2]						 PREDICTOR
+	Chart[2]		S2307 PP-> * P ADV N PP [2,2]						 PREDICTOR
+	Chart[2]		S2308 PP-> * ADV P+D NP [2,2]						 PREDICTOR
+	Chart[2]		S2309 PP-> * ADV P+D PRO$ N , CP . [2,2]					 PREDICTOR
+	Chart[2]		S2310 PP-> * ADV P+WADV NP [2,2]					 PREDICTOR
+	Chart[2]		S2311 PP-> * P+D N PP [2,2]						 PREDICTOR
+	Chart[2]		S2312 PP-> * DEM SR , P+D NP [2,2]					 PREDICTOR
+	Chart[2]		S2313 PP-> * ADV P+D NP , PP [2,2]					 PREDICTOR
+	Chart[2]		S2314 PP-> * ADV PP , PP [2,2]						 PREDICTOR
+	Chart[2]		S2315 PP-> * P N [2,2]							 PREDICTOR
+	Chart[2]		S2316 PP-> * P+D N [2,2]						 PREDICTOR
+	Chart[2]		S2317 ADVP-> * SENAO ADV [2,2]						 PREDICTOR
+	Chart[2]		S2319 ADVP-> * NEG ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2318 ADVP-> * ADV ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2320 ADVP-> * ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2321 ADVP-> * Q ADV PP [2,2]						 PREDICTOR
+	Chart[2]		S2322 ADVP-> * Q ADV [2,2]						 PREDICTOR
+	Chart[2]		S2323 ADVP-> * CONJ ADV [2,2]						 PREDICTOR
+	Chart[2]		S2324 ADVP-> * DEM SR , ADV [2,2]					 PREDICTOR
+	Chart[2]		S2325 ADVP-> * ADV , CONJ ADV [2,2]					 PREDICTOR
+	Chart[2]		S2326 ADVP-> * ADV ADV [2,2]						 PREDICTOR
+	Chart[2]		S2327 ADVP-> * SENAO ADV PP [2,2]					 PREDICTOR
+	Chart[2]		S2328 ADVP-> * ADV , PP [2,2]						 PREDICTOR
+	Chart[2]		S2329 ADVP-> * FP ADV [2,2]						 PREDICTOR
+	Chart[2]		S2330 ADVP-> * ADV CP [2,2]						 PREDICTOR
+	Chart[2]		S2331 ADVP-> * ADV ADV ADV [2,2]					 PREDICTOR
+	Chart[2]		S2332 ADVP-> * PP ADV [2,2]						 PREDICTOR
 Reading chart[3]...
+	Chart[3]		S2334 NP-> ADV * D N PP , CP [2,3]					 COMPLETER
+	Chart[3]		S2333 NP-> ADV * D N ADJP [2,3]						 COMPLETER
+	Chart[3]		S2335 NP-> ADV * D [2,3]						 COMPLETER
+	Chart[3]		S2337 NP-> ADV * D PRO$ N [2,3]						 COMPLETER
+	Chart[3]		S2336 IP-> ADV SR ADV * VB [0,3]					 COMPLETER
+	Chart[3]		S2340 NP-> ADV * D CP [2,3]						 COMPLETER
+	Chart[3]		S2339 NP-> ADV * D N PP [2,3]						 COMPLETER
+	Chart[3]		S2341 NP-> ADV * ADJ N [2,3]						 COMPLETER
+	Chart[3]		S2338 NP-> ADV * D N PP , PP [2,3]					 COMPLETER
+	Chart[3]		S2342 ADJP-> ADV * ADJ [2,3]						 COMPLETER
+	Chart[3]		S2343 NP-> ADV * Q CP [2,3]						 COMPLETER
+	Chart[3]		S2345 PP-> ADV * P IP , PP [2,3]					 COMPLETER
+	Chart[3]		S2344 NP-> ADV * Q [2,3]						 COMPLETER
+	Chart[3]		S2347 ADJP-> ADV * ADV ADJ PP [2,3]					 COMPLETER
+	Chart[3]		S2346 NP-> ADV * D N [2,3]						 COMPLETER
+	Chart[3]		S2348 NP-> ADV * PRO [2,3]						 COMPLETER
+	Chart[3]		S2350 NP-> ADV * D N , CONJP [2,3]					 COMPLETER
+	Chart[3]		S2349 PP-> ADV * P NP [2,3]						 COMPLETER
+	Chart[3]		S2351 ADJP-> ADV * ADV VB [2,3]						 COMPLETER
+	Chart[3]		S2352 NP-> ADV * ADV [2,3]						 COMPLETER
+	Chart[3]		S2353 NP-> ADV * N PP [2,3]						 COMPLETER
+	Chart[3]		S2354 NP-> ADV * D ADJ N PP [2,3]					 COMPLETER
+	Chart[3]		S2357 NP-> ADV * PRO$ [2,3]						 COMPLETER
+	Chart[3]		S2355 PP-> ADV * P+D NP , CP [2,3]					 COMPLETER
+	Chart[3]		S2359 NP-> ADV * C [2,3]						 COMPLETER
+	Chart[3]		S2358 NP-> ADV * N , CP [2,3]						 COMPLETER
+	Chart[3]		S2360 NP-> ADV * VB [2,3]						 COMPLETER
+	Chart[3]		S2356 ADJP-> ADV * ADJ , [2,3]						 COMPLETER
+	Chart[3]		S2362 NP-> ADV * PP [2,3]						 COMPLETER
+	Chart[3]		S2361 PP-> ADV * P NP , PP [2,3]					 COMPLETER
+	Chart[3]		S2363 NP-> ADV * D ADJ [2,3]						 COMPLETER
+	Chart[3]		S2364 ADJP-> ADV * ADJ , CONJP [2,3]					 COMPLETER
+	Chart[3]		S2365 PP-> ADV * P NP , CP [2,3]					 COMPLETER
+	Chart[3]		S2366 NP-> ADV * N , [2,3]						 COMPLETER
+	Chart[3]		S2367 ADJP-> ADV * ADJ CP [2,3]						 COMPLETER
+	Chart[3]		S2368 PP-> ADV * PP [2,3]						 COMPLETER
+	Chart[3]		S2369 NP-> ADV * ADV N [2,3]						 COMPLETER
+	Chart[3]		S2370 ADJP-> ADV * ADJ , CP [2,3]					 COMPLETER
+	Chart[3]		S2371 PP-> ADV * P IP , CP [2,3]					 COMPLETER
+	Chart[3]		S2372 NP-> ADV * N [2,3]						 COMPLETER
+	Chart[3]		S2374 PP-> ADV * FP P NP [2,3]						 COMPLETER
+	Chart[3]		S2373 ADJP-> ADV * CP [2,3]						 COMPLETER
+	Chart[3]		S2376 PP-> ADV * P IP [2,3]						 COMPLETER
+	Chart[3]		S2375 NP-> ADV * , CONJ ADV [2,3]					 COMPLETER
+	Chart[3]		S2377 ADJP-> ADV * ADJ PP [2,3]						 COMPLETER
+	Chart[3]		S2378 PP-> ADV * P+PRO [2,3]						 COMPLETER
+	Chart[3]		S2380 ADJP-> ADV * VB [2,3]						 COMPLETER
+	Chart[3]		S2381 PP-> ADV * P+D NP [2,3]						 COMPLETER
+	Chart[3]		S2379 NP-> ADV * Q D ADV N , CP [2,3]					 COMPLETER
+	Chart[3]		S2383 PP-> ADV * P+D PRO$ N , CP . [2,3]					 COMPLETER
+	Chart[3]		S2382 ADJP-> ADV * Q ADJ [2,3]						 COMPLETER
+	Chart[3]		S2384 PP-> ADV * P+WADV NP [2,3]					 COMPLETER
+	Chart[3]		S2385 ADJP-> ADV * PP [2,3]						 COMPLETER
+	Chart[3]		S2386 PP-> ADV * P+D NP , PP [2,3]					 COMPLETER
+	Chart[3]		S2387 ADJP-> ADV * ADJ PP , PP [2,3]					 COMPLETER
+	Chart[3]		S2388 PP-> ADV * PP , PP [2,3]						 COMPLETER
+	Chart[3]		S2389 ADJP-> ADV * VB PP [2,3]						 COMPLETER
+	Chart[3]		S2390 ADVP-> ADV * ADV PP [2,3]						 COMPLETER
+	Chart[3]		S2391 NP-> ADV * N CP [2,3]						 COMPLETER
+	Chart[3]		S2392 ADVP-> ADV * PP [2,3]						 COMPLETER
+	Chart[3]		S2393 NP-> ADV * D ADJ N [2,3]						 COMPLETER
+	Chart[3]		S2394 ADVP-> ADV * , CONJ ADV [2,3]					 COMPLETER
+	Chart[3]		S2395 NP-> ADV * D N ADJ [2,3]						 COMPLETER
+	Chart[3]		S2396 ADVP-> ADV * ADV [2,3]						 COMPLETER
+	Chart[3]		S2397 ADVP-> ADV * , PP [2,3]						 COMPLETER
+	Chart[3]		S2398 ADVP-> ADV * CP [2,3]						 COMPLETER
+	Chart[3]		S2399 ADVP-> ADV * ADV ADV [2,3]					 COMPLETER
+	Chart[4]		S2400 VB-> aceites * [3,4]						 SCANNER
+	Chart[3]		S2401 PP-> * ADV P IP , PP [3,3]					 PREDICTOR
+	Chart[3]		S2403 PP-> * ADV P NP [3,3]						 PREDICTOR
+	Chart[3]		S2402 PP-> * P+D N , CP [3,3]						 PREDICTOR
+	Chart[3]		S2404 PP-> * ADV P NP , PP [3,3]					 PREDICTOR
+	Chart[3]		S2406 PP-> * ADV P+D NP , CP [3,3]					 PREDICTOR
+	Chart[3]		S2405 PP-> * P ADV [3,3]						 PREDICTOR
+	Chart[3]		S2407 PP-> * ADV P NP , CP [3,3]					 PREDICTOR
+	Chart[3]		S2408 PP-> * DEM SR , P IP [3,3]					 PREDICTOR
+	Chart[3]		S2409 PP-> * ADV P IP , CP [3,3]					 PREDICTOR
+	Chart[3]		S2410 PP-> * ADV PP [3,3]						 PREDICTOR
+	Chart[3]		S2411 PP-> * DEM SR P+D NP [3,3]					 PREDICTOR
+	Chart[3]		S2412 PP-> * ADV P IP [3,3]						 PREDICTOR
+	Chart[3]		S2413 PP-> * ADV P+D NP [3,3]						 PREDICTOR
+	Chart[3]		S2414 PP-> * P D N ADJP [3,3]						 PREDICTOR
+	Chart[3]		S2415 PP-> * ADV FP P NP [3,3]						 PREDICTOR
+	Chart[3]		S2416 PP-> * ADV P+PRO [3,3]						 PREDICTOR
+	Chart[3]		S2417 PP-> * ADV P+WADV NP [3,3]					 PREDICTOR
+	Chart[3]		S2418 PP-> * P ADV N PP [3,3]						 PREDICTOR
+	Chart[3]		S2419 PP-> * P+D N PP [3,3]						 PREDICTOR
+	Chart[3]		S2420 PP-> * ADV P+D PRO$ N , CP . [3,3]					 PREDICTOR
+	Chart[3]		S2421 PP-> * ADV P+D NP , PP [3,3]					 PREDICTOR
+	Chart[3]		S2422 PP-> * P N [3,3]							 PREDICTOR
+	Chart[3]		S2423 PP-> * P+D N [3,3]						 PREDICTOR
+	Chart[3]		S2424 PP-> * DEM SR , P+D NP [3,3]					 PREDICTOR
+	Chart[3]		S2425 PP-> * ADV PP , PP [3,3]						 PREDICTOR
+	Chart[3]		S2426 CP-> * P ADV C IP [3,3]						 PREDICTOR
+	Chart[3]		S2427 CP-> * SENAO ADV C IP [3,3]					 PREDICTOR
+	Chart[3]		S2428 CP-> * Q ADV C IP [3,3]						 PREDICTOR
+	Chart[3]		S2429 CP-> * ADV C IP [3,3]						 PREDICTOR
+	Chart[3]		S2430 CP-> * VB IP [3,3]						 PREDICTOR
+	Chart[3]		S2431 CP-> * P N C IP [3,3]						 PREDICTOR
+	Chart[3]		S2432 CP-> * CONJ ADV NP , WNP IP . [3,3]					 PREDICTOR
+	Chart[3]		S2433 CP-> * CONJS PP VB NP [3,3]					 PREDICTOR
+	Chart[3]		S2434 CP-> * P ADV , C IP [3,3]						 PREDICTOR
+	Chart[3]		S2435 CP-> * P ADV ADJ C IP [3,3]					 PREDICTOR
+	Chart[3]		S2436 CP-> * CONJS ADV C IP [3,3]					 PREDICTOR
+	Chart[3]		S2437 CP-> * ADV ADV C IP [3,3]						 PREDICTOR
+	Chart[3]		S2438 CP-> * Q D N C IP [3,3]						 PREDICTOR
+	Chart[3]		S2440 CP-> * ADV CONJS IP [3,3]						 PREDICTOR
+	Chart[3]		S2439 CP-> * CONJS PP ADV NP VB PP [3,3]					 PREDICTOR
+	Chart[3]		S2441 CP-> * P+D ADJ N C IP [3,3]					 PREDICTOR
+	Chart[3]		S2442 CP-> * P N , C IP [3,3]						 PREDICTOR
+	Chart[3]		S2443 CP-> * ADV , IP , WNP IP . [3,3]					 PREDICTOR
+	Chart[3]		S2444 CP-> * P+D N , C IP [3,3]						 PREDICTOR
+	Chart[3]		S2445 CP-> * CONJ ADV WADVP IP . [3,3]					 PREDICTOR
+	Chart[3]		S2446 CP-> * ADV CONJS IP , [3,3]					 PREDICTOR
+	Chart[3]		S2447 CP-> * P+D ADJ N , C IP [3,3]					 PREDICTOR
+	Chart[3]		S2448 CP-> * P ADV C IP , [3,3]						 PREDICTOR
 Reading chart[4]...
-Reading chart[5]...
-Reading chart[6]...
-Reading chart[7]...
-Reading chart[8]...
+	Chart[4]		S2450 NP-> ADV VB * [2,4]						 COMPLETER
+	Chart[4]		S2451 ADJP-> ADV VB * [2,4]						 COMPLETER
+	Chart[4]		S2449 IP-> ADV SR ADV VB * [0,4]					 COMPLETER
+	Chart[4]		S2452 CP-> VB * IP [3,4]						 COMPLETER
 
-- SENTENCE: "indica poder em uns e nos outros medo"
-- TIME: 0 minutes, 59 seconds e 59236 milliseconds
+- SENTENCE: "então sejam bem aceites"
+- TIME: 0 minutes, 16 seconds e 16096 milliseconds
 - SENTENCE STATUS: recognized
-- SENTENCE PRECISION: not precise, 0.0 % precision 
+- SENTENCE PRECISION: precise
 Do you want to show grammar whole tree (all backpointers)? (y/N)
 - SYNTATIC TREE (with backpointers):
-	Chart[8] S11948 IP-> VB NP NP * [0,8] (S10280,S5111,S1397)
-	Chart[8] S11868 NP-> D NP * [3,8] (S10280,S3524)
-	Chart[8] S11866 NP-> D CONJP * [3,8] (S10169,S3524)
-	Chart[8] S10796 IP-> CONJ PP * [4,8] (S9864,S6950)
-	Chart[8] S10659 CONJP-> CONJ PP * [4,8] (S9864,S6950)
-	Chart[8] S10280 NP-> CONJ NP * [4,8] (S9858,S6950)
-	Chart[8] S10169 CONJP-> CONJ NP * [4,8] (S9858,S6950)
-	Chart[8] S9864 PP-> P+D NP * [5,8] (S9685,S8811)
-	Chart[8] S9858 NP-> P+D NP * [5,8] (S9685,S8811)
-	Chart[8] S9685 NP-> ADJ N * [6,8] (S9299,S9097)
-	Chart[8] S9299 N-> medo * [7,8] SCANNER
-	Chart[7] S9097 ADJ-> outros * [6,7] SCANNER
-	Chart[6] S8811 P+D-> nos * [5,6] SCANNER
-	Chart[5] S6950 CONJ-> e * [4,5] SCANNER
-	Chart[5] S6638 IP-> VB NP * [0,4] (S5111,S1397)
-	Chart[5] S5111 NP-> N PP * [1,4] (S4995,S1574)
-	Chart[5] S4995 PP-> P D * [2,4] (S3524,S3220)
-	Chart[4] S3524 D-> uns * [3,4] SCANNER
-	Chart[3] S3220 P-> em * [2,3] SCANNER
-	Chart[2] S1574 N-> poder * [1,2] SCANNER
-	Chart[1] S1397 VB-> indica * [0,1] SCANNER
+	Chart[6] S2451 ADJP-> ADV VB * [2,4] (S2400,S2043)
+	Chart[4] S2449 IP-> ADV SR ADV VB * [0,4] (S2400,S2043,S1968,S1499)
+	Chart[4] S2450 NP-> ADV VB * [2,4] (S2400,S2043)
+	Chart[4] S2400 VB-> aceites * [3,4] SCANNER
+	Chart[3] S2043 ADV-> bem * [2,3] SCANNER
+	Chart[3] S2037 IP-> ADV SR * [0,2] (S1968,S1499)
+	Chart[2] S1968 SR-> sejam * [1,2] SCANNER
+	Chart[1] S1499 ADV-> então * [0,1] SCANNER
