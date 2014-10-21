@@ -1,6 +1,5 @@
-package ime.mac5725.earley.parser;
+package ime.mac5725.earley;
 
-import ime.mac5725.earley.Earley;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;

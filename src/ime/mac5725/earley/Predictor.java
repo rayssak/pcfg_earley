@@ -1,6 +1,5 @@
-package ime.mac5725.earley.parser;
+package ime.mac5725.earley;
 
-import ime.mac5725.earley.Earley;
 import ime.mac5725.earley.util.ConstantsUtility;
 
 import java.util.ArrayList;
@@ -33,7 +32,7 @@ public class Predictor extends Earley implements Runnable {
 		currentPOSTag = nextCategory(state);
 		sentenceHeadRule = sentenceHeadRuleCount == 0 ? currentPOSTag : sentenceHeadRule;
 		sentenceHeadRuleCount = sentenceHeadRuleCount == 0 ? sentenceHeadRuleCount+1 : sentenceHeadRuleCount;
-
+		
 		while(currentPOSTagCount > 0 && partialGrammar.indexOf(currentPOSTag) >= 0) {
 			
 			currentPOSTagCount = Collections.frequency(partialGrammar, getRule(currentPOSTag));
@@ -69,10 +68,6 @@ public class Predictor extends Earley implements Runnable {
 	}
 	
 	private boolean isRequiredToProcess(String rule) {
-		if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[0].equals("IP") ||
-		   rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[0].equals("CP") ||
-		   rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[0].equals("FRAG"))
-			return true;
 		synchronized (rulesToPredict) {
 			String tags[] = rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
 			for(String current : rulesToPredict)

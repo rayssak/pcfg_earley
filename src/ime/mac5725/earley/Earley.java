@@ -1,10 +1,7 @@
 package ime.mac5725.earley;
 
-import ime.mac5725.earley.parser.Completer;
-import ime.mac5725.earley.parser.Predictor;
 import ime.mac5725.earley.util.ConstantsUtility;
 
-import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -59,7 +56,6 @@ public class Earley {
 	protected String previousState;
 	protected static volatile String sentenceHeadRule;
 	protected static volatile String finalState;
-	protected static volatile String sentenceOriginalTree;
 	
 	protected static String DUMMY_STATE;
 	
@@ -73,20 +69,19 @@ public class Earley {
 	
 	protected void prepareVariables(LinkedHashSet<String> grammar, LinkedHashSet<String> lexicon) {
 		
-		// rayssak testing
-		try {
-			out = new PrintWriter("C:\\rayssak\\dev\\ime\\testing\\testing.txt");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+		i = 0;
+		j = 0;
+		stateLevelCount = 0;
+		sentenceHeadRuleCount = 0;
+		threadCount = 0;
+		threadCompletedCount = 0;
+		precision = 0d;
 		
 		state = "";
 		currentPOSTag = "";
 		sentenceHeadRule = "";
 		previousState = "";
 		finalState = "";
-		precision = 0d;
-		sentenceOriginalTree = "";
 		
 		this.grammar = new ArrayList<String>();
 		this.grammar.addAll(grammar);
@@ -128,15 +123,11 @@ public class Earley {
 	}
 	
 	private void checkPossibleTerminalsToPredict() {
-		int count = 0;
 		for(String rule : lexicon) {
 			for(int aux=0; aux<sentenceWords.size(); aux++) {
-				if(rule.contains(sentenceWords.get(aux))) {
-					rulesToPredict.add(rule);
-					count++;
-				}
-				if(count == sentenceWords.size())
-					break;
+				if(rule.contains(sentenceWords.get(aux)))
+					if(rule.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].equals(sentenceWords.get(aux)))
+						rulesToPredict.add(rule);
 			}
 		}
 	}
@@ -319,7 +310,7 @@ public class Earley {
 	
 	protected void printHeadRule() {
 		if(printRules)
-			System.out.println("\tChart[" + i + "]\t\t" + "S" + stateLevelCount + " " + chart.get(i).get(0).replace(ConstantsUtility.FIELD_SEPARATOR, "") + 
+			System.out.println("\tChart[" + i + "]\t\t" + "S" + stateLevelCount + " " + DUMMY_STATE.replace(ConstantsUtility.FIELD_SEPARATOR, "") + 
 							   "\t\t\t\t\t\t\t\t DUMMY START STATE");
 	}
 	
@@ -328,7 +319,6 @@ public class Earley {
 			rule = rule.contains(ConstantsUtility.DOTTED_RULE) ? rule : addStateAndStartEndPointsFields(rule); 
 			rule += rule.length()<24 ? "\t\t\t\t\t\t\t" : (rule.length()<32 ? "\t\t\t\t\t\t" : "\t\t\t\t\t");
 			System.out.println("\tChart[" + chartValue + "]\t\t" + rule.replace("|", " ") + " " + method);
-			out.println("\tChart[" + chartValue + "]\t\t" + rule.replace("|", " ") + " " + method + ".... state: " + state);
 		}
 	}
 	
@@ -556,8 +546,8 @@ public class Earley {
 		String[] tmp = DUMMY_STATE.substring(0, DUMMY_STATE.indexOf(ConstantsUtility.FIELD_SEPARATOR)).split(ConstantsUtility.NEXT_ELEMENT_CHAR)[1].replace(ConstantsUtility.DOTTED_RULE, "").split(" ");
 		
 		if(ruleStart == 0 && ruleEnd == chart.size()-1)
-			for(int aux=0; aux<tmp.length; aux++)
-				if(tmp[aux].equals(getRule(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "")))
+//			for(int aux=0; aux<tmp.length; aux++)
+//				if(tmp[aux].equals(getRule(rule).replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "")))
 					return true;
 		
 		return false;
@@ -637,32 +627,32 @@ public class Earley {
 	 * @param grammarTrees
 	 * @return
 	 */
-	public boolean parse(HashMap<String,String> grammarTrees) {
+	public boolean parse(HashMap<String,ArrayList<String>> grammarTrees) {
 		
 		if(!finalState.isEmpty()) {
 			String finalParserState = finalState.replaceAll(ConstantsUtility.FIELD_SEPARATOR_WITH_STATE_LEVEL, "")
 												.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0]
 												.replace(" " + ConstantsUtility.DOTTED_RULE, "");
-			
-			if(grammarTrees.containsValue(sentence))
-				for(Entry<String, String> rule : grammarTrees.entrySet())
-					if(rule.getValue().equals(sentence)) {
+
+			for(ArrayList<String> values : grammarTrees.values()) {
+				for(Entry<String, ArrayList<String>> rule : grammarTrees.entrySet()) {
+				
+					if(values.contains(sentence) && rule.getKey().equals(finalParserState)) {
 						
 						String tmpParserState[] = finalParserState.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
-	
+
 						int count = 0;
 						for(int aux=0; aux<tmpParserState.length; aux++)
 							if(rule.getKey().contains(tmpParserState[aux]))
 								count++;
 						
 						precision = (count*100)/tmpParserState.length;
-						
-						if(rule.getKey().equals(finalParserState)) {
-							sentenceOriginalTree = "(" + rule.getKey() + " and " + finalParserState + ")";
-							return true;
-						}
-						
+						return true;
+								
 					}
+				}
+			}
+				
 		}
 		
 		return false;
@@ -678,10 +668,6 @@ public class Earley {
 	
 	public double getPrecision() {
 		return precision;
-	}
-	
-	public String getOriginalAndParsedTree() {
-		return sentenceOriginalTree;
 	}
 	
 }

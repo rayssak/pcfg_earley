@@ -32,7 +32,7 @@ public class TreeBankHandler {
 	
 	private LinkedHashSet<String> grammarRules;
 	private LinkedHashSet<String> lexicon;
-	private HashMap<String, String> grammarTrees;
+	private HashMap<String, ArrayList<String>> grammarTrees;
 	private LinkedHashMap<String, String> sentenceIndex;
 	
 	public LinkedHashSet<String> getFullGrammarRules() {
@@ -56,7 +56,7 @@ public class TreeBankHandler {
 		BufferedReader reader;
 		tmp = new LinkedList<String>();
 		grammarRules = new LinkedHashSet<String>();
-		grammarTrees = new HashMap<String, String>();
+		grammarTrees = new HashMap<String, ArrayList<String>>();
 		lexicon = new LinkedHashSet<String>();
 		sentenceIndex = new LinkedHashMap<String, String>();
 		
@@ -81,7 +81,7 @@ public class TreeBankHandler {
 		
 	}
 	
-	public HashMap<String, String> getGrammarTrees() {
+	public HashMap<String, ArrayList<String>> getGrammarTrees() {
 		return this.grammarTrees;
 	}
 
@@ -283,9 +283,18 @@ public class TreeBankHandler {
 					if(words.contains(".") || words.contains(",") || words.contains(":") || words.contains(";") || words.contains("!"))
 						words = words.replaceFirst("[\\.\\,] ", " ").replaceAll("\\s{2,}", " ");
 					
-					grammarTrees.put(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag, words);
-					System.out.println(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag);
-							System.out.println(words);
+					if(grammarTrees.get(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag) != null) {
+						ArrayList<String> currentValues = new ArrayList<String>();
+						currentValues.add(words);
+						ArrayList<String> previousValues = grammarTrees.put(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag, currentValues);
+						previousValues.addAll(currentValues);
+						previousValues.addAll(currentValues);
+						grammarTrees.put(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag, previousValues);
+					} else {
+						ArrayList<String> sentence = new ArrayList<String>();
+						sentence.add(words);
+						grammarTrees.put(item + NEXT_ELEMENT_CHAR + " " + currentPOSTag, sentence);
+					}
 
 					if(currentItem.equals("1 IP")) 
 						sentenceIndex.clear();

@@ -5,13 +5,9 @@ import ime.mac5725.earley.util.ConstantsUtility;
 import ime.mac5725.earley.util.TreeBankHandler;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
-import java.util.Map.Entry;
 import java.util.Scanner;
 
 /**
@@ -24,7 +20,7 @@ import java.util.Scanner;
  */
 public class TestingLC1 {
 	
-	private static TreeBankHandler glc;
+	private static TreeBankHandler treeBank;
 	private static EarleyFinger earley;
 
 	private static String time;
@@ -33,9 +29,8 @@ public class TestingLC1 {
 	private static boolean printRules;
 	
 	private static LinkedHashSet<String> lexicon;
-	private static LinkedHashSet<String> fullGrammarRules;
 	private static LinkedHashSet<String> grammarRules;
-	private static HashMap<String, String> grammarTrees;
+	private static HashMap<String, ArrayList<String>> grammarTrees;
 	
 	public static void main(String[] args) {
 		
@@ -53,9 +48,16 @@ public class TestingLC1 {
 		 *		vem por compaixão e lástima
 		 *		necessita que primeiro morra o seu autor
 		 *		ficam reservadas para serem obras póstumas
+		 *		mais firme ,
+		 * 		uma e outra cousa
+		 * 		só assim
+		 * 		as achamos
+		 * 		já o não é
+		 * 		e o tacto só sente .
+		 * 		favorece ao primeiro que encontra ,
 		 * 
 		 */
-		String sentence = "um pequeno livro";
+		String sentence = args[2];
 		printRules = Boolean.valueOf(args[1]);
 		
 		long timeRan = System.currentTimeMillis();
@@ -68,7 +70,7 @@ public class TestingLC1 {
 		System.out.println("\n- SENTENCE: " + "\"" + sentence + "\"");
 		System.out.println("- TIME: " + time);
 		System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
-		System.out.println("- SENTENCE PRECISION: " + (earley.parse(glc.getGrammarTrees()) ? "precise" : "not precise, " + earley.getPrecision() + " % precision " + earley.getOriginalAndParsedTree()));
+		System.out.println("- SENTENCE PRECISION: " + (earley.parse(grammarTrees) ? "precise" : "not precise, " + earley.getPrecision() + " % precision "));
 		
 		if(grammarRecognized) {
 			Scanner input = new Scanner(System.in);
@@ -118,19 +120,18 @@ public class TestingLC1 {
 //	}
 
 	private static void initializeRequiredObjects() {
-		glc = new TreeBankHandler();
+		treeBank = new TreeBankHandler();
 		earley = new EarleyFinger();
-		fullGrammarRules = new LinkedHashSet<String>();
 		grammarRules = new LinkedHashSet<String>();
 		lexicon = new LinkedHashSet<String>();
 		earley.setPrintRules(printRules);
 	}
 	
 	private static void readGrammar(String[] args) {
-		glc.readGrammar(new File(args[0]));
-		grammarRules = glc.getGrammarRules();
-		lexicon = glc.getLexicon();
-		grammarTrees = glc.getGrammarTrees();
+		treeBank.readGrammar(new File(args[0]));
+		grammarRules = treeBank.getGrammarRules();
+		lexicon = treeBank.getLexicon();
+		grammarTrees = treeBank.getGrammarTrees();
 	}
 	
 }

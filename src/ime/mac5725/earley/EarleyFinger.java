@@ -21,6 +21,8 @@ public class EarleyFinger extends Earley {
 		
 		for(; i<=sentenceWords.size(); i++) {
 			
+			System.out.println("Reading chart[" + i + "]...");
+			
 			while(!grammarRecognized && j<chart.get(i).size()) {
 				
 				getNextStateToRun();

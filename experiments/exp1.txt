@@ -1,0 +1,37 @@
+Reading chart[0]...
+Reading chart[1]...
+Reading chart[2]...
+Reading chart[3]...
+Reading chart[4]...
+Reading chart[5]...
+Reading chart[6]...
+Reading chart[7]...
+Reading chart[8]...
+
+- SENTENCE: "indica poder em uns e nos outros medo"
+- TIME: 0 minutes, 59 seconds e 59236 milliseconds
+- SENTENCE STATUS: recognized
+- SENTENCE PRECISION: not precise, 0.0 % precision 
+Do you want to show grammar whole tree (all backpointers)? (y/N)
+- SYNTATIC TREE (with backpointers):
+	Chart[8] S11948 IP-> VB NP NP * [0,8] (S10280,S5111,S1397)
+	Chart[8] S11868 NP-> D NP * [3,8] (S10280,S3524)
+	Chart[8] S11866 NP-> D CONJP * [3,8] (S10169,S3524)
+	Chart[8] S10796 IP-> CONJ PP * [4,8] (S9864,S6950)
+	Chart[8] S10659 CONJP-> CONJ PP * [4,8] (S9864,S6950)
+	Chart[8] S10280 NP-> CONJ NP * [4,8] (S9858,S6950)
+	Chart[8] S10169 CONJP-> CONJ NP * [4,8] (S9858,S6950)
+	Chart[8] S9864 PP-> P+D NP * [5,8] (S9685,S8811)
+	Chart[8] S9858 NP-> P+D NP * [5,8] (S9685,S8811)
+	Chart[8] S9685 NP-> ADJ N * [6,8] (S9299,S9097)
+	Chart[8] S9299 N-> medo * [7,8] SCANNER
+	Chart[7] S9097 ADJ-> outros * [6,7] SCANNER
+	Chart[6] S8811 P+D-> nos * [5,6] SCANNER
+	Chart[5] S6950 CONJ-> e * [4,5] SCANNER
+	Chart[5] S6638 IP-> VB NP * [0,4] (S5111,S1397)
+	Chart[5] S5111 NP-> N PP * [1,4] (S4995,S1574)
+	Chart[5] S4995 PP-> P D * [2,4] (S3524,S3220)
+	Chart[4] S3524 D-> uns * [3,4] SCANNER
+	Chart[3] S3220 P-> em * [2,3] SCANNER
+	Chart[2] S1574 N-> poder * [1,2] SCANNER
+	Chart[1] S1397 VB-> indica * [0,1] SCANNER
