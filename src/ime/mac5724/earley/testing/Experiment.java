@@ -6,7 +6,6 @@ import ime.mac5725.earley.util.TreeBankHandler;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Map.Entry;
 import java.util.Random;
@@ -37,32 +36,22 @@ public class Experiment {
 		for (Entry<String, ArrayList<String>> entry : grammarTreesTesting.entrySet()) {
 			
 		    String key = entry.getKey();
-//		    ArrayList<String> sentences = entry.getValue();
 		    String sentence = entry.getValue().get(0);
-		    
-//		    HashSet tmpSet = new HashSet();
-//			tmpSet.addAll(sentences);
-//			sentences.clear();
-//			sentences.addAll(tmpSet);
-//			
-//			for(String sentence : sentences) {
-				
-				EarleyFinger earley = new EarleyFinger();
-				earley.setPrintRules(printRules);
-				grammarRecognized = false;
-				
-				sentence = sentence.split(" \\,")[0];
-				timeRan = System.currentTimeMillis();
-				System.out.println("\nStarting to recognize and parse: " + "\"" + sentence + "\"...");
-				grammarRecognized = earley.recognize(sentence, grammarRulesTesting, lexicon);
-				handleTimeRan(timeRan);
-				
-				System.out.println("- TIME: " + time);
-				System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
-				System.out.println("- SENTENCE PRECISION: " + (earley.parse(treeBank.getGrammarTrees()) ? "precise" : "not precise, " + earley.getPrecision() + " % precision "));
+	    
+			EarleyFinger earley = new EarleyFinger();
+			earley.setPrintRules(printRules);
+			grammarRecognized = false;
 			
-//			}
-
+			sentence = sentence.split(" \\,")[0];
+			timeRan = System.currentTimeMillis();
+			System.out.println("\nStarting to recognize and parse: " + "\"" + sentence + "\"...");
+			grammarRecognized = earley.recognize(sentence, grammarRulesTesting, lexicon);
+			handleTimeRan(timeRan);
+			
+			System.out.println("- TIME: " + time);
+			System.out.println("- SENTENCE STATUS: " + (grammarRecognized ? "recognized" : "not recognized"));
+			System.out.println("- SENTENCE PRECISION: " + (earley.parse(treeBank.getGrammarTrees()) ? "precise" : "not precise, " + earley.getPrecision() + " % precision "));
+			
 		}
 		
 	}
