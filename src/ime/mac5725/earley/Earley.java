@@ -22,18 +22,18 @@ public class Earley {
 	
 	protected static volatile PrintWriter out;
 	
-	protected static volatile int i = 0;
-	protected static volatile int j = 0;
-	protected static volatile int stateLevelCount = 0;
-	protected static volatile int sentenceHeadRuleCount = 0;
-	protected static volatile int threadCount = 0;
-	protected static volatile int threadCompletedCount = 0;
+	protected static volatile int i;
+	protected static volatile int j;
+	protected static volatile int stateLevelCount;
+	protected static volatile int sentenceHeadRuleCount;
+	protected static volatile int threadCount;
+	protected static volatile int threadCompletedCount;
 	
 	protected static double precision;
 	
 	protected static volatile boolean printRules;
-	protected static volatile boolean grammarRecognized = false;
-	protected static volatile boolean threadRuleCompleted = false;
+	protected static volatile boolean grammarRecognized;
+	protected static volatile boolean threadRuleCompleted;
 	
 	protected static volatile ArrayList<String> lexicon;
 	protected static volatile ArrayList<String> grammarIndex;
@@ -77,11 +77,16 @@ public class Earley {
 		threadCompletedCount = 0;
 		precision = 0d;
 		
+		sentence = "";
 		state = "";
+		fullState = "";
 		currentPOSTag = "";
 		sentenceHeadRule = "";
 		previousState = "";
 		finalState = "";
+		
+		grammarRecognized = false;
+		threadRuleCompleted = false;
 		
 		this.grammar = new ArrayList<String>();
 		this.grammar.addAll(grammar);
@@ -271,7 +276,7 @@ public class Earley {
 		synchronized (chartTerminalsIndex) {
 			if(currentTerminal.isEmpty()) {
 				String tmp = stateWithoutRule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[0];
-				tmp = tmp.matches("[A-Za-zÀ-Úà-ú0-9]+\\s\\*") || tmp.matches("[\\:\\;\\.\\,\\?\\!]\\s\\*") ? tmp : tmp.split(" ")[tmp.split(" ").length-2] + " " + tmp.split(" ")[tmp.split(" ").length-1];
+				tmp = tmp.matches("[A-Za-zï¿½-ï¿½ï¿½-ï¿½0-9]+\\s\\*") || tmp.matches("[\\:\\;\\.\\,\\?\\!]\\s\\*") ? tmp : tmp.split(" ")[tmp.split(" ").length-2] + " " + tmp.split(" ")[tmp.split(" ").length-1];
 				chartTerminalsIndex.get(i).add(tmp);
 			} else if(stateWithoutRule.indexOf(ConstantsUtility.DOTTED_RULE) > stateWithoutRule.indexOf(currentTerminal))
 				chartTerminalsIndex.get(i).add(currentTerminal + " " + ConstantsUtility.DOTTED_RULE);
@@ -577,30 +582,33 @@ public class Earley {
 			String states = "";
 			String previousRule = "";
 			
-			for(int aux=finalParser.size()-1; aux>=0; aux--) {
-					
-				String tmp = finalParser.get(aux);
-				String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
-				
-				if(ruleAlreadyInTree(tmp, rule))
-					return;
-				
-				else if(tmpRule.equals(rule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, ""))
-						&& !previousRule.equals(tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1])) {
-					
-					if(tmp.contains("("))
-						states += states.isEmpty() ? tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "") :
-									"," + tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "");
+			if(finalParser.size() > 0) {
+			
+				for(int aux=finalParser.size()-1; aux>=0; aux--) {
 						
-					previousRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1];
+					String tmp = finalParser.get(aux);
+					String tmpRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, "");
 					
+					if(ruleAlreadyInTree(tmp, rule))
+						return;
+					
+					else if(tmpRule.equals(rule.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1].replace(ConstantsUtility.DOTTED_RULE + " ", "").replace(" " + ConstantsUtility.DOTTED_RULE, ""))
+							&& !previousRule.equals(tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1])) {
+						
+						if(tmp.contains("("))
+							states += states.isEmpty() ? tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "") :
+										"," + tmp.split("\\(")[1].replace(")" + ConstantsUtility.FIELD_SEPARATOR, "").replace(")", "");
+							
+						previousRule = tmp.split(ConstantsUtility.FIELD_SEPARATOR_TO_REPLACE)[1];
+						
+					}
 				}
+						
+				previousState = "";
+				int aux = i == chart.size()-1 ? i : i+1;
+				finalParser.add("Chart[" + aux + "] " + rule + (method.matches(".*[A-Z]{2,}.*") ? " " + method : " (" + states + ")"));
+			
 			}
-					
-			previousState = "";
-			int aux = i == chart.size()-1 ? i : i+1;
-			finalParser.add("Chart[" + aux + "] " + rule + (method.matches(".*[A-Z]{2,}.*") ? " " + method : " (" + states + ")"));
-		
 		}
 		
 	}
