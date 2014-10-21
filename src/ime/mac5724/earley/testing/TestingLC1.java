@@ -57,7 +57,7 @@ public class TestingLC1 {
 		 * 		favorece ao primeiro que encontra ,
 		 * 
 		 */
-		String sentence = args[2];
+		String sentence = "e que só em vossa majestade não tem feliz indigência";
 		printRules = Boolean.valueOf(args[1]);
 		
 		long timeRan = System.currentTimeMillis();

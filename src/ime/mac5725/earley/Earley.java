@@ -637,7 +637,7 @@ public class Earley {
 			for(ArrayList<String> values : grammarTrees.values()) {
 				for(Entry<String, ArrayList<String>> rule : grammarTrees.entrySet()) {
 				
-					if(values.contains(sentence) && rule.getKey().equals(finalParserState)) {
+					if(!values.contains(sentence) && rule.getKey().equals(finalParserState)) {
 						
 						String tmpParserState[] = finalParserState.split(ConstantsUtility.NEXT_ELEMENT_CHAR_TO_REPLACE + " ")[1].split(" ");
 
