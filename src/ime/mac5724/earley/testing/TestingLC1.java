@@ -57,7 +57,7 @@ public class TestingLC1 {
 		 * 		favorece ao primeiro que encontra ,
 		 * 
 		 */
-		String sentence = "se a vaidade fosse uma virtude só nos havia de inspirar meios virtuosos .";
+		String sentence = args[2];;
 		printRules = Boolean.valueOf(args[1]);
 		
 		long timeRan = System.currentTimeMillis();

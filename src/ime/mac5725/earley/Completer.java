@@ -94,7 +94,8 @@ public class Completer extends Earley implements Runnable {
 				
 			}
 			
-			partialChart.set(partialChart.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag), "");
+			if(partialChart.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag) > 0)
+				partialChart.set(partialChart.indexOf(ConstantsUtility.DOTTED_RULE + " " + currentPOSTag), "");
 			if(grammarRecognized)
 				break;
 		}
