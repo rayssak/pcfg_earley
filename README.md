@@ -1,5 +1,4 @@
 pcfg_earley
 ===========
 
-Java parser using Earley algorithm top-down approach for Context Free Grammar. Receives a grammar and a sentence as input. Checks whether the sentence is recognized by the grammar and parsers it, generating its grammar trees.
-The algorithm was not updated to handle Probabilistic Context Free Grammar yet.
+An implementation of the Earley algorithm was developed in Java to propose a new approach for Context-Free Grammar (CFG) recognition and parsing of Portuguese (pt-BR) language given a specific corpus (although the focus was to generically cover Earley's properties). The main goal was to find the most appropriate data structure and data pre-processing manipulation in order to gain performance and Earley's coverage success rate. 
